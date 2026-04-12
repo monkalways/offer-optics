@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-11T23:24:05",
+  "build_timestamp": "2026-04-11T23:26:38",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -212,8 +212,6 @@
         "western_bmsc",
         "mcmaster_lifesci",
         "queens_lifesci",
-        "uoft_lifesci_utm",
-        "uoft_lifesci_utsc",
         "guelph_biomed",
         "ottawa_biomed",
         "brock_medsci",
@@ -223,7 +221,9 @@
         "waterloo_cs_bba",
         "waterloo_se",
         "waterloo_math_cs",
-        "waterloo_math"
+        "waterloo_math",
+        "uoft_lifesci_utm",
+        "uoft_lifesci_utsc"
       ],
       "tier_4_ualberta": [
         "ualberta_bsc_biolsci",
@@ -1308,360 +1308,6 @@
       ]
     },
     {
-      "program_key": "uoft_lifesci_utsc",
-      "program": "Life Sciences",
-      "university": "University of Toronto (Scarborough)",
-      "tier": 2,
-      "verdict": "safety",
-      "verdict_label": "Safety",
-      "verdict_gpa_only": "safety",
-      "ec_weight": "none",
-      "confidence": "medium",
-      "n_accepted": 37,
-      "median_accepted_avg": 92.6,
-      "min_avg": 79.0,
-      "p25": 90.7,
-      "p50": 92.6,
-      "p75": 94.2,
-      "max_avg": 98.1,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 70.3,
-      "justin_percentile_mid": 94.6,
-      "justin_percentile_high": 97.3,
-      "oop_n": 3,
-      "oop_min": 92.5,
-      "oop_mean": 93.8,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": false,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-15",
-      "deadline_supp": null,
-      "deadline_doc": "2027-02-02",
-      "decision_window": "January through late May (rolling)",
-      "fee_cad": 156,
-      "official_url": "https://www.utsc.utoronto.ca/biosci/",
-      "min_average_competitive": 85.0,
-      "prereq_courses": [
-        "Grade 12 English (ENG4U)",
-        "Grade 12 Calculus & Vectors (MCV4U) or equivalent",
-        "3 additional Grade 12 4U/M courses"
-      ],
-      "prereq_notes": "Same as UTM and St. George Life Sciences. Alberta equivalents:\nELA 30-1, Math 31, plus 3 more academic Grade 12 courses.\n",
-      "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 94.6th percentile of accepted reports for University of Toronto (Scarborough) Life Sciences (n=37, median accepted avg 92.6%). Projection range (93.5-97.5%) places him at the 70.3-97.3th percentile. OOP subset (small sample, n=3): mean accepted 93.8%, min 92.5%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 1
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 1
-        },
-        {
-          "bin": 87,
-          "n": 3
-        },
-        {
-          "bin": 88,
-          "n": 0
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 6
-        },
-        {
-          "bin": 91,
-          "n": 5
-        },
-        {
-          "bin": 92,
-          "n": 6
-        },
-        {
-          "bin": 93,
-          "n": 4
-        },
-        {
-          "bin": 94,
-          "n": 5
-        },
-        {
-          "bin": 95,
-          "n": 5
-        },
-        {
-          "bin": 96,
-          "n": 0
-        },
-        {
-          "bin": 97,
-          "n": 0
-        },
-        {
-          "bin": 98,
-          "n": 1
-        },
-        {
-          "bin": 99,
-          "n": 0
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
-      "program_key": "uoft_lifesci_utm",
-      "program": "Life Sciences",
-      "university": "University of Toronto (Mississauga)",
-      "tier": 2,
-      "verdict": "safety",
-      "verdict_label": "Safety",
-      "verdict_gpa_only": "safety",
-      "ec_weight": "none",
-      "confidence": "low",
-      "n_accepted": 28,
-      "median_accepted_avg": 92.7,
-      "min_avg": 80.0,
-      "p25": 89.0,
-      "p50": 92.7,
-      "p75": 95.0,
-      "max_avg": 99.2,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 64.3,
-      "justin_percentile_mid": 82.1,
-      "justin_percentile_high": 92.9,
-      "oop_n": 0,
-      "oop_min": null,
-      "oop_mean": null,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": false,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-15",
-      "deadline_supp": null,
-      "deadline_doc": "2027-02-02",
-      "decision_window": "January through late May (rolling)",
-      "fee_cad": 156,
-      "official_url": "https://www.utm.utoronto.ca/future-students/admissions/admission-requirements",
-      "min_average_competitive": 85.0,
-      "prereq_courses": [
-        "Grade 12 English (ENG4U)",
-        "Grade 12 Calculus & Vectors (MCV4U) or equivalent",
-        "3 additional Grade 12 4U/M courses"
-      ],
-      "prereq_notes": "For Alberta: ELA 30-1, Math 31 (or AP Calculus), plus 3 more academic\nGrade 12 courses. Same Alberta requirements as UofT StG.\n",
-      "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 82.1th percentile of accepted reports for University of Toronto (Mississauga) Life Sciences (n=28, median accepted avg 92.7%). Projection range (93.5-97.5%) places him at the 64.3-92.9th percentile. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 1
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 1
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 2
-        },
-        {
-          "bin": 87,
-          "n": 1
-        },
-        {
-          "bin": 88,
-          "n": 1
-        },
-        {
-          "bin": 89,
-          "n": 2
-        },
-        {
-          "bin": 90,
-          "n": 1
-        },
-        {
-          "bin": 91,
-          "n": 2
-        },
-        {
-          "bin": 92,
-          "n": 4
-        },
-        {
-          "bin": 93,
-          "n": 3
-        },
-        {
-          "bin": 94,
-          "n": 2
-        },
-        {
-          "bin": 95,
-          "n": 3
-        },
-        {
-          "bin": 96,
-          "n": 2
-        },
-        {
-          "bin": 97,
-          "n": 2
-        },
-        {
-          "bin": 98,
-          "n": 0
-        },
-        {
-          "bin": 99,
-          "n": 1
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
       "program_key": "western_bmsc",
       "program": "Bachelor of Medical Sciences (BMSc)",
       "university": "Western University",
@@ -2732,6 +2378,360 @@
     }
   ],
   "tier3": [
+    {
+      "program_key": "uoft_lifesci_utsc",
+      "program": "Life Sciences",
+      "university": "University of Toronto (Scarborough)",
+      "tier": 3,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "medium",
+      "n_accepted": 37,
+      "median_accepted_avg": 92.6,
+      "min_avg": 79.0,
+      "p25": 90.7,
+      "p50": 92.6,
+      "p75": 94.2,
+      "max_avg": 98.1,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 70.3,
+      "justin_percentile_mid": 94.6,
+      "justin_percentile_high": 97.3,
+      "oop_n": 3,
+      "oop_min": 92.5,
+      "oop_mean": 93.8,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-02",
+      "decision_window": "January through late May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://www.utsc.utoronto.ca/biosci/",
+      "min_average_competitive": 85.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Calculus & Vectors (MCV4U) or equivalent",
+        "3 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "Same as UTM and St. George Life Sciences. Alberta equivalents:\nELA 30-1, Math 31, plus 3 more academic Grade 12 courses.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 94.6th percentile of accepted reports for University of Toronto (Scarborough) Life Sciences (n=37, median accepted avg 92.6%). Projection range (93.5-97.5%) places him at the 70.3-97.3th percentile. OOP subset (small sample, n=3): mean accepted 93.8%, min 92.5%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 1
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 3
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 6
+        },
+        {
+          "bin": 91,
+          "n": 5
+        },
+        {
+          "bin": 92,
+          "n": 6
+        },
+        {
+          "bin": 93,
+          "n": 4
+        },
+        {
+          "bin": 94,
+          "n": 5
+        },
+        {
+          "bin": 95,
+          "n": 5
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 1
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "uoft_lifesci_utm",
+      "program": "Life Sciences",
+      "university": "University of Toronto (Mississauga)",
+      "tier": 3,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "low",
+      "n_accepted": 28,
+      "median_accepted_avg": 92.7,
+      "min_avg": 80.0,
+      "p25": 89.0,
+      "p50": 92.7,
+      "p75": 95.0,
+      "max_avg": 99.2,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 64.3,
+      "justin_percentile_mid": 82.1,
+      "justin_percentile_high": 92.9,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-02",
+      "decision_window": "January through late May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://www.utm.utoronto.ca/future-students/admissions/admission-requirements",
+      "min_average_competitive": 85.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Calculus & Vectors (MCV4U) or equivalent",
+        "3 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "For Alberta: ELA 30-1, Math 31 (or AP Calculus), plus 3 more academic\nGrade 12 courses. Same Alberta requirements as UofT StG.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 82.1th percentile of accepted reports for University of Toronto (Mississauga) Life Sciences (n=28, median accepted avg 92.7%). Projection range (93.5-97.5%) places him at the 64.3-92.9th percentile. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 1
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 1
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 2
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 2
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 2
+        },
+        {
+          "bin": 92,
+          "n": 4
+        },
+        {
+          "bin": 93,
+          "n": 3
+        },
+        {
+          "bin": 94,
+          "n": 2
+        },
+        {
+          "bin": 95,
+          "n": 3
+        },
+        {
+          "bin": 96,
+          "n": 2
+        },
+        {
+          "bin": 97,
+          "n": 2
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
     {
       "program_key": "waterloo_math_cs",
       "program": "Mathematics / Computer Science (joint)",
@@ -5298,20 +5298,6 @@
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: University of Toronto (Scarborough) — Life Sciences",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 279
-    },
-    {
-      "date": "2027-01-15",
-      "label": "OUAC equal-consideration: University of Toronto (Mississauga) — Life Sciences",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 279
-    },
-    {
-      "date": "2027-01-15",
       "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
@@ -5378,20 +5364,6 @@
       "label": "Documents due: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 297
-    },
-    {
-      "date": "2027-02-02",
-      "label": "Documents due: University of Toronto (Scarborough) — Life Sciences",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 297
-    },
-    {
-      "date": "2027-02-02",
-      "label": "Documents due: University of Toronto (Mississauga) — Life Sciences",
-      "category": "application_deadline",
-      "priority": "medium",
       "days_from_today": 297
     },
     {
@@ -5490,7 +5462,7 @@
         "n_programs_mapped": 126,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:24:02"
+        "fetched_at": "2026-04-11T23:26:35"
       },
       {
         "cycle": "2023-2024",
@@ -5501,7 +5473,7 @@
         "n_programs_mapped": 225,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:24:02"
+        "fetched_at": "2026-04-11T23:26:35"
       },
       {
         "cycle": "2024-2025",
@@ -5512,7 +5484,7 @@
         "n_programs_mapped": 370,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:24:02"
+        "fetched_at": "2026-04-11T23:26:35"
       },
       {
         "cycle": "2025-2026",
@@ -5523,7 +5495,7 @@
         "n_programs_mapped": 519,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:24:02"
+        "fetched_at": "2026-04-11T23:26:35"
       },
       {
         "cycle": "2025-2026-ab",
@@ -5534,7 +5506,7 @@
         "n_programs_mapped": 21,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:24:02"
+        "fetched_at": "2026-04-11T23:26:35"
       }
     ],
     "caveats": [

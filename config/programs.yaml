@@ -107,7 +107,7 @@ programs:
       - "(?i)queen.?s.*life\\s*sci"
 
   - key: uoft_lifesci_utm
-    tier: 2
+    tier: 3
     university: University of Toronto (Mississauga)
     university_key: uoft_utm
     program: Life Sciences
@@ -117,7 +117,7 @@ programs:
       - "(?i)uoft.*utm.*life"
 
   - key: uoft_lifesci_utsc
-    tier: 2
+    tier: 3
     university: University of Toronto (Scarborough)
     university_key: uoft_utsc
     program: Life Sciences

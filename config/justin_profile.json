@@ -190,8 +190,6 @@
       "western_bmsc",
       "mcmaster_lifesci",
       "queens_lifesci",
-      "uoft_lifesci_utm",
-      "uoft_lifesci_utsc",
       "guelph_biomed",
       "ottawa_biomed",
       "brock_medsci",
@@ -201,7 +199,9 @@
       "waterloo_cs_bba",
       "waterloo_se",
       "waterloo_math_cs",
-      "waterloo_math"
+      "waterloo_math",
+      "uoft_lifesci_utm",
+      "uoft_lifesci_utsc"
     ],
     "tier_4_ualberta": [
       "ualberta_bsc_biolsci",
