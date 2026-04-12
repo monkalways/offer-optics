@@ -1034,16 +1034,35 @@ function renderAppendix(data) {
   const dq = data.data_quality;
   if (!dq || !dq.cycles) return;
 
-  // Total rows
+  // Aggregate stats
   const totalRows = dq.cycles.reduce((sum, c) => sum + (c.n_rows || 0), 0);
-  const totalEl = document.getElementById("appendix-total-rows");
-  if (totalEl) totalEl.textContent = totalRows.toLocaleString() + "+";
-
-  // Total programs
+  const totalCycles = dq.cycles.length;
   const totalPrograms = (data.tier1 || []).length + (data.tier2 || []).length
     + (data.tier3 || []).length + (data.tier4 || []).length;
+  const totalUniversities = dq.cycles.reduce((sum, c) => sum + (c.n_universities_mapped || 0), 0);
+  const totalDecisions = dq.cycles.reduce((sum, c) => sum + (c.n_decisions_mapped || 0), 0);
+  const totalRequirements = [...(data.tier1 || []), ...(data.tier2 || [])]
+    .filter(p => p.deadline_ouac).length;
+
+  // Populate inline references
+  const totalEl = document.getElementById("appendix-total-rows");
+  if (totalEl) totalEl.textContent = totalRows.toLocaleString() + "+";
   const progsEl = document.getElementById("appendix-total-programs");
   if (progsEl) progsEl.textContent = String(totalPrograms);
+
+  // Populate summary stats grid
+  const statsMap = {
+    "stat-total-rows":         totalRows.toLocaleString(),
+    "stat-total-cycles":       String(totalCycles),
+    "stat-total-programs":     String(totalPrograms),
+    "stat-total-universities":  totalUniversities.toLocaleString(),
+    "stat-total-requirements":  String(totalRequirements),
+    "stat-total-decisions":    totalDecisions.toLocaleString(),
+  };
+  for (const [id, value] of Object.entries(statsMap)) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
 
   // Sources table
   const tbody = document.getElementById("appendix-sources-tbody");
