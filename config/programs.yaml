@@ -198,6 +198,15 @@ programs:
     match_patterns:
       - "(?i)waterloo.*math(?!.*cs)"
 
+  - key: waterloo_health_sci
+    tier: 3
+    university: University of Waterloo
+    university_key: waterloo
+    program: Health Sciences
+    official_url: https://uwaterloo.ca/future-students/programs/health-sciences
+    match_patterns:
+      - "(?i)waterloo.*health\\s*sci"
+
   # ─────────── Tier 4: UAlberta in-province options ───────────
 
   - key: ualberta_bsc_biolsci

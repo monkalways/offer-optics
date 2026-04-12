@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-11T23:32:25",
+  "build_timestamp": "2026-04-11T23:51:46",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -223,7 +223,8 @@
         "uoft_lifesci_utm",
         "uoft_lifesci_utsc",
         "ottawa_biomed",
-        "western_health_sci"
+        "western_health_sci",
+        "waterloo_health_sci"
       ],
       "tier_4_others": [
         "brock_medsci",
@@ -2902,6 +2903,179 @@
       ]
     },
     {
+      "program_key": "waterloo_health_sci",
+      "program": "Health Sciences",
+      "university": "University of Waterloo",
+      "tier": 3,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "none",
+      "confidence": "medium",
+      "n_accepted": 58,
+      "median_accepted_avg": 95.0,
+      "min_avg": 88.0,
+      "p25": 93.2,
+      "p50": 95.0,
+      "p75": 96.3,
+      "max_avg": 98.8,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 29.3,
+      "justin_percentile_mid": 53.4,
+      "justin_percentile_high": 94.8,
+      "oop_n": 1,
+      "oop_min": 97.0,
+      "oop_mean": 97.0,
+      "oop_caveat": "Justin's midpoint 95.5% is below the observed OOP floor 97.0% (small sample n=1 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 53.4th percentile of accepted reports for University of Waterloo Health Sciences (n=58, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 29.3-94.8th percentile. OOP DIRECTIONAL SIGNAL (small sample, n=1): mean accepted 97.0%, min 97.0%. Justin's midpoint 95.5% is below the observed OOP minimum but his high projection 97.5% clears it. Treat as directional only. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 1
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 4
+        },
+        {
+          "bin": 92,
+          "n": 4
+        },
+        {
+          "bin": 93,
+          "n": 7
+        },
+        {
+          "bin": 94,
+          "n": 8
+        },
+        {
+          "bin": 95,
+          "n": 7
+        },
+        {
+          "bin": 96,
+          "n": 17
+        },
+        {
+          "bin": 97,
+          "n": 6
+        },
+        {
+          "bin": 98,
+          "n": 2
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
       "program_key": "waterloo_math",
       "program": "Mathematics (general)",
       "university": "University of Waterloo",
@@ -5418,10 +5592,10 @@
         "n_rows": 981,
         "n_decisions_mapped": 971,
         "n_universities_mapped": 980,
-        "n_programs_mapped": 126,
+        "n_programs_mapped": 136,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:32:22"
+        "fetched_at": "2026-04-11T23:51:43"
       },
       {
         "cycle": "2023-2024",
@@ -5429,10 +5603,10 @@
         "n_rows": 1474,
         "n_decisions_mapped": 1473,
         "n_universities_mapped": 1459,
-        "n_programs_mapped": 225,
+        "n_programs_mapped": 238,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:32:22"
+        "fetched_at": "2026-04-11T23:51:43"
       },
       {
         "cycle": "2024-2025",
@@ -5440,10 +5614,10 @@
         "n_rows": 2074,
         "n_decisions_mapped": 2074,
         "n_universities_mapped": 2069,
-        "n_programs_mapped": 370,
+        "n_programs_mapped": 383,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:32:22"
+        "fetched_at": "2026-04-11T23:51:43"
       },
       {
         "cycle": "2025-2026",
@@ -5451,10 +5625,10 @@
         "n_rows": 3973,
         "n_decisions_mapped": 3973,
         "n_universities_mapped": 3948,
-        "n_programs_mapped": 519,
+        "n_programs_mapped": 543,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:32:22"
+        "fetched_at": "2026-04-11T23:51:43"
       },
       {
         "cycle": "2025-2026-ab",
@@ -5465,7 +5639,7 @@
         "n_programs_mapped": 21,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:32:22"
+        "fetched_at": "2026-04-11T23:51:43"
       }
     ],
     "caveats": [

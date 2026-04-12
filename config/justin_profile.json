@@ -201,7 +201,8 @@
       "uoft_lifesci_utm",
       "uoft_lifesci_utsc",
       "ottawa_biomed",
-      "western_health_sci"
+      "western_health_sci",
+      "waterloo_health_sci"
     ],
     "tier_4_others": [
       "brock_medsci",
