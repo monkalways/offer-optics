@@ -357,13 +357,18 @@ function renderTop6(profile) {
 function renderVerdictTiles(tier1) {
   const container = document.getElementById("verdict-tiles");
   container.innerHTML = "";
-  // Fixed display order: safety → target → reach → hard_reach (nicest sort for the eye)
-  const verdictOrder = { safety: 0, target: 1, reach: 2, hard_reach: 3, insufficient_data: 4 };
+  // Explicit display order for the 4 Tier-1 hero tiles:
+  // McMaster BHSc → Queen's BHSc → UofT Life Sci → Waterloo CS
+  const tileOrder = {
+    mcmaster_bhsc: 0,
+    queens_bhsc: 1,
+    uoft_lifesci_stgeorge: 2,
+    waterloo_cs: 3,
+  };
   const sorted = [...tier1].sort((a, b) => {
-    const va = verdictOrder[a.verdict] ?? 9;
-    const vb = verdictOrder[b.verdict] ?? 9;
-    if (va !== vb) return va - vb;
-    return (b.n_accepted || 0) - (a.n_accepted || 0);
+    const oa = tileOrder[a.program_key] ?? 99;
+    const ob = tileOrder[b.program_key] ?? 99;
+    return oa - ob;
   });
 
   sorted.forEach(p => {
