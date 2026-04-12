@@ -87,11 +87,9 @@
       <ul class="topnav__links" role="list">
         <li><a href="#top6"         data-nav-target="top6">Overview</a></li>
         <li><a href="#verdicts"     data-nav-target="verdicts">Verdicts</a></li>
-        <li><a href="#actions"      data-nav-target="actions">Actions</a></li>
-        <li><a href="#distribution" data-nav-target="distribution">Trends</a></li>
-        <li><a href="#ec-landscape" data-nav-target="ec-landscape">ECs</a></li>
+        <li><a href="#actions"      data-nav-target="actions">Timeline</a></li>
+        <li><a href="#distribution" data-nav-target="distribution">Comparison</a></li>
         <li><a href="#programs"     data-nav-target="programs">Programs</a></li>
-        <li><a href="#checklist"    data-nav-target="checklist">Checklist</a></li>
         <li><a href="#appendix"     data-nav-target="appendix">Appendix</a></li>
       </ul>
 
@@ -309,34 +307,15 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════
-         EC Landscape — what accepted students bring beyond grades
-         ══════════════════════════════════════════════════════════════════ -->
-    <section id="ec-landscape" class="mb-16 md:mb-24" aria-labelledby="ec-heading">
-      <div class="section-marker">
-        <span class="section-marker__num">VI.</span>
-        <p class="section-marker__kicker">Beyond grades</p>
-      </div>
-      <h2 id="ec-heading" class="section-heading font-display italic text-ink-900 mb-3">
-        EC landscape: what accepted students bring
-      </h2>
-      <p class="text-sm text-ink-500 mb-6" style="padding-left:calc(1.75ch + 0.875rem)">
-        Keyword analysis of supplementary application notes, extracurriculars, and comments reported by accepted applicants.
-        Categories are derived via keyword matching — directional, not comprehensive.
-      </p>
-
-      <div id="ec-insights-container" class="space-y-6"></div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════════════════════════
-         Per-program detail accordion (Tier 1 + Tier 2)
+         Per-program analysis (consolidated: GPA + EC + Verdict + Requirements)
          ══════════════════════════════════════════════════════════════════ -->
     <section id="programs" class="mb-16 md:mb-24" aria-labelledby="programs-heading">
       <div class="section-marker">
-        <span class="section-marker__num">VII.</span>
-        <p class="section-marker__kicker">Deep dive</p>
+        <span class="section-marker__num">V.</span>
+        <p class="section-marker__kicker">Per-program analysis</p>
       </div>
       <h2 id="programs-heading" class="section-heading font-display italic text-ink-900 mb-3">
-        Per-program detail
+        Full program profiles
       </h2>
       <!-- ── Block A: Background (collapsible) ── -->
       <details class="rounded-lg border border-ink-100 bg-card overflow-hidden mb-4">
@@ -586,69 +565,28 @@
         AFMC admission requirements, r/premedcanada community consensus.</span>
       </p>
 
-      <div class="space-y-6">
-        <div>
-          <h3 class="text-[11px] tracking-[0.22em] uppercase text-ink-500 mb-3">Tier 1 — Top targets · detailed assessment</h3>
-          <div id="tier1-accordion" class="space-y-2"></div>
-        </div>
-        <div>
-          <h3 class="text-[11px] tracking-[0.22em] uppercase text-ink-500 mb-3">Tier 2 — Ontario health / life sci pool · detailed assessment</h3>
-          <div id="tier2-accordion" class="space-y-2"></div>
-        </div>
+      <!-- Per-program cards: Tier 1 (full: GPA + EC + Verdict + Requirements) -->
+      <div class="space-y-6 mb-8">
+        <h3 class="text-[11px] tracking-[0.22em] uppercase text-ink-500">Tier 1 — Top targets · full profile</h3>
+        <div id="tier1-programs" class="space-y-4"></div>
       </div>
 
-      <!-- Tier 3/4 brief note (no detail rows, most are insufficient-data) -->
+      <!-- Per-program cards: Tier 2 (compact: GPA + Verdict + Requirements) -->
+      <div class="space-y-6 mb-6">
+        <h3 class="text-[11px] tracking-[0.22em] uppercase text-ink-500">Tier 2 — Ontario health / life sci + Waterloo backups · full profile</h3>
+        <div id="tier2-programs" class="space-y-4"></div>
+      </div>
+
+      <!-- Tier 3/4 brief note -->
       <div id="tier34-note" class="mt-6 rounded-lg border border-ink-100 bg-ink-50/50 p-5 text-sm text-ink-600"></div>
     </section>
-
-    <!-- ══════════════════════════════════════════════════════════════════
-         Section 9 — Application checklist table (Tier 1 + Tier 2)
-         ══════════════════════════════════════════════════════════════════ -->
-    <section id="checklist" class="mb-16 md:mb-24" aria-labelledby="checklist-heading">
-      <div class="section-marker">
-        <span class="section-marker__num">VIII.</span>
-        <p class="section-marker__kicker">Application checklist</p>
-      </div>
-      <h2 id="checklist-heading" class="section-heading font-display italic text-ink-900 mb-3">
-        Deadlines &amp; submission requirements
-      </h2>
-      <p class="text-sm text-ink-500 max-w-prose mb-6">
-        Sorted by OUAC deadline. Click a column header to re-sort. Dates reflect Justin's 2026–2027 cycle
-        (shifted +1 year from the curated 2025–2026 template; verify before submitting anything time-sensitive).
-      </p>
-
-      <!-- Desktop table -->
-      <div class="hidden md:block rounded-lg border border-ink-100 bg-card overflow-hidden">
-        <table id="checklist-table" class="w-full text-sm">
-          <thead>
-            <tr class="text-left text-[11px] tracking-wider uppercase text-ink-500 bg-ink-50/60 border-b border-ink-100">
-              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="tier">Tier</th>
-              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="program">Program</th>
-              <th class="px-4 py-3 font-medium cursor-pointer sortable tabular-nums" data-sort-key="deadline_ouac">OUAC</th>
-              <th class="px-4 py-3 font-medium cursor-pointer sortable tabular-nums" data-sort-key="deadline_supp">Supp due</th>
-              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="supp_app_type">Supp app</th>
-              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="casper_required">CASPer</th>
-              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="decision_window">Decisions</th>
-              <th class="px-4 py-3 font-medium cursor-pointer sortable tabular-nums" data-sort-key="fee_cad">Fee</th>
-              <th class="px-4 py-3 font-medium">Official</th>
-            </tr>
-          </thead>
-          <tbody id="checklist-tbody" class="divide-y divide-ink-100"></tbody>
-        </table>
-      </div>
-
-      <!-- Mobile card list -->
-      <div id="checklist-cards" class="md:hidden space-y-3"></div>
-    </section>
-
-    <!-- Data quality section removed — covered by the Appendix -->
 
     <!-- ══════════════════════════════════════════════════════════════════
          Appendix — Dataset & methodology overview
          ══════════════════════════════════════════════════════════════════ -->
     <section id="appendix" class="mb-16 md:mb-24" aria-labelledby="appendix-heading">
       <div class="section-marker">
-        <span class="section-marker__num">IX.</span>
+        <span class="section-marker__num">VI.</span>
         <p class="section-marker__kicker">Appendix</p>
       </div>
       <h2 id="appendix-heading" class="section-heading font-display italic text-ink-900 mb-6">

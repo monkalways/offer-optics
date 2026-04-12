@@ -424,58 +424,58 @@ function shortenSuppApp(type) {
 }
 
 // ────────────────────────────────────────────────────────────────────
-// Accordion (Tier 1 + Tier 2)
+// Per-program cards (consolidated: GPA + EC + Verdict + Requirements)
 // ────────────────────────────────────────────────────────────────────
 
-// Explicit display order for Tier 2 accordion: med-school prestige first,
-// Waterloo CS variants last (they're CS backups, not pre-med).
+// Display order for Tier 1 and Tier 2
+const TIER1_ORDER = { mcmaster_bhsc: 0, queens_bhsc: 1, waterloo_cs: 2 };
 const TIER2_ORDER = {
-  western_bmsc:           0,   // Schulich BMSc — top pre-med prestige
-  uoft_lifesci_stgeorge:  1,   // UofT StG — #1 research infra, grade deflation caveat
-  mcmaster_lifesci:       2,   // McMaster Science I → Life Sci
-  queens_lifesci:         3,   // Queen's BSc Life Sci
-  guelph_biomed:          4,   // Guelph Biomedical Sciences
-  ualberta_bsc_physiol:   5,   // UAlberta Physiology — in-province pre-med
-  waterloo_math_cs:       6,   // Waterloo Math/CS (CS backup, not pre-med)
-  waterloo_se:            7,   // Waterloo SE (CS backup, not pre-med)
+  western_bmsc: 0, uoft_lifesci_stgeorge: 1, mcmaster_lifesci: 2,
+  queens_lifesci: 3, guelph_biomed: 4, ualberta_bsc_physiol: 5,
+  waterloo_math_cs: 6, waterloo_se: 7,
 };
 
-function renderAccordion(containerId, programs) {
-  const host = document.getElementById(containerId);
-  host.innerHTML = "";
+function renderProgramCards(data) {
+  const ecInsights = data.ec_insights || {};
+  const timelineMap = {};
+  (data.decision_timeline || []).forEach(t => { timelineMap[t.program_key] = t.months; });
 
-  const sorted = [...programs].sort((a, b) => {
-    // Use explicit order if defined (Tier 2), otherwise fall back to verdict sort
-    const oa = TIER2_ORDER[a.program_key];
-    const ob = TIER2_ORDER[b.program_key];
-    if (oa !== undefined && ob !== undefined) return oa - ob;
-    if (oa !== undefined) return -1;
-    if (ob !== undefined) return 1;
-    // Fallback: sort by verdict then by sample size
-    const verdictOrder = { safety: 0, target: 1, reach: 2, hard_reach: 3, insufficient_data: 4 };
-    const va = verdictOrder[a.verdict] ?? 9;
-    const vb = verdictOrder[b.verdict] ?? 9;
-    if (va !== vb) return va - vb;
-    return (b.n_accepted || 0) - (a.n_accepted || 0);
-  });
+  // Tier 1
+  const tier1Host = document.getElementById("tier1-programs");
+  if (tier1Host) {
+    tier1Host.innerHTML = "";
+    const sorted1 = [...(data.tier1 || [])].sort((a, b) =>
+      (TIER1_ORDER[a.program_key] ?? 99) - (TIER1_ORDER[b.program_key] ?? 99));
+    sorted1.forEach((p, i) => {
+      tier1Host.appendChild(buildProgramCard(p, ecInsights[p.program_key], timelineMap[p.program_key], i === 0));
+    });
+  }
 
-  sorted.forEach(p => {
-    host.appendChild(renderProgramDetails(p));
-  });
+  // Tier 2
+  const tier2Host = document.getElementById("tier2-programs");
+  if (tier2Host) {
+    tier2Host.innerHTML = "";
+    const sorted2 = [...(data.tier2 || [])].sort((a, b) =>
+      (TIER2_ORDER[a.program_key] ?? 99) - (TIER2_ORDER[b.program_key] ?? 99));
+    sorted2.forEach(p => {
+      tier2Host.appendChild(buildProgramCard(p, ecInsights[p.program_key], timelineMap[p.program_key], false));
+    });
+  }
 }
 
-function renderProgramDetails(p) {
+function buildProgramCard(p, ecInsight, timelineMonths, openByDefault) {
   const id = `program-${slug(p.program_key)}`;
   const details = document.createElement("details");
   details.id = id;
   details.className = "program-row";
+  if (openByDefault) details.open = true;
 
-  const verdictKind = verdictClass(p.verdict);
+  const vk = verdictClass(p.verdict);
 
   // Summary row
   const summary = document.createElement("summary");
   summary.innerHTML = `
-    <span class="badge badge--${verdictKind}">${esc(p.verdict_label)}</span>
+    <span class="badge badge--${vk}">${esc(p.verdict_label)}</span>
     <span class="summary-program">
       ${esc(p.program)}
       <small>${esc(p.university)}</small>
@@ -489,77 +489,158 @@ function renderProgramDetails(p) {
   `;
   details.appendChild(summary);
 
-  // Body
-  const body = document.createElement("div");
-  body.className = "program-body";
+  const body = el("div", "program-body");
 
-  // Stats row
+  // ── Sub-section 1: GPA Analysis ──
+  body.appendChild(el("div", "program-subsection-label", "1. GPA Analysis"));
   const statsRow = document.createElement("dl");
   statsRow.className = "program-stats-row";
-  const statCells = [
-    ["n accepted",    p.n_accepted],
-    ["25th pct avg",  p.p25],
-    ["Median avg",    p.p50 != null ? p.p50 : p.median_accepted_avg],
-    ["75th pct avg",  p.p75],
-    ["Justin pct",    p.justin_percentile_mid != null ? ordinal(p.justin_percentile_mid) : null],
-  ];
-  statCells.forEach(([label, value]) => {
-    const cell = el("div");
-    cell.innerHTML = `<dt>${esc(label)}</dt><dd>${value != null ? esc(String(value)) : "—"}</dd>`;
-    statsRow.appendChild(cell);
+  [["n accepted", p.n_accepted], ["25th pct", p.p25],
+   ["Median", p.p50 ?? p.median_accepted_avg], ["75th pct", p.p75],
+   ["Justin pct", p.justin_percentile_mid != null ? ordinal(p.justin_percentile_mid) : null]
+  ].forEach(([label, value]) => {
+    const c = el("div");
+    c.innerHTML = `<dt>${esc(label)}</dt><dd>${value != null ? esc(String(value)) : "—"}</dd>`;
+    statsRow.appendChild(c);
   });
   body.appendChild(statsRow);
-
-  // OOP caveat (only if adverse) — stays full-width above the 2-col grid
   if (p.oop_caveat) {
-    body.appendChild(el("div", "oop-warning",
-      `<strong>OOP yellow flag</strong>${esc(p.oop_caveat)}`));
+    body.appendChild(el("div", "oop-warning", `<strong>OOP yellow flag</strong>${esc(p.oop_caveat)}`));
   }
 
-  // Two-column grid: reasoning + ec-fit on the left, requirements sidebar on the right
-  const cols = el("div", "program-body-cols");
-  const main = el("div", "program-body-cols__main");
-  const aside = el("div", "program-body-cols__aside");
+  // ── Sub-section 2: EC Analysis (Tier 1 with supp apps only) ──
+  if (ecInsight && ecInsight.category_frequencies && Object.keys(ecInsight.category_frequencies).length > 0) {
+    body.appendChild(el("div", "program-subsection-label mt-6", "2. EC Analysis"));
+    const ecDiv = el("div", "mt-2 mb-4");
 
-  // Main column: long-form reasoning (structured) + EC fit
+    // Alignment badge
+    const align = ecInsight.justin_alignment || {};
+    const cats = Object.keys(ecInsight.category_frequencies);
+    const vals = Object.values(ecInsight.category_frequencies);
+    const maxVal = Math.max(...vals, 1);
+
+    ecDiv.innerHTML = `
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-flex items-center px-2.5 py-1 text-[11px] font-medium rounded-full border
+          ${(align.match_rate_pct || 0) >= 75 ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-amber-50 border-amber-200 text-amber-700'}">
+          Justin matches ${(align.matched || []).length}/${cats.length} categories
+        </span>
+        <span class="text-[12px] text-ink-400">${ecInsight.n_with_ec_data} of ${ecInsight.n_accepted_total} accepted reports have EC data</span>
+      </div>
+    `;
+
+    // EC bars
+    const barsDiv = el("div", "space-y-1.5");
+    const barColor = EC_BAR_COLORS[p.program_key] || "#1f2937";
+    cats.forEach((cat, i) => {
+      const count = vals[i];
+      const pct = (count / maxVal) * 100;
+      const isMatch = (align.matched || []).includes(cat);
+      const row = el("div", "flex items-center gap-3 text-[12px]");
+      row.innerHTML = `
+        <span class="w-[150px] sm:w-[180px] shrink-0 text-right text-ink-500 truncate">${esc(cat)}</span>
+        <div class="flex-1 h-5 bg-ink-50 rounded overflow-hidden relative">
+          <div class="h-full rounded" style="width:${pct}%;background:${barColor};opacity:${isMatch ? '0.8' : '0.3'}"></div>
+          <span class="absolute inset-y-0 left-2 flex items-center text-[10px] font-medium ${pct > 25 ? 'text-white' : 'text-ink-600'}">${count}</span>
+        </div>
+        <span class="w-4 shrink-0 text-center text-[12px] ${isMatch ? 'text-emerald-600' : 'text-ink-300'}">${isMatch ? '✓' : '—'}</span>
+      `;
+      barsDiv.appendChild(row);
+    });
+    ecDiv.appendChild(barsDiv);
+
+    // Sample quotes
+    if (ecInsight.sample_quotes && ecInsight.sample_quotes.length) {
+      const quotesDiv = el("div", "mt-4 pt-3 border-t border-ink-100");
+      quotesDiv.innerHTML = `<p class="text-[10px] tracking-[0.18em] uppercase text-ink-400 font-medium mb-2">What accepted students mentioned</p>`;
+      ecInsight.sample_quotes.filter(q => q.length > 15).forEach(q => {
+        quotesDiv.appendChild(el("p", "text-[12.5px] text-ink-500 leading-relaxed pl-3 border-l-2 border-ink-100 mb-1.5",
+          `"${esc(q)}"`));
+      });
+      ecDiv.appendChild(quotesDiv);
+    }
+    body.appendChild(ecDiv);
+  } else if (p.ec_weight === "medium") {
+    // Waterloo CS variants — brief AIF note
+    body.appendChild(el("div", "program-subsection-label mt-6", "2. EC Analysis"));
+    body.appendChild(el("p", "text-[13px] text-ink-500 mt-2 mb-4",
+      "AIF (Admission Information Form) required — Justin's AIF will be strong given his CyberPatriot, Kaggle, IMC, and Harvard MEDScience credentials."));
+  }
+
+  // ── Sub-section 3: Justin's Verdict ──
+  body.appendChild(el("div", "program-subsection-label mt-6",
+    `3. Justin's Verdict — <span class="badge badge--${vk}" style="font-size:11px;padding:2px 8px;vertical-align:1px">${esc(p.verdict_label)}</span>`));
+  if (p.verdict_gpa_only && p.verdict_gpa_only !== p.verdict) {
+    body.appendChild(el("p", "text-[13px] text-ink-500 mt-2",
+      `GPA-only verdict: <strong class="text-ink-700">${esc(p.verdict_gpa_only)}</strong> → upgraded to <strong class="text-ink-700">${esc(p.verdict)}</strong> via EC leverage`));
+  }
   if (p.reasoning) {
-    const reasoningContainer = el("div", "program-reasoning-formatted");
-    reasoningContainer.innerHTML = formatReasoning(p.reasoning);
-    main.appendChild(reasoningContainer);
+    const rc = el("div", "program-reasoning-formatted mt-3");
+    rc.innerHTML = formatReasoning(p.reasoning);
+    body.appendChild(rc);
   }
   if (p.ec_strength_text) {
-    main.appendChild(el("div", "ec-fit",
-      `<strong>EC fit</strong>${esc(p.ec_strength_text)}`));
+    body.appendChild(el("div", "ec-fit mt-3", `<strong>EC fit</strong>${esc(p.ec_strength_text)}`));
   }
 
-  // Aside column: requirements meta (deadlines, fee, link, etc.)
-  const meta = document.createElement("dl");
-  meta.className = "program-meta";
+  // ── Sub-section 4: Application Procedure ──
+  body.appendChild(el("div", "program-subsection-label mt-6", "4. Application Procedure"));
+  const reqGrid = el("div", "program-req-grid mt-3");
 
-  function metaCell(label, value) {
-    if (value === null || value === undefined || value === "") return;
-    const cell = el("div");
-    cell.innerHTML = `<dt>${esc(label)}</dt><dd>${value}</dd>`;
-    meta.appendChild(cell);
+  function rq(label, value) {
+    if (value === null || value === undefined || value === "") return "";
+    return `<div><dt>${esc(label)}</dt><dd>${value}</dd></div>`;
   }
 
-  metaCell("OUAC deadline",   p.deadline_ouac ? esc(fmtDate(p.deadline_ouac)) : null);
-  metaCell("Supp deadline",   p.deadline_supp ? esc(fmtDate(p.deadline_supp)) : null);
-  metaCell("Document deadline", p.deadline_doc ? esc(fmtDate(p.deadline_doc)) : null);
-  metaCell("Decision window", p.decision_window ? esc(p.decision_window) : null);
-  metaCell("Supplementary", p.supp_app_required == null ? null :
-    (p.supp_app_required ? esc(p.supp_app_type || "Required") : "None"));
-  metaCell("CASPer", p.casper_required === true ? "Required" :
-    (p.casper_required === false ? "Not required" : null));
-  metaCell("Fee (CAD)", p.fee_cad != null ? `$${p.fee_cad}` : null);
-  metaCell("Requirements confidence", p.requirements_confidence ? esc(p.requirements_confidence) : null);
-  metaCell("Source", p.official_url ?
-    `<a href="${esc(p.official_url)}" target="_blank" rel="noopener">Official page ↗</a>` : null);
+  reqGrid.innerHTML = `
+    ${rq("OUAC deadline", p.deadline_ouac ? esc(fmtDate(p.deadline_ouac)) : null)}
+    ${rq("Supp deadline", p.deadline_supp ? esc(fmtDate(p.deadline_supp)) : null)}
+    ${rq("Document deadline", p.deadline_doc ? esc(fmtDate(p.deadline_doc)) : null)}
+    ${rq("Decision window", p.decision_window ? esc(p.decision_window) : null)}
+    ${rq("Supplementary", p.supp_app_required == null ? null :
+      (p.supp_app_required ? esc(p.supp_app_type || "Required") : "None"))}
+    ${rq("CASPer", p.casper_required === true ? "Required" :
+      (p.casper_required === false ? "Not required" : null))}
+    ${rq("Fee (CAD)", p.fee_cad != null ? "$" + p.fee_cad : null)}
+    ${rq("Confidence", p.requirements_confidence ? esc(p.requirements_confidence) : null)}
+    ${rq("Official page", p.official_url ?
+      `<a href="${esc(p.official_url)}" target="_blank" rel="noopener" class="program-link">Visit page ↗</a>` : null)}
+  `;
+  body.appendChild(reqGrid);
 
-  aside.appendChild(meta);
-  cols.appendChild(main);
-  cols.appendChild(aside);
-  body.appendChild(cols);
+  // Prereq courses
+  if (p.prereq_courses && p.prereq_courses.length) {
+    const prereqDiv = el("div", "mt-3");
+    prereqDiv.innerHTML = `
+      <p class="text-[10.5px] tracking-[0.15em] uppercase text-ink-400 font-medium mb-1.5">Prerequisite courses</p>
+      <ul class="text-[13px] text-ink-600 space-y-0.5 pl-4 list-disc">${
+        p.prereq_courses.map(c => `<li>${esc(c)}</li>`).join("")
+      }</ul>
+      ${p.prereq_notes ? `<p class="text-[12px] text-ink-400 mt-2 leading-relaxed">${esc(p.prereq_notes).slice(0, 300)}</p>` : ""}
+    `;
+    body.appendChild(prereqDiv);
+  }
+
+  // Decision timeline months (if available)
+  if (timelineMonths && timelineMonths.length) {
+    const tlDiv = el("div", "mt-3");
+    tlDiv.innerHTML = `
+      <p class="text-[10.5px] tracking-[0.15em] uppercase text-ink-400 font-medium mb-1.5">When decisions arrived (2024-25 cycle)</p>
+      <div class="flex flex-wrap gap-1.5">${timelineMonths.map(m => {
+        const month = m.year_month.split("-")[1];
+        const monthNames = {
+          "01":"Jan","02":"Feb","03":"Mar","04":"Apr","05":"May","06":"Jun",
+          "07":"Jul","08":"Aug","09":"Sep","10":"Oct","11":"Nov","12":"Dec"};
+        return `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] rounded border border-ink-100 bg-ink-50 text-ink-700 tabular-nums">
+          <span class="font-medium">${monthNames[month] || month}</span>
+          <span class="text-ink-400">${m.n_accepted}A</span>
+          ${m.n_rejected ? `<span class="text-red-500">${m.n_rejected}R</span>` : ""}
+          ${m.n_deferred ? `<span class="text-amber-600">${m.n_deferred}D</span>` : ""}
+        </span>`;
+      }).join("")}</div>
+    `;
+    body.appendChild(tlDiv);
+  }
 
   details.appendChild(body);
   return details;
@@ -845,26 +926,12 @@ function renderYoyChart(yoy) {
 }
 
 // ────────────────────────────────────────────────────────────────────
-// Checklist (sortable table + mobile cards)
+// (Checklist section removed — merged into per-program cards)
 // ────────────────────────────────────────────────────────────────────
 
-// Explicit checklist display order: Tier 1 first (matching hero tile order),
-// then Tier 2 (matching accordion prestige order).
-const CHECKLIST_ORDER = {
-  mcmaster_bhsc:           0,
-  queens_bhsc:             1,
-  waterloo_cs:             2,
-  western_bmsc:            3,
-  uoft_lifesci_stgeorge:   4,
-  mcmaster_lifesci:        5,
-  queens_lifesci:          6,
-  guelph_biomed:           7,
-  ualberta_bsc_physiol:    8,
-  waterloo_math_cs:        9,
-  waterloo_se:            10,
-};
-
-function renderChecklist(data) {
+/* Removed: renderChecklist, renderChecklistRows, renderChecklistCards, sortRows, updateSortIndicators
+   — all checklist data is now inside per-program cards (sub-section 4: Application Procedure) */
+function _removed_renderChecklist(data) {
   const rows = [...(data.tier1 || []), ...(data.tier2 || [])]
     .filter(p => p.deadline_ouac); // only programs with real deadlines
 
@@ -992,7 +1059,7 @@ function renderChecklistCards(rows) {
 }
 
 // ────────────────────────────────────────────────────────────────────
-// EC Insights — what accepted students bring beyond grades
+// (EC Insights section removed — merged into per-program cards)
 // ────────────────────────────────────────────────────────────────────
 
 const PROGRAM_LABELS_SHORT = {
@@ -1007,7 +1074,8 @@ const EC_BAR_COLORS = {
   waterloo_cs: "#1e3a8a",
 };
 
-function renderEcInsights(ecInsights, tier1) {
+/* Removed: renderEcInsights — EC data now rendered inside each Tier-1 program card */
+function _removed_renderEcInsights(ecInsights, tier1) {
   const container = document.getElementById("ec-insights-container");
   if (!container || !ecInsights) return;
   container.innerHTML = "";
@@ -1406,11 +1474,8 @@ async function main() {
     renderActionItems(data.action_items || []);
     renderDistributionChart(data.tier1 || []);
     renderYoyChart(data.yoy_trends || []);
-    renderEcInsights(data.ec_insights || {}, data.tier1 || []);
-    renderAccordion("tier1-accordion", data.tier1 || []);
-    renderAccordion("tier2-accordion", data.tier2 || []);
+    renderProgramCards(data);
     renderTier34Note(data.tier3 || [], data.tier4 || []);
-    renderChecklist(data);
     renderAppendix(data);
     wireAnchorAutoOpen();
     wireNavActiveState();

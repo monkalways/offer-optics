@@ -1004,6 +1004,44 @@ details.program-row .chev::before { content: "+"; }
   }
 }
 
+/* ── Per-program card sub-section labels ── */
+
+.program-subsection-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-500);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ink-100);
+  margin-bottom: 0.75rem;
+}
+
+/* Requirements grid (sub-section 4) */
+.program-req-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem 1.5rem;
+  font-size: 12.5px;
+}
+
+.program-req-grid dt {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-400);
+  margin-bottom: 2px;
+}
+
+.program-req-grid dd {
+  color: var(--ink-800);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .program-req-grid { grid-template-columns: 1fr 1fr; }
+}
+
 /* ── Formatted reasoning sections (replaces old .program-reasoning) ── */
 
 .program-reasoning-formatted {
