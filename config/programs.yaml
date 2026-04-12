@@ -56,7 +56,7 @@ programs:
       - "(?i)uw.*\\b(cs|computer\\s*science)\\b"
 
   - key: uoft_lifesci_stgeorge
-    tier: 1
+    tier: 2
     university: University of Toronto (St. George)
     university_key: uoft_stgeorge
     program: Life Sciences

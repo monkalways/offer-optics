@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-11T23:51:46",
+  "build_timestamp": "2026-04-12T00:02:32",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -205,11 +205,11 @@
       "tier_1_top_targets": [
         "mcmaster_bhsc",
         "queens_bhsc",
-        "waterloo_cs",
-        "uoft_lifesci_stgeorge"
+        "waterloo_cs"
       ],
       "tier_2_ontario_health_lifesci": [
         "western_bmsc",
+        "uoft_lifesci_stgeorge",
         "mcmaster_lifesci",
         "queens_lifesci",
         "guelph_biomed",
@@ -240,183 +240,6 @@
     }
   },
   "tier1": [
-    {
-      "program_key": "uoft_lifesci_stgeorge",
-      "program": "Life Sciences",
-      "university": "University of Toronto (St. George)",
-      "tier": 1,
-      "verdict": "safety",
-      "verdict_label": "Safety",
-      "verdict_gpa_only": "safety",
-      "ec_weight": "none",
-      "confidence": "high",
-      "n_accepted": 148,
-      "median_accepted_avg": 94.2,
-      "min_avg": 73.2,
-      "p25": 92.0,
-      "p50": 94.2,
-      "p75": 96.3,
-      "max_avg": 99.8,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 39.9,
-      "justin_percentile_mid": 65.5,
-      "justin_percentile_high": 85.8,
-      "oop_n": 9,
-      "oop_min": 89.0,
-      "oop_mean": 95.0,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": false,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-15",
-      "deadline_supp": null,
-      "deadline_doc": "2027-02-02",
-      "decision_window": "January through late May",
-      "fee_cad": 156,
-      "official_url": "https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences",
-      "min_average_competitive": 88.0,
-      "prereq_courses": [
-        "English (ELA 30-1 or English 30 for Alberta students)",
-        "Mathematics 31 (Calculus) or AP Calculus AB/BC",
-        "Three additional Grade 12 / 30-level academic courses"
-      ],
-      "prereq_notes": "For Alberta students: ELA 30-1, Math 31 (or AP Calc), plus 3 more\nGrade 12 academic courses. Five Grade 12 academic courses minimum.\nELA 30-2 does NOT meet the requirement. Justin satisfies all of these\nwith room to spare: ELA 30-1 (~87.5), Math 31 (~99), Math 30-1 (~99),\nBio 30 (~97.5), Chem 30 (~97.5), French 30-1 (~92.5).\n\nImportant: \"challenge subjects, career courses, work experience\ncourses, and/or co-op courses\" are excluded from consideration.\nJustin's six listed courses are all academic, so this isn't a problem.\n",
-      "requirements_confidence": "high",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 65.5th percentile of accepted reports for University of Toronto (St. George) Life Sciences (n=148, median accepted avg 94.2%). Projection range (93.5-97.5%) places him at the 39.9-85.8th percentile. OOP subset (small sample, n=9): mean accepted 95.0%, min 89.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": "NOT APPLICABLE — no supplementary application at UofT Life Sci. ECs do not affect the decision. Justin is well above the academic bar here regardless.",
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 1
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 1
-        },
-        {
-          "bin": 84,
-          "n": 1
-        },
-        {
-          "bin": 85,
-          "n": 1
-        },
-        {
-          "bin": 86,
-          "n": 1
-        },
-        {
-          "bin": 87,
-          "n": 2
-        },
-        {
-          "bin": 88,
-          "n": 1
-        },
-        {
-          "bin": 89,
-          "n": 5
-        },
-        {
-          "bin": 90,
-          "n": 7
-        },
-        {
-          "bin": 91,
-          "n": 14
-        },
-        {
-          "bin": 92,
-          "n": 17
-        },
-        {
-          "bin": 93,
-          "n": 14
-        },
-        {
-          "bin": 94,
-          "n": 23
-        },
-        {
-          "bin": 95,
-          "n": 12
-        },
-        {
-          "bin": 96,
-          "n": 20
-        },
-        {
-          "bin": 97,
-          "n": 11
-        },
-        {
-          "bin": 98,
-          "n": 12
-        },
-        {
-          "bin": 99,
-          "n": 5
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
     {
       "program_key": "mcmaster_bhsc",
       "program": "Bachelor of Health Sciences (Honours)",
@@ -954,6 +777,183 @@
     }
   ],
   "tier2": [
+    {
+      "program_key": "uoft_lifesci_stgeorge",
+      "program": "Life Sciences",
+      "university": "University of Toronto (St. George)",
+      "tier": 2,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 148,
+      "median_accepted_avg": 94.2,
+      "min_avg": 73.2,
+      "p25": 92.0,
+      "p50": 94.2,
+      "p75": 96.3,
+      "max_avg": 99.8,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 39.9,
+      "justin_percentile_mid": 65.5,
+      "justin_percentile_high": 85.8,
+      "oop_n": 9,
+      "oop_min": 89.0,
+      "oop_mean": 95.0,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-02",
+      "decision_window": "January through late May",
+      "fee_cad": 156,
+      "official_url": "https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences",
+      "min_average_competitive": 88.0,
+      "prereq_courses": [
+        "English (ELA 30-1 or English 30 for Alberta students)",
+        "Mathematics 31 (Calculus) or AP Calculus AB/BC",
+        "Three additional Grade 12 / 30-level academic courses"
+      ],
+      "prereq_notes": "For Alberta students: ELA 30-1, Math 31 (or AP Calc), plus 3 more\nGrade 12 academic courses. Five Grade 12 academic courses minimum.\nELA 30-2 does NOT meet the requirement. Justin satisfies all of these\nwith room to spare: ELA 30-1 (~87.5), Math 31 (~99), Math 30-1 (~99),\nBio 30 (~97.5), Chem 30 (~97.5), French 30-1 (~92.5).\n\nImportant: \"challenge subjects, career courses, work experience\ncourses, and/or co-op courses\" are excluded from consideration.\nJustin's six listed courses are all academic, so this isn't a problem.\n",
+      "requirements_confidence": "high",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 65.5th percentile of accepted reports for University of Toronto (St. George) Life Sciences (n=148, median accepted avg 94.2%). Projection range (93.5-97.5%) places him at the 39.9-85.8th percentile. OOP subset (small sample, n=9): mean accepted 95.0%, min 89.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": "NOT APPLICABLE — no supplementary application at UofT Life Sci. ECs do not affect the decision. Justin is well above the academic bar here regardless.",
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 1
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 1
+        },
+        {
+          "bin": 84,
+          "n": 1
+        },
+        {
+          "bin": 85,
+          "n": 1
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 2
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 5
+        },
+        {
+          "bin": 90,
+          "n": 7
+        },
+        {
+          "bin": 91,
+          "n": 14
+        },
+        {
+          "bin": 92,
+          "n": 17
+        },
+        {
+          "bin": 93,
+          "n": 14
+        },
+        {
+          "bin": 94,
+          "n": 23
+        },
+        {
+          "bin": 95,
+          "n": 12
+        },
+        {
+          "bin": 96,
+          "n": 20
+        },
+        {
+          "bin": 97,
+          "n": 11
+        },
+        {
+          "bin": 98,
+          "n": 12
+        },
+        {
+          "bin": 99,
+          "n": 5
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
     {
       "program_key": "guelph_biomed",
       "program": "Biomedical Sciences",
@@ -5229,40 +5229,6 @@
       ]
     },
     {
-      "program_key": "uoft_lifesci_stgeorge",
-      "program": "Life Sciences",
-      "cycles": [
-        {
-          "cycle": "2022-2023",
-          "n": 27,
-          "mean": 93.8,
-          "min": 86.0,
-          "max": 99.0
-        },
-        {
-          "cycle": "2023-2024",
-          "n": 22,
-          "mean": 90.9,
-          "min": 73.2,
-          "max": 97.0
-        },
-        {
-          "cycle": "2024-2025",
-          "n": 18,
-          "mean": 92.6,
-          "min": 87.0,
-          "max": 96.4
-        },
-        {
-          "cycle": "2025-2026",
-          "n": 81,
-          "mean": 95.0,
-          "min": 88.0,
-          "max": 99.8
-        }
-      ]
-    },
-    {
       "program_key": "waterloo_cs",
       "program": "Computer Science (BCS)",
       "cycles": [
@@ -5346,47 +5312,6 @@
       ]
     },
     {
-      "program_key": "uoft_lifesci_stgeorge",
-      "program": "Life Sciences",
-      "months": [
-        {
-          "year_month": "2025-01",
-          "n": 2,
-          "n_accepted": 2,
-          "n_rejected": 0,
-          "n_deferred": 0
-        },
-        {
-          "year_month": "2025-02",
-          "n": 13,
-          "n_accepted": 13,
-          "n_rejected": 0,
-          "n_deferred": 0
-        },
-        {
-          "year_month": "2025-03",
-          "n": 2,
-          "n_accepted": 2,
-          "n_rejected": 0,
-          "n_deferred": 0
-        },
-        {
-          "year_month": "2025-04",
-          "n": 1,
-          "n_accepted": 1,
-          "n_rejected": 0,
-          "n_deferred": 0
-        },
-        {
-          "year_month": "2025-05",
-          "n": 1,
-          "n_accepted": 0,
-          "n_rejected": 1,
-          "n_deferred": 0
-        }
-      ]
-    },
-    {
       "program_key": "waterloo_cs",
       "program": "Computer Science (BCS)",
       "months": [
@@ -5420,161 +5345,161 @@
       "label": "Confirm enrollment: Harvard Medical School MEDscience Summer Program — TECH Foundations",
       "category": "summer_program",
       "priority": "high",
-      "days_from_today": 4
+      "days_from_today": 3
     },
     {
       "date": "2026-04-22",
       "label": "Submit payment: Harvard Medical School MEDscience Summer Program — TECH Foundations ($2,800 USD)",
       "category": "summer_program",
       "priority": "high",
-      "days_from_today": 11
+      "days_from_today": 10
     },
     {
       "date": "2026-05-15",
       "label": "Welcome letter expected: Harvard Medical School MEDscience Summer Program — TECH Foundations",
       "category": "summer_program",
       "priority": "info",
-      "days_from_today": 34
-    },
-    {
-      "date": "2027-01-15",
-      "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
-      "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 279
+      "days_from_today": 33
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 279
+      "days_from_today": 278
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 279
+      "days_from_today": 278
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 278
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 279
+      "days_from_today": 278
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 279
+      "days_from_today": 278
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 279
+      "days_from_today": 278
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 279
+      "days_from_today": 278
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 294
+      "days_from_today": 293
     },
     {
       "date": "2027-02-01",
       "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 296
+      "days_from_today": 295
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 296
+      "days_from_today": 295
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 296
+      "days_from_today": 295
     },
     {
       "date": "2027-02-02",
       "label": "Documents due: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 297
+      "priority": "medium",
+      "days_from_today": 296
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 308
+      "days_from_today": 307
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 308
+      "days_from_today": 307
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 310
+      "days_from_today": 309
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 310
+      "days_from_today": 309
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 310
+      "days_from_today": 309
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 310
+      "days_from_today": 309
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 310
+      "days_from_today": 309
     },
     {
       "date": "2028-02-29",
       "label": "Documents due: University of Alberta — BSc Physiology",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 689
+      "days_from_today": 688
     },
     {
       "date": null,
@@ -5595,7 +5520,7 @@
         "n_programs_mapped": 136,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:51:43"
+        "fetched_at": "2026-04-12T00:02:28"
       },
       {
         "cycle": "2023-2024",
@@ -5606,7 +5531,7 @@
         "n_programs_mapped": 238,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:51:43"
+        "fetched_at": "2026-04-12T00:02:28"
       },
       {
         "cycle": "2024-2025",
@@ -5617,7 +5542,7 @@
         "n_programs_mapped": 383,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:51:43"
+        "fetched_at": "2026-04-12T00:02:28"
       },
       {
         "cycle": "2025-2026",
@@ -5628,7 +5553,7 @@
         "n_programs_mapped": 543,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:51:43"
+        "fetched_at": "2026-04-12T00:02:28"
       },
       {
         "cycle": "2025-2026-ab",
@@ -5639,7 +5564,7 @@
         "n_programs_mapped": 21,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:51:43"
+        "fetched_at": "2026-04-12T00:02:28"
       }
     ],
     "caveats": [

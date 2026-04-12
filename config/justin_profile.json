@@ -183,11 +183,11 @@
     "tier_1_top_targets": [
       "mcmaster_bhsc",
       "queens_bhsc",
-      "waterloo_cs",
-      "uoft_lifesci_stgeorge"
+      "waterloo_cs"
     ],
     "tier_2_ontario_health_lifesci": [
       "western_bmsc",
+      "uoft_lifesci_stgeorge",
       "mcmaster_lifesci",
       "queens_lifesci",
       "guelph_biomed",

@@ -357,13 +357,12 @@ function renderTop6(profile) {
 function renderVerdictTiles(tier1) {
   const container = document.getElementById("verdict-tiles");
   container.innerHTML = "";
-  // Explicit display order for the 4 Tier-1 hero tiles:
-  // McMaster BHSc → Queen's BHSc → UofT Life Sci → Waterloo CS
+  // Explicit display order for the 3 Tier-1 hero tiles:
+  // McMaster BHSc → Queen's BHSc → Waterloo CS
   const tileOrder = {
     mcmaster_bhsc: 0,
     queens_bhsc: 1,
-    uoft_lifesci_stgeorge: 2,
-    waterloo_cs: 3,
+    waterloo_cs: 2,
   };
   const sorted = [...tier1].sort((a, b) => {
     const oa = tileOrder[a.program_key] ?? 99;
@@ -431,13 +430,14 @@ function shortenSuppApp(type) {
 // Explicit display order for Tier 2 accordion: med-school prestige first,
 // Waterloo CS variants last (they're CS backups, not pre-med).
 const TIER2_ORDER = {
-  western_bmsc:        0,   // Schulich BMSc — top pre-med prestige
-  mcmaster_lifesci:    1,   // McMaster Science I → Life Sci
-  queens_lifesci:      2,   // Queen's BSc Life Sci
-  guelph_biomed:       3,   // Guelph Biomedical Sciences
-  ualberta_bsc_physiol:4,   // UAlberta Physiology — in-province pre-med
-  waterloo_math_cs:    5,   // Waterloo Math/CS (CS backup, not pre-med)
-  waterloo_se:         6,   // Waterloo SE (CS backup, not pre-med)
+  western_bmsc:           0,   // Schulich BMSc — top pre-med prestige
+  uoft_lifesci_stgeorge:  1,   // UofT StG — #1 research infra, grade deflation caveat
+  mcmaster_lifesci:       2,   // McMaster Science I → Life Sci
+  queens_lifesci:         3,   // Queen's BSc Life Sci
+  guelph_biomed:          4,   // Guelph Biomedical Sciences
+  ualberta_bsc_physiol:   5,   // UAlberta Physiology — in-province pre-med
+  waterloo_math_cs:       6,   // Waterloo Math/CS (CS backup, not pre-med)
+  waterloo_se:            7,   // Waterloo SE (CS backup, not pre-med)
 };
 
 function renderAccordion(containerId, programs) {
