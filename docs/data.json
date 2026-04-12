@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-11T23:27:25",
+  "build_timestamp": "2026-04-11T23:30:20",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -214,7 +214,6 @@
         "queens_lifesci",
         "guelph_biomed",
         "ottawa_biomed",
-        "brock_medsci",
         "ualberta_bsc_physiol",
         "waterloo_math_cs",
         "waterloo_se"
@@ -225,7 +224,8 @@
         "uoft_lifesci_utm",
         "uoft_lifesci_utsc"
       ],
-      "tier_4_ualberta": [
+      "tier_4_others": [
+        "brock_medsci",
         "ualberta_bsc_biolsci",
         "ualberta_bsc_biochem",
         "ualberta_bsc_cellbiol",
@@ -2366,184 +2366,6 @@
       ]
     },
     {
-      "program_key": "brock_medsci",
-      "program": "Medical Sciences / Biomedical Sciences",
-      "university": "Brock University",
-      "tier": 2,
-      "verdict": "insufficient_data",
-      "verdict_label": "Insufficient data",
-      "verdict_gpa_only": "insufficient_data",
-      "ec_weight": "none",
-      "confidence": "insufficient",
-      "n_accepted": 6,
-      "median_accepted_avg": 89.5,
-      "min_avg": 88.2,
-      "p25": 89.0,
-      "p50": 89.5,
-      "p75": 95.5,
-      "max_avg": 98.0,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 66.7,
-      "justin_percentile_mid": 83.3,
-      "justin_percentile_high": 83.3,
-      "oop_n": 0,
-      "oop_min": null,
-      "oop_mean": null,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": false,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-15",
-      "deadline_supp": null,
-      "deadline_doc": "2027-02-15",
-      "decision_window": "April through May",
-      "fee_cad": 156,
-      "official_url": "https://brocku.ca/programs/undergraduate/biomedical-sciences/",
-      "min_average_competitive": 80.0,
-      "prereq_courses": [
-        "Grade 12 English (ENG4U)",
-        "Grade 12 Math: Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U) — minimum 70%",
-        "Grade 12 Chemistry (SCH4U) — minimum 70%",
-        "2 of: Biology (SBI4U), Physics (SPH4U), Earth & Space Science (SES4U), 2nd 4U math, or 2nd 4U English"
-      ],
-      "prereq_notes": "Explicit 70% minimum on Math and Chemistry. Justin satisfies all\nprereqs at far above the 70% threshold.\n",
-      "requirements_confidence": "medium",
-      "reasoning": "Only 6 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 0
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 1
-        },
-        {
-          "bin": 89,
-          "n": 2
-        },
-        {
-          "bin": 90,
-          "n": 0
-        },
-        {
-          "bin": 91,
-          "n": 0
-        },
-        {
-          "bin": 92,
-          "n": 0
-        },
-        {
-          "bin": 93,
-          "n": 1
-        },
-        {
-          "bin": 94,
-          "n": 0
-        },
-        {
-          "bin": 95,
-          "n": 1
-        },
-        {
-          "bin": 96,
-          "n": 0
-        },
-        {
-          "bin": 97,
-          "n": 0
-        },
-        {
-          "bin": 98,
-          "n": 1
-        },
-        {
-          "bin": 99,
-          "n": 0
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
       "program_key": "ualberta_bsc_physiol",
       "program": "BSc Physiology",
       "university": "University of Alberta",
@@ -3426,6 +3248,184 @@
     }
   ],
   "tier4": [
+    {
+      "program_key": "brock_medsci",
+      "program": "Medical Sciences / Biomedical Sciences",
+      "university": "Brock University",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 6,
+      "median_accepted_avg": 89.5,
+      "min_avg": 88.2,
+      "p25": 89.0,
+      "p50": 89.5,
+      "p75": 95.5,
+      "max_avg": 98.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 66.7,
+      "justin_percentile_mid": 83.3,
+      "justin_percentile_high": 83.3,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "April through May",
+      "fee_cad": 156,
+      "official_url": "https://brocku.ca/programs/undergraduate/biomedical-sciences/",
+      "min_average_competitive": 80.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Math: Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U) — minimum 70%",
+        "Grade 12 Chemistry (SCH4U) — minimum 70%",
+        "2 of: Biology (SBI4U), Physics (SPH4U), Earth & Space Science (SES4U), 2nd 4U math, or 2nd 4U English"
+      ],
+      "prereq_notes": "Explicit 70% minimum on Math and Chemistry. Justin satisfies all\nprereqs at far above the 70% threshold.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Only 6 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 2
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 1
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 1
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 1
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
     {
       "program_key": "ualberta_computing_science",
       "program": "BSc Computing Science",
@@ -5325,13 +5325,6 @@
       "days_from_today": 279
     },
     {
-      "date": "2027-01-15",
-      "label": "OUAC equal-consideration: Brock University — Medical Sciences / Biomedical Sciences",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 279
-    },
-    {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
@@ -5430,13 +5423,6 @@
       "days_from_today": 310
     },
     {
-      "date": "2027-02-15",
-      "label": "Documents due: Brock University — Medical Sciences / Biomedical Sciences",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 310
-    },
-    {
       "date": "2028-02-29",
       "label": "Documents due: University of Alberta — BSc Physiology",
       "category": "application_deadline",
@@ -5462,7 +5448,7 @@
         "n_programs_mapped": 126,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:27:21"
+        "fetched_at": "2026-04-11T23:30:16"
       },
       {
         "cycle": "2023-2024",
@@ -5473,7 +5459,7 @@
         "n_programs_mapped": 225,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:27:21"
+        "fetched_at": "2026-04-11T23:30:16"
       },
       {
         "cycle": "2024-2025",
@@ -5484,7 +5470,7 @@
         "n_programs_mapped": 370,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:27:21"
+        "fetched_at": "2026-04-11T23:30:16"
       },
       {
         "cycle": "2025-2026",
@@ -5495,7 +5481,7 @@
         "n_programs_mapped": 519,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:27:21"
+        "fetched_at": "2026-04-11T23:30:16"
       },
       {
         "cycle": "2025-2026-ab",
@@ -5506,7 +5492,7 @@
         "n_programs_mapped": 21,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:27:21"
+        "fetched_at": "2026-04-11T23:30:16"
       }
     ],
     "caveats": [

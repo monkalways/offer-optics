@@ -147,7 +147,7 @@ programs:
       - "(?i)uottawa.*(biomed|health\\s*sci)"
 
   - key: brock_medsci
-    tier: 2
+    tier: 4
     university: Brock University
     university_key: brock
     program: Medical Sciences / Biomedical Sciences

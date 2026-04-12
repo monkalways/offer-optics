@@ -192,7 +192,6 @@
       "queens_lifesci",
       "guelph_biomed",
       "ottawa_biomed",
-      "brock_medsci",
       "ualberta_bsc_physiol",
       "waterloo_math_cs",
       "waterloo_se"
@@ -203,7 +202,8 @@
       "uoft_lifesci_utm",
       "uoft_lifesci_utsc"
     ],
-    "tier_4_ualberta": [
+    "tier_4_others": [
+      "brock_medsci",
       "ualberta_bsc_biolsci",
       "ualberta_bsc_biochem",
       "ualberta_bsc_cellbiol",
