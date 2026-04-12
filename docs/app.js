@@ -1039,7 +1039,8 @@ function renderAppendix(data) {
   const totalCycles = dq.cycles.length;
   const totalPrograms = (data.tier1 || []).length + (data.tier2 || []).length
     + (data.tier3 || []).length + (data.tier4 || []).length;
-  const totalUniversities = dq.cycles.reduce((sum, c) => sum + (c.n_universities_mapped || 0), 0);
+  const allProgs = [...(data.tier1 || []), ...(data.tier2 || []), ...(data.tier3 || []), ...(data.tier4 || [])];
+  const totalUniversities = new Set(allProgs.map(p => p.university)).size;
   const totalDecisions = dq.cycles.reduce((sum, c) => sum + (c.n_decisions_mapped || 0), 0);
   const totalRequirements = [...(data.tier1 || []), ...(data.tier2 || [])]
     .filter(p => p.deadline_ouac).length;
