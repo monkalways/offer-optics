@@ -772,6 +772,31 @@ function buildProgramCard(p, ecInsight, timelineMonths, openByDefault) {
     body.appendChild(prereqDiv);
   }
 
+  // UofT Life Sci: college selection note in Application Procedure
+  if (p.program_key === "uoft_lifesci_stgeorge") {
+    const collegeDiv = el("div", "mt-4 rounded-lg border border-ink-100 bg-ink-50/50 p-4 text-[13px] text-ink-700 leading-relaxed space-y-2");
+    collegeDiv.innerHTML = `
+      <p class="text-[10.5px] tracking-[0.15em] uppercase text-ink-500 font-semibold mb-2">College selection (decided on OUAC form)</p>
+      <p>
+        Every UofT Arts &amp; Science student belongs to a <strong class="text-ink-900">college from Year 1</strong> — chosen on the OUAC
+        application form before admission, not applied to later. College choice does NOT affect academic program eligibility (you can study
+        Pathobiology, Immunology, etc. at any college), but it determines your residence, advising, scholarships, and community.
+      </p>
+      <p>
+        <strong class="text-ink-900">Recommended: rank Victoria College #1</strong> — this is where Patrick Wang (Old Scona alumnus) built his
+        research trajectory. Vic requires a short supplementary applicant profile (plays to Justin's writing strength) and must be ranked first
+        preference. Being at Vic gives access to Vic-specific awards (Isabel Bader Scholarship, Milne Research Award) and eligibility for
+        <strong class="text-ink-900">Vic One Stowe-Gullen</strong> (the pre-med first-year seminar described above).
+      </p>
+      <p class="text-[12px] text-ink-500">
+        Alternative: Trinity College also requires a supplementary and offers Trinity One Biomedical Health. The other 5 colleges
+        (University College, St. Michael's, Innis, New, Woodsworth) accept based on preference ranking alone — no supplementary needed.
+        College membership generally cannot be changed after admission.
+      </p>
+    `;
+    body.appendChild(collegeDiv);
+  }
+
   // Decision timeline months (if available)
   if (timelineMonths && timelineMonths.length) {
     const tlDiv = el("div", "mt-3");
