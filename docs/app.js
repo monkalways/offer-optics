@@ -652,6 +652,88 @@ function buildProgramCard(p, ecInsight, timelineMonths, openByDefault) {
     body.appendChild(enrichDiv);
   }
 
+  // ── UofT Life Sci special: Student spotlight ──
+  if (p.program_key === "uoft_lifesci_stgeorge") {
+    const spotlightDiv = el("div", "mt-6");
+    spotlightDiv.innerHTML = `
+      <div class="program-subsection-label">Student Spotlight: An Old Scona Alumnus at UofT</div>
+      <div class="rounded-lg border border-ink-100 bg-card p-5 mt-3">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-baseline gap-2 flex-wrap mb-1">
+              <span class="text-[15px] font-medium text-ink-900">Patrick Wang</span>
+              <span class="text-[12px] text-ink-400">Old Scona Academic → UofT Life Sciences → Victoria College</span>
+            </div>
+            <p class="text-[13px] text-ink-600 leading-relaxed mb-3">
+              Pathobiology Specialist + Immunology Major · Class of 2026 · From <strong class="text-ink-800">Edmonton, Alberta</strong> —
+              the same high school, same city, and same out-of-province pathway Justin would take.
+            </p>
+
+            <div class="space-y-3">
+              <div>
+                <p class="text-[10px] tracking-[0.15em] uppercase text-ink-400 font-medium mb-1.5">Trajectory at UofT</p>
+                <div class="space-y-1.5 text-[12.5px] text-ink-600">
+                  <div class="flex gap-2">
+                    <span class="text-ink-400 shrink-0 w-[52px] tabular-nums">Year 1</span>
+                    <span>Life Sciences at Victoria College. Maintained 3.50+ GPA.</span>
+                  </div>
+                  <div class="flex gap-2">
+                    <span class="text-ink-400 shrink-0 w-[52px] tabular-nums">Year 2</span>
+                    <span>Dean's List Scholar. Isabel Bader In-Course Scholarship (Vic College, GPA 3.50+). Declared Pathobiology + Immunology.</span>
+                  </div>
+                  <div class="flex gap-2">
+                    <span class="text-ink-400 shrink-0 w-[52px] tabular-nums">Sum '24</span>
+                    <span>LMP SURE program — 4 months in Dr. Kelsie Thu's lab (lung cancer chemotherapy resistance). Poster presentations at KRSS + LMP SURE competitions.</span>
+                  </div>
+                  <div class="flex gap-2">
+                    <span class="text-ink-400 shrink-0 w-[52px] tabular-nums">Year 3</span>
+                    <span>LMP305 research course (8 months in Thu Lab). Won <strong class="text-ink-800">Milne Research Award</strong>, <strong class="text-ink-800">John P. Mitchell Undergrad Research Award</strong> (given to ONE student), <strong class="text-ink-800">Alan Gornall Pathobiology Award</strong>.</span>
+                  </div>
+                  <div class="flex gap-2">
+                    <span class="text-ink-400 shrink-0 w-[52px] tabular-nums">Sum '25</span>
+                    <span>Dr. Hong Chang's lab — therapeutic targeting of resistant acute myeloid leukemia.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-emerald-50 border border-emerald-200 text-emerald-700">Old Scona Academic</span>
+                <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-emerald-50 border border-emerald-200 text-emerald-700">Rutherford Scholars (top 10 AB Diploma)</span>
+                <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">Victoria College</span>
+                <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">Dean's List</span>
+                <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">LMP SURE Research</span>
+                <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">qPCR + Western Blotting</span>
+                <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">3 Research Awards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-ink-100 text-[12.5px] text-ink-500 leading-relaxed space-y-2">
+          <p>
+            <strong class="text-ink-700">Why this matters for Justin:</strong>
+            Patrick proves the Old Scona → UofT Life Sci → Victoria College path works for an Edmonton OOP applicant. By Year 3 he had
+            three research awards, funded cancer research in Faculty of Medicine labs, and a Pathobiology specialist that sits inside
+            the Temerty Faculty of Medicine — giving direct access to the TAHSN hospital network from undergrad.
+          </p>
+          <p>
+            The <strong class="text-ink-700">Rutherford Scholars Award</strong> (top 10 on Alberta Diploma Exam) suggests Patrick entered
+            UofT with a comparable academic profile to Justin's projected 95.5%. The <strong class="text-ink-700">LMP SURE</strong> summer research
+            program is the formal pipeline that converted his undergrad status into real lab experience — the kind of research CV
+            that makes medical school applications competitive.
+          </p>
+        </div>
+
+        <p class="mt-3 text-[11px] text-ink-400">
+          Sources:
+          <a href="https://lmp.utoronto.ca/news/humans-lmp-patrick-wang" target="_blank" rel="noopener" class="underline decoration-dotted underline-offset-3 hover:text-ink-700">LMP "Humans of LMP" profile</a> ·
+          <a href="https://www.linkedin.com/in/patrick-wang-559042246/" target="_blank" rel="noopener" class="underline decoration-dotted underline-offset-3 hover:text-ink-700">LinkedIn</a>
+        </p>
+      </div>
+    `;
+    body.appendChild(spotlightDiv);
+  }
+
   // ── Sub-section 4: Application Procedure ──
   body.appendChild(el("div", "program-subsection-label mt-6", "4. Application Procedure"));
   const reqGrid = el("div", "program-req-grid mt-3");
