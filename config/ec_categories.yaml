@@ -1,0 +1,248 @@
+# EC category definitions for keyword-based extraction.
+# Used by tools/analyze_ecs.py to scan supp_app_notes, extracurriculars,
+# and comments fields from the Reddit application data.
+#
+# Each category has:
+#   key:      stable identifier used in ec_categories table and data.json
+#   label:    display name
+#   keywords: list of case-insensitive substring matches (not regex)
+#   icon:     optional display hint for the dashboard (not used in extraction)
+#
+# Tuning: run analyze_ecs.py, check the per-program frequencies, and
+# adjust keywords if a category is over/under-matching. The keywords
+# are deliberately broad — false positives are preferable to false
+# negatives since we're deriving directional insights, not precise counts.
+
+categories:
+  - key: healthcare
+    label: Healthcare / Clinical
+    keywords:
+      - hospital
+      - shadowing
+      - clinic
+      - patient
+      - nurse
+      - nursing
+      - EMT
+      - paramedic
+      - medical
+      - health care
+      - healthcare
+      - dental
+      - pharmacy
+      - physio
+      - doctor
+      - surgeon
+      - pathology
+      - anatomy
+
+  - key: stem_competitions
+    label: STEM Competitions
+    keywords:
+      - olympiad
+      - hackathon
+      - CCC
+      - AMC
+      - Euclid
+      - science fair
+      - robotics competition
+      - DECA
+      - HOSA
+      - science olympics
+      - math contest
+      - math competition
+      - computing competition
+      - CyberPatriot
+      - cyber patriot
+      - COMC
+      - Fermat
+      - Cayley
+      - Pascal
+      - Fryer
+      - Hypatia
+      - CIMC
+      - Waterloo contest
+      - FIRST robotics
+      - VEX
+      - science bowl
+      - Kaggle
+
+  - key: research
+    label: Research / Lab
+    keywords:
+      - research
+      - lab
+      - laboratory
+      - publication
+      - thesis
+      - experiment
+      - journal
+      - peer-reviewed
+      - co-author
+      - principal investigator
+      - HYRS
+      - summer research
+
+  - key: leadership
+    label: Leadership
+    keywords:
+      - president
+      - founder
+      - captain
+      - executive
+      - exec
+      - leader
+      - chair
+      - coordinator
+      - head of
+      - director
+      - vice-president
+      - VP
+      - co-president
+      - led
+      - organized
+      - managed
+
+  - key: community_service
+    label: Community Service
+    keywords:
+      - volunteer
+      - non-profit
+      - nonprofit
+      - community
+      - fundrais
+      - charity
+      - mentor
+      - tutor
+      - outreach
+      - food bank
+      - shelter
+      - helping
+      - giving back
+      - service hours
+      - hours of
+
+  - key: athletics
+    label: Athletics
+    keywords:
+      - varsity
+      - team sport
+      - swim
+      - track
+      - soccer
+      - hockey
+      - basketball
+      - baseball
+      - football
+      - volleyball
+      - cross country
+      - rowing
+      - martial art
+      - karate
+      - taekwondo
+      - boxing
+      - OFSAA
+      - provincial sport
+      - national sport
+      - athlete
+      - athletic
+
+  - key: arts_music
+    label: Arts / Music
+    keywords:
+      - music
+      - piano
+      - RCM
+      - violin
+      - cello
+      - guitar
+      - dance
+      - ballet
+      - art
+      - theatre
+      - theater
+      - drama
+      - orchestra
+      - band
+      - choir
+      - conservatory
+      - concert
+      - perform
+      - recital
+      - painting
+      - photography
+
+  - key: cs_technical
+    label: CS / Technical Projects
+    keywords:
+      - coding
+      - programming
+      - software
+      - app
+      - website
+      - github
+      - project
+      - developer
+      - machine learning
+      - AI
+      - artificial intelligence
+      - neural network
+      - data science
+      - python
+      - java
+      - web dev
+      - startup
+      - tech
+
+  - key: entrepreneurship
+    label: Entrepreneurship
+    keywords:
+      - startup
+      - business
+      - company
+      - founded
+      - launched
+      - venture
+      - entrepreneur
+      - CEO
+      - co-founder
+      - revenue
+      - profit
+      - client
+      - customers
+      - freelance
+
+  - key: academic_awards
+    label: Academic Awards
+    keywords:
+      - distinction
+      - honour
+      - honor
+      - award
+      - medal
+      - scholarship
+      - dean's list
+      - deans list
+      - valedictorian
+      - top student
+      - first place
+      - gold medal
+      - silver medal
+      - bronze medal
+      - merit
+      - AP score
+      - IB score
+
+# Justin's EC categories (derived from config/justin_profile.json).
+# Used by analyze_ecs.py to compute the alignment score per program.
+# Keep in sync with the actual profile — update if Justin's ECs change.
+justin_categories:
+  - healthcare          # Misericordia shadowing, UofT MED YSP, Harvard MEDScience
+  - stem_competitions   # IMC Merit, COMC, CyberPatriot, CCC, Kaggle, BIBO Silver, Pascal/Fryer/CIMC
+  - research            # IB CS IA on mental health ML, Kaggle ML competitions
+  - leadership          # HelpingMinds founder, Math & CS Club exec, Community Helpers exec
+  - community_service   # Chatter 100+ hours, HelpingMinds awareness campaigns
+  - arts_music          # Piano RCM Level 10
+  - cs_technical        # CyberPatriot Linux, IB CS IA, Kaggle, LightGBM/XGBoost, Harvard AI robots
+  - academic_awards     # IMC Merit, COMC Distinction, AP Bio 5, BIBO Silver
+  # NOT matched: athletics (no sports mentioned), entrepreneurship (HelpingMinds is a non-profit, not a business)

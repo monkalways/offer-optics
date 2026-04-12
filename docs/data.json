@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-12T00:22:19",
+  "build_timestamp": "2026-04-12T10:24:05",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -5569,6 +5569,148 @@
       "priority": "info"
     }
   ],
+  "ec_insights": {
+    "mcmaster_bhsc": {
+      "n_with_ec_data": 32,
+      "n_accepted_total": 62,
+      "coverage_pct": 51.6,
+      "category_frequencies": {
+        "CS / Technical Projects": 17,
+        "Leadership": 10,
+        "STEM Competitions": 7,
+        "Community Service": 6,
+        "Arts / Music": 5,
+        "Academic Awards": 5,
+        "Entrepreneurship": 3,
+        "Athletics": 3,
+        "Research / Lab": 2,
+        "Healthcare / Clinical": 1
+      },
+      "top_categories": [
+        "CS / Technical Projects",
+        "Leadership",
+        "STEM Competitions",
+        "Community Service",
+        "Arts / Music"
+      ],
+      "sample_quotes": [
+        "unremarkable interview",
+        "It was an online interview. I talked about being in band as an extracurricular. I mostly blanked out though.",
+        "I mentioned crocheting(for my typed response). Then for the videos, I mentioned something about planning for a bake sale by HOSA and bringing forward someone’s ideas to make them feel heard(or was it maybe the booth for the annual school bbq??). T...",
+        "missionary trip to Uganda and mentioned about it in my supp app",
+        "VEX Robotics member, Cultural Unity Club member, Model UN."
+      ],
+      "justin_alignment": {
+        "matched": [
+          "Academic Awards",
+          "Arts / Music",
+          "Community Service",
+          "CS / Technical Projects",
+          "Healthcare / Clinical",
+          "Leadership",
+          "Research / Lab",
+          "STEM Competitions"
+        ],
+        "missing": [
+          "Athletics",
+          "Entrepreneurship"
+        ],
+        "match_rate_pct": 80.0
+      }
+    },
+    "queens_bhsc": {
+      "n_with_ec_data": 26,
+      "n_accepted_total": 54,
+      "coverage_pct": 48.1,
+      "category_frequencies": {
+        "CS / Technical Projects": 14,
+        "Community Service": 10,
+        "Leadership": 10,
+        "Healthcare / Clinical": 3,
+        "Athletics": 3,
+        "STEM Competitions": 3,
+        "Arts / Music": 3,
+        "Academic Awards": 2
+      },
+      "top_categories": [
+        "CS / Technical Projects",
+        "Community Service",
+        "Leadership",
+        "Healthcare / Clinical",
+        "Athletics"
+      ],
+      "sample_quotes": [
+        "Found of the school STEAM SHSM program and helping hands founder",
+        "SAC President, Athletic Council, Varsity Basketball",
+        "talked abt my experiences as a tutor and as HOSA pres of my school chapter.",
+        "I talked about volunteering at the hospital after completing my co-op for the written and leading a biology debate for the video",
+        "Talked about sports and school musical"
+      ],
+      "justin_alignment": {
+        "matched": [
+          "Academic Awards",
+          "Arts / Music",
+          "Community Service",
+          "CS / Technical Projects",
+          "Healthcare / Clinical",
+          "Leadership",
+          "STEM Competitions"
+        ],
+        "missing": [
+          "Athletics"
+        ],
+        "match_rate_pct": 87.5
+      }
+    },
+    "waterloo_cs": {
+      "n_with_ec_data": 62,
+      "n_accepted_total": 74,
+      "coverage_pct": 83.8,
+      "category_frequencies": {
+        "CS / Technical Projects": 54,
+        "Leadership": 36,
+        "STEM Competitions": 26,
+        "Community Service": 21,
+        "Arts / Music": 21,
+        "Academic Awards": 19,
+        "Entrepreneurship": 11,
+        "Athletics": 10,
+        "Research / Lab": 6,
+        "Healthcare / Clinical": 1
+      },
+      "top_categories": [
+        "CS / Technical Projects",
+        "Leadership",
+        "STEM Competitions",
+        "Community Service",
+        "Arts / Music"
+      ],
+      "sample_quotes": [
+        "Made a hackathon org with 100+ attendees, board leadership, internship at an IT corp, student council treasurer, distinction on csmc, lead web dev at another hackathon, 2nd place in cities for trivia comps",
+        "Varsity sports, founded robotics club, programming workshop mentor, lot of excs",
+        "President of school's math club, attended waterloo EMACS",
+        "Shad; Nominated from my school for schulich scholarship + uoft national scholarship; Won 2nd place at high school hackathon; Did well on Fermat contest, okay on CSMC/Euclid; Worked at convenience store where I implemented a new inventory system; F...",
+        "im a teen father of 2. I transed my gender in 2013. Early onset prostate cancer. Anal prolapse."
+      ],
+      "justin_alignment": {
+        "matched": [
+          "Academic Awards",
+          "Arts / Music",
+          "Community Service",
+          "CS / Technical Projects",
+          "Healthcare / Clinical",
+          "Leadership",
+          "Research / Lab",
+          "STEM Competitions"
+        ],
+        "missing": [
+          "Athletics",
+          "Entrepreneurship"
+        ],
+        "match_rate_pct": 80.0
+      }
+    }
+  },
   "data_quality": {
     "cycles": [
       {

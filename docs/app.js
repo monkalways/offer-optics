@@ -992,6 +992,98 @@ function renderChecklistCards(rows) {
 }
 
 // ────────────────────────────────────────────────────────────────────
+// EC Insights — what accepted students bring beyond grades
+// ────────────────────────────────────────────────────────────────────
+
+const PROGRAM_LABELS_SHORT = {
+  mcmaster_bhsc: "McMaster BHSc",
+  queens_bhsc: "Queen's BHSc",
+  waterloo_cs: "Waterloo CS",
+};
+
+const EC_BAR_COLORS = {
+  mcmaster_bhsc: "#1f2937",
+  queens_bhsc: "#0f766e",
+  waterloo_cs: "#1e3a8a",
+};
+
+function renderEcInsights(ecInsights, tier1) {
+  const container = document.getElementById("ec-insights-container");
+  if (!container || !ecInsights) return;
+  container.innerHTML = "";
+
+  const programs = ["mcmaster_bhsc", "queens_bhsc", "waterloo_cs"];
+
+  programs.forEach(progKey => {
+    const ec = ecInsights[progKey];
+    if (!ec || !ec.category_frequencies) return;
+
+    const label = PROGRAM_LABELS_SHORT[progKey] || progKey;
+    const freq = ec.category_frequencies;
+    const categories = Object.keys(freq);
+    const values = Object.values(freq);
+    const maxVal = Math.max(...values, 1);
+
+    // Build the card
+    const card = el("div", "rounded-lg border border-ink-100 bg-card p-5 md:p-6");
+
+    // Header: program name + coverage stat
+    card.innerHTML = `
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-5">
+        <div>
+          <h3 class="text-[15px] font-medium text-ink-900">${esc(label)}</h3>
+          <p class="text-[12px] text-ink-400 mt-0.5">EC categories among accepted applicants (n=${ec.n_with_ec_data} of ${ec.n_accepted_total}, ${ec.coverage_pct}% coverage)</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center px-2.5 py-1 text-[11px] font-medium rounded-full border
+            ${ec.justin_alignment.match_rate_pct >= 75 ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-amber-50 border-amber-200 text-amber-700'}">
+            Justin matches ${ec.justin_alignment.matched.length}/${categories.length} categories
+          </span>
+        </div>
+      </div>
+    `;
+
+    // Horizontal bar chart (pure HTML/CSS, no Chart.js needed)
+    const barsDiv = el("div", "space-y-2");
+    categories.forEach((cat, i) => {
+      const count = values[i];
+      const pct = (count / maxVal) * 100;
+      const isJustinMatch = ec.justin_alignment.matched.includes(cat);
+      const barColor = EC_BAR_COLORS[progKey] || "#1f2937";
+
+      const row = el("div", "flex items-center gap-3 text-[12.5px]");
+      row.innerHTML = `
+        <span class="w-[160px] sm:w-[200px] shrink-0 text-right text-ink-600 truncate" title="${esc(cat)}">${esc(cat)}</span>
+        <div class="flex-1 h-6 bg-ink-50 rounded overflow-hidden relative">
+          <div class="h-full rounded transition-all duration-300" style="width:${pct}%;background:${barColor};opacity:${isJustinMatch ? '0.85' : '0.35'}"></div>
+          <span class="absolute inset-y-0 left-2 flex items-center text-[11px] font-medium ${pct > 30 ? 'text-white' : 'text-ink-700'}">${count}</span>
+        </div>
+        <span class="w-5 shrink-0 text-center text-[13px] ${isJustinMatch ? 'text-emerald-600' : 'text-ink-300'}" title="${isJustinMatch ? 'Justin has this' : 'Justin does not have this'}">${isJustinMatch ? '✓' : '—'}</span>
+      `;
+      barsDiv.appendChild(row);
+    });
+    card.appendChild(barsDiv);
+
+    // Sample quotes
+    if (ec.sample_quotes && ec.sample_quotes.length > 0) {
+      const quotesDiv = el("div", "mt-5 pt-4 border-t border-ink-100");
+      quotesDiv.innerHTML = `<p class="text-[10.5px] tracking-[0.18em] uppercase text-ink-400 font-medium mb-3">What accepted students mentioned</p>`;
+      const quotesList = el("div", "space-y-2");
+      ec.sample_quotes.forEach(q => {
+        if (q.length > 15) {
+          quotesList.appendChild(el("p", "text-[13px] text-ink-500 leading-relaxed pl-3 border-l-2 border-ink-100",
+            `"${esc(q)}"`));
+        }
+      });
+      quotesDiv.appendChild(quotesList);
+      card.appendChild(quotesDiv);
+    }
+
+    container.appendChild(card);
+  });
+}
+
+// ────────────────────────────────────────────────────────────────────
 // Tier 3/4 note
 // ────────────────────────────────────────────────────────────────────
 
@@ -1314,6 +1406,7 @@ async function main() {
     renderActionItems(data.action_items || []);
     renderDistributionChart(data.tier1 || []);
     renderYoyChart(data.yoy_trends || []);
+    renderEcInsights(data.ec_insights || {}, data.tier1 || []);
     renderAccordion("tier1-accordion", data.tier1 || []);
     renderAccordion("tier2-accordion", data.tier2 || []);
     renderTier34Note(data.tier3 || [], data.tier4 || []);

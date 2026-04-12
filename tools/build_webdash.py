@@ -546,6 +546,31 @@ def build_data() -> dict:
         yoy = query_yoy_trends(conn)
         timeline = query_decision_timeline(conn)
         cycles = query_cycles(conn)
+
+        # EC insights (from analyze_ecs.py output — must run before conn closes)
+        ec_insights = {}
+        try:
+            for row in conn.execute(
+                "SELECT program_key, n_with_ec_data, n_accepted_total, coverage_pct, "
+                "category_freq_json, top_categories_json, sample_quotes_json, "
+                "justin_matched_json, justin_missing_json, justin_match_pct "
+                "FROM ec_program_summary"
+            ).fetchall():
+                ec_insights[row[0]] = {
+                    "n_with_ec_data": row[1],
+                    "n_accepted_total": row[2],
+                    "coverage_pct": row[3],
+                    "category_frequencies": json.loads(row[4]) if row[4] else {},
+                    "top_categories": json.loads(row[5]) if row[5] else [],
+                    "sample_quotes": json.loads(row[6]) if row[6] else [],
+                    "justin_alignment": {
+                        "matched": json.loads(row[7]) if row[7] else [],
+                        "missing": json.loads(row[8]) if row[8] else [],
+                        "match_rate_pct": row[9],
+                    },
+                }
+        except Exception:
+            pass  # ec_program_summary may not exist yet
     finally:
         conn.close()
 
@@ -565,6 +590,7 @@ def build_data() -> dict:
         "yoy_trends": yoy,
         "decision_timeline": timeline,
         "action_items": action_items,
+        "ec_insights": ec_insights,
         "data_quality": {
             "cycles": cycles,
             "caveats": CAVEATS,
