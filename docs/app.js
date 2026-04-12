@@ -565,6 +565,11 @@ function buildProgramCard(p, ecInsight, timelineMonths, openByDefault) {
     body.appendChild(el("div", "program-subsection-label mt-6", "2. EC Analysis"));
     body.appendChild(el("p", "text-[13px] text-ink-500 mt-2 mb-4",
       "AIF (Admission Information Form) required — Justin's AIF will be strong given his CyberPatriot, Kaggle, IMC, and Harvard MEDScience credentials."));
+  } else {
+    // No supp app — still show section 2 so numbering is consistent
+    body.appendChild(el("div", "program-subsection-label mt-6", "2. EC Analysis"));
+    body.appendChild(el("p", "text-[13px] text-ink-500 mt-2 mb-4",
+      "This program does not use a supplementary application — ECs do not directly affect the admission decision. Verdict is driven entirely by GPA."));
   }
 
   // ── Sub-section 3: Justin's Verdict ──
