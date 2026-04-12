@@ -965,15 +965,18 @@ function renderTier34Note(tier3, tier4) {
     : "all insufficient sample";
 
   host.innerHTML = `
-    <p><strong>Other programs in the analysis (no detail shown above):</strong></p>
+    <p><strong>Other programs in the analysis (not shown above):</strong></p>
     <p>
-      <strong>Tier 3 — Waterloo backups</strong> (${(tier3 || []).length} programs):
-      ${t3Summary}. Remaining Waterloo variants have too few Reddit reports to produce a reliable verdict.
+      <strong>Tier 3 — Additional backups</strong> (${(tier3 || []).length} programs):
+      ${t3Summary}. Includes remaining Waterloo variants and UofT satellite-campus Life Sciences (UTM, UTSC).
+      Most have too few Reddit reports for a reliable per-program verdict.
     </p>
     <p>
       <strong>Tier 4 — UAlberta in-province options</strong> (${t4Any} programs):
-      all have insufficient Reddit sample size to compute a per-program verdict. Justin's 95.5% projected top-6 clears the
-      published thresholds for every UAlberta BSc program comfortably — lean on the official admissions pages for UAlberta details.
+      remaining UAlberta science specializations (Biological Sciences, Biochemistry, Cell Biology, Immunology, Pharmacology,
+      Neuroscience, Computing Science, Pharmacy). All have insufficient Reddit sample size for per-program placement.
+      Justin's 95.5% projected top-6 clears UAlberta's published thresholds comfortably — these are safeties by any measure.
+      BSc Physiology (the top UAlberta pre-med major) has been promoted to Tier 2 above.
     </p>
   `;
 }
