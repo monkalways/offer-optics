@@ -137,7 +137,7 @@ programs:
       - "(?i)guelph.*biological"
 
   - key: ottawa_biomed
-    tier: 2
+    tier: 3
     university: University of Ottawa
     university_key: ottawa
     program: Biomedical Sciences / Health Sciences
