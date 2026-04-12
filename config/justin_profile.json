@@ -194,7 +194,8 @@
       "uoft_lifesci_utsc",
       "guelph_biomed",
       "ottawa_biomed",
-      "brock_medsci"
+      "brock_medsci",
+      "ualberta_bsc_physiol"
     ],
     "tier_3_waterloo_backups": [
       "waterloo_cs_bba",
@@ -206,7 +207,6 @@
       "ualberta_bsc_biolsci",
       "ualberta_bsc_biochem",
       "ualberta_bsc_cellbiol",
-      "ualberta_bsc_physiol",
       "ualberta_bsc_immunology",
       "ualberta_bsc_pharmacology",
       "ualberta_bsc_neuroscience",

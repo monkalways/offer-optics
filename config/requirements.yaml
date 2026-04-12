@@ -725,6 +725,68 @@ requirements:
       published "70% in math+chem" floor is well below Justin's projected
       grades.
 
+  - program_key: ualberta_bsc_physiol
+    tier: 2
+    source_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/physiology.html
+    curated_on: 2026-04-11
+    confidence: medium
+    curator_notes: |
+      UAlberta BSc Physiology — promoted to Tier 2 as Justin's top
+      in-province pre-med option. UAlberta does not use OUAC; applications
+      go through ApplyAlberta. Dates and competitive avg from public
+      knowledge of UAlberta admissions.
+
+    application_deadline_ouac: null
+    application_deadline_supp: null
+    document_deadline: 2027-03-01
+    decision_release_window: "March through June (rolling)"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 82.0
+    prereq_courses:
+      - "English Language Arts 30-1"
+      - "Biology 30"
+      - "Chemistry 30"
+      - "Mathematics 30-1"
+      - "One additional 30-level academic course"
+    prereq_notes: |
+      UAlberta uses Alberta high school courses directly — no OUAC
+      equivalency needed. Justin satisfies all prerequisites at well
+      above the competitive range. Physics 30 is recommended but not
+      required. As an in-province applicant, Justin has the strongest
+      possible residency position here.
+
+    oop_eligible: true
+    oop_notes: |
+      Justin IS in-province for UAlberta (Edmonton resident). This is
+      his strongest safety option with no OOP disadvantage. UAlberta
+      Physiology is a premier pre-med pathway with direct access to
+      UAlberta Hospital, Stollery Children's Hospital, and Cross Cancer
+      Institute research labs — all on campus.
+
+    application_fee_cad: 125
+
+    notes: |
+      The classic UAlberta pre-med major. Covers organ systems,
+      homeostasis, human anatomy — directly maps to MCAT biological
+      systems content. Strong advising for med-school applicants.
+      Proximity to campus hospitals gives in-province students a
+      significant advantage in accumulating research and clinical hours.
+      Reddit data is too sparse for a reliable placement verdict (n=2),
+      but Justin's 95.5% top-6 is far above UAlberta's competitive
+      threshold (~82%). Genuine safety.
+
   - program_key: uoft_lifesci_stgeorge
     tier: 1
     source_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences

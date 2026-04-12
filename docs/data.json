@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-11T18:31:21",
+  "build_timestamp": "2026-04-11T23:24:05",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -216,7 +216,8 @@
         "uoft_lifesci_utsc",
         "guelph_biomed",
         "ottawa_biomed",
-        "brock_medsci"
+        "brock_medsci",
+        "ualberta_bsc_physiol"
       ],
       "tier_3_waterloo_backups": [
         "waterloo_cs_bba",
@@ -228,7 +229,6 @@
         "ualberta_bsc_biolsci",
         "ualberta_bsc_biochem",
         "ualberta_bsc_cellbiol",
-        "ualberta_bsc_physiol",
         "ualberta_bsc_immunology",
         "ualberta_bsc_pharmacology",
         "ualberta_bsc_neuroscience",
@@ -2550,6 +2550,185 @@
           "n": 0
         }
       ]
+    },
+    {
+      "program_key": "ualberta_bsc_physiol",
+      "program": "BSc Physiology",
+      "university": "University of Alberta",
+      "tier": 2,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 1,
+      "median_accepted_avg": 97.0,
+      "min_avg": 97.0,
+      "p25": 97.0,
+      "p50": 97.0,
+      "p75": 97.0,
+      "max_avg": 97.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 0.0,
+      "justin_percentile_mid": 0.0,
+      "justin_percentile_high": 100.0,
+      "oop_n": 1,
+      "oop_min": 97.0,
+      "oop_mean": 97.0,
+      "oop_caveat": "Justin's midpoint 95.5% is below the observed OOP floor 97.0% (small sample n=1 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": "2028-02-29",
+      "decision_window": "March through June (rolling)",
+      "fee_cad": 125,
+      "official_url": "https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/physiology.html",
+      "min_average_competitive": 82.0,
+      "prereq_courses": [
+        "English Language Arts 30-1",
+        "Biology 30",
+        "Chemistry 30",
+        "Mathematics 30-1",
+        "One additional 30-level academic course"
+      ],
+      "prereq_notes": "UAlberta uses Alberta high school courses directly — no OUAC\nequivalency needed. Justin satisfies all prerequisites at well\nabove the competitive range. Physics 30 is recommended but not\nrequired. As an in-province applicant, Justin has the strongest\npossible residency position here.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Only 1 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 1
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
     }
   ],
   "tier3": [
@@ -4286,179 +4465,6 @@
       ]
     },
     {
-      "program_key": "ualberta_bsc_physiol",
-      "program": "BSc Physiology",
-      "university": "University of Alberta",
-      "tier": 4,
-      "verdict": "insufficient_data",
-      "verdict_label": "Insufficient data",
-      "verdict_gpa_only": "insufficient_data",
-      "ec_weight": "none",
-      "confidence": "insufficient",
-      "n_accepted": 1,
-      "median_accepted_avg": 97.0,
-      "min_avg": 97.0,
-      "p25": 97.0,
-      "p50": 97.0,
-      "p75": 97.0,
-      "max_avg": 97.0,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 0.0,
-      "justin_percentile_mid": 0.0,
-      "justin_percentile_high": 100.0,
-      "oop_n": 1,
-      "oop_min": 97.0,
-      "oop_mean": 97.0,
-      "oop_caveat": "Justin's midpoint 95.5% is below the observed OOP floor 97.0% (small sample n=1 — directional only)",
-      "oop_signal": "adverse_small_sample",
-      "supp_app_required": null,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": null,
-      "interview_required": null,
-      "references_required": null,
-      "deadline_ouac": null,
-      "deadline_supp": null,
-      "deadline_doc": null,
-      "decision_window": null,
-      "fee_cad": null,
-      "official_url": null,
-      "min_average_competitive": null,
-      "prereq_courses": [],
-      "prereq_notes": null,
-      "requirements_confidence": null,
-      "reasoning": "Only 1 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 0
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 0
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 0
-        },
-        {
-          "bin": 91,
-          "n": 0
-        },
-        {
-          "bin": 92,
-          "n": 0
-        },
-        {
-          "bin": 93,
-          "n": 0
-        },
-        {
-          "bin": 94,
-          "n": 0
-        },
-        {
-          "bin": 95,
-          "n": 0
-        },
-        {
-          "bin": 96,
-          "n": 0
-        },
-        {
-          "bin": 97,
-          "n": 1
-        },
-        {
-          "bin": 98,
-          "n": 0
-        },
-        {
-          "bin": 99,
-          "n": 0
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
       "program_key": "ualberta_bsc_pharmacology",
       "program": "BSc Pharmacology",
       "university": "University of Alberta",
@@ -5459,6 +5465,13 @@
       "days_from_today": 310
     },
     {
+      "date": "2028-02-29",
+      "label": "Documents due: University of Alberta — BSc Physiology",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 689
+    },
+    {
       "date": null,
       "date_label": "spring 2026",
       "label": "Decision pending: HYRS 2026 (Heritage Youth Researcher Summer)",
@@ -5477,7 +5490,7 @@
         "n_programs_mapped": 126,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-07T20:39:59"
+        "fetched_at": "2026-04-11T23:24:02"
       },
       {
         "cycle": "2023-2024",
@@ -5488,7 +5501,7 @@
         "n_programs_mapped": 225,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-07T20:39:59"
+        "fetched_at": "2026-04-11T23:24:02"
       },
       {
         "cycle": "2024-2025",
@@ -5499,7 +5512,7 @@
         "n_programs_mapped": 370,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-07T20:39:59"
+        "fetched_at": "2026-04-11T23:24:02"
       },
       {
         "cycle": "2025-2026",
@@ -5510,7 +5523,7 @@
         "n_programs_mapped": 519,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-07T20:39:59"
+        "fetched_at": "2026-04-11T23:24:02"
       },
       {
         "cycle": "2025-2026-ab",
@@ -5521,7 +5534,7 @@
         "n_programs_mapped": 21,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-07T20:39:59"
+        "fetched_at": "2026-04-11T23:24:02"
       }
     ],
     "caveats": [

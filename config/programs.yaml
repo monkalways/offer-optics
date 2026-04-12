@@ -230,7 +230,7 @@ programs:
       - "(?i)\\bmcdb\\b"  # UAlberta acronym
 
   - key: ualberta_bsc_physiol
-    tier: 4
+    tier: 2
     university: University of Alberta
     university_key: ualberta
     program: BSc Physiology
