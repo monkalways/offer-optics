@@ -119,6 +119,146 @@ function verdictClass(v) {
 }
 
 // ════════════════════════════════════════════════════════════════════
+// Reasoning text formatter
+// ════════════════════════════════════════════════════════════════════
+//
+// The reasoning text from analyze_program.py follows a predictable structure:
+//   1. GPA placement ("Justin's projected top-6 midpoint...")
+//   2. OOP signal (optional — "OOP DIRECTIONAL..." or "Out-of-province...")
+//   3. EC leverage ("Supp-app leverage..." / "AIF leverage..." / "This program does not...")
+//   4. EC adjustment (optional — "EC adjustment applied:...")
+//   5. Final verdict ("FINAL VERDICT:...")
+//   6. Caveat ("Caveat:...")
+//
+// We split on known sentence-starting phrases, label each section, and
+// apply inline formatting (bold verdicts, italic signals, bullet-pointed
+// credential lists).
+
+function formatReasoning(text) {
+  if (!text) return "";
+
+  // Split text into sentences at ". " followed by a capital letter or known marker
+  const sentences = text.split(/(?<=\.) (?=[A-Z])/);
+
+  // Group sentences into labeled sections
+  const sections = [];
+  let currentLabel = "GPA Placement";
+  let currentType = "default";
+  let buffer = [];
+
+  for (const s of sentences) {
+    let newLabel = null;
+    let newType = "default";
+
+    if (/^OOP DIRECTIONAL|^Out-of-province|^OOP subset/i.test(s)) {
+      newLabel = "Out-of-Province Signal";
+      newType = "warning";
+    } else if (/^Supp-app leverage/i.test(s)) {
+      newLabel = "Supplementary App Leverage";
+      newType = "highlight";
+    } else if (/^AIF leverage/i.test(s)) {
+      newLabel = "AIF Leverage";
+      newType = "highlight";
+    } else if (/^This program does not use/i.test(s)) {
+      newLabel = "Supplementary Application";
+      newType = "default";
+    } else if (/^EC adjustment applied/i.test(s)) {
+      newLabel = "EC Adjustment";
+      newType = "accent";
+    } else if (/^AIF content will be/i.test(s)) {
+      newLabel = "AIF Assessment";
+      newType = "default";
+    } else if (/^FINAL VERDICT/i.test(s)) {
+      newLabel = "Final Verdict";
+      newType = "verdict";
+    } else if (/^Caveat:/i.test(s)) {
+      newLabel = "Data Caveat";
+      newType = "muted";
+    }
+
+    if (newLabel && newLabel !== currentLabel) {
+      if (buffer.length) {
+        sections.push({ label: currentLabel, type: currentType, text: buffer.join(" ") });
+      }
+      currentLabel = newLabel;
+      currentType = newType;
+      buffer = [s];
+    } else {
+      buffer.push(s);
+    }
+  }
+  if (buffer.length) {
+    sections.push({ label: currentLabel, type: currentType, text: buffer.join(" ") });
+  }
+
+  // Render each section as a structured block
+  return sections
+    .map((sec) => {
+      const typeClass = `reasoning-section--${sec.type}`;
+      const body = highlightReasoning(esc(sec.text));
+      return `<div class="reasoning-section ${typeClass}">
+        <div class="reasoning-section__label">${esc(sec.label)}</div>
+        <div class="reasoning-section__body">${body}</div>
+      </div>`;
+    })
+    .join("");
+}
+
+/** Apply inline formatting to reasoning text:
+ *  - Bold verdict labels (REACH, TARGET, SAFETY, HARD REACH)
+ *  - Italic signal keywords (VERY STRONG, YELLOW FLAG, DIRECTIONAL SIGNAL)
+ *  - Monospace-styled percentages and sample sizes
+ *  - Convert "+" separated credential lists into bullet points
+ */
+function highlightReasoning(text) {
+  let out = text;
+
+  // Bold verdict labels
+  out = out.replace(
+    /\b(REACH|TARGET|SAFETY|HARD REACH|FINAL VERDICT:\s*(?:REACH|TARGET|SAFETY|HARD REACH))\b/g,
+    "<strong>$1</strong>"
+  );
+
+  // Italic signal phrases
+  out = out.replace(
+    /\b(VERY STRONG|YELLOW FLAG|DIRECTIONAL SIGNAL|NOT APPLICABLE)\b/g,
+    "<em class='reasoning-signal'>$1</em>"
+  );
+
+  // Highlight percentages and sample sizes
+  out = out.replace(
+    /(\d+\.?\d*(?:th|st|nd|rd)?\s*(?:percentile|pct))/g,
+    "<span class='reasoning-stat'>$1</span>"
+  );
+  out = out.replace(
+    /\b(n=\d+)\b/g,
+    "<span class='reasoning-stat'>$1</span>"
+  );
+  out = out.replace(
+    /(\d+\.?\d*%)/g,
+    "<span class='reasoning-num'>$1</span>"
+  );
+
+  // Convert "+" separated credential lists into bullet points.
+  // Pattern: "...plus rare X + Y + Z + W." or "...plus X + Y + Z."
+  // Look for "plus " followed by items separated by " + "
+  out = out.replace(
+    /\bplus\s+((?:[^+.]+\+\s*){2,}[^+.]+)(?=\.)/gi,
+    (match, listPart) => {
+      const items = listPart
+        .split(/\s*\+\s*/)
+        .map((item) => item.trim())
+        .filter(Boolean);
+      if (items.length < 3) return match; // not a real list
+      const bullets = items.map((i) => `<li>${i}</li>`).join("");
+      return `plus:<ul class="reasoning-credentials">${bullets}</ul>`;
+    }
+  );
+
+  return out;
+}
+
+// ════════════════════════════════════════════════════════════════════
 // Chart.js custom plugin: Justin marker (dashed vertical line at 95.5)
 // ════════════════════════════════════════════════════════════════════
 //
@@ -358,9 +498,11 @@ function renderProgramDetails(p) {
   const main = el("div", "program-body-cols__main");
   const aside = el("div", "program-body-cols__aside");
 
-  // Main column: long-form reasoning + EC fit
+  // Main column: long-form reasoning (structured) + EC fit
   if (p.reasoning) {
-    main.appendChild(el("p", "program-reasoning", esc(p.reasoning)));
+    const reasoningContainer = el("div", "program-reasoning-formatted");
+    reasoningContainer.innerHTML = formatReasoning(p.reasoning);
+    main.appendChild(reasoningContainer);
   }
   if (p.ec_strength_text) {
     main.appendChild(el("div", "ec-fit",

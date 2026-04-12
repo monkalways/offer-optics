@@ -1004,21 +1004,132 @@ details.program-row .chev::before { content: "+"; }
   }
 }
 
-.program-reasoning {
-  font-size: 14.5px;
-  line-height: 1.72;
-  color: var(--ink-700);
+/* ── Formatted reasoning sections (replaces old .program-reasoning) ── */
+
+.program-reasoning-formatted {
   margin: 0 0 1rem;
 }
 
-.program-reasoning:first-letter {
-  font-family: "Instrument Serif", ui-serif, Georgia, serif;
-  font-style: italic;
-  font-size: 2.4em;
-  float: left;
-  line-height: 0.85;
-  padding: 0.15em 0.12em 0 0;
+.reasoning-section {
+  margin-bottom: 1rem;
+  padding: 0.875rem 1rem;
+  border-radius: 6px;
+  background: transparent;
+  border-left: 3px solid var(--ink-100);
+}
+
+.reasoning-section:last-child { margin-bottom: 0; }
+
+.reasoning-section__label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-400);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.reasoning-section__body {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-700);
+}
+
+/* Section type variants */
+.reasoning-section--default    { border-left-color: var(--ink-200); }
+.reasoning-section--warning    { border-left-color: var(--hardreach-border); background: var(--hardreach-bg); }
+.reasoning-section--warning .reasoning-section__label { color: var(--hardreach-fg); }
+.reasoning-section--warning .reasoning-section__body  { color: var(--hardreach-fg); }
+
+.reasoning-section--highlight  { border-left-color: var(--safety-border); background: var(--safety-bg); }
+.reasoning-section--highlight .reasoning-section__label { color: var(--safety-fg); }
+
+.reasoning-section--accent     { border-left-color: var(--target-border); background: var(--target-bg); }
+.reasoning-section--accent .reasoning-section__label { color: var(--target-fg); }
+
+.reasoning-section--verdict {
+  border-left-color: var(--ink-800);
+  background: var(--ink-50);
+  border-left-width: 4px;
+}
+.reasoning-section--verdict .reasoning-section__label {
   color: var(--ink-800);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+}
+.reasoning-section--verdict .reasoning-section__body {
+  color: var(--ink-900);
+  font-weight: 500;
+  font-size: 14.5px;
+}
+
+.reasoning-section--muted {
+  border-left-color: var(--ink-100);
+  background: transparent;
+  opacity: 0.7;
+}
+.reasoning-section--muted .reasoning-section__body {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink-500);
+}
+
+/* Inline highlights within reasoning text */
+.reasoning-section__body strong {
+  color: var(--ink-900);
+  font-weight: 600;
+}
+
+.reasoning-signal {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink-800);
+}
+
+.reasoning-stat {
+  font-weight: 500;
+  color: var(--ink-800);
+  font-variant-numeric: tabular-nums;
+}
+
+.reasoning-num {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Credential bullet list (converted from "+" separated items) */
+.reasoning-credentials {
+  list-style: none;
+  margin: 0.625rem 0 0.375rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.reasoning-credentials li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  font-size: 12.5px;
+  background: var(--card);
+  border: 1px solid var(--ink-100);
+  border-radius: 4px;
+  color: var(--ink-700);
+  line-height: 1.35;
+}
+
+/* Dark mode overrides for reasoning sections */
+html.dark .reasoning-section--warning  { background: var(--hardreach-bg); }
+html.dark .reasoning-section--highlight { background: var(--safety-bg); }
+html.dark .reasoning-section--accent   { background: var(--target-bg); }
+html.dark .reasoning-section--verdict  { background: var(--ink-50); }
+html.dark .reasoning-section--verdict .reasoning-section__label { color: var(--ink-800); }
+html.dark .reasoning-section--verdict .reasoning-section__body  { color: var(--ink-900); }
+html.dark .reasoning-credentials li {
+  background: var(--ink-50);
+  border-color: var(--ink-200);
 }
 
 .oop-warning {
