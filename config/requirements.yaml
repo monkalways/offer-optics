@@ -728,15 +728,15 @@ requirements:
   - program_key: ualberta_bsc_physiol
     tier: 2
     source_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/physiology.html
-    curated_on: 2026-04-11
+    curated_on: 2026-04-12
     confidence: medium
     curator_notes: |
       UAlberta BSc Physiology — promoted to Tier 2 as Justin's top
       in-province pre-med option. UAlberta does not use OUAC; applications
-      go through ApplyAlberta. Dates and competitive avg from public
-      knowledge of UAlberta admissions.
+      go through ApplyAlberta. The deadline below is the ApplyAlberta
+      equal-consideration date (not OUAC).
 
-    application_deadline_ouac: null
+    application_deadline_ouac: 2026-03-01
     application_deadline_supp: null
     document_deadline: 2027-03-01
     decision_release_window: "March through June (rolling)"
@@ -787,8 +787,99 @@ requirements:
       but Justin's 95.5% top-6 is far above UAlberta's competitive
       threshold (~82%). Genuine safety.
 
+  - program_key: waterloo_math_cs
+    tier: 2
+    source_url: https://uwaterloo.ca/future-students/programs/mathematics-computer-science
+    deadlines_source_url: https://uwaterloo.ca/future-students/admissions/deadlines
+    curated_on: 2026-04-12
+    confidence: medium
+    curator_notes: |
+      Waterloo Math/CS is in the Math Faculty (NOT Engineering), so it
+      follows the Jan 30 general deadline. Same AIF process as Waterloo CS.
+
+    application_deadline_ouac: 2026-01-30
+    application_deadline_supp: 2026-02-13
+    document_deadline: 2026-02-13
+    decision_release_window: "Mid May"
+
+    supp_app_required: true
+    supp_app_type: "Admission Information Form (AIF)"
+    supp_app_url: https://uwaterloo.ca/future-students/admissions/admission-information-form
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 93.0
+    prereq_courses:
+      - "Grade 12 English 4U (any)"
+      - "Grade 12 Advanced Functions (MHF4U)"
+      - "Grade 12 Calculus & Vectors (MCV4U)"
+      - "One additional Grade 12 4U/4M course"
+    prereq_notes: |
+      Same prerequisites as Waterloo CS. Justin's Math 30-1 + Math 31
+      satisfy both math requirements at elite levels.
+
+    oop_eligible: true
+    oop_notes: null
+    application_fee_cad: 156
+    notes: |
+      Joint Math/CS program — strong CS curriculum with additional
+      math depth. A realistic Waterloo backup if CS is too competitive.
+
+  - program_key: waterloo_se
+    tier: 2
+    source_url: https://uwaterloo.ca/future-students/programs/software-engineering
+    deadlines_source_url: https://uwaterloo.ca/future-students/admissions/deadlines
+    curated_on: 2026-04-12
+    confidence: medium
+    curator_notes: |
+      Waterloo SE is in the Faculty of ENGINEERING, so it uses the
+      Jan 15 Engineering deadline (NOT Jan 30 like CS/Math programs).
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: 2026-01-30
+    document_deadline: 2026-01-30
+    decision_release_window: "Mid May"
+
+    supp_app_required: true
+    supp_app_type: "Admission Information Form (AIF)"
+    supp_app_url: https://uwaterloo.ca/future-students/admissions/admission-information-form
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 95.0
+    prereq_courses:
+      - "Grade 12 English 4U (any)"
+      - "Grade 12 Advanced Functions (MHF4U)"
+      - "Grade 12 Calculus & Vectors (MCV4U)"
+      - "Grade 12 Chemistry (SCH4U)"
+      - "Grade 12 Physics (SPH4U)"
+    prereq_notes: |
+      SE requires Chemistry AND Physics — unlike CS which does not.
+      Justin's projected courses include Chemistry 30 but NOT Physics 30.
+      This is a potential gap to flag.
+
+    oop_eligible: true
+    oop_notes: null
+    application_fee_cad: 156
+    notes: |
+      Engineering program — more rigorous than CS with additional
+      physics/chemistry requirements. A reach for Justin (19th pct).
+      Physics 30 may be required — verify before applying.
+
   - program_key: uoft_lifesci_stgeorge
-    tier: 1
+    tier: 2
     source_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences
     alberta_source_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-requirements/other-canadian-provinces
     dates_source_url: https://future.utoronto.ca/apply/important-application-dates/

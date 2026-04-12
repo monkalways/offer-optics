@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-12T00:02:32",
+  "build_timestamp": "2026-04-12T00:22:19",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -1518,22 +1518,27 @@
       "oop_mean": 95.9,
       "oop_caveat": null,
       "oop_signal": "none",
-      "supp_app_required": null,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": null,
-      "interview_required": null,
-      "references_required": null,
-      "deadline_ouac": null,
-      "deadline_supp": null,
-      "deadline_doc": null,
-      "decision_window": null,
-      "fee_cad": null,
-      "official_url": null,
-      "min_average_competitive": null,
-      "prereq_courses": [],
-      "prereq_notes": null,
-      "requirements_confidence": null,
+      "supp_app_required": true,
+      "supp_app_type": "Admission Information Form (AIF)",
+      "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-30",
+      "deadline_supp": "2027-02-13",
+      "deadline_doc": "2027-02-13",
+      "decision_window": "Mid May",
+      "fee_cad": 156,
+      "official_url": "https://uwaterloo.ca/future-students/programs/mathematics-computer-science",
+      "min_average_competitive": 93.0,
+      "prereq_courses": [
+        "Grade 12 English 4U (any)",
+        "Grade 12 Advanced Functions (MHF4U)",
+        "Grade 12 Calculus & Vectors (MCV4U)",
+        "One additional Grade 12 4U/4M course"
+      ],
+      "prereq_notes": "Same prerequisites as Waterloo CS. Justin's Math 30-1 + Math 31\nsatisfy both math requirements at elite levels.\n",
+      "requirements_confidence": "medium",
       "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 57.1th percentile of accepted reports for University of Waterloo Mathematics / Computer Science (joint) (n=91, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 28.6-86.8th percentile. OOP subset (small sample, n=3): mean accepted 95.9%, min 91.0%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of TARGET. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
@@ -1870,22 +1875,28 @@
       "oop_mean": 95.9,
       "oop_caveat": null,
       "oop_signal": "none",
-      "supp_app_required": null,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": null,
-      "interview_required": null,
-      "references_required": null,
-      "deadline_ouac": null,
-      "deadline_supp": null,
-      "deadline_doc": null,
-      "decision_window": null,
-      "fee_cad": null,
-      "official_url": null,
-      "min_average_competitive": null,
-      "prereq_courses": [],
-      "prereq_notes": null,
-      "requirements_confidence": null,
+      "supp_app_required": true,
+      "supp_app_type": "Admission Information Form (AIF)",
+      "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": "2027-01-30",
+      "deadline_doc": "2027-01-30",
+      "decision_window": "Mid May",
+      "fee_cad": 156,
+      "official_url": "https://uwaterloo.ca/future-students/programs/software-engineering",
+      "min_average_competitive": 95.0,
+      "prereq_courses": [
+        "Grade 12 English 4U (any)",
+        "Grade 12 Advanced Functions (MHF4U)",
+        "Grade 12 Calculus & Vectors (MCV4U)",
+        "Grade 12 Chemistry (SCH4U)",
+        "Grade 12 Physics (SPH4U)"
+      ],
+      "prereq_notes": "SE requires Chemistry AND Physics — unlike CS which does not.\nJustin's projected courses include Chemistry 30 but NOT Physics 30.\nThis is a potential gap to flag.\n",
+      "requirements_confidence": "medium",
       "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 19.4th percentile of accepted reports for University of Waterloo Software Engineering (n=36, median accepted avg 97.3%). Projection range (93.5-97.5%) places him at the 11.1-58.3th percentile. OOP subset (small sample, n=6): mean accepted 95.9%, min 89.2%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
@@ -2049,7 +2060,7 @@
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
-      "deadline_ouac": null,
+      "deadline_ouac": "2027-03-01",
       "deadline_supp": null,
       "deadline_doc": "2028-02-29",
       "decision_window": "March through June (rolling)",
@@ -5411,10 +5422,38 @@
       "days_from_today": 278
     },
     {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: University of Waterloo — Software Engineering",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 278
+    },
+    {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
+      "days_from_today": 293
+    },
+    {
+      "date": "2027-01-30",
+      "label": "OUAC equal-consideration: University of Waterloo — Mathematics / Computer Science (joint)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 293
+    },
+    {
+      "date": "2027-01-30",
+      "label": "Supplementary application due: University of Waterloo — Software Engineering",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 293
+    },
+    {
+      "date": "2027-01-30",
+      "label": "Documents due: University of Waterloo — Software Engineering",
+      "category": "application_deadline",
+      "priority": "medium",
       "days_from_today": 293
     },
     {
@@ -5460,6 +5499,20 @@
       "days_from_today": 307
     },
     {
+      "date": "2027-02-13",
+      "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 307
+    },
+    {
+      "date": "2027-02-13",
+      "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 307
+    },
+    {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
@@ -5493,6 +5546,13 @@
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 309
+    },
+    {
+      "date": "2027-03-01",
+      "label": "OUAC equal-consideration: University of Alberta — BSc Physiology",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 323
     },
     {
       "date": "2028-02-29",
