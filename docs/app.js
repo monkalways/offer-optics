@@ -1270,7 +1270,6 @@ async function main() {
     renderAccordion("tier2-accordion", data.tier2 || []);
     renderTier34Note(data.tier3 || [], data.tier4 || []);
     renderChecklist(data);
-    renderDataQuality(data.data_quality);
     renderAppendix(data);
     wireAnchorAutoOpen();
     wireNavActiveState();
