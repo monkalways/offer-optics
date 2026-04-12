@@ -428,13 +428,31 @@ function shortenSuppApp(type) {
 // Accordion (Tier 1 + Tier 2)
 // ────────────────────────────────────────────────────────────────────
 
+// Explicit display order for Tier 2 accordion: med-school prestige first,
+// Waterloo CS variants last (they're CS backups, not pre-med).
+const TIER2_ORDER = {
+  western_bmsc:        0,   // Schulich BMSc — top pre-med prestige
+  mcmaster_lifesci:    1,   // McMaster Science I → Life Sci
+  queens_lifesci:      2,   // Queen's BSc Life Sci
+  guelph_biomed:       3,   // Guelph Biomedical Sciences
+  ualberta_bsc_physiol:4,   // UAlberta Physiology — in-province pre-med
+  waterloo_math_cs:    5,   // Waterloo Math/CS (CS backup, not pre-med)
+  waterloo_se:         6,   // Waterloo SE (CS backup, not pre-med)
+};
+
 function renderAccordion(containerId, programs) {
   const host = document.getElementById(containerId);
   host.innerHTML = "";
 
-  // Sort by verdict (safety first) then by n_accepted desc
-  const verdictOrder = { safety: 0, target: 1, reach: 2, hard_reach: 3, insufficient_data: 4 };
   const sorted = [...programs].sort((a, b) => {
+    // Use explicit order if defined (Tier 2), otherwise fall back to verdict sort
+    const oa = TIER2_ORDER[a.program_key];
+    const ob = TIER2_ORDER[b.program_key];
+    if (oa !== undefined && ob !== undefined) return oa - ob;
+    if (oa !== undefined) return -1;
+    if (ob !== undefined) return 1;
+    // Fallback: sort by verdict then by sample size
+    const verdictOrder = { safety: 0, target: 1, reach: 2, hard_reach: 3, insufficient_data: 4 };
     const va = verdictOrder[a.verdict] ?? 9;
     const vb = verdictOrder[b.verdict] ?? 9;
     if (va !== vb) return va - vb;
