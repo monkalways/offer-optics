@@ -583,6 +583,70 @@ function buildProgramCard(p, ecInsight, timelineMonths, openByDefault) {
     body.appendChild(el("div", "ec-fit mt-3", `<strong>EC fit</strong>${esc(p.ec_strength_text)}`));
   }
 
+  // ── UofT Life Sci special: First-year enrichment programs ──
+  if (p.program_key === "uoft_lifesci_stgeorge") {
+    const enrichDiv = el("div", "mt-6");
+    enrichDiv.innerHTML = `
+      <div class="program-subsection-label">First-Year Enrichment: "One" Programs</div>
+      <div class="rounded-lg border border-ink-100 bg-ink-50/50 p-5 mt-3 text-[13.5px] text-ink-700 leading-relaxed space-y-4">
+        <p>
+          UofT's residential colleges offer competitive small-cohort first-year seminars called <strong class="text-ink-900">"Ones" programs</strong>
+          that provide mentoring, community, and research exposure within the large Life Sciences admission category. Two streams are
+          directly relevant for pre-med students:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="rounded-lg border border-ink-100 bg-card p-4">
+            <div class="flex items-baseline gap-2 mb-2">
+              <span class="text-[14px] font-medium text-ink-900">Vic One — Stowe-Gullen Stream</span>
+              <span class="text-[11px] text-ink-400">Victoria College</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5 mb-2.5">
+              <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">~25 students</span>
+              <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">2 full-year courses</span>
+              <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">Separate application</span>
+            </div>
+            <p class="text-[12.5px] text-ink-600 leading-relaxed mb-2">
+              <strong>VIC170</strong> (Prof. Angus McQuibban): science communication — grant proposals, three-minute thesis presentations, lab visits.
+              McQuibban runs a research lab and invites colleagues as guest speakers; alumni credit this course for securing first research positions.
+              <strong>VIC171</strong> (Prof. Cory Lewis): philosophy of science, reading-heavy, generous extensions, open-topic weeks.
+            </p>
+            <p class="text-[12px] text-ink-500">
+              83% of Vic One graduates earn distinction/high distinction vs 59% of all Arts &amp; Science students.
+              Named after Emily Stowe and Augusta Stowe-Gullen, pioneers of Canadian women in medicine.
+            </p>
+          </div>
+          <div class="rounded-lg border border-ink-100 bg-card p-4">
+            <div class="flex items-baseline gap-2 mb-2">
+              <span class="text-[14px] font-medium text-ink-900">Trinity One — Biomedical Health Stream</span>
+              <span class="text-[11px] text-ink-400">Trinity College</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5 mb-2.5">
+              <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">~20 students</span>
+              <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">2 full-year courses</span>
+              <span class="inline-flex items-center px-2 py-0.5 text-[10px] font-medium rounded bg-ink-50 border border-ink-100 text-ink-600">Separate application</span>
+            </div>
+            <p class="text-[12.5px] text-ink-600 leading-relaxed mb-2">
+              Offers <strong>TRN225Y1: "The Art of Health Discovery"</strong> — scientific writing, grant proposals, manuscripts.
+              Students describe the community as a "stark contrast to impersonal first-year courses."
+              Access to Trinity's undergraduate research conference in first year. More institutional funding for community events (bi-weekly catered lunches, field trips, end-of-year dinner).
+            </p>
+            <p class="text-[12px] text-ink-500">
+              ~20 per stream (smaller than Vic One). Trinity has produced 43 Rhodes Scholars. Profs know students by first name.
+            </p>
+          </div>
+        </div>
+        <div class="rounded border border-amber-200 bg-amber-50 px-4 py-3 text-[12.5px] text-amber-800">
+          <strong class="text-[10.5px] tracking-[0.12em] uppercase">Important caveat:</strong>
+          No published evidence exists that either program directly boosts med-school acceptance rates. UofT's MD program
+          states "it does not matter what subject you studied." The benefits are indirect: stronger reference letters from faculty
+          who know you, earlier research exposure, better science-communication skills, and a support community that reduces burnout.
+          If Justin goes to UofT, applying to either is free upside — but this should not be the reason to choose UofT over another university.
+        </div>
+      </div>
+    `;
+    body.appendChild(enrichDiv);
+  }
+
   // ── Sub-section 4: Application Procedure ──
   body.appendChild(el("div", "program-subsection-label mt-6", "4. Application Procedure"));
   const reqGrid = el("div", "program-req-grid mt-3");
