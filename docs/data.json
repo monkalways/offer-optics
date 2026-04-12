@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-11T23:30:52",
+  "build_timestamp": "2026-04-11T23:32:25",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -222,7 +222,8 @@
         "waterloo_math",
         "uoft_lifesci_utm",
         "uoft_lifesci_utsc",
-        "ottawa_biomed"
+        "ottawa_biomed",
+        "western_health_sci"
       ],
       "tier_4_others": [
         "brock_medsci",
@@ -1841,182 +1842,6 @@
       ]
     },
     {
-      "program_key": "western_health_sci",
-      "program": "Health Sciences (BHSc)",
-      "university": "Western University",
-      "tier": 2,
-      "verdict": "target",
-      "verdict_label": "Target",
-      "verdict_gpa_only": "target",
-      "ec_weight": "none",
-      "confidence": "high",
-      "n_accepted": 60,
-      "median_accepted_avg": 94.3,
-      "min_avg": 86.0,
-      "p25": 93.0,
-      "p50": 94.3,
-      "p75": 96.5,
-      "max_avg": 99.7,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 33.3,
-      "justin_percentile_mid": 61.7,
-      "justin_percentile_high": 91.7,
-      "oop_n": 6,
-      "oop_min": 90.0,
-      "oop_mean": 94.5,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": false,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-15",
-      "deadline_supp": null,
-      "deadline_doc": "2027-02-15",
-      "decision_window": "March through May (rolling)",
-      "fee_cad": 156,
-      "official_url": "https://welcome.uwo.ca/what-can-i-study/undergraduate-programs/health-sciences.html",
-      "min_average_competitive": 87.0,
-      "prereq_courses": [
-        "Grade 12 English (ENG4U)",
-        "5 additional Grade 12 4U/M courses"
-      ],
-      "prereq_notes": "No specific science prerequisites at first-year entry — students can\nchoose Health Sciences without Bio/Chem/Math at this stage. Some Year 2\nspecializations (Nursing, Kinesiology) have additional prereqs and\nhigher cutoffs.\n",
-      "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 61.7th percentile of accepted reports for Western University Health Sciences (BHSc) (n=60, median accepted avg 94.3%). Projection range (93.5-97.5%) places him at the 33.3-91.7th percentile. OOP subset (small sample, n=6): mean accepted 94.5%, min 90.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 1
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 1
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 2
-        },
-        {
-          "bin": 91,
-          "n": 2
-        },
-        {
-          "bin": 92,
-          "n": 8
-        },
-        {
-          "bin": 93,
-          "n": 8
-        },
-        {
-          "bin": 94,
-          "n": 10
-        },
-        {
-          "bin": 95,
-          "n": 7
-        },
-        {
-          "bin": 96,
-          "n": 9
-        },
-        {
-          "bin": 97,
-          "n": 7
-        },
-        {
-          "bin": 98,
-          "n": 4
-        },
-        {
-          "bin": 99,
-          "n": 1
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
       "program_key": "waterloo_se",
       "program": "Software Engineering",
       "university": "University of Waterloo",
@@ -2889,6 +2714,182 @@
         {
           "bin": 98,
           "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "western_health_sci",
+      "program": "Health Sciences (BHSc)",
+      "university": "Western University",
+      "tier": 3,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 60,
+      "median_accepted_avg": 94.3,
+      "min_avg": 86.0,
+      "p25": 93.0,
+      "p50": 94.3,
+      "p75": 96.5,
+      "max_avg": 99.7,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 33.3,
+      "justin_percentile_mid": 61.7,
+      "justin_percentile_high": 91.7,
+      "oop_n": 6,
+      "oop_min": 90.0,
+      "oop_mean": 94.5,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "March through May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://welcome.uwo.ca/what-can-i-study/undergraduate-programs/health-sciences.html",
+      "min_average_competitive": 87.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "5 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "No specific science prerequisites at first-year entry — students can\nchoose Health Sciences without Bio/Chem/Math at this stage. Some Year 2\nspecializations (Nursing, Kinesiology) have additional prereqs and\nhigher cutoffs.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 61.7th percentile of accepted reports for Western University Health Sciences (BHSc) (n=60, median accepted avg 94.3%). Projection range (93.5-97.5%) places him at the 33.3-91.7th percentile. OOP subset (small sample, n=6): mean accepted 94.5%, min 90.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 2
+        },
+        {
+          "bin": 91,
+          "n": 2
+        },
+        {
+          "bin": 92,
+          "n": 8
+        },
+        {
+          "bin": 93,
+          "n": 8
+        },
+        {
+          "bin": 94,
+          "n": 10
+        },
+        {
+          "bin": 95,
+          "n": 7
+        },
+        {
+          "bin": 96,
+          "n": 9
+        },
+        {
+          "bin": 97,
+          "n": 7
+        },
+        {
+          "bin": 98,
+          "n": 4
         },
         {
           "bin": 99,
@@ -5311,13 +5312,6 @@
       "days_from_today": 279
     },
     {
-      "date": "2027-01-15",
-      "label": "OUAC equal-consideration: Western University — Health Sciences (BHSc)",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 279
-    },
-    {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
@@ -5402,13 +5396,6 @@
       "days_from_today": 310
     },
     {
-      "date": "2027-02-15",
-      "label": "Documents due: Western University — Health Sciences (BHSc)",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 310
-    },
-    {
       "date": "2028-02-29",
       "label": "Documents due: University of Alberta — BSc Physiology",
       "category": "application_deadline",
@@ -5434,7 +5421,7 @@
         "n_programs_mapped": 126,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:30:49"
+        "fetched_at": "2026-04-11T23:32:22"
       },
       {
         "cycle": "2023-2024",
@@ -5445,7 +5432,7 @@
         "n_programs_mapped": 225,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:30:49"
+        "fetched_at": "2026-04-11T23:32:22"
       },
       {
         "cycle": "2024-2025",
@@ -5456,7 +5443,7 @@
         "n_programs_mapped": 370,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:30:49"
+        "fetched_at": "2026-04-11T23:32:22"
       },
       {
         "cycle": "2025-2026",
@@ -5467,7 +5454,7 @@
         "n_programs_mapped": 519,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:30:49"
+        "fetched_at": "2026-04-11T23:32:22"
       },
       {
         "cycle": "2025-2026-ab",
@@ -5478,7 +5465,7 @@
         "n_programs_mapped": 21,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:30:49"
+        "fetched_at": "2026-04-11T23:32:22"
       }
     ],
     "caveats": [

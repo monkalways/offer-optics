@@ -78,7 +78,7 @@ programs:
       - "(?i)uwo.*(med\\s*sci|bmsc)"
 
   - key: western_health_sci
-    tier: 2
+    tier: 3
     university: Western University
     university_key: western
     program: Health Sciences (BHSc)
