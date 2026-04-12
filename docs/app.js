@@ -848,11 +848,27 @@ function renderYoyChart(yoy) {
 // Checklist (sortable table + mobile cards)
 // ────────────────────────────────────────────────────────────────────
 
+// Explicit checklist display order: Tier 1 first (matching hero tile order),
+// then Tier 2 (matching accordion prestige order).
+const CHECKLIST_ORDER = {
+  mcmaster_bhsc:           0,
+  queens_bhsc:             1,
+  waterloo_cs:             2,
+  western_bmsc:            3,
+  uoft_lifesci_stgeorge:   4,
+  mcmaster_lifesci:        5,
+  queens_lifesci:          6,
+  guelph_biomed:           7,
+  ualberta_bsc_physiol:    8,
+  waterloo_math_cs:        9,
+  waterloo_se:            10,
+};
+
 function renderChecklist(data) {
   const rows = [...(data.tier1 || []), ...(data.tier2 || [])]
     .filter(p => p.deadline_ouac); // only programs with real deadlines
 
-  const state = { sortKey: "deadline_ouac", sortDir: "asc" };
+  const state = { sortKey: "_rank", sortDir: "asc" };
 
   // Wire up table header clicks once
   const table = document.getElementById("checklist-table");
@@ -891,6 +907,12 @@ function sortRows(rows, state) {
   const { sortKey, sortDir } = state;
   const dir = sortDir === "asc" ? 1 : -1;
   return [...rows].sort((a, b) => {
+    // Custom rank sort: use the explicit CHECKLIST_ORDER map
+    if (sortKey === "_rank") {
+      const oa = CHECKLIST_ORDER[a.program_key] ?? 99;
+      const ob = CHECKLIST_ORDER[b.program_key] ?? 99;
+      return (oa - ob) * dir;
+    }
     const va = a[sortKey];
     const vb = b[sortKey];
     if (va == null && vb == null) return 0;
