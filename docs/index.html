@@ -224,11 +224,30 @@
 
       <div id="verdict-tiles" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
 
-      <p class="mt-5 text-xs text-ink-400">
-        Click a tile to jump to the full per-program reasoning.
-        Verdicts combine GPA percentile against Reddit-reported admits with a program-specific EC leverage adjustment —
-        see the methodology note in the footer.
-      </p>
+      <div class="mt-6 rounded-lg border border-ink-100 bg-card px-5 py-4">
+        <p class="text-[10.5px] tracking-[0.18em] uppercase text-ink-400 font-medium mb-3">Verdict definitions</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[13px]">
+          <div class="flex items-start gap-2.5">
+            <span class="badge badge--safety mt-0.5" style="font-size:11px;padding:2px 8px">Safety</span>
+            <span class="text-ink-600">Justin's projected average is <strong class="text-ink-800">above the 65th percentile</strong> of accepted reports. High confidence of admission on grades alone.</span>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="badge badge--target mt-0.5" style="font-size:11px;padding:2px 8px">Target</span>
+            <span class="text-ink-600">Justin sits between the <strong class="text-ink-800">35th and 65th percentile</strong> of accepted reports, or has been upgraded from Reach via strong supplementary-app leverage.</span>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="badge badge--reach mt-0.5" style="font-size:11px;padding:2px 8px">Reach</span>
+            <span class="text-ink-600">Justin is between the <strong class="text-ink-800">15th and 35th percentile</strong> of accepted reports. Competitive but below the median — supplementary apps and ECs matter here.</span>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="badge badge--hardreach mt-0.5" style="font-size:11px;padding:2px 8px">Hard Reach</span>
+            <span class="text-ink-600">Below the <strong class="text-ink-800">15th percentile</strong> of accepted reports. Admission would require exceptional circumstances or a dramatic grade improvement.</span>
+          </div>
+        </div>
+        <p class="mt-3 text-[11.5px] text-ink-400 leading-relaxed">
+          Percentiles are relative to Reddit-reported <em>admitted</em> students (not all applicants). The dataset is heavily self-selected toward acceptances (~95–99%), so treat these as floor estimates. Click a tile to jump to the full reasoning.
+        </p>
+      </div>
     </section>
 
     <!-- Pull quote section removed at user request -->
