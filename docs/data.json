@@ -1,0 +1,5562 @@
+{
+  "build_timestamp": "2026-04-11T18:31:21",
+  "cycle_label": "2026-2027",
+  "profile": {
+    "name": "Justin",
+    "current_grade": 11,
+    "high_school": "Old Scona Academic High School",
+    "city": "Edmonton",
+    "province": "AB",
+    "country": "Canada",
+    "applicant_type": "105",
+    "grade_12_projected_courses": [
+      {
+        "course": "Math 30-1",
+        "low": 98,
+        "high": 100,
+        "midpoint": 99.0
+      },
+      {
+        "course": "Math 31",
+        "low": 98,
+        "high": 100,
+        "midpoint": 99.0
+      },
+      {
+        "course": "ELA 30-1",
+        "low": 85,
+        "high": 90,
+        "midpoint": 87.5
+      },
+      {
+        "course": "Biology 30",
+        "low": 95,
+        "high": 100,
+        "midpoint": 97.5
+      },
+      {
+        "course": "Chemistry 30",
+        "low": 95,
+        "high": 100,
+        "midpoint": 97.5
+      },
+      {
+        "course": "French 30-1",
+        "low": 90,
+        "high": 95,
+        "midpoint": 92.5
+      }
+    ],
+    "grade_12_projected_top6_average": {
+      "low": 93.5,
+      "midpoint": 95.5,
+      "high": 97.5
+    },
+    "grade_11_final_average": null,
+    "grade_12_midterm_average": null,
+    "tests": {
+      "casper_planned": null,
+      "sat": null,
+      "act": null
+    },
+    "extracurriculars_summary": "G11 at Old Scona; med-school-track profile combining math/CS elite-competition results, direct clinical exposure, and a founder-level mental-health non-profit. Cohesive narrative linking a grade-9 classmate's mental-health-driven drop-out to his self-directed ML research on at-risk-student identification (IB CS IA).",
+    "extracurriculars": {
+      "captured_on": "2026-04-11",
+      "updated_on": "2026-04-11 (Harvard MEDScience acceptance added)",
+      "sources": [
+        "data/justin/Justin's Resume (Updated 2026).docx",
+        "data/justin/HYRS_2026_Essay_Justin_Wei.docx",
+        "data/justin/Harvard MEDScience.docx",
+        "Harvard MEDScience admission email (2026-04, confirmed acceptance to TECH Foundations Session M3)"
+      ],
+      "narrative_theme": "A grade-9 classmate did not pass the Old Scona entrance exam and dropped out of school within 2 months due to mental-health pressure. Justin researched Alberta youth mental-health trends, combined with his math/ML strengths to self-teach LightGBM/XGBoost, and is now building an ML risk-detection tool for at-risk students as his IB CS IA — 'the tool I wish had existed for my classmate.' Career direction: bioinformatics, bridging clinical practice with data science.",
+      "healthcare_exposure": [
+        {
+          "name": "Medical Shadowing — Histopathology",
+          "org": "Dr. Surinder Kanwal, Misericordia Community Hospital, Covenant Health",
+          "period": "July 2025",
+          "hours": 30,
+          "description": "Observed surgical specimen processing, margin evaluation, and lymph-node dissection for cancer diagnosis."
+        },
+        {
+          "name": "Youth Summer Program (MED YSP)",
+          "org": "University of Toronto Faculty of Medicine",
+          "period": "July 2025",
+          "description": "Studied disease mechanisms (kidney failure, genetic diseases), neural physiology, and chronic-condition management (cystic fibrosis, obesity)."
+        },
+        {
+          "name": "Harvard Medical School MEDscience Summer Program — MEDscienceTECH Foundations",
+          "org": "Harvard Medical School (Boston, MA)",
+          "period": "Session M3, June 22-26, 2026",
+          "selectivity": "Selected from a highly competitive applicant pool (admission letter received 2026-04, before April 15 deadline)",
+          "track": "MEDscienceTECH Foundations — biomedical engineering + computer science + clinical medicine",
+          "description": "Hands-on team project at Harvard Medical School building AI computer vision surgical robots on the Kepler AI surgical robotic platform. Students learn the biodesign process and prototype solutions to complex healthcare problems. The week also includes direct clinical exposure: diagnosing and treating simulated patients, learning anatomy and physiology, and getting bedside exposure to careers including surgery. Final activity is a shark-tank-style pitch + live demonstration to medical experts on demo day.",
+          "why_it_matters": "Sits at the exact intersection of Justin's three core interests: AI / computer vision (his ML work), engineering / robotics (build-from-scratch with the Kepler platform), and clinical medicine (bedside exposure + anatomy/physiology). It's a stronger fit for Waterloo CS than I initially framed — the AIF can cite AI computer vision robotics built in a Harvard cohort. For McMaster/Queen's BHSc, the credential reads as both clinical exposure AND technical capability tied directly to medicine.",
+          "notes": "Confirmed acceptance; $2,800 program fee due 2026-04-22. Welcome letter scheduled 2026-05-15. Justin's application essay (data/justin/Harvard MEDScience.docx) framed him as the 'Calm Analyst & Team Specialist' — the team-project nature of building robots-in-teams aligns with that framing."
+        }
+      ],
+      "mental_health_focus": [
+        {
+          "name": "HelpingMinds.ca (Founder & President)",
+          "org": "HelpingMinds.ca — own non-profit",
+          "period": "2024 – Present",
+          "role": "Founder & President",
+          "description": "Non-profit supporting children's mental health; led fundraising and awareness campaigns partnering with local community groups."
+        },
+        {
+          "name": "Chatter Social Skills Program (Volunteer Mentor)",
+          "org": "Khan Communication Services",
+          "period": "2023 – Present",
+          "duration_months_minimum": 18,
+          "hours_minimum": 100,
+          "description": "Mentors neurodiverse children in communication and social skills. 18+ months sustained, 100+ hours of group activities and direct support."
+        },
+        {
+          "name": "Community Helpers (Executive Member)",
+          "org": "Alberta Health Services",
+          "period": "2024 – Present",
+          "role": "Executive Member",
+          "description": "Trained in suicide prevention and stress management; supports peers at Old Scona."
+        }
+      ],
+      "stem_competitions": {
+        "mathematics": [
+          "International Mathematics Competition 2024 — Merit Award (Lucknow, India) — represented Canada internationally",
+          "Canadian Open Mathematics Challenge (COMC): Distinction 2024, Honours 2023",
+          "Canada Lynx Mathematical Competition (CLMC): Honourable Mention (National), Bronze / Silver (Provincial)",
+          "University of Waterloo Pascal Contest: Distinction (2023, 2024)",
+          "University of Waterloo Fryer Contest: Distinction (2024)",
+          "University of Waterloo CIMC: Distinction (2024)"
+        ],
+        "computer_science": [
+          "CyberPatriot Competition: National Finalist (previous season), Semi-Finalist 2024-25 — Linux specialist",
+          "Canadian Computing Competition (CCC): Active competitor (University of Waterloo)",
+          "Kaggle / DrivenData: Top 5.7% in 3 ML competitions on health datasets (mental health, vaccine hesitancy); LightGBM / XGBoost"
+        ],
+        "biology": [
+          "AP Biology: Score 5 (perfect)",
+          "British Intermediate Biology Olympiad: Silver"
+        ]
+      },
+      "technical_projects": [
+        {
+          "name": "Mental Health Risk Prediction Algorithm",
+          "context": "IB Computer Science Internal Assessment",
+          "period": "2024 – Present",
+          "stack": "Python, scikit-learn, pandas, NumPy",
+          "description": "Web-based survey platform and ML model to identify at-risk high school students from anonymized response patterns — targeting early intervention."
+        },
+        {
+          "name": "Kaggle Titanic ML Retrospective (LinkedIn article)",
+          "period": "2024 – Present",
+          "description": "Authored a technical retrospective on feature-engineering vs model complexity trade-offs. Demonstrated that recalibrating the decision threshold from 0.50 to 0.60 moved him ~10,000 places on the leaderboard — showcasing disciplined root-cause debugging over complexity."
+        }
+      ],
+      "leadership": [
+        {
+          "name": "Founder & President — HelpingMinds.ca",
+          "period": "2024 – Present"
+        },
+        {
+          "name": "Executive Member — Mathematics & Computer Science Club (Old Scona)",
+          "period": "2024 – Present",
+          "description": "Organizes peer-led sessions on Data Structures & Algorithms; facilitates school-wide participation in math and coding contests."
+        }
+      ],
+      "other_achievements": [
+        "Piano — RCM Level 10 Certificate (classical performance, significant time commitment)"
+      ],
+      "self_described_team_role": "Calm Analyst & Team Specialist — steps back to check foundational assumptions before adding complexity; bridges technical execution with empathy for vulnerable populations.",
+      "summer_2026_plans": {
+        "confirmed": [
+          {
+            "program": "Harvard Medical School MEDscience Summer Program — TECH Foundations",
+            "dates": "2026-06-22 to 2026-06-26",
+            "location": "Boston, MA",
+            "cost_usd": 2800,
+            "confirmation_deadline": "2026-04-15",
+            "payment_deadline": "2026-04-22",
+            "welcome_letter_expected": "2026-05-15"
+          }
+        ],
+        "pending_decisions": [
+          {
+            "program": "HYRS 2026 (Heritage Youth Researcher Summer)",
+            "applied": true,
+            "essay_source": "data/justin/HYRS_2026_Essay_Justin_Wei.docx",
+            "decision_expected": "spring 2026"
+          }
+        ],
+        "notes": "Harvard MEDScience is a 1-week program (June 22-26), so it does NOT compete with HYRS — Justin can do both if HYRS accepts him. With Harvard MEDScience confirmed, the formal-clinical-research gap from his earlier profile is partially filled even without HYRS; HYRS now becomes additive (lab research) rather than gap-filling (any clinical exposure)."
+      },
+      "ec_strengths_by_target": {
+        "mcmaster_bhsc": "VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for.",
+        "queens_bhsc": "VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive.",
+        "waterloo_cs": "VERY STRONG for the AIF. CyberPatriot National Finalist (Linux), IMC 2024, Pascal/Fryer/CIMC distinctions, CCC, Kaggle top 5.7%, LightGBM/XGBoost, self-built ML projects — exactly what Waterloo CS AIF readers value. **NEW credential to highlight prominently: Harvard Medical School MEDscienceTECH Foundations (June 2026, confirmed) — building AI computer vision surgical robots on the Kepler platform in a team of biomedical engineers, with a shark-tank pitch demo day to medical experts.** This is directly Waterloo-CS-relevant content (AI, computer vision, robotics, team biodesign, prototype-to-pitch) and Justin should lead the AIF with it. GPA is still the bigger gate (Reddit median 97.5), but the AIF case is now materially stronger.",
+        "uoft_lifesci_stgeorge": "NOT APPLICABLE — no supplementary application at UofT Life Sci. ECs do not affect the decision. Justin is well above the academic bar here regardless.",
+        "tier_2_general": "Most Tier-2 programs are academic-record-only and don't read supplementary applications. ECs are irrelevant for admission, but the combination means Justin would be among the top-of-class admits wherever he lands.",
+        "watch_items": [
+          "ELA 30-1 projection 85-90% is the single academic vulnerability — Queen's BHSc requires minimum 80% in ENG4U equivalent, so any slip below 80% is a hard-fail. Otherwise the gap is a softer cap on his essay-writing ceiling.",
+          "Physics 30 is not in his course list — check whether any target program requires it (Western BMSc recommends it; Waterloo CS does not; BHSc programs do not)."
+        ]
+      }
+    },
+    "target_programs": {
+      "tier_1_top_targets": [
+        "mcmaster_bhsc",
+        "queens_bhsc",
+        "waterloo_cs",
+        "uoft_lifesci_stgeorge"
+      ],
+      "tier_2_ontario_health_lifesci": [
+        "western_bmsc",
+        "mcmaster_lifesci",
+        "queens_lifesci",
+        "uoft_lifesci_utm",
+        "uoft_lifesci_utsc",
+        "guelph_biomed",
+        "ottawa_biomed",
+        "brock_medsci"
+      ],
+      "tier_3_waterloo_backups": [
+        "waterloo_cs_bba",
+        "waterloo_se",
+        "waterloo_math_cs",
+        "waterloo_math"
+      ],
+      "tier_4_ualberta": [
+        "ualberta_bsc_biolsci",
+        "ualberta_bsc_biochem",
+        "ualberta_bsc_cellbiol",
+        "ualberta_bsc_physiol",
+        "ualberta_bsc_immunology",
+        "ualberta_bsc_pharmacology",
+        "ualberta_bsc_neuroscience",
+        "ualberta_pharmacy",
+        "ualberta_pharmacology_honors"
+      ]
+    }
+  },
+  "tier1": [
+    {
+      "program_key": "uoft_lifesci_stgeorge",
+      "program": "Life Sciences",
+      "university": "University of Toronto (St. George)",
+      "tier": 1,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 148,
+      "median_accepted_avg": 94.2,
+      "min_avg": 73.2,
+      "p25": 92.0,
+      "p50": 94.2,
+      "p75": 96.3,
+      "max_avg": 99.8,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 39.9,
+      "justin_percentile_mid": 65.5,
+      "justin_percentile_high": 85.8,
+      "oop_n": 9,
+      "oop_min": 89.0,
+      "oop_mean": 95.0,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-02",
+      "decision_window": "January through late May",
+      "fee_cad": 156,
+      "official_url": "https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences",
+      "min_average_competitive": 88.0,
+      "prereq_courses": [
+        "English (ELA 30-1 or English 30 for Alberta students)",
+        "Mathematics 31 (Calculus) or AP Calculus AB/BC",
+        "Three additional Grade 12 / 30-level academic courses"
+      ],
+      "prereq_notes": "For Alberta students: ELA 30-1, Math 31 (or AP Calc), plus 3 more\nGrade 12 academic courses. Five Grade 12 academic courses minimum.\nELA 30-2 does NOT meet the requirement. Justin satisfies all of these\nwith room to spare: ELA 30-1 (~87.5), Math 31 (~99), Math 30-1 (~99),\nBio 30 (~97.5), Chem 30 (~97.5), French 30-1 (~92.5).\n\nImportant: \"challenge subjects, career courses, work experience\ncourses, and/or co-op courses\" are excluded from consideration.\nJustin's six listed courses are all academic, so this isn't a problem.\n",
+      "requirements_confidence": "high",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 65.5th percentile of accepted reports for University of Toronto (St. George) Life Sciences (n=148, median accepted avg 94.2%). Projection range (93.5-97.5%) places him at the 39.9-85.8th percentile. OOP subset (small sample, n=9): mean accepted 95.0%, min 89.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": "NOT APPLICABLE — no supplementary application at UofT Life Sci. ECs do not affect the decision. Justin is well above the academic bar here regardless.",
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 1
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 1
+        },
+        {
+          "bin": 84,
+          "n": 1
+        },
+        {
+          "bin": 85,
+          "n": 1
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 2
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 5
+        },
+        {
+          "bin": 90,
+          "n": 7
+        },
+        {
+          "bin": 91,
+          "n": 14
+        },
+        {
+          "bin": 92,
+          "n": 17
+        },
+        {
+          "bin": 93,
+          "n": 14
+        },
+        {
+          "bin": 94,
+          "n": 23
+        },
+        {
+          "bin": 95,
+          "n": 12
+        },
+        {
+          "bin": 96,
+          "n": 20
+        },
+        {
+          "bin": 97,
+          "n": 11
+        },
+        {
+          "bin": 98,
+          "n": 12
+        },
+        {
+          "bin": 99,
+          "n": 5
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "mcmaster_bhsc",
+      "program": "Bachelor of Health Sciences (Honours)",
+      "university": "McMaster University",
+      "tier": 1,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "reach",
+      "ec_weight": "very_high",
+      "confidence": "high",
+      "n_accepted": 62,
+      "median_accepted_avg": 97.0,
+      "min_avg": 90.0,
+      "p25": 96.0,
+      "p50": 97.0,
+      "p75": 98.0,
+      "max_avg": 100.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 11.3,
+      "justin_percentile_mid": 21.0,
+      "justin_percentile_high": 69.4,
+      "oop_n": 5,
+      "oop_min": 97.8,
+      "oop_mean": 98.9,
+      "oop_caveat": "Justin's HIGH projection 97.5% is below the observed OOP floor 97.8% (small sample n=5 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": true,
+      "supp_app_type": "Written supplementary application (reflective essay-style questions)",
+      "supp_app_url": "https://hhsp.healthsci.mcmaster.ca/future-students/supplementary-application/",
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": "2027-02-01",
+      "deadline_doc": "2027-02-01",
+      "decision_window": "Early to mid May",
+      "fee_cad": 156,
+      "official_url": "https://bhsc.mcmaster.ca/future-students/admissions/",
+      "min_average_competitive": 90.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U) — required",
+        "5 best Grade 12 4U/4M courses including the required English",
+        "Grade 12 Biology (SBI4U) — strongly recommended",
+        "Grade 12 Chemistry (SCH4U) — strongly recommended"
+      ],
+      "prereq_notes": "English 4U is the only formally required prerequisite; Bio + Chem are\nrecommended. Justin's Alberta equivalents are ELA 30-1, Biology 30,\nChemistry 30 — all satisfied. McMaster will use his top-6 Grade 12\nacademic average for assessment.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 21.0th percentile of accepted reports for McMaster University Bachelor of Health Sciences (Honours) (n=62, median accepted avg 97.0%). Projection range (93.5-97.5%) places him at the 11.3-69.4th percentile. OOP DIRECTIONAL SIGNAL (small sample, treat with caution): only 5 OOP-accepted reports across 4 cycles, all clustered above 97.8%. Even Justin's HIGH projection of 97.5% is below the observed OOP minimum, but with n=5 this is a YELLOW FLAG, not a hard threshold — one additional data point could shift the floor by several percentage points. Suggests OOP bar may be tougher than in-province; do not let it override the percentile-based verdict. Supp-app leverage (very high weight at this program): VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for. EC adjustment applied: GPA-only verdict would be REACH, upgraded to TARGET via strong supplementary-application leverage. ECs alone never upgrade a reach to a safety — the upgrade is capped at target. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": "VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for.",
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 2
+        },
+        {
+          "bin": 91,
+          "n": 3
+        },
+        {
+          "bin": 92,
+          "n": 2
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 3
+        },
+        {
+          "bin": 95,
+          "n": 5
+        },
+        {
+          "bin": 96,
+          "n": 11
+        },
+        {
+          "bin": 97,
+          "n": 19
+        },
+        {
+          "bin": 98,
+          "n": 13
+        },
+        {
+          "bin": 99,
+          "n": 3
+        },
+        {
+          "bin": 100,
+          "n": 1
+        }
+      ]
+    },
+    {
+      "program_key": "queens_bhsc",
+      "program": "Bachelor of Health Sciences",
+      "university": "Queen's University",
+      "tier": 1,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "reach",
+      "ec_weight": "very_high",
+      "confidence": "medium",
+      "n_accepted": 54,
+      "median_accepted_avg": 96.5,
+      "min_avg": 82.5,
+      "p25": 95.3,
+      "p50": 96.5,
+      "p75": 97.7,
+      "max_avg": 99.3,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 9.3,
+      "justin_percentile_mid": 33.3,
+      "justin_percentile_high": 70.4,
+      "oop_n": 7,
+      "oop_min": 93.5,
+      "oop_mean": 96.4,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": true,
+      "supp_app_type": "Personal Statement of Experience (PSE) — 1 written response + 1 video response",
+      "supp_app_url": "https://bhsc.queensu.ca/future-students/supplementary-application",
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": "2027-02-15",
+      "deadline_doc": "2027-02-15",
+      "decision_window": "April",
+      "fee_cad": 156,
+      "official_url": "https://bhsc.queensu.ca/future-students/admission",
+      "min_average_competitive": 90.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U) — minimum 80% required",
+        "Grade 12 Biology (SBI4U) — required",
+        "Grade 12 Chemistry (SCH4U) — required",
+        "Grade 12 Math: one of Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U) — required",
+        "2 additional Grade 12 4U or 4M courses"
+      ],
+      "prereq_notes": "Minimum 75% cumulative average required for consideration. Justin's\nAlberta equivalents satisfy these: ELA 30-1 (must hit ≥80% — currently\nprojected 85-90), Biology 30, Chemistry 30, Math 30-1 (Pure Math = AB\nAdvanced Functions equivalent), Math 31 (= Calculus & Vectors), French\n30-1. **The 80% English minimum is the field to watch — Justin's ELA\n30-1 projection of 85-90 has cushion but no margin for slipping.**\n",
+      "requirements_confidence": "high",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 33.3th percentile of accepted reports for Queen's University Bachelor of Health Sciences (n=54, median accepted avg 96.5%). Projection range (93.5-97.5%) places him at the 9.3-70.4th percentile. OOP subset (small sample, n=7): mean accepted 96.4%, min 93.5%. Justin's range is consistent with the observed OOP cluster. Supp-app leverage (very high weight at this program): VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive. EC adjustment applied: GPA-only verdict would be REACH, upgraded to TARGET via strong supplementary-application leverage. ECs alone never upgrade a reach to a safety — the upgrade is capped at target. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": "VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive.",
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 1
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 1
+        },
+        {
+          "bin": 93,
+          "n": 2
+        },
+        {
+          "bin": 94,
+          "n": 3
+        },
+        {
+          "bin": 95,
+          "n": 11
+        },
+        {
+          "bin": 96,
+          "n": 9
+        },
+        {
+          "bin": 97,
+          "n": 15
+        },
+        {
+          "bin": 98,
+          "n": 6
+        },
+        {
+          "bin": 99,
+          "n": 5
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "waterloo_cs",
+      "program": "Computer Science (BCS)",
+      "university": "University of Waterloo",
+      "tier": 1,
+      "verdict": "reach",
+      "verdict_label": "Reach",
+      "verdict_gpa_only": "reach",
+      "ec_weight": "medium",
+      "confidence": "high",
+      "n_accepted": 71,
+      "median_accepted_avg": 97.5,
+      "min_avg": 76.0,
+      "p25": 96.2,
+      "p50": 97.5,
+      "p75": 98.5,
+      "max_avg": 100.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 15.5,
+      "justin_percentile_mid": 21.1,
+      "justin_percentile_high": 50.7,
+      "oop_n": 12,
+      "oop_min": 76.0,
+      "oop_mean": 93.5,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": true,
+      "supp_app_type": "Admission Information Form (AIF)",
+      "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-30",
+      "deadline_supp": "2027-02-13",
+      "deadline_doc": "2027-02-13",
+      "decision_window": "Mid May (with a deferral round before final decisions)",
+      "fee_cad": 156,
+      "official_url": "https://uwaterloo.ca/future-students/programs/computer-science",
+      "min_average_competitive": 95.0,
+      "prereq_courses": [
+        "Grade 12 English 4U (any)",
+        "Grade 12 Advanced Functions (MHF4U)",
+        "Grade 12 Calculus & Vectors (MCV4U)",
+        "One additional Grade 12 4U/4M course"
+      ],
+      "prereq_notes": "Recommended: Grade 11 Introduction to Computer Science (ICS3U). For\nAlberta students, Math 30-1 maps to Advanced Functions and Math 31\n(Calculus) maps to Calculus & Vectors — Justin satisfies both at very\nstrong levels (99/99). His weakest spot is ELA 30-1 at 87.5 midpoint;\nWaterloo doesn't impose an explicit English minimum like Queen's does,\nbut a higher English mark would help his top-6 average.\n",
+      "requirements_confidence": "high",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 21.1th percentile of accepted reports for University of Waterloo Computer Science (BCS) (n=71, median accepted avg 97.5%). Projection range (93.5-97.5%) places him at the 15.5-50.7th percentile. Out-of-province subset (n=12): mean accepted 93.5%, min 76.0%. No adverse OOP signal for Justin's projection range. AIF leverage (medium weight at this program): VERY STRONG for the AIF. CyberPatriot National Finalist (Linux), IMC 2024, Pascal/Fryer/CIMC distinctions, CCC, Kaggle top 5.7%, LightGBM/XGBoost, self-built ML projects — exactly what Waterloo CS AIF readers value. **NEW credential to highlight prominently: Harvard Medical School MEDscienceTECH Foundations (June 2026, confirmed) — building AI computer vision surgical robots on the Kepler platform in a team of biomedical engineers, with a shark-tank pitch demo day to medical experts.** This is directly Waterloo-CS-relevant content (AI, computer vision, robotics, team biodesign, prototype-to-pitch) and Justin should lead the AIF with it. GPA is still the bigger gate (Reddit median 97.5), but the AIF case is now materially stronger. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": "VERY STRONG for the AIF. CyberPatriot National Finalist (Linux), IMC 2024, Pascal/Fryer/CIMC distinctions, CCC, Kaggle top 5.7%, LightGBM/XGBoost, self-built ML projects — exactly what Waterloo CS AIF readers value. **NEW credential to highlight prominently: Harvard Medical School MEDscienceTECH Foundations (June 2026, confirmed) — building AI computer vision surgical robots on the Kepler platform in a team of biomedical engineers, with a shark-tank pitch demo day to medical experts.** This is directly Waterloo-CS-relevant content (AI, computer vision, robotics, team biodesign, prototype-to-pitch) and Justin should lead the AIF with it. GPA is still the bigger gate (Reddit median 97.5), but the AIF case is now materially stronger.",
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 1
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 1
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 3
+        },
+        {
+          "bin": 90,
+          "n": 2
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 2
+        },
+        {
+          "bin": 93,
+          "n": 1
+        },
+        {
+          "bin": 94,
+          "n": 1
+        },
+        {
+          "bin": 95,
+          "n": 3
+        },
+        {
+          "bin": 96,
+          "n": 14
+        },
+        {
+          "bin": 97,
+          "n": 11
+        },
+        {
+          "bin": 98,
+          "n": 20
+        },
+        {
+          "bin": 99,
+          "n": 10
+        },
+        {
+          "bin": 100,
+          "n": 1
+        }
+      ]
+    }
+  ],
+  "tier2": [
+    {
+      "program_key": "ottawa_biomed",
+      "program": "Biomedical Sciences / Health Sciences",
+      "university": "University of Ottawa",
+      "tier": 2,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 135,
+      "median_accepted_avg": 93.4,
+      "min_avg": 72.0,
+      "p25": 91.0,
+      "p50": 93.4,
+      "p75": 95.3,
+      "max_avg": 99.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 54.1,
+      "justin_percentile_mid": 77.8,
+      "justin_percentile_high": 94.1,
+      "oop_n": 4,
+      "oop_min": 89.4,
+      "oop_mean": 92.1,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "March through May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://catalogue.uottawa.ca/en/undergrad/honours-bsc-biomedical-science/",
+      "min_average_competitive": 86.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "2 of: Biology (SBI4U), Chemistry (SCH4U), Physics (SPH4U), Calculus & Vectors (MCV4U)"
+      ],
+      "prereq_notes": "Minimum 70% combined average across science/math prereqs. Justin's\nAlberta equivalents (Bio 30 + Chem 30 + Math 31) easily satisfy.\nThe \"any 2 of 4\" structure is more flexible than most Ontario\nbiomed programs — Justin doesn't strictly need Physics 30.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 77.8th percentile of accepted reports for University of Ottawa Biomedical Sciences / Health Sciences (n=135, median accepted avg 93.4%). Projection range (93.5-97.5%) places him at the 54.1-94.1th percentile. OOP subset (small sample, n=4): mean accepted 92.1%, min 89.4%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 1
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 5
+        },
+        {
+          "bin": 86,
+          "n": 2
+        },
+        {
+          "bin": 87,
+          "n": 4
+        },
+        {
+          "bin": 88,
+          "n": 2
+        },
+        {
+          "bin": 89,
+          "n": 7
+        },
+        {
+          "bin": 90,
+          "n": 12
+        },
+        {
+          "bin": 91,
+          "n": 5
+        },
+        {
+          "bin": 92,
+          "n": 21
+        },
+        {
+          "bin": 93,
+          "n": 18
+        },
+        {
+          "bin": 94,
+          "n": 15
+        },
+        {
+          "bin": 95,
+          "n": 19
+        },
+        {
+          "bin": 96,
+          "n": 7
+        },
+        {
+          "bin": 97,
+          "n": 11
+        },
+        {
+          "bin": 98,
+          "n": 5
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "guelph_biomed",
+      "program": "Biomedical Sciences",
+      "university": "University of Guelph",
+      "tier": 2,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 85,
+      "median_accepted_avg": 94.0,
+      "min_avg": 82.3,
+      "p25": 91.2,
+      "p50": 94.0,
+      "p75": 95.7,
+      "max_avg": 99.3,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 43.5,
+      "justin_percentile_mid": 71.8,
+      "justin_percentile_high": 88.2,
+      "oop_n": 2,
+      "oop_min": 93.0,
+      "oop_mean": 93.4,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "April through May",
+      "fee_cad": 156,
+      "official_url": "https://www.uoguelph.ca/programs/biomedical-science/",
+      "min_average_competitive": 85.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Biology (SBI4U)",
+        "Grade 12 Chemistry (SCH4U)",
+        "Grade 12 Math (MHF4U or MCV4U)",
+        "Grade 12 Physics (SPH4U) — recommended"
+      ],
+      "prereq_notes": "Standard Ontario science prereqs. Justin's Alberta equivalents\nsatisfy these except Physics 30 which is not in his projected\ncourses — Guelph BIOM does not strictly require Physics 30 but it's\nrecommended.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 71.8th percentile of accepted reports for University of Guelph Biomedical Sciences (n=85, median accepted avg 94.0%). Projection range (93.5-97.5%) places him at the 43.5-88.2th percentile. OOP subset (small sample, n=2): mean accepted 93.4%, min 93.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 1
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 2
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 3
+        },
+        {
+          "bin": 88,
+          "n": 6
+        },
+        {
+          "bin": 89,
+          "n": 3
+        },
+        {
+          "bin": 90,
+          "n": 3
+        },
+        {
+          "bin": 91,
+          "n": 6
+        },
+        {
+          "bin": 92,
+          "n": 8
+        },
+        {
+          "bin": 93,
+          "n": 9
+        },
+        {
+          "bin": 94,
+          "n": 14
+        },
+        {
+          "bin": 95,
+          "n": 10
+        },
+        {
+          "bin": 96,
+          "n": 6
+        },
+        {
+          "bin": 97,
+          "n": 5
+        },
+        {
+          "bin": 98,
+          "n": 7
+        },
+        {
+          "bin": 99,
+          "n": 2
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "uoft_lifesci_utsc",
+      "program": "Life Sciences",
+      "university": "University of Toronto (Scarborough)",
+      "tier": 2,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "medium",
+      "n_accepted": 37,
+      "median_accepted_avg": 92.6,
+      "min_avg": 79.0,
+      "p25": 90.7,
+      "p50": 92.6,
+      "p75": 94.2,
+      "max_avg": 98.1,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 70.3,
+      "justin_percentile_mid": 94.6,
+      "justin_percentile_high": 97.3,
+      "oop_n": 3,
+      "oop_min": 92.5,
+      "oop_mean": 93.8,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-02",
+      "decision_window": "January through late May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://www.utsc.utoronto.ca/biosci/",
+      "min_average_competitive": 85.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Calculus & Vectors (MCV4U) or equivalent",
+        "3 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "Same as UTM and St. George Life Sciences. Alberta equivalents:\nELA 30-1, Math 31, plus 3 more academic Grade 12 courses.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 94.6th percentile of accepted reports for University of Toronto (Scarborough) Life Sciences (n=37, median accepted avg 92.6%). Projection range (93.5-97.5%) places him at the 70.3-97.3th percentile. OOP subset (small sample, n=3): mean accepted 93.8%, min 92.5%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 1
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 3
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 6
+        },
+        {
+          "bin": 91,
+          "n": 5
+        },
+        {
+          "bin": 92,
+          "n": 6
+        },
+        {
+          "bin": 93,
+          "n": 4
+        },
+        {
+          "bin": 94,
+          "n": 5
+        },
+        {
+          "bin": 95,
+          "n": 5
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 1
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "uoft_lifesci_utm",
+      "program": "Life Sciences",
+      "university": "University of Toronto (Mississauga)",
+      "tier": 2,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "low",
+      "n_accepted": 28,
+      "median_accepted_avg": 92.7,
+      "min_avg": 80.0,
+      "p25": 89.0,
+      "p50": 92.7,
+      "p75": 95.0,
+      "max_avg": 99.2,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 64.3,
+      "justin_percentile_mid": 82.1,
+      "justin_percentile_high": 92.9,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-02",
+      "decision_window": "January through late May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://www.utm.utoronto.ca/future-students/admissions/admission-requirements",
+      "min_average_competitive": 85.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Calculus & Vectors (MCV4U) or equivalent",
+        "3 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "For Alberta: ELA 30-1, Math 31 (or AP Calculus), plus 3 more academic\nGrade 12 courses. Same Alberta requirements as UofT StG.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 82.1th percentile of accepted reports for University of Toronto (Mississauga) Life Sciences (n=28, median accepted avg 92.7%). Projection range (93.5-97.5%) places him at the 64.3-92.9th percentile. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 1
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 1
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 2
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 2
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 2
+        },
+        {
+          "bin": 92,
+          "n": 4
+        },
+        {
+          "bin": 93,
+          "n": 3
+        },
+        {
+          "bin": 94,
+          "n": 2
+        },
+        {
+          "bin": 95,
+          "n": 3
+        },
+        {
+          "bin": 96,
+          "n": 2
+        },
+        {
+          "bin": 97,
+          "n": 2
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "western_bmsc",
+      "program": "Bachelor of Medical Sciences (BMSc)",
+      "university": "Western University",
+      "tier": 2,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 151,
+      "median_accepted_avg": 95.5,
+      "min_avg": 87.5,
+      "p25": 93.8,
+      "p50": 95.5,
+      "p75": 97.0,
+      "max_avg": 99.4,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 23.2,
+      "justin_percentile_mid": 51.0,
+      "justin_percentile_high": 83.4,
+      "oop_n": 21,
+      "oop_min": 90.0,
+      "oop_mean": 95.1,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "March through May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://www.schulich.uwo.ca/bmsc/future-students/applying/from-ontario-high-schools.html",
+      "min_average_competitive": 89.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Biology (SBI4U)",
+        "Grade 12 Chemistry (SCH4U)",
+        "Grade 12 Calculus & Vectors (MCV4U)",
+        "Grade 12 Physics (SPH4U) — recommended"
+      ],
+      "prereq_notes": "Minimum 6 Grade 12 4U/M courses (excluding co-op). For Alberta\nstudents: ELA 30-1, Biology 30, Chemistry 30, Math 31 (Calculus),\nPhysics 30 recommended. Justin satisfies all of these except Physics\n30 which is not in his projected courses — verify whether Physics 30\nis required vs recommended for Med Sci First Entry.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 51.0th percentile of accepted reports for Western University Bachelor of Medical Sciences (BMSc) (n=151, median accepted avg 95.5%). Projection range (93.5-97.5%) places him at the 23.2-83.4th percentile. Out-of-province subset (n=21): mean accepted 95.1%, min 90.0%. No adverse OOP signal for Justin's projection range. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 1
+        },
+        {
+          "bin": 90,
+          "n": 3
+        },
+        {
+          "bin": 91,
+          "n": 8
+        },
+        {
+          "bin": 92,
+          "n": 9
+        },
+        {
+          "bin": 93,
+          "n": 16
+        },
+        {
+          "bin": 94,
+          "n": 18
+        },
+        {
+          "bin": 95,
+          "n": 26
+        },
+        {
+          "bin": 96,
+          "n": 25
+        },
+        {
+          "bin": 97,
+          "n": 20
+        },
+        {
+          "bin": 98,
+          "n": 16
+        },
+        {
+          "bin": 99,
+          "n": 8
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "mcmaster_lifesci",
+      "program": "Life Sciences",
+      "university": "McMaster University",
+      "tier": 2,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 110,
+      "median_accepted_avg": 95.7,
+      "min_avg": 88.0,
+      "p25": 94.2,
+      "p50": 95.7,
+      "p75": 96.8,
+      "max_avg": 99.4,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 16.4,
+      "justin_percentile_mid": 49.1,
+      "justin_percentile_high": 82.7,
+      "oop_n": 9,
+      "oop_min": 90.0,
+      "oop_mean": 95.3,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-01",
+      "decision_window": "March through May",
+      "fee_cad": 156,
+      "official_url": "https://future.mcmaster.ca/programs/science/",
+      "min_average_competitive": 88.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Biology (SBI4U)",
+        "Grade 12 Chemistry (SCH4U)",
+        "Grade 12 Advanced Functions (MHF4U)"
+      ],
+      "prereq_notes": "Standard McMaster Science I prereqs. Calculus & Vectors (MCV4U) is\nstrongly recommended even though only Advanced Functions is required\nformally. Justin's Math 30-1 + Math 31 covers both.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 49.1th percentile of accepted reports for McMaster University Life Sciences (n=110, median accepted avg 95.7%). Projection range (93.5-97.5%) places him at the 16.4-82.7th percentile. OOP subset (small sample, n=9): mean accepted 95.3%, min 90.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 1
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 2
+        },
+        {
+          "bin": 92,
+          "n": 6
+        },
+        {
+          "bin": 93,
+          "n": 8
+        },
+        {
+          "bin": 94,
+          "n": 21
+        },
+        {
+          "bin": 95,
+          "n": 20
+        },
+        {
+          "bin": 96,
+          "n": 23
+        },
+        {
+          "bin": 97,
+          "n": 10
+        },
+        {
+          "bin": 98,
+          "n": 12
+        },
+        {
+          "bin": 99,
+          "n": 5
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "queens_lifesci",
+      "program": "Life Sciences",
+      "university": "Queen's University",
+      "tier": 2,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 82,
+      "median_accepted_avg": 94.8,
+      "min_avg": 84.0,
+      "p25": 93.0,
+      "p50": 94.8,
+      "p75": 96.5,
+      "max_avg": 99.7,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 34.1,
+      "justin_percentile_mid": 58.5,
+      "justin_percentile_high": 84.1,
+      "oop_n": 5,
+      "oop_min": 84.0,
+      "oop_mean": 91.5,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "March through April",
+      "fee_cad": 156,
+      "official_url": "https://www.queensu.ca/admission/programs/life-sciences",
+      "min_average_competitive": 88.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Biology (SBI4U)",
+        "Grade 12 Chemistry (SCH4U)",
+        "Grade 12 Math: Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U)",
+        "2 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "No 80% English minimum like Queen's BHSc. Justin satisfies all\nprereqs comfortably with his Alberta course list.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 58.5th percentile of accepted reports for Queen's University Life Sciences (n=82, median accepted avg 94.8%). Projection range (93.5-97.5%) places him at the 34.1-84.1th percentile. OOP subset (small sample, n=5): mean accepted 91.5%, min 84.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 1
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 4
+        },
+        {
+          "bin": 91,
+          "n": 8
+        },
+        {
+          "bin": 92,
+          "n": 5
+        },
+        {
+          "bin": 93,
+          "n": 9
+        },
+        {
+          "bin": 94,
+          "n": 12
+        },
+        {
+          "bin": 95,
+          "n": 9
+        },
+        {
+          "bin": 96,
+          "n": 15
+        },
+        {
+          "bin": 97,
+          "n": 6
+        },
+        {
+          "bin": 98,
+          "n": 10
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "western_health_sci",
+      "program": "Health Sciences (BHSc)",
+      "university": "Western University",
+      "tier": 2,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 60,
+      "median_accepted_avg": 94.3,
+      "min_avg": 86.0,
+      "p25": 93.0,
+      "p50": 94.3,
+      "p75": 96.5,
+      "max_avg": 99.7,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 33.3,
+      "justin_percentile_mid": 61.7,
+      "justin_percentile_high": 91.7,
+      "oop_n": 6,
+      "oop_min": 90.0,
+      "oop_mean": 94.5,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "March through May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://welcome.uwo.ca/what-can-i-study/undergraduate-programs/health-sciences.html",
+      "min_average_competitive": 87.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "5 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "No specific science prerequisites at first-year entry — students can\nchoose Health Sciences without Bio/Chem/Math at this stage. Some Year 2\nspecializations (Nursing, Kinesiology) have additional prereqs and\nhigher cutoffs.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 61.7th percentile of accepted reports for Western University Health Sciences (BHSc) (n=60, median accepted avg 94.3%). Projection range (93.5-97.5%) places him at the 33.3-91.7th percentile. OOP subset (small sample, n=6): mean accepted 94.5%, min 90.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 2
+        },
+        {
+          "bin": 91,
+          "n": 2
+        },
+        {
+          "bin": 92,
+          "n": 8
+        },
+        {
+          "bin": 93,
+          "n": 8
+        },
+        {
+          "bin": 94,
+          "n": 10
+        },
+        {
+          "bin": 95,
+          "n": 7
+        },
+        {
+          "bin": 96,
+          "n": 9
+        },
+        {
+          "bin": 97,
+          "n": 7
+        },
+        {
+          "bin": 98,
+          "n": 4
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "brock_medsci",
+      "program": "Medical Sciences / Biomedical Sciences",
+      "university": "Brock University",
+      "tier": 2,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 6,
+      "median_accepted_avg": 89.5,
+      "min_avg": 88.2,
+      "p25": 89.0,
+      "p50": 89.5,
+      "p75": 95.5,
+      "max_avg": 98.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 66.7,
+      "justin_percentile_mid": 83.3,
+      "justin_percentile_high": 83.3,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "April through May",
+      "fee_cad": 156,
+      "official_url": "https://brocku.ca/programs/undergraduate/biomedical-sciences/",
+      "min_average_competitive": 80.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "Grade 12 Math: Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U) — minimum 70%",
+        "Grade 12 Chemistry (SCH4U) — minimum 70%",
+        "2 of: Biology (SBI4U), Physics (SPH4U), Earth & Space Science (SES4U), 2nd 4U math, or 2nd 4U English"
+      ],
+      "prereq_notes": "Explicit 70% minimum on Math and Chemistry. Justin satisfies all\nprereqs at far above the 70% threshold.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Only 6 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 2
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 1
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 1
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 1
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    }
+  ],
+  "tier3": [
+    {
+      "program_key": "waterloo_math_cs",
+      "program": "Mathematics / Computer Science (joint)",
+      "university": "University of Waterloo",
+      "tier": 3,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "medium",
+      "confidence": "high",
+      "n_accepted": 91,
+      "median_accepted_avg": 95.0,
+      "min_avg": 88.3,
+      "p25": 93.0,
+      "p50": 95.0,
+      "p75": 96.5,
+      "max_avg": 99.7,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 28.6,
+      "justin_percentile_mid": 57.1,
+      "justin_percentile_high": 86.8,
+      "oop_n": 3,
+      "oop_min": 91.0,
+      "oop_mean": 95.9,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 57.1th percentile of accepted reports for University of Waterloo Mathematics / Computer Science (joint) (n=91, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 28.6-86.8th percentile. OOP subset (small sample, n=3): mean accepted 95.9%, min 91.0%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of TARGET. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 7
+        },
+        {
+          "bin": 92,
+          "n": 6
+        },
+        {
+          "bin": 93,
+          "n": 17
+        },
+        {
+          "bin": 94,
+          "n": 11
+        },
+        {
+          "bin": 95,
+          "n": 14
+        },
+        {
+          "bin": 96,
+          "n": 17
+        },
+        {
+          "bin": 97,
+          "n": 8
+        },
+        {
+          "bin": 98,
+          "n": 8
+        },
+        {
+          "bin": 99,
+          "n": 2
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "waterloo_se",
+      "program": "Software Engineering",
+      "university": "University of Waterloo",
+      "tier": 3,
+      "verdict": "reach",
+      "verdict_label": "Reach",
+      "verdict_gpa_only": "reach",
+      "ec_weight": "medium",
+      "confidence": "medium",
+      "n_accepted": 36,
+      "median_accepted_avg": 97.3,
+      "min_avg": 86.3,
+      "p25": 96.0,
+      "p50": 97.3,
+      "p75": 98.2,
+      "max_avg": 100.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 11.1,
+      "justin_percentile_mid": 19.4,
+      "justin_percentile_high": 58.3,
+      "oop_n": 6,
+      "oop_min": 89.2,
+      "oop_mean": 95.9,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 19.4th percentile of accepted reports for University of Waterloo Software Engineering (n=36, median accepted avg 97.3%). Projection range (93.5-97.5%) places him at the 11.1-58.3th percentile. OOP subset (small sample, n=6): mean accepted 95.9%, min 89.2%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 2
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 1
+        },
+        {
+          "bin": 95,
+          "n": 3
+        },
+        {
+          "bin": 96,
+          "n": 6
+        },
+        {
+          "bin": 97,
+          "n": 7
+        },
+        {
+          "bin": 98,
+          "n": 10
+        },
+        {
+          "bin": 99,
+          "n": 3
+        },
+        {
+          "bin": 100,
+          "n": 2
+        }
+      ]
+    },
+    {
+      "program_key": "waterloo_math",
+      "program": "Mathematics (general)",
+      "university": "University of Waterloo",
+      "tier": 3,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "medium",
+      "confidence": "insufficient",
+      "n_accepted": 6,
+      "median_accepted_avg": 94.0,
+      "min_avg": 90.0,
+      "p25": 93.0,
+      "p50": 94.0,
+      "p75": 96.0,
+      "max_avg": 97.3,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 33.3,
+      "justin_percentile_mid": 66.7,
+      "justin_percentile_high": 100.0,
+      "oop_n": 1,
+      "oop_min": 90.0,
+      "oop_mean": 90.0,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 6 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 1
+        },
+        {
+          "bin": 94,
+          "n": 2
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 1
+        },
+        {
+          "bin": 97,
+          "n": 1
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "waterloo_cs_bba",
+      "program": "Computer Science / Business Administration Double Degree",
+      "university": "University of Waterloo / Wilfrid Laurier University",
+      "tier": 3,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "medium",
+      "confidence": "insufficient",
+      "n_accepted": 5,
+      "median_accepted_avg": 95.0,
+      "min_avg": 89.7,
+      "p25": 89.7,
+      "p50": 95.0,
+      "p75": 96.0,
+      "max_avg": 98.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 20.0,
+      "justin_percentile_mid": 60.0,
+      "justin_percentile_high": 80.0,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 5 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 1
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 1
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 1
+        },
+        {
+          "bin": 96,
+          "n": 1
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 1
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    }
+  ],
+  "tier4": [
+    {
+      "program_key": "ualberta_computing_science",
+      "program": "BSc Computing Science",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 6,
+      "median_accepted_avg": 94.2,
+      "min_avg": 91.6,
+      "p25": 92.8,
+      "p50": 94.2,
+      "p75": 96.2,
+      "max_avg": 98.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 33.3,
+      "justin_percentile_mid": 66.7,
+      "justin_percentile_high": 83.3,
+      "oop_n": 3,
+      "oop_min": 92.8,
+      "oop_mean": 95.0,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 6 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 1
+        },
+        {
+          "bin": 92,
+          "n": 1
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 1
+        },
+        {
+          "bin": 95,
+          "n": 1
+        },
+        {
+          "bin": 96,
+          "n": 1
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 1
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_biolsci",
+      "program": "BSc Biological Sciences",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 3,
+      "median_accepted_avg": 91.0,
+      "min_avg": 90.8,
+      "p25": 90.8,
+      "p50": 91.0,
+      "p75": 92.0,
+      "max_avg": 92.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 100.0,
+      "justin_percentile_mid": 100.0,
+      "justin_percentile_high": 100.0,
+      "oop_n": 3,
+      "oop_min": 90.8,
+      "oop_mean": 91.3,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 3 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 1
+        },
+        {
+          "bin": 92,
+          "n": 1
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_neuroscience",
+      "program": "BSc Neuroscience",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 3,
+      "median_accepted_avg": 98.0,
+      "min_avg": 97.0,
+      "p25": 97.0,
+      "p50": 98.0,
+      "p75": 98.3,
+      "max_avg": 98.3,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 0.0,
+      "justin_percentile_mid": 0.0,
+      "justin_percentile_high": 33.3,
+      "oop_n": 3,
+      "oop_min": 97.0,
+      "oop_mean": 97.8,
+      "oop_caveat": "Justin's midpoint 95.5% is below the observed OOP floor 97.0% (small sample n=3 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 3 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 1
+        },
+        {
+          "bin": 98,
+          "n": 2
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_immunology",
+      "program": "BSc Immunology and Infection",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 2,
+      "median_accepted_avg": 92.0,
+      "min_avg": 92.0,
+      "p25": 92.0,
+      "p50": 92.0,
+      "p75": 96.3,
+      "max_avg": 96.3,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 50.0,
+      "justin_percentile_mid": 50.0,
+      "justin_percentile_high": 100.0,
+      "oop_n": 2,
+      "oop_min": 92.0,
+      "oop_mean": 94.2,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 2 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 1
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 1
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_biochem",
+      "program": "BSc Biochemistry",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 1,
+      "median_accepted_avg": 99.4,
+      "min_avg": 99.4,
+      "p25": 99.4,
+      "p50": 99.4,
+      "p75": 99.4,
+      "max_avg": 99.4,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 0.0,
+      "justin_percentile_mid": 0.0,
+      "justin_percentile_high": 0.0,
+      "oop_n": 1,
+      "oop_min": 99.4,
+      "oop_mean": 99.4,
+      "oop_caveat": "Justin's HIGH projection 97.5% is below the observed OOP floor 99.4% (small sample n=1 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 1 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_cellbiol",
+      "program": "BSc Cell Biology / Molecular, Cellular & Developmental Biology",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 1,
+      "median_accepted_avg": 87.0,
+      "min_avg": 87.0,
+      "p25": 87.0,
+      "p50": 87.0,
+      "p75": 87.0,
+      "max_avg": 87.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 100.0,
+      "justin_percentile_mid": 100.0,
+      "justin_percentile_high": 100.0,
+      "oop_n": 1,
+      "oop_min": 87.0,
+      "oop_mean": 87.0,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 1 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_physiol",
+      "program": "BSc Physiology",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 1,
+      "median_accepted_avg": 97.0,
+      "min_avg": 97.0,
+      "p25": 97.0,
+      "p50": 97.0,
+      "p75": 97.0,
+      "max_avg": 97.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 0.0,
+      "justin_percentile_mid": 0.0,
+      "justin_percentile_high": 100.0,
+      "oop_n": 1,
+      "oop_min": 97.0,
+      "oop_mean": 97.0,
+      "oop_caveat": "Justin's midpoint 95.5% is below the observed OOP floor 97.0% (small sample n=1 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 1 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 1
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_pharmacology",
+      "program": "BSc Pharmacology",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 0,
+      "median_accepted_avg": null,
+      "min_avg": null,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "max_avg": null,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": null,
+      "justin_percentile_mid": null,
+      "justin_percentile_high": null,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 0 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_pharmacology_honors",
+      "program": "BSc Honors Pharmacology",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 0,
+      "median_accepted_avg": null,
+      "min_avg": null,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "max_avg": null,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": null,
+      "justin_percentile_mid": null,
+      "justin_percentile_high": null,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 0 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_pharmacy",
+      "program": "Bachelor of Science in Pharmacy",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 0,
+      "median_accepted_avg": null,
+      "min_avg": null,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "max_avg": null,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": null,
+      "justin_percentile_mid": null,
+      "justin_percentile_high": null,
+      "oop_n": 0,
+      "oop_min": null,
+      "oop_mean": null,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Only 0 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    }
+  ],
+  "yoy_trends": [
+    {
+      "program_key": "mcmaster_bhsc",
+      "program": "Bachelor of Health Sciences (Honours)",
+      "cycles": [
+        {
+          "cycle": "2022-2023",
+          "n": 4,
+          "mean": 93.7,
+          "min": 90.0,
+          "max": 97.0
+        },
+        {
+          "cycle": "2023-2024",
+          "n": 14,
+          "mean": 96.6,
+          "min": 94.0,
+          "max": 98.7
+        },
+        {
+          "cycle": "2024-2025",
+          "n": 21,
+          "mean": 96.5,
+          "min": 91.0,
+          "max": 99.5
+        },
+        {
+          "cycle": "2025-2026",
+          "n": 23,
+          "mean": 97.0,
+          "min": 90.0,
+          "max": 100.0
+        }
+      ]
+    },
+    {
+      "program_key": "queens_bhsc",
+      "program": "Bachelor of Health Sciences",
+      "cycles": [
+        {
+          "cycle": "2022-2023",
+          "n": 5,
+          "mean": 95.3,
+          "min": 92.0,
+          "max": 99.0
+        },
+        {
+          "cycle": "2023-2024",
+          "n": 14,
+          "mean": 96.0,
+          "min": 88.0,
+          "max": 99.0
+        },
+        {
+          "cycle": "2024-2025",
+          "n": 10,
+          "mean": 97.4,
+          "min": 95.5,
+          "max": 99.3
+        },
+        {
+          "cycle": "2025-2026",
+          "n": 25,
+          "mean": 95.8,
+          "min": 82.5,
+          "max": 98.3
+        }
+      ]
+    },
+    {
+      "program_key": "uoft_lifesci_stgeorge",
+      "program": "Life Sciences",
+      "cycles": [
+        {
+          "cycle": "2022-2023",
+          "n": 27,
+          "mean": 93.8,
+          "min": 86.0,
+          "max": 99.0
+        },
+        {
+          "cycle": "2023-2024",
+          "n": 22,
+          "mean": 90.9,
+          "min": 73.2,
+          "max": 97.0
+        },
+        {
+          "cycle": "2024-2025",
+          "n": 18,
+          "mean": 92.6,
+          "min": 87.0,
+          "max": 96.4
+        },
+        {
+          "cycle": "2025-2026",
+          "n": 81,
+          "mean": 95.0,
+          "min": 88.0,
+          "max": 99.8
+        }
+      ]
+    },
+    {
+      "program_key": "waterloo_cs",
+      "program": "Computer Science (BCS)",
+      "cycles": [
+        {
+          "cycle": "2022-2023",
+          "n": 3,
+          "mean": 94.6,
+          "min": 89.0,
+          "max": 99.2
+        },
+        {
+          "cycle": "2023-2024",
+          "n": 27,
+          "mean": 94.1,
+          "min": 76.0,
+          "max": 99.4
+        },
+        {
+          "cycle": "2024-2025",
+          "n": 30,
+          "mean": 97.7,
+          "min": 95.2,
+          "max": 100.0
+        },
+        {
+          "cycle": "2025-2026",
+          "n": 11,
+          "mean": 97.9,
+          "min": 96.2,
+          "max": 99.5
+        }
+      ]
+    }
+  ],
+  "decision_timeline": [
+    {
+      "program_key": "mcmaster_bhsc",
+      "program": "Bachelor of Health Sciences (Honours)",
+      "months": [
+        {
+          "year_month": "2025-02",
+          "n": 3,
+          "n_accepted": 2,
+          "n_rejected": 1,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-03",
+          "n": 9,
+          "n_accepted": 9,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-05",
+          "n": 21,
+          "n_accepted": 10,
+          "n_rejected": 11,
+          "n_deferred": 0
+        }
+      ]
+    },
+    {
+      "program_key": "queens_bhsc",
+      "program": "Bachelor of Health Sciences",
+      "months": [
+        {
+          "year_month": "2025-04",
+          "n": 10,
+          "n_accepted": 10,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-05",
+          "n": 3,
+          "n_accepted": 0,
+          "n_rejected": 1,
+          "n_deferred": 0
+        }
+      ]
+    },
+    {
+      "program_key": "uoft_lifesci_stgeorge",
+      "program": "Life Sciences",
+      "months": [
+        {
+          "year_month": "2025-01",
+          "n": 2,
+          "n_accepted": 2,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-02",
+          "n": 13,
+          "n_accepted": 13,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-03",
+          "n": 2,
+          "n_accepted": 2,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-04",
+          "n": 1,
+          "n_accepted": 1,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-05",
+          "n": 1,
+          "n_accepted": 0,
+          "n_rejected": 1,
+          "n_deferred": 0
+        }
+      ]
+    },
+    {
+      "program_key": "waterloo_cs",
+      "program": "Computer Science (BCS)",
+      "months": [
+        {
+          "year_month": "2025-03",
+          "n": 5,
+          "n_accepted": 5,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-04",
+          "n": 2,
+          "n_accepted": 2,
+          "n_rejected": 0,
+          "n_deferred": 0
+        },
+        {
+          "year_month": "2025-05",
+          "n": 36,
+          "n_accepted": 23,
+          "n_rejected": 0,
+          "n_deferred": 13
+        }
+      ]
+    }
+  ],
+  "action_items": [
+    {
+      "date": "2026-04-15",
+      "label": "Confirm enrollment: Harvard Medical School MEDscience Summer Program — TECH Foundations",
+      "category": "summer_program",
+      "priority": "high",
+      "days_from_today": 4
+    },
+    {
+      "date": "2026-04-22",
+      "label": "Submit payment: Harvard Medical School MEDscience Summer Program — TECH Foundations ($2,800 USD)",
+      "category": "summer_program",
+      "priority": "high",
+      "days_from_today": 11
+    },
+    {
+      "date": "2026-05-15",
+      "label": "Welcome letter expected: Harvard Medical School MEDscience Summer Program — TECH Foundations",
+      "category": "summer_program",
+      "priority": "info",
+      "days_from_today": 34
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: McMaster University — Bachelor of Health Sciences (Honours)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: University of Ottawa — Biomedical Sciences / Health Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: University of Guelph — Biomedical Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: University of Toronto (Scarborough) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: University of Toronto (Mississauga) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: McMaster University — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: Queen's University — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: Western University — Health Sciences (BHSc)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: Brock University — Medical Sciences / Biomedical Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 279
+    },
+    {
+      "date": "2027-01-30",
+      "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 294
+    },
+    {
+      "date": "2027-02-01",
+      "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 296
+    },
+    {
+      "date": "2027-02-01",
+      "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 296
+    },
+    {
+      "date": "2027-02-01",
+      "label": "Documents due: McMaster University — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 296
+    },
+    {
+      "date": "2027-02-02",
+      "label": "Documents due: University of Toronto (St. George) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 297
+    },
+    {
+      "date": "2027-02-02",
+      "label": "Documents due: University of Toronto (Scarborough) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 297
+    },
+    {
+      "date": "2027-02-02",
+      "label": "Documents due: University of Toronto (Mississauga) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 297
+    },
+    {
+      "date": "2027-02-13",
+      "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 308
+    },
+    {
+      "date": "2027-02-13",
+      "label": "Documents due: University of Waterloo — Computer Science (BCS)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 308
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 310
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: Queen's University — Bachelor of Health Sciences",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 310
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: University of Ottawa — Biomedical Sciences / Health Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 310
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: University of Guelph — Biomedical Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 310
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: Western University — Bachelor of Medical Sciences (BMSc)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 310
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: Queen's University — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 310
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: Western University — Health Sciences (BHSc)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 310
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: Brock University — Medical Sciences / Biomedical Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 310
+    },
+    {
+      "date": null,
+      "date_label": "spring 2026",
+      "label": "Decision pending: HYRS 2026 (Heritage Youth Researcher Summer)",
+      "category": "summer_program",
+      "priority": "info"
+    }
+  ],
+  "data_quality": {
+    "cycles": [
+      {
+        "cycle": "2022-2023",
+        "region": "ON",
+        "n_rows": 981,
+        "n_decisions_mapped": 971,
+        "n_universities_mapped": 980,
+        "n_programs_mapped": 126,
+        "live": 0,
+        "refresh_until": null,
+        "fetched_at": "2026-04-07T20:39:59"
+      },
+      {
+        "cycle": "2023-2024",
+        "region": "ON",
+        "n_rows": 1474,
+        "n_decisions_mapped": 1473,
+        "n_universities_mapped": 1459,
+        "n_programs_mapped": 225,
+        "live": 0,
+        "refresh_until": null,
+        "fetched_at": "2026-04-07T20:39:59"
+      },
+      {
+        "cycle": "2024-2025",
+        "region": "ON",
+        "n_rows": 2074,
+        "n_decisions_mapped": 2074,
+        "n_universities_mapped": 2069,
+        "n_programs_mapped": 370,
+        "live": 0,
+        "refresh_until": null,
+        "fetched_at": "2026-04-07T20:39:59"
+      },
+      {
+        "cycle": "2025-2026",
+        "region": "ON",
+        "n_rows": 3973,
+        "n_decisions_mapped": 3973,
+        "n_universities_mapped": 3948,
+        "n_programs_mapped": 519,
+        "live": 1,
+        "refresh_until": "2026-05-31",
+        "fetched_at": "2026-04-07T20:39:59"
+      },
+      {
+        "cycle": "2025-2026-ab",
+        "region": "AB",
+        "n_rows": 136,
+        "n_decisions_mapped": 136,
+        "n_universities_mapped": 120,
+        "n_programs_mapped": 21,
+        "live": 1,
+        "refresh_until": "2026-05-31",
+        "fetched_at": "2026-04-07T20:39:59"
+      }
+    ],
+    "caveats": [
+      {
+        "label": "Self-selection bias",
+        "body": "Reddit users overwhelmingly post when they're accepted (~93-99% of decisions reported are acceptances). Treat all 'accepted average' numbers as the FLOOR of what gets in, not as a 50/50 cutoff line. Justin's percentile is relative to admitted students, not raw applicant pools."
+      },
+      {
+        "label": "OOP small samples",
+        "body": "Out-of-province sample sizes are 4-12 reports per program. The verdict model treats OOP floors as directional only when n_oop < 10 — small-sample minimums are too noisy to override percentile-based verdicts."
+      },
+      {
+        "label": "McMaster BHSc OOP yellow flag",
+        "body": "Only 5 OOP-accepted reports for McMaster BHSc across 4 cycles, all with averages ≥ 97.8%. The verdict model surfaces this as directional rather than verdict-changing, but it suggests the OOP bar may be meaningfully higher than in-province. Justin should know this."
+      },
+      {
+        "label": "Schema drift across cycles",
+        "body": "The 4 Reddit forms used different question sets across years. The normalizer maps everything to a canonical 'best_avg' field. See workflows/clean_application_data.md for details."
+      },
+      {
+        "label": "2025-26 cycle still in progress",
+        "body": "The 2025-2026 cycles (Ontario + Alberta) are still receiving submissions through ~end of May 2026. Numbers from that cycle are provisional and skew toward earlier-cycle decisions."
+      },
+      {
+        "label": "Tier-2 requirements confidence: medium",
+        "body": "All 9 Tier-2 requirement entries are confidence=medium. Prerequisite courses are high-confidence (well-known and stable); specific dates default to the universal Jan 15 OUAC date and competitive averages are educated guesses anchored to Reddit data."
+      },
+      {
+        "label": "Tier-3/4 not curated",
+        "body": "Tier-3 (Waterloo CS variants) and Tier-4 (UAlberta) program requirements have NOT been curated. Their checklist rows are blank."
+      },
+      {
+        "label": "Dates are shifted +1 year from cycle template",
+        "body": "Curated requirements use the 2025-2026 cycle as a template. The dashboard shifts every date by +365 days to reflect Justin's actual application cycle (2026-2027). OUAC and supp deadlines may shift by ±1 day in the actual cycle — verify against official sources before relying on exact dates."
+      }
+    ]
+  }
+}

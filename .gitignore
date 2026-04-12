@@ -1,0 +1,25 @@
+# Secrets — never commit
+.env
+credentials.json
+token.json
+*.token
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Disposable processing files
+.tmp/
+
+# Raw personal documents (contain phone/email — extracted data is in config/)
+data/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

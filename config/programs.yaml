@@ -1,0 +1,337 @@
+# Canonical program registry for the Reddit application analysis.
+#
+# Each entry has:
+#   key:                stable identifier used everywhere downstream
+#   tier:               1=top target, 2=Ontario health/lifesci pool, 3=Waterloo backup, 4=UAlberta
+#   university:         display name
+#   university_key:     canonical short id (used for university-level matching)
+#   program:            display name
+#   official_url:       page to scrape for the requirements tracker (Step 5)
+#   match_patterns:     case-insensitive regex/substring patterns used by normalize_data.py
+#                       to map free-text Reddit responses to this program key
+#
+# Notes:
+#   - Patterns are deliberately broad on first pass; the normalize step's QA report
+#     surfaces unmapped strings so we can iteratively expand patterns without
+#     hand-tagging every row.
+#   - When two programs at the same university overlap (e.g. Waterloo CS vs Waterloo
+#     CS/BBA), the more specific patterns must come first in match order.
+#   - Tier 4 (UAlberta) coverage in the Reddit dataset is expected to be sparse.
+
+programs:
+
+  # ─────────── Tier 1: Top targets ───────────
+
+  - key: mcmaster_bhsc
+    tier: 1
+    university: McMaster University
+    university_key: mcmaster
+    program: Bachelor of Health Sciences (Honours)
+    # Note: bhsc.mcmaster.ca was retired and now 301-redirects to hhsp.healthsci.mcmaster.ca
+    official_url: https://hhsp.healthsci.mcmaster.ca/future-students/
+    match_patterns:
+      - "(?i)mcmaster.*health\\s*sci"
+      - "(?i)mac.*bhsc"
+      - "(?i)mcmaster.*bhsc"
+      - "(?i)mac.*health\\s*sci"
+
+  - key: queens_bhsc
+    tier: 1
+    university: Queen's University
+    university_key: queens
+    program: Bachelor of Health Sciences
+    official_url: https://bhsc.queensu.ca/
+    match_patterns:
+      - "(?i)queen.?s.*health\\s*sci"
+      - "(?i)queen.?s.*bhsc"
+
+  - key: waterloo_cs
+    tier: 1
+    university: University of Waterloo
+    university_key: waterloo
+    program: Computer Science (BCS)
+    official_url: https://uwaterloo.ca/future-students/programs/computer-science
+    match_patterns:
+      - "(?i)waterloo.*\\b(cs|computer\\s*science|bcs)\\b"
+      - "(?i)uw.*\\b(cs|computer\\s*science)\\b"
+
+  - key: uoft_lifesci_stgeorge
+    tier: 1
+    university: University of Toronto (St. George)
+    university_key: uoft_stgeorge
+    program: Life Sciences
+    official_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences
+    match_patterns:
+      - "(?i)(uoft|u\\s*of\\s*t|toronto).*life\\s*sci.*(st\\.?\\s*george|main|downtown)?"
+      - "(?i)utsg.*life\\s*sci"
+
+  # ─────────── Tier 2: Ontario health/life sci pool ───────────
+
+  - key: western_bmsc
+    tier: 2
+    university: Western University
+    university_key: western
+    program: Bachelor of Medical Sciences (BMSc)
+    official_url: https://welcome.uwo.ca/academics/our-programs/medical-sciences.html
+    match_patterns:
+      - "(?i)western.*(med\\s*sci|bmsc|medical\\s*sci)"
+      - "(?i)uwo.*(med\\s*sci|bmsc)"
+
+  - key: western_health_sci
+    tier: 2
+    university: Western University
+    university_key: western
+    program: Health Sciences (BHSc)
+    official_url: https://welcome.uwo.ca/academics/our-programs/health-sciences.html
+    match_patterns:
+      - "(?i)western.*health\\s*sci"
+      - "(?i)uwo.*health\\s*sci"
+
+  - key: mcmaster_lifesci
+    tier: 2
+    university: McMaster University
+    university_key: mcmaster
+    program: Life Sciences
+    official_url: https://future.mcmaster.ca/programs/science/#tab-content-life-sciences
+    match_patterns:
+      - "(?i)mcmaster.*life\\s*sci"
+      - "(?i)mac.*life\\s*sci"
+
+  - key: queens_lifesci
+    tier: 2
+    university: Queen's University
+    university_key: queens
+    program: Life Sciences
+    official_url: https://www.queensu.ca/artsci/programs-degrees/life-sciences
+    match_patterns:
+      - "(?i)queen.?s.*life\\s*sci"
+
+  - key: uoft_lifesci_utm
+    tier: 2
+    university: University of Toronto (Mississauga)
+    university_key: uoft_utm
+    program: Life Sciences
+    official_url: https://www.utm.utoronto.ca/biology/
+    match_patterns:
+      - "(?i)(utm|mississauga).*life\\s*sci"
+      - "(?i)uoft.*utm.*life"
+
+  - key: uoft_lifesci_utsc
+    tier: 2
+    university: University of Toronto (Scarborough)
+    university_key: uoft_utsc
+    program: Life Sciences
+    official_url: https://www.utsc.utoronto.ca/biosci/
+    match_patterns:
+      - "(?i)(utsc|scarborough).*life\\s*sci"
+      - "(?i)uoft.*utsc.*life"
+
+  - key: guelph_biomed
+    tier: 2
+    university: University of Guelph
+    university_key: guelph
+    program: Biomedical Sciences
+    official_url: https://www.uoguelph.ca/programs/biomedical-sciences
+    match_patterns:
+      - "(?i)guelph.*bio[-\\s]?med"
+      - "(?i)guelph.*biological"
+
+  - key: ottawa_biomed
+    tier: 2
+    university: University of Ottawa
+    university_key: ottawa
+    program: Biomedical Sciences / Health Sciences
+    official_url: https://www.uottawa.ca/faculty-health-sciences/undergraduate-studies
+    match_patterns:
+      - "(?i)ottawa.*(biomed|health\\s*sci)"
+      - "(?i)uottawa.*(biomed|health\\s*sci)"
+
+  - key: brock_medsci
+    tier: 2
+    university: Brock University
+    university_key: brock
+    program: Medical Sciences / Biomedical Sciences
+    official_url: https://brocku.ca/programs/undergraduate/medical-sciences/
+    match_patterns:
+      - "(?i)brock.*(med\\s*sci|biomed)"
+
+  # ─────────── Tier 3: Waterloo backups ───────────
+
+  - key: waterloo_cs_bba
+    tier: 3
+    university: University of Waterloo / Wilfrid Laurier University
+    university_key: waterloo
+    program: Computer Science / Business Administration Double Degree
+    official_url: https://uwaterloo.ca/future-students/programs/computer-science-and-business-administration
+    match_patterns:
+      - "(?i)waterloo.*cs.*bba"
+      - "(?i)cs.*bba.*double"
+      - "(?i)double\\s*degree.*cs"
+
+  - key: waterloo_se
+    tier: 3
+    university: University of Waterloo
+    university_key: waterloo
+    program: Software Engineering
+    official_url: https://uwaterloo.ca/future-students/programs/software-engineering
+    match_patterns:
+      - "(?i)waterloo.*software\\s*eng"
+      - "(?i)\\buw\\b.*\\bse\\b"
+      - "(?i)waterloo.*\\bse\\b"
+
+  - key: waterloo_math_cs
+    tier: 3
+    university: University of Waterloo
+    university_key: waterloo
+    program: Mathematics / Computer Science (joint)
+    official_url: https://uwaterloo.ca/math/future-undergraduates/programs/mathematics-computer-science
+    match_patterns:
+      - "(?i)waterloo.*math.*cs"
+      - "(?i)math.*cs.*waterloo"
+
+  - key: waterloo_math
+    tier: 3
+    university: University of Waterloo
+    university_key: waterloo
+    program: Mathematics (general)
+    official_url: https://uwaterloo.ca/math/future-undergraduates
+    match_patterns:
+      - "(?i)waterloo.*math(?!.*cs)"
+
+  # ─────────── Tier 4: UAlberta in-province options ───────────
+
+  - key: ualberta_bsc_biolsci
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Biological Sciences
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/biological-sciences.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*bio(logical)?\\s*sci"
+
+  - key: ualberta_bsc_biochem
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Biochemistry
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/biochemistry.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*biochem"
+
+  - key: ualberta_bsc_cellbiol
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Cell Biology / Molecular, Cellular & Developmental Biology
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/cell-biology.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*cell\\s*bio"
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*(?:cellular.*biolog|molecular.*cellular)"
+      - "(?i)\\bmcdb\\b"  # UAlberta acronym
+
+  - key: ualberta_bsc_physiol
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Physiology
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/physiology.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*physio"
+
+  - key: ualberta_bsc_immunology
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Immunology and Infection
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/immunology-and-infection.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*(immunology|infection)"
+
+  - key: ualberta_bsc_pharmacology
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Pharmacology
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/pharmacology.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*pharmacology(?!\\s*honor)"
+
+  - key: ualberta_bsc_neuroscience
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Neuroscience
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/neuroscience.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*neurosci"
+
+  - key: ualberta_pharmacy
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: Bachelor of Science in Pharmacy
+    official_url: https://www.ualberta.ca/pharmacy/programs/undergraduate-programs/bsc-pharmacy.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*pharmacy"
+
+  - key: ualberta_pharmacology_honors
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Honors Pharmacology
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/pharmacology.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*pharmacology.*honor"
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*honor.*pharmacology"
+
+  - key: ualberta_computing_science
+    tier: 4
+    university: University of Alberta
+    university_key: ualberta
+    program: BSc Computing Science
+    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/computing-science.html
+    match_patterns:
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*computing\\s*science"
+      - "(?i)(u\\s*of\\s*a|ualberta|alberta).*computer\\s*science"
+
+# Spreadsheet sources — same data lives in workflows/ingest_application_data.md but
+# duplicated here so tools/fetch_sheet.py can read a single file.
+#
+# `region` is "ON" for the Ontario-subreddit-driven dataset (the original 4 cycles)
+# and "AB" for the Alberta-specific dataset added 2026-04-07.
+#
+# `live` = true means the spreadsheet is still receiving submissions; refresh
+# regularly until decisions are out (~end of May 2026 for the 2025-2026 cycles).
+spreadsheets:
+  - cycle: "2022-2023"
+    region: "ON"
+    sheet_id: "18xQRBO1X2llysir9GwHPhdRPeJGL-osKhOX7WC4e_3o"
+    gid: 1176989226
+    form_id: "1FAIpQLScEsmGukX993wdeJq8lYkiX55Ycq5P6B9xFoKWytc_EOkzRNQ"
+    live: false
+  - cycle: "2023-2024"
+    region: "ON"
+    sheet_id: "1X5oygD0Mu8v899bRBvklzB-t6saHMS7mrqfH_xsiq2Y"
+    gid: 1574433327
+    form_short: "tU3hYmNkEVHHcJjT8"
+    live: false
+  - cycle: "2024-2025"
+    region: "ON"
+    sheet_id: "1j48oJsjcAqS9K2wQ-x-W27gYr5LuOT-a96dt_ZZpjrw"
+    gid: null
+    form_short: "HiTWjUbtW3tbgYeu5"
+    live: false
+  - cycle: "2025-2026"
+    region: "ON"
+    sheet_id: "1NCN-1lw39N9lRyB9bJPfrkJy8v3V-yjnnZ1HjrG5I9A"
+    gid: null
+    form_id: "1FAIpQLSftI1sd98UFPhqf7MWohoEJ2JWSL6UGEmCWyEU96lDK4ImnoA"
+    live: true
+    refresh_until: "2026-05-31"
+  - cycle: "2025-2026-ab"
+    region: "AB"
+    sheet_id: "1fm2jDtnOyD6102mmWVXoCTNs0miMJ6-hyh5WjFKYP6Q"
+    gid: 984484565
+    live: true
+    refresh_until: "2026-05-31"
+    notes: "Alberta-specific 2025-2026 application results sheet (added 2026-04-07)"

@@ -1,0 +1,797 @@
+# Curated application requirements per program for Justin's 2026-2027 cycle.
+# (Justin applies in fall 2026 for fall 2027 entry.)
+#
+# This is the source of truth — committed, hand-edited, and loaded into the
+# SQLite `requirements` table by tools/load_requirements.py. The companion
+# tools/fetch_requirements_pages.py captures HTML snapshots in .tmp/requirements/
+# for provenance.
+#
+# Schema (see workflows/build_requirements_checklist.md for the full spec):
+#   program_key                 — must match a program in config/programs.yaml
+#   tier                        — copied from programs.yaml for convenience
+#   source_url                  — the page each fact came from
+#   curated_on                  — ISO date of last curation pass
+#   confidence                  — high | medium | low | needs_verification
+#   curator_notes               — anything the curator wants future-self to know
+#
+#   Dates are ISO YYYY-MM-DD. They reference the 2025-2026 (last published)
+#   cycle as a template; OUAC dates almost never shift more than ±1 day year
+#   over year, so Justin's 2026-2027 dates will fall on the same calendar dates
+#   ±1. Mark `dates_cycle_template` so the dashboard can flag this.
+#
+#   Use null (not omitted) when a field is genuinely unknown, so the dashboard
+#   can display "—" rather than silently dropping the field.
+
+dates_cycle_template: "2025-2026"
+dates_note: |
+  The dates below are from the most recent published cycle (2025-2026, i.e.
+  fall-2025 application for fall-2026 entry). Justin's actual cycle is 2026-2027
+  (fall-2026 application for fall-2027 entry); his dates will fall on the same
+  calendar dates ±1 day. Re-curate these once each program publishes its 2026-2027
+  dates (typically August-October 2026).
+
+requirements:
+
+  # ───────────────────── Tier 1 — Top targets ─────────────────────
+
+  - program_key: mcmaster_bhsc
+    tier: 1
+    source_url: https://bhsc.mcmaster.ca/future-students/admissions/
+    fallback_source_url: https://hhsp.healthsci.mcmaster.ca/
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      McMaster's bhsc.mcmaster.ca and hhsp.healthsci.mcmaster.ca are both
+      Cloudflare-protected and refused our automated fetches (403). These
+      values come from public knowledge of the program plus the Reddit dataset.
+      All fields should be re-verified by manually opening the official page.
+      The bhsc.mcmaster.ca subdomain 301-redirects to hhsp.healthsci.mcmaster.ca
+      as of April 2026 — the Honours Health Sciences Program (HHSP) is the
+      program's current home.
+
+    application_deadline_ouac: 2026-01-15        # OUAC equal-consideration; Jan 15 is the universal Ontario UG date
+    application_deadline_supp: 2026-02-01        # supplementary app deadline; commonly Feb 1 (verify)
+    document_deadline: 2026-02-01
+    decision_release_window: "Early to mid May"
+
+    supp_app_required: true
+    supp_app_type: "Written supplementary application (reflective essay-style questions)"
+    supp_app_url: https://hhsp.healthsci.mcmaster.ca/future-students/supplementary-application/
+    supp_app_notes: |
+      Opens in September. Applicants receive submission instructions via email
+      in January. Reflective questions covering experiences, motivations, and
+      values. Must be completed independently — sharing or posting answers
+      online disqualifies the application. The supp app is the primary
+      differentiator above the ~90% grade floor.
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 90.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U) — required"
+      - "5 best Grade 12 4U/4M courses including the required English"
+      - "Grade 12 Biology (SBI4U) — strongly recommended"
+      - "Grade 12 Chemistry (SCH4U) — strongly recommended"
+    prereq_notes: |
+      English 4U is the only formally required prerequisite; Bio + Chem are
+      recommended. Justin's Alberta equivalents are ELA 30-1, Biology 30,
+      Chemistry 30 — all satisfied. McMaster will use his top-6 Grade 12
+      academic average for assessment.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all Canadian high school students, including 105 / Group B
+      applicants from Alberta. **However, the Reddit dataset shows zero OOP
+      acceptances below 97.8% across 4 cycles (n=5 OOP reports).** Justin at
+      ~95.5% is below this observed floor. Take this as a strong signal that
+      the OOP supplementary application bar at McMaster BHSc is meaningfully
+      higher than the in-province bar.
+
+    application_fee_cad: 156   # OUAC base fee for 3 program choices; supp app fee not included
+
+    notes: |
+      One of the most competitive direct-entry undergraduate programs in
+      Canada. The supplementary application + interview-style reflective
+      writing is the dominant signal — Reddit data shows the accepted vs
+      rejected averages at McMaster BHSc differ by only ~0.8 points in 24-25.
+      Justin can compensate for the OOP gap with an exceptional supp app, but
+      the bar is realistically a reach.
+
+  - program_key: queens_bhsc
+    tier: 1
+    source_url: https://bhsc.queensu.ca/future-students/admission
+    supp_app_source_url: https://bhsc.queensu.ca/future-students/supplementary-application
+    curated_on: 2026-04-08
+    confidence: high
+    curator_notes: |
+      Most fields confirmed from the official Queen's BHSc admission and
+      supplementary application pages. Dates marked `medium` confidence are
+      from the supplementary app page; the OUAC date is the universal Ontario
+      Jan 15. Queen's BHSc has both an on-campus stream and an online stream;
+      the on-campus stream is what most applicants pursue and is what is
+      reflected here.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: 2026-02-15        # PSE deadline confirmed from supp app page
+    document_deadline: 2026-02-15
+    decision_release_window: "April"
+
+    supp_app_required: true
+    supp_app_type: "Personal Statement of Experience (PSE) — 1 written response + 1 video response"
+    supp_app_url: https://bhsc.queensu.ca/future-students/supplementary-application
+    supp_app_notes: |
+      One written response and one video response. "Queen's does not accept
+      late submissions." Additional materials (reference letters, CV, etc.)
+      will not be reviewed. Specific question text and rubric are released
+      to applicants annually. Required for the on-campus stream.
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 90.0  # "anticipated that the admission average will be over 90% for the on-campus BHSc"
+    prereq_courses:
+      - "Grade 12 English (ENG4U) — minimum 80% required"
+      - "Grade 12 Biology (SBI4U) — required"
+      - "Grade 12 Chemistry (SCH4U) — required"
+      - "Grade 12 Math: one of Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U) — required"
+      - "2 additional Grade 12 4U or 4M courses"
+    prereq_notes: |
+      Minimum 75% cumulative average required for consideration. Justin's
+      Alberta equivalents satisfy these: ELA 30-1 (must hit ≥80% — currently
+      projected 85-90), Biology 30, Chemistry 30, Math 30-1 (Pure Math = AB
+      Advanced Functions equivalent), Math 31 (= Calculus & Vectors), French
+      30-1. **The 80% English minimum is the field to watch — Justin's ELA
+      30-1 projection of 85-90 has cushion but no margin for slipping.**
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all Canadian high school students. Reddit data (n=7 OOP) shows
+      no clear OOP penalty: in-province mean accepted avg 96.2 vs OOP mean
+      96.4. Queen's BHSc looks like Justin's most realistic Tier-1 BHSc
+      target.
+
+    application_fee_cad: 156
+
+    notes: |
+      Smaller and newer than McMaster's BHSc but increasingly competitive.
+      The PSE (1 written + 1 video) is the differentiator. Reddit data shows
+      median accepted avg 96.5%, very close to McMaster's 97.0. The 80%
+      English floor and the "no late submissions" rule are the two
+      compliance gates Justin needs to clear absolutely.
+
+  - program_key: waterloo_cs
+    tier: 1
+    source_url: https://uwaterloo.ca/future-students/programs/computer-science
+    deadlines_source_url: https://uwaterloo.ca/future-students/admissions/deadlines
+    aif_source_url: https://uwaterloo.ca/future-students/admissions/admission-information-form
+    curated_on: 2026-04-08
+    confidence: high
+    curator_notes: |
+      Confirmed from the Waterloo CS program page and Waterloo's deadlines
+      page. CS is in the Math Faculty, NOT Engineering, so it follows the
+      January 30 general deadline rather than the January 15 Engineering
+      deadline. The "individual selection from the low to mid-90s" wording is
+      Waterloo's own published competitive average for CS.
+
+    application_deadline_ouac: 2026-01-30        # Waterloo's general (non-Eng) deadline
+    application_deadline_supp: 2026-02-13        # AIF deadline — same as general document deadline
+    document_deadline: 2026-02-13
+    decision_release_window: "Mid May (with a deferral round before final decisions)"
+
+    supp_app_required: true
+    supp_app_type: "Admission Information Form (AIF)"
+    supp_app_url: https://uwaterloo.ca/future-students/admissions/admission-information-form
+    supp_app_notes: |
+      The AIF asks about academic background, extracurriculars, programming
+      experience, contests, and reasons for choosing Waterloo CS. It is a
+      required part of the application — the program page states
+      "supplementary information forms, including the Admission Information
+      Form, are required for admission." Reddit comments frequently cite
+      hackathon wins, CS contest results (CCC, Euclid, AMC), and
+      community/competitive programming as common AIF entries.
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 95.0   # "individual selection from the low to mid-90s" — interpreted as ~95
+    prereq_courses:
+      - "Grade 12 English 4U (any)"
+      - "Grade 12 Advanced Functions (MHF4U)"
+      - "Grade 12 Calculus & Vectors (MCV4U)"
+      - "One additional Grade 12 4U/4M course"
+    prereq_notes: |
+      Recommended: Grade 11 Introduction to Computer Science (ICS3U). For
+      Alberta students, Math 30-1 maps to Advanced Functions and Math 31
+      (Calculus) maps to Calculus & Vectors — Justin satisfies both at very
+      strong levels (99/99). His weakest spot is ELA 30-1 at 87.5 midpoint;
+      Waterloo doesn't impose an explicit English minimum like Queen's does,
+      but a higher English mark would help his top-6 average.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data (n=12 OOP) shows accepted-average distribution
+      similar to in-province; the OOP penalty looks small compared to
+      McMaster BHSc. However, Waterloo CS overall is the toughest Tier-1
+      program by raw GPA — median accepted avg 97.5% in the Reddit dataset,
+      and the YoY trend is rising sharply (+3.6 points from 23-24 to 24-25).
+
+    application_fee_cad: 156
+
+    notes: |
+      The most numerically competitive of Justin's Tier-1 targets. Cutoffs
+      have tightened sharply in the last two cycles. The AIF can move a
+      borderline applicant up — strong CS contest results and hackathon work
+      are well-regarded. Waterloo CS commonly defers borderline applicants
+      to a second decision round in late May rather than rejecting outright.
+
+  # ───────────────────── Tier 2 — Ontario health/lifesci pool ─────────────────────
+  #
+  # Tier-2 entries are curated more lightly than Tier 1: prerequisite courses
+  # and supp-app requirements are high-confidence (well-known and stable),
+  # but specific dates and competitive averages are marked confidence:medium
+  # because the official program pages either 404'd, 403'd, or just linked out
+  # to generic university-wide pages without program-level detail. The dates
+  # default to the universal Jan 15 OUAC equal-consideration deadline, which
+  # applies to all Ontario undergraduate programs except Waterloo CS/Eng.
+  #
+  # All Tier-2 entries should be verified by manually opening the source_url
+  # before they're surfaced in front of Justin as authoritative.
+
+  - program_key: western_bmsc
+    tier: 2
+    source_url: https://www.schulich.uwo.ca/bmsc/future-students/applying/from-ontario-high-schools.html
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      Prereqs verified from the linked Schulich page. Western's BMSc is a
+      Year 3 designation; first-year applicants apply to "Medical Sciences
+      First Entry" (a guaranteed-progression pathway). Dates and competitive
+      avg are based on standard Western practice — verify against the main
+      welcome.uwo.ca page before the dashboard goes live.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-15
+    decision_release_window: "March through May (rolling)"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 89.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "Grade 12 Biology (SBI4U)"
+      - "Grade 12 Chemistry (SCH4U)"
+      - "Grade 12 Calculus & Vectors (MCV4U)"
+      - "Grade 12 Physics (SPH4U) — recommended"
+    prereq_notes: |
+      Minimum 6 Grade 12 4U/M courses (excluding co-op). For Alberta
+      students: ELA 30-1, Biology 30, Chemistry 30, Math 31 (Calculus),
+      Physics 30 recommended. Justin satisfies all of these except Physics
+      30 which is not in his projected courses — verify whether Physics 30
+      is required vs recommended for Med Sci First Entry.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. The BMSc First Entry pathway competes in a single pool;
+      no published OOP quota. Reddit data shows mean accepted avg ~95% with
+      a fairly tight distribution.
+
+    application_fee_cad: 156
+
+    notes: |
+      Strong med-school feeder. Year-3 BMSc admission requires maintaining
+      75-80% in 2000-level courses depending on the chosen module. Reddit
+      median accepted avg 95.5%. Western Med Sci is a realistic mid-target
+      for Justin given his 95.5% projected top-6.
+
+  - program_key: western_health_sci
+    tier: 2
+    source_url: https://welcome.uwo.ca/what-can-i-study/undergraduate-programs/health-sciences.html
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      Western's School of Health Studies BHSc has a common first year then
+      students apply for specialization in Year 2. The 4U prerequisites and
+      competitive avg below are based on public knowledge and the fact that
+      School of Health Studies is one of Western's lower-cutoff first-entry
+      programs. Verify against the welcome.uwo.ca page.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-15
+    decision_release_window: "March through May (rolling)"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 87.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "5 additional Grade 12 4U/M courses"
+    prereq_notes: |
+      No specific science prerequisites at first-year entry — students can
+      choose Health Sciences without Bio/Chem/Math at this stage. Some Year 2
+      specializations (Nursing, Kinesiology) have additional prereqs and
+      higher cutoffs.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data shows mean accepted avg ~94.5%, similar to
+      Western BMSc but without the science prereqs.
+
+    application_fee_cad: 156
+
+    notes: |
+      Lower entry bar than BMSc but the Year-2 specialization process can
+      be competitive (especially for the Honours Specialization in Health
+      Sciences module). Good fallback option if Justin is unsure about
+      committing to a specific science track at application time.
+
+  - program_key: mcmaster_lifesci
+    tier: 2
+    source_url: https://future.mcmaster.ca/programs/science/
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      McMaster Cloudflare-blocks all our automated fetches; this entry is
+      based on public knowledge of McMaster's Science I admission pathway.
+      Life Sciences is a Level II major selected after a common Science I
+      first year. Verify all dates and the competitive average against
+      McMaster's site before the dashboard ships.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-01
+    decision_release_window: "March through May"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 88.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "Grade 12 Biology (SBI4U)"
+      - "Grade 12 Chemistry (SCH4U)"
+      - "Grade 12 Advanced Functions (MHF4U)"
+    prereq_notes: |
+      Standard McMaster Science I prereqs. Calculus & Vectors (MCV4U) is
+      strongly recommended even though only Advanced Functions is required
+      formally. Justin's Math 30-1 + Math 31 covers both.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data shows mean accepted avg ~95.4% with mean
+      OOP avg similar to in-province (no OOP penalty observed at the
+      Life Sci tier — this is the McMaster path that's most accessible to
+      OOP applicants).
+
+    application_fee_cad: 156
+
+    notes: |
+      Reddit median accepted avg 95.7%, very close to BMSc and Western
+      Health Sci. Common pre-med pathway. McMaster uses Science I as a
+      common first year, so Justin would apply to "Science" and then
+      declare Life Sciences as his Level II major.
+
+  - program_key: queens_lifesci
+    tier: 2
+    source_url: https://www.queensu.ca/admission/programs/life-sciences
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      Queen's Life Sciences is part of the Faculty of Arts & Science (NOT
+      the Faculty of Health Sciences which houses BHSc). It's a BSc Honours
+      plan and does NOT require the BHSc supplementary PSE. Prereqs and
+      cutoffs verified against public knowledge; specific dates from the
+      universal OUAC schedule.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-15
+    decision_release_window: "March through April"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 88.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "Grade 12 Biology (SBI4U)"
+      - "Grade 12 Chemistry (SCH4U)"
+      - "Grade 12 Math: Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U)"
+      - "2 additional Grade 12 4U/M courses"
+    prereq_notes: |
+      No 80% English minimum like Queen's BHSc. Justin satisfies all
+      prereqs comfortably with his Alberta course list.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data shows mean accepted avg ~94.5%, well below
+      Justin's 95.5% projection.
+
+    application_fee_cad: 156
+
+    notes: |
+      Solid Queen's target for Justin without the PSE workload. Reddit
+      median 94.8% — Justin is comfortably above. Good "match" tier
+      relative to BHSc which is a reach.
+
+  - program_key: uoft_lifesci_utm
+    tier: 2
+    source_url: https://www.utm.utoronto.ca/future-students/admissions/admission-requirements
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      UTM Life Sciences shares the broader UofT admission framework — the
+      same Jan 15 OUAC date and the same "mid to high 80s" target as the
+      St. George campus, but with a slightly lower realized competitive
+      average per Reddit data. Justin can apply to UTM and StG separately
+      under different OUAC choices.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-02
+    decision_release_window: "January through late May (rolling)"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 85.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "Grade 12 Calculus & Vectors (MCV4U) or equivalent"
+      - "3 additional Grade 12 4U/M courses"
+    prereq_notes: |
+      For Alberta: ELA 30-1, Math 31 (or AP Calculus), plus 3 more academic
+      Grade 12 courses. Same Alberta requirements as UofT StG.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data shows mean accepted avg ~91.9% — UTM is
+      noticeably less competitive than StG. Strong target for Justin.
+
+    application_fee_cad: 156
+
+    notes: |
+      Solid match-tier UofT option. Reddit median 92.7%. UTM has its own
+      campus identity but is part of the same UofT degree. First-year
+      students choose specific Life Sci majors (Biology, Biomedical
+      Communications, Forensic Science, etc.) at the end of first year.
+
+  - program_key: uoft_lifesci_utsc
+    tier: 2
+    source_url: https://www.utsc.utoronto.ca/biosci/
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      UTSC Life Sciences mirrors the UTM/StG admission framework. Slightly
+      different on-campus departmental layout but the application process,
+      deadlines, and Alberta requirements are the same as UTM and StG.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-02
+    decision_release_window: "January through late May (rolling)"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 85.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "Grade 12 Calculus & Vectors (MCV4U) or equivalent"
+      - "3 additional Grade 12 4U/M courses"
+    prereq_notes: |
+      Same as UTM and St. George Life Sciences. Alberta equivalents:
+      ELA 30-1, Math 31, plus 3 more academic Grade 12 courses.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data shows mean accepted avg ~92.0%, similar to
+      UTM. Co-op programs at UTSC may have slightly higher cutoffs.
+
+    application_fee_cad: 156
+
+    notes: |
+      UTSC offers integrated co-op programs which are well-regarded for
+      med-school applicants. First-year students choose a Life Sci program
+      after completing the first-year category requirements.
+
+  - program_key: guelph_biomed
+    tier: 2
+    source_url: https://www.uoguelph.ca/programs/biomedical-science/
+    calendar_source_url: https://calendar.uoguelph.ca/undergraduate-calendar/programs-majors-minors/bio-medical-science-biom/
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      Guelph BSc Bio-Medical Science (BIOM major). Standard Ontario science
+      prereqs. Guelph is generally less competitive than the McMaster /
+      Queen's / Western health sci programs but has a respected biomedical
+      curriculum and is a popular pre-med pathway.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-15
+    decision_release_window: "April through May"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 85.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "Grade 12 Biology (SBI4U)"
+      - "Grade 12 Chemistry (SCH4U)"
+      - "Grade 12 Math (MHF4U or MCV4U)"
+      - "Grade 12 Physics (SPH4U) — recommended"
+    prereq_notes: |
+      Standard Ontario science prereqs. Justin's Alberta equivalents
+      satisfy these except Physics 30 which is not in his projected
+      courses — Guelph BIOM does not strictly require Physics 30 but it's
+      recommended.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data shows mean accepted avg ~93.3%. Solid
+      target for Justin.
+
+    application_fee_cad: 156
+
+    notes: |
+      Reddit median 94.0%. Pre-med-friendly curriculum with strong
+      animal/human comparative health focus. Less prestige than McMaster
+      Life Sci but easier admission and well-regarded for med-school
+      applications.
+
+  - program_key: ottawa_biomed
+    tier: 2
+    source_url: https://catalogue.uottawa.ca/en/undergrad/honours-bsc-biomedical-science/
+    program_page_url: https://www.uottawa.ca/faculty-science/biology/undergraduate/biomedical-science
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      uOttawa Honours BSc in Biomedical Science. Offered in English and
+      French. Multiple specialization options (Cellular and Molecular
+      Medicine, Neuroscience, etc.) declared after first year. The
+      uOttawa catalog notes "Requirements for this program have been
+      modified" — verify the 2026-2027 prereqs against the current page.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-15
+    decision_release_window: "March through May (rolling)"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 86.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "2 of: Biology (SBI4U), Chemistry (SCH4U), Physics (SPH4U), Calculus & Vectors (MCV4U)"
+    prereq_notes: |
+      Minimum 70% combined average across science/math prereqs. Justin's
+      Alberta equivalents (Bio 30 + Chem 30 + Math 31) easily satisfy.
+      The "any 2 of 4" structure is more flexible than most Ontario
+      biomed programs — Justin doesn't strictly need Physics 30.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit data shows mean accepted avg ~92.8%. Bilingual
+      campus — English-only stream is fine for Justin even though he has
+      French 30-1.
+
+    application_fee_cad: 156
+
+    notes: |
+      Reddit median 93.4%. Often used as a backup by applicants targeting
+      McMaster/Queen's. Co-op available. Cellular and Molecular Medicine
+      and Neuroscience options are popular pre-med tracks.
+
+  - program_key: brock_medsci
+    tier: 2
+    source_url: https://brocku.ca/programs/undergraduate/biomedical-sciences/
+    curated_on: 2026-04-08
+    confidence: medium
+    curator_notes: |
+      The config program_key is `brock_medsci` but the actual program is
+      now branded "Biomedical Sciences" at Brock (Brock also has a separate
+      "Medical Sciences" program in the same faculty — they overlap heavily).
+      Treat this entry as covering Brock's biomedical-sciences track. Lower
+      cutoff than the Tier-2 majors above; serves as a safety option.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null
+    document_deadline: 2026-02-15
+    decision_release_window: "April through May"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 80.0
+    prereq_courses:
+      - "Grade 12 English (ENG4U)"
+      - "Grade 12 Math: Advanced Functions (MHF4U) or Calculus & Vectors (MCV4U) — minimum 70%"
+      - "Grade 12 Chemistry (SCH4U) — minimum 70%"
+      - "2 of: Biology (SBI4U), Physics (SPH4U), Earth & Space Science (SES4U), 2nd 4U math, or 2nd 4U English"
+    prereq_notes: |
+      Explicit 70% minimum on Math and Chemistry. Justin satisfies all
+      prereqs at far above the 70% threshold.
+
+    oop_eligible: true
+    oop_notes: |
+      Open to all. Reddit sample is small (only 6 reports for brock_medsci
+      across 4 cycles) so per-program stats are unreliable.
+
+    application_fee_cad: 156
+
+    notes: |
+      Lowest-cutoff option in Justin's Tier-2 pool. A genuine safety
+      target. Reddit data is too thin to rank confidently but Brock's
+      published "70% in math+chem" floor is well below Justin's projected
+      grades.
+
+  - program_key: uoft_lifesci_stgeorge
+    tier: 1
+    source_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences
+    alberta_source_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-requirements/other-canadian-provinces
+    dates_source_url: https://future.utoronto.ca/apply/important-application-dates/
+    curated_on: 2026-04-08
+    confidence: high
+    curator_notes: |
+      Confirmed from the official Faculty of Arts & Science Life Sciences
+      admission category page, the Other Canadian Provinces requirements
+      page, and the U of T important application dates page. The "JOIN U of T"
+      portal is mentioned for non-Ontario applicants but UofT undergrad is
+      still primarily through OUAC for Canadian students.
+
+    application_deadline_ouac: 2026-01-15
+    application_deadline_supp: null              # No supp app for Life Sci
+    document_deadline: 2026-02-02                # A&S extends some document deadlines to Feb 2
+    decision_release_window: "January through late May"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: |
+      Life Sciences admission category does not require a supplementary
+      application. Some other A&S programs (Engineering, Music, etc.) do, but
+      Life Sci is judged on academic record alone.
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 88.0   # UofT publishes "mid to high 80s" — Reddit median is 94.2
+    prereq_courses:
+      - "English (ELA 30-1 or English 30 for Alberta students)"
+      - "Mathematics 31 (Calculus) or AP Calculus AB/BC"
+      - "Three additional Grade 12 / 30-level academic courses"
+    prereq_notes: |
+      For Alberta students: ELA 30-1, Math 31 (or AP Calc), plus 3 more
+      Grade 12 academic courses. Five Grade 12 academic courses minimum.
+      ELA 30-2 does NOT meet the requirement. Justin satisfies all of these
+      with room to spare: ELA 30-1 (~87.5), Math 31 (~99), Math 30-1 (~99),
+      Bio 30 (~97.5), Chem 30 (~97.5), French 30-1 (~92.5).
+
+      Important: "challenge subjects, career courses, work experience
+      courses, and/or co-op courses" are excluded from consideration.
+      Justin's six listed courses are all academic, so this isn't a problem.
+
+    oop_eligible: true
+    oop_notes: |
+      Alberta applicants follow the same admission review process as other
+      Canadian provinces. UofT cites a target of "mid to high 80s" for both
+      English and Calculus and overall — significantly lower than the
+      Reddit-reported median of 94.2. The Reddit number reflects
+      self-selection bias (high-achievers report more); the official "mid to
+      high 80s" is the realistic minimum competitive line. Justin at ~95.5%
+      is comfortably above both. **UofT Life Sci StG is the strongest target
+      in Justin's Tier 1.**
+
+    application_fee_cad: 156
+
+    notes: |
+      The "Life Sciences" admission category at A&S is a broad first-year
+      entry — students choose a specific program (Human Biology, Physiology,
+      Neuroscience, Immunology, etc.) at the end of first year after
+      completing 4.0 credits. OUAC code TLG. UofT releases admission
+      decisions on a rolling basis from January through late May; early
+      strong applicants often receive offers in February.

@@ -1,0 +1,227 @@
+{
+  "name": "Justin",
+  "current_grade": 11,
+  "high_school": "Old Scona Academic High School",
+  "city": "Edmonton",
+  "province": "AB",
+  "country": "Canada",
+  "applicant_type": "105",
+  "_applicant_type_note": "OUAC code 105 = out-of-province / non-Ontario high-school applicant",
+  "grade_12_projected_courses": [
+    { "course": "Math 30-1",    "low": 98, "high": 100, "midpoint": 99.0 },
+    { "course": "Math 31",      "low": 98, "high": 100, "midpoint": 99.0 },
+    { "course": "ELA 30-1",     "low": 85, "high": 90,  "midpoint": 87.5 },
+    { "course": "Biology 30",   "low": 95, "high": 100, "midpoint": 97.5 },
+    { "course": "Chemistry 30", "low": 95, "high": 100, "midpoint": 97.5 },
+    { "course": "French 30-1",  "low": 90, "high": 95,  "midpoint": 92.5 }
+  ],
+  "grade_12_projected_top6_average": {
+    "low": 93.5,
+    "midpoint": 95.5,
+    "high": 97.5
+  },
+  "grade_11_final_average": null,
+  "grade_12_midterm_average": null,
+  "tests": {
+    "casper_planned": null,
+    "sat": null,
+    "act": null
+  },
+  "extracurriculars_summary": "G11 at Old Scona; med-school-track profile combining math/CS elite-competition results, direct clinical exposure, and a founder-level mental-health non-profit. Cohesive narrative linking a grade-9 classmate's mental-health-driven drop-out to his self-directed ML research on at-risk-student identification (IB CS IA).",
+  "extracurriculars": {
+    "captured_on": "2026-04-11",
+    "updated_on": "2026-04-11 (Harvard MEDScience acceptance added)",
+    "sources": [
+      "data/justin/Justin's Resume (Updated 2026).docx",
+      "data/justin/HYRS_2026_Essay_Justin_Wei.docx",
+      "data/justin/Harvard MEDScience.docx",
+      "Harvard MEDScience admission email (2026-04, confirmed acceptance to TECH Foundations Session M3)"
+    ],
+    "narrative_theme": "A grade-9 classmate did not pass the Old Scona entrance exam and dropped out of school within 2 months due to mental-health pressure. Justin researched Alberta youth mental-health trends, combined with his math/ML strengths to self-teach LightGBM/XGBoost, and is now building an ML risk-detection tool for at-risk students as his IB CS IA — 'the tool I wish had existed for my classmate.' Career direction: bioinformatics, bridging clinical practice with data science.",
+
+    "healthcare_exposure": [
+      {
+        "name": "Medical Shadowing — Histopathology",
+        "org": "Dr. Surinder Kanwal, Misericordia Community Hospital, Covenant Health",
+        "period": "July 2025",
+        "hours": 30,
+        "description": "Observed surgical specimen processing, margin evaluation, and lymph-node dissection for cancer diagnosis."
+      },
+      {
+        "name": "Youth Summer Program (MED YSP)",
+        "org": "University of Toronto Faculty of Medicine",
+        "period": "July 2025",
+        "description": "Studied disease mechanisms (kidney failure, genetic diseases), neural physiology, and chronic-condition management (cystic fibrosis, obesity)."
+      },
+      {
+        "name": "Harvard Medical School MEDscience Summer Program — MEDscienceTECH Foundations",
+        "org": "Harvard Medical School (Boston, MA)",
+        "period": "Session M3, June 22-26, 2026",
+        "selectivity": "Selected from a highly competitive applicant pool (admission letter received 2026-04, before April 15 deadline)",
+        "track": "MEDscienceTECH Foundations — biomedical engineering + computer science + clinical medicine",
+        "description": "Hands-on team project at Harvard Medical School building AI computer vision surgical robots on the Kepler AI surgical robotic platform. Students learn the biodesign process and prototype solutions to complex healthcare problems. The week also includes direct clinical exposure: diagnosing and treating simulated patients, learning anatomy and physiology, and getting bedside exposure to careers including surgery. Final activity is a shark-tank-style pitch + live demonstration to medical experts on demo day.",
+        "why_it_matters": "Sits at the exact intersection of Justin's three core interests: AI / computer vision (his ML work), engineering / robotics (build-from-scratch with the Kepler platform), and clinical medicine (bedside exposure + anatomy/physiology). It's a stronger fit for Waterloo CS than I initially framed — the AIF can cite AI computer vision robotics built in a Harvard cohort. For McMaster/Queen's BHSc, the credential reads as both clinical exposure AND technical capability tied directly to medicine.",
+        "notes": "Confirmed acceptance; $2,800 program fee due 2026-04-22. Welcome letter scheduled 2026-05-15. Justin's application essay (data/justin/Harvard MEDScience.docx) framed him as the 'Calm Analyst & Team Specialist' — the team-project nature of building robots-in-teams aligns with that framing."
+      }
+    ],
+
+    "mental_health_focus": [
+      {
+        "name": "HelpingMinds.ca (Founder & President)",
+        "org": "HelpingMinds.ca — own non-profit",
+        "period": "2024 – Present",
+        "role": "Founder & President",
+        "description": "Non-profit supporting children's mental health; led fundraising and awareness campaigns partnering with local community groups."
+      },
+      {
+        "name": "Chatter Social Skills Program (Volunteer Mentor)",
+        "org": "Khan Communication Services",
+        "period": "2023 – Present",
+        "duration_months_minimum": 18,
+        "hours_minimum": 100,
+        "description": "Mentors neurodiverse children in communication and social skills. 18+ months sustained, 100+ hours of group activities and direct support."
+      },
+      {
+        "name": "Community Helpers (Executive Member)",
+        "org": "Alberta Health Services",
+        "period": "2024 – Present",
+        "role": "Executive Member",
+        "description": "Trained in suicide prevention and stress management; supports peers at Old Scona."
+      }
+    ],
+
+    "stem_competitions": {
+      "mathematics": [
+        "International Mathematics Competition 2024 — Merit Award (Lucknow, India) — represented Canada internationally",
+        "Canadian Open Mathematics Challenge (COMC): Distinction 2024, Honours 2023",
+        "Canada Lynx Mathematical Competition (CLMC): Honourable Mention (National), Bronze / Silver (Provincial)",
+        "University of Waterloo Pascal Contest: Distinction (2023, 2024)",
+        "University of Waterloo Fryer Contest: Distinction (2024)",
+        "University of Waterloo CIMC: Distinction (2024)"
+      ],
+      "computer_science": [
+        "CyberPatriot Competition: National Finalist (previous season), Semi-Finalist 2024-25 — Linux specialist",
+        "Canadian Computing Competition (CCC): Active competitor (University of Waterloo)",
+        "Kaggle / DrivenData: Top 5.7% in 3 ML competitions on health datasets (mental health, vaccine hesitancy); LightGBM / XGBoost"
+      ],
+      "biology": [
+        "AP Biology: Score 5 (perfect)",
+        "British Intermediate Biology Olympiad: Silver"
+      ]
+    },
+
+    "technical_projects": [
+      {
+        "name": "Mental Health Risk Prediction Algorithm",
+        "context": "IB Computer Science Internal Assessment",
+        "period": "2024 – Present",
+        "stack": "Python, scikit-learn, pandas, NumPy",
+        "description": "Web-based survey platform and ML model to identify at-risk high school students from anonymized response patterns — targeting early intervention."
+      },
+      {
+        "name": "Kaggle Titanic ML Retrospective (LinkedIn article)",
+        "period": "2024 – Present",
+        "description": "Authored a technical retrospective on feature-engineering vs model complexity trade-offs. Demonstrated that recalibrating the decision threshold from 0.50 to 0.60 moved him ~10,000 places on the leaderboard — showcasing disciplined root-cause debugging over complexity."
+      }
+    ],
+
+    "leadership": [
+      {
+        "name": "Founder & President — HelpingMinds.ca",
+        "period": "2024 – Present"
+      },
+      {
+        "name": "Executive Member — Mathematics & Computer Science Club (Old Scona)",
+        "period": "2024 – Present",
+        "description": "Organizes peer-led sessions on Data Structures & Algorithms; facilitates school-wide participation in math and coding contests."
+      }
+    ],
+
+    "other_achievements": [
+      "Piano — RCM Level 10 Certificate (classical performance, significant time commitment)"
+    ],
+
+    "self_described_team_role": "Calm Analyst & Team Specialist — steps back to check foundational assumptions before adding complexity; bridges technical execution with empathy for vulnerable populations.",
+
+    "summer_2026_plans": {
+      "confirmed": [
+        {
+          "program": "Harvard Medical School MEDscience Summer Program — TECH Foundations",
+          "dates": "2026-06-22 to 2026-06-26",
+          "location": "Boston, MA",
+          "cost_usd": 2800,
+          "confirmation_deadline": "2026-04-15",
+          "payment_deadline": "2026-04-22",
+          "welcome_letter_expected": "2026-05-15"
+        }
+      ],
+      "pending_decisions": [
+        {
+          "program": "HYRS 2026 (Heritage Youth Researcher Summer)",
+          "applied": true,
+          "essay_source": "data/justin/HYRS_2026_Essay_Justin_Wei.docx",
+          "decision_expected": "spring 2026"
+        }
+      ],
+      "notes": "Harvard MEDScience is a 1-week program (June 22-26), so it does NOT compete with HYRS — Justin can do both if HYRS accepts him. With Harvard MEDScience confirmed, the formal-clinical-research gap from his earlier profile is partially filled even without HYRS; HYRS now becomes additive (lab research) rather than gap-filling (any clinical exposure)."
+    },
+
+
+    "ec_strengths_by_target": {
+      "mcmaster_bhsc": "VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for.",
+      "queens_bhsc": "VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive.",
+      "waterloo_cs": "VERY STRONG for the AIF. CyberPatriot National Finalist (Linux), IMC 2024, Pascal/Fryer/CIMC distinctions, CCC, Kaggle top 5.7%, LightGBM/XGBoost, self-built ML projects — exactly what Waterloo CS AIF readers value. **NEW credential to highlight prominently: Harvard Medical School MEDscienceTECH Foundations (June 2026, confirmed) — building AI computer vision surgical robots on the Kepler platform in a team of biomedical engineers, with a shark-tank pitch demo day to medical experts.** This is directly Waterloo-CS-relevant content (AI, computer vision, robotics, team biodesign, prototype-to-pitch) and Justin should lead the AIF with it. GPA is still the bigger gate (Reddit median 97.5), but the AIF case is now materially stronger.",
+      "uoft_lifesci_stgeorge": "NOT APPLICABLE — no supplementary application at UofT Life Sci. ECs do not affect the decision. Justin is well above the academic bar here regardless.",
+      "tier_2_general": "Most Tier-2 programs are academic-record-only and don't read supplementary applications. ECs are irrelevant for admission, but the combination means Justin would be among the top-of-class admits wherever he lands.",
+      "watch_items": [
+        "ELA 30-1 projection 85-90% is the single academic vulnerability — Queen's BHSc requires minimum 80% in ENG4U equivalent, so any slip below 80% is a hard-fail. Otherwise the gap is a softer cap on his essay-writing ceiling.",
+        "Physics 30 is not in his course list — check whether any target program requires it (Western BMSc recommends it; Waterloo CS does not; BHSc programs do not)."
+      ]
+    }
+  },
+  "target_programs": {
+    "tier_1_top_targets": [
+      "mcmaster_bhsc",
+      "queens_bhsc",
+      "waterloo_cs",
+      "uoft_lifesci_stgeorge"
+    ],
+    "tier_2_ontario_health_lifesci": [
+      "western_bmsc",
+      "mcmaster_lifesci",
+      "queens_lifesci",
+      "uoft_lifesci_utm",
+      "uoft_lifesci_utsc",
+      "guelph_biomed",
+      "ottawa_biomed",
+      "brock_medsci"
+    ],
+    "tier_3_waterloo_backups": [
+      "waterloo_cs_bba",
+      "waterloo_se",
+      "waterloo_math_cs",
+      "waterloo_math"
+    ],
+    "tier_4_ualberta": [
+      "ualberta_bsc_biolsci",
+      "ualberta_bsc_biochem",
+      "ualberta_bsc_cellbiol",
+      "ualberta_bsc_physiol",
+      "ualberta_bsc_immunology",
+      "ualberta_bsc_pharmacology",
+      "ualberta_bsc_neuroscience",
+      "ualberta_pharmacy",
+      "ualberta_pharmacology_honors"
+    ]
+  },
+  "_profile_provenance": {
+    "captured_on": "2026-04-07",
+    "updated_on": "2026-04-11",
+    "captured_from": "user-provided in initial planning conversation; ECs extracted 2026-04-11 from resume + HYRS essay + Harvard MEDScience essay in data/justin/",
+    "next_to_collect": [
+      "grade_11_final_average",
+      "grade_12_midterm_average (when available)",
+      "test plans (CASPer/SAT)"
+    ]
+  }
+}

@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justin's University Application Dashboard · 2026-2027</title>
+  <meta name="description" content="Per-program reach/target/safety analysis for Justin's 2026-2027 Canadian university application cycle. Built from 4 cycles of Reddit-sourced outcomes.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+
+  <!-- Fonts: Geist Sans (body) + Instrument Serif (display accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!--
+    Tailwind config MUST be declared before the CDN script loads (the CDN reads
+    window.tailwind.config synchronously at parse time). Reversing the order
+    silently drops custom colors/fonts.
+  -->
+  <script>
+    window.tailwind = {
+      config: {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+              display: ['"Instrument Serif"', 'ui-serif', 'Georgia', 'serif'],
+            },
+            colors: {
+              paper: '#fafaf7',
+              card: '#ffffff',
+              ink: {
+                50:  '#f7f7f5',
+                100: '#ededeb',
+                200: '#dcdcd9',
+                300: '#b8b8b4',
+                400: '#8a8a86',
+                500: '#5c5c58',
+                600: '#3f3f3c',
+                700: '#2a2a28',
+                800: '#161614',
+                900: '#0a0a09',
+              },
+            },
+            maxWidth: {
+              prose: '68ch',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js (UMD, exposes global `Chart`) — must be in place before app.js runs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Prevent white flash on dark-mode reload: apply theme class before first paint -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
+
+<body class="bg-paper text-ink-900 font-sans antialiased">
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       Sticky top navigation (brand · section links · repo)
+       ══════════════════════════════════════════════════════════════════ -->
+  <nav class="topnav" aria-label="Primary navigation">
+    <div class="topnav__inner">
+      <a href="#top" class="topnav__brand" aria-label="Justin's University Dashboard — back to top">
+        <span class="topnav__brand-mark" aria-hidden="true">J</span>
+        <span class="topnav__brand-text">
+          <span class="topnav__brand-serif">Justin's</span>
+          <span class="topnav__brand-label">University Dashboard</span>
+        </span>
+      </a>
+
+      <ul class="topnav__links" role="list">
+        <li><a href="#top6"         data-nav-target="top6">Overview</a></li>
+        <li><a href="#verdicts"     data-nav-target="verdicts">Verdicts</a></li>
+        <li><a href="#actions"      data-nav-target="actions">Actions</a></li>
+        <li><a href="#distribution" data-nav-target="distribution">Trends</a></li>
+        <li><a href="#programs"     data-nav-target="programs">Programs</a></li>
+        <li><a href="#checklist"    data-nav-target="checklist">Checklist</a></li>
+        <li><a href="#data-quality" data-nav-target="data-quality">Method</a></li>
+      </ul>
+
+      <button id="theme-toggle" class="topnav__theme-btn" type="button"
+              aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="theme-icon theme-icon--light" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon theme-icon--dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <a href="https://github.com/monkalways/offer-optics"
+         target="_blank" rel="noopener"
+         class="topnav__repo">
+        <span>Source</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="top" class="max-w-6xl mx-auto px-6 py-12 md:px-10 md:py-16">
+
+    <!-- Error banner (shown only on fetch failure) -->
+    <div id="error-banner" class="hidden mb-10 rounded-md border border-red-200 bg-red-50 px-5 py-4 text-sm text-red-900" role="alert">
+      <p class="font-medium mb-1">Could not load <code class="font-mono">data.json</code>.</p>
+      <p id="error-banner-detail" class="text-red-800/80"></p>
+      <p class="mt-2 text-red-800/70">
+        If you opened this file directly (<code class="font-mono">file://</code>), browsers block local JSON reads.
+        Run <code class="font-mono">python -m http.server 8000</code> from the <code class="font-mono">docs/</code> directory and visit
+        <a class="underline" href="http://localhost:8000/">http://localhost:8000/</a>.
+      </p>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Header · editorial masthead
+         ══════════════════════════════════════════════════════════════════ -->
+    <header class="page-header mb-14 md:mb-20 reveal" style="--reveal-delay: 0ms">
+      <div class="page-header__rule" aria-hidden="true"></div>
+      <p class="page-header__eyebrow">Application cycle 2026–2027 · A Dossier</p>
+      <div class="page-header__grid">
+        <div>
+          <h1 class="page-header__title font-display text-ink-900">
+            <span class="italic">Justin's</span><br>
+            <span class="page-header__title-sans">University Application Dashboard</span>
+          </h1>
+          <p class="page-header__lede text-ink-500">
+            Per-program reach / target / safety analysis drawing on four cycles of Reddit-sourced acceptance data
+            and curated admissions requirements. Built for Justin, his parents, and the occasional skeptical relative.
+          </p>
+        </div>
+        <aside class="page-header__meta">
+          <div class="page-header__stamp">
+            <span class="page-header__stamp-label">Last compiled</span>
+            <span id="meta-stamp" class="page-header__stamp-value tabular-nums"></span>
+          </div>
+          <a href="https://github.com/monkalways/offer-optics" target="_blank" rel="noopener"
+             class="page-header__repo">
+            monkalways / offer-optics
+            <span aria-hidden="true">↗</span>
+          </a>
+        </aside>
+      </div>
+    </header>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 2 — Profile strip
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="profile" class="mb-12 md:mb-14 reveal" style="--reveal-delay: 80ms" aria-label="Applicant profile">
+      <div class="rounded-lg border border-ink-100 bg-card px-6 py-5">
+        <dl class="grid grid-cols-2 md:grid-cols-5 gap-x-6 gap-y-4">
+          <div>
+            <dt class="text-[11px] tracking-wider uppercase text-ink-400">Applicant</dt>
+            <dd id="profile-name" class="mt-1 text-[15px] font-medium text-ink-900"></dd>
+          </div>
+          <div>
+            <dt class="text-[11px] tracking-wider uppercase text-ink-400">Grade</dt>
+            <dd id="profile-grade" class="mt-1 text-[15px] text-ink-700 tabular-nums"></dd>
+          </div>
+          <div class="col-span-2 md:col-span-2">
+            <dt class="text-[11px] tracking-wider uppercase text-ink-400">School</dt>
+            <dd id="profile-school" class="mt-1 text-[15px] text-ink-700"></dd>
+          </div>
+          <div>
+            <dt class="text-[11px] tracking-wider uppercase text-ink-400">OUAC group</dt>
+            <dd id="profile-group" class="mt-1 text-[15px] text-ink-700"></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 3 — Top-6 projection card
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="top6" class="mb-14 md:mb-20 reveal" style="--reveal-delay: 160ms" aria-labelledby="top6-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">I.</span>
+        <p class="section-marker__kicker">Academic projection</p>
+      </div>
+      <h2 id="top6-heading" class="section-heading font-display italic text-ink-900">
+        Projected Grade 12 top-6 average
+      </h2>
+
+      <div class="rounded-lg border border-ink-100 bg-card p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-center md:gap-12 gap-6">
+          <!-- Range display -->
+          <div class="flex items-baseline gap-8">
+            <div>
+              <div class="text-[11px] tracking-wider uppercase text-ink-400">Low</div>
+              <div id="top6-low" class="mt-1 font-display italic text-3xl text-ink-500 tabular-nums"></div>
+            </div>
+            <div>
+              <div class="text-[11px] tracking-wider uppercase text-ink-700 font-medium">Midpoint</div>
+              <div id="top6-mid" class="mt-1 font-display italic text-5xl text-ink-900 tabular-nums"></div>
+            </div>
+            <div>
+              <div class="text-[11px] tracking-wider uppercase text-ink-400">High</div>
+              <div id="top6-high" class="mt-1 font-display italic text-3xl text-ink-500 tabular-nums"></div>
+            </div>
+          </div>
+
+          <!-- Per-course chips -->
+          <div class="flex-1">
+            <div class="text-[11px] tracking-wider uppercase text-ink-400 mb-3">Per-course projections</div>
+            <ul id="top6-courses" class="flex flex-wrap gap-2"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 4 — Verdict tiles (THE HERO)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="verdicts" class="mb-16 md:mb-24 reveal" style="--reveal-delay: 240ms" aria-labelledby="verdicts-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">II.</span>
+        <p class="section-marker__kicker">Top targets · Tier 1</p>
+      </div>
+      <h2 id="verdicts-heading" class="section-heading font-display italic text-ink-900 mb-6">
+        Where Justin stands on the four headline programs
+      </h2>
+
+      <div id="verdict-tiles" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+      <p class="mt-5 text-xs text-ink-400">
+        Click a tile to jump to the full per-program reasoning.
+        Verdicts combine GPA percentile against Reddit-reported admits with a program-specific EC leverage adjustment —
+        see the methodology note in the footer.
+      </p>
+    </section>
+
+    <!-- ──────────────── Pull quote (editorial anchor) ──────────────── -->
+    <section class="mb-16 md:mb-20 reveal" style="--reveal-delay: 320ms" aria-label="Project context">
+      <blockquote class="pull-quote">
+        In grade nine, a classmate didn't pass the Old Scona entrance exam. Two months later,
+        he had dropped out entirely. I'm building the tool I wish had existed for him.
+      </blockquote>
+      <p class="mt-4 text-center text-[11px] tracking-[0.22em] uppercase text-ink-400">
+        — paraphrased from Justin's HYRS 2026 application essay
+      </p>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 5 — Action items timeline
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="actions" class="mb-16 md:mb-24" aria-labelledby="actions-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">III.</span>
+        <p class="section-marker__kicker">What's next</p>
+      </div>
+      <h2 id="actions-heading" class="section-heading font-display italic text-ink-900 mb-7">
+        Upcoming deadlines and decisions
+      </h2>
+      <ol id="action-list" class="space-y-2"></ol>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 6 — Distribution chart
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="distribution" class="mb-16 md:mb-24" aria-labelledby="distribution-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">IV.</span>
+        <p class="section-marker__kicker">Tier 1 distributions</p>
+      </div>
+      <h2 id="distribution-heading" class="section-heading font-display italic text-ink-900 mb-3">
+        How Justin compares to admitted students
+      </h2>
+      <p class="text-sm text-ink-500 max-w-prose mb-6">
+        Accepted-average histograms for the four Tier-1 programs across all four cycles.
+        The dashed vertical line marks Justin's projected top-6 midpoint.
+        Bars to the left of the line = admits whose averages fell at or below Justin's projection.
+      </p>
+      <div class="chart-box rounded-lg border border-ink-100 bg-card p-5 md:p-6 relative h-[440px] md:h-[480px]">
+        <canvas id="dist-chart-canvas"></canvas>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 7 — Year-over-year trends
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="yoy" class="mb-16 md:mb-24" aria-labelledby="yoy-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">V.</span>
+        <p class="section-marker__kicker">Cutoffs over time</p>
+      </div>
+      <h2 id="yoy-heading" class="section-heading font-display italic text-ink-900 mb-3">
+        Mean accepted average by cycle
+      </h2>
+      <p class="text-sm text-ink-500 max-w-prose mb-6">
+        The 2025–26 cycle is still in progress — its number is provisional and skews toward
+        earlier-cycle decisions (typically the strongest admits).
+      </p>
+      <div class="chart-box rounded-lg border border-ink-100 bg-card p-5 md:p-6 relative h-[360px] md:h-[400px]">
+        <canvas id="yoy-chart-canvas"></canvas>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 8 — Per-program detail accordion (Tier 1 + Tier 2)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="programs" class="mb-16 md:mb-24" aria-labelledby="programs-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">VI.</span>
+        <p class="section-marker__kicker">Deep dive</p>
+      </div>
+      <h2 id="programs-heading" class="section-heading font-display italic text-ink-900 mb-3">
+        Per-program detail
+      </h2>
+      <p class="text-sm text-ink-500 max-w-prose mb-6">
+        Tier 1 top targets and Tier 2 Ontario health / life science pool. Click a row to expand the full reasoning,
+        requirements, and the EC fit for that program.
+      </p>
+
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-[11px] tracking-[0.22em] uppercase text-ink-500 mb-3">Tier 1 — Top targets</h3>
+          <div id="tier1-accordion" class="space-y-2"></div>
+        </div>
+        <div>
+          <h3 class="text-[11px] tracking-[0.22em] uppercase text-ink-500 mb-3">Tier 2 — Ontario health / life sci pool</h3>
+          <div id="tier2-accordion" class="space-y-2"></div>
+        </div>
+      </div>
+
+      <!-- Tier 3/4 brief note (no detail rows, most are insufficient-data) -->
+      <div id="tier34-note" class="mt-6 rounded-lg border border-ink-100 bg-ink-50/50 p-5 text-sm text-ink-600"></div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 9 — Application checklist table (Tier 1 + Tier 2)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="checklist" class="mb-16 md:mb-24" aria-labelledby="checklist-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">VII.</span>
+        <p class="section-marker__kicker">Application checklist</p>
+      </div>
+      <h2 id="checklist-heading" class="section-heading font-display italic text-ink-900 mb-3">
+        Deadlines &amp; submission requirements
+      </h2>
+      <p class="text-sm text-ink-500 max-w-prose mb-6">
+        Sorted by OUAC deadline. Click a column header to re-sort. Dates reflect Justin's 2026–2027 cycle
+        (shifted +1 year from the curated 2025–2026 template; verify before submitting anything time-sensitive).
+      </p>
+
+      <!-- Desktop table -->
+      <div class="hidden md:block rounded-lg border border-ink-100 bg-card overflow-hidden">
+        <table id="checklist-table" class="w-full text-sm">
+          <thead>
+            <tr class="text-left text-[11px] tracking-wider uppercase text-ink-500 bg-ink-50/60 border-b border-ink-100">
+              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="tier">Tier</th>
+              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="program">Program</th>
+              <th class="px-4 py-3 font-medium cursor-pointer sortable tabular-nums" data-sort-key="deadline_ouac">OUAC</th>
+              <th class="px-4 py-3 font-medium cursor-pointer sortable tabular-nums" data-sort-key="deadline_supp">Supp due</th>
+              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="supp_app_type">Supp app</th>
+              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="casper_required">CASPer</th>
+              <th class="px-4 py-3 font-medium cursor-pointer sortable" data-sort-key="decision_window">Decisions</th>
+              <th class="px-4 py-3 font-medium cursor-pointer sortable tabular-nums" data-sort-key="fee_cad">Fee</th>
+              <th class="px-4 py-3 font-medium">Official</th>
+            </tr>
+          </thead>
+          <tbody id="checklist-tbody" class="divide-y divide-ink-100"></tbody>
+        </table>
+      </div>
+
+      <!-- Mobile card list -->
+      <div id="checklist-cards" class="md:hidden space-y-3"></div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 10 — Data quality & caveats (collapsed)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="data-quality" class="mb-16 md:mb-20" aria-labelledby="data-quality-heading">
+      <details class="rounded-lg border border-ink-100 bg-card overflow-hidden">
+        <summary class="px-6 py-4 cursor-pointer select-none flex items-center justify-between text-sm text-ink-700 hover:bg-ink-50/60 transition-colors">
+          <span>
+            <span class="text-[11px] tracking-[0.22em] uppercase text-ink-400 mr-2">Methodology</span>
+            Show data sources and caveats
+          </span>
+          <span class="chev text-ink-400">+</span>
+        </summary>
+        <div class="px-6 pb-6 pt-2 space-y-8">
+          <div>
+            <h3 id="data-quality-heading" class="text-[11px] tracking-[0.22em] uppercase text-ink-500 mb-3">Cycles ingested</h3>
+            <div id="dq-cycles" class="overflow-x-auto"></div>
+          </div>
+          <div>
+            <h3 class="text-[11px] tracking-[0.22em] uppercase text-ink-500 mb-3">Caveats &amp; known limitations</h3>
+            <ol id="dq-caveats" class="space-y-4 text-sm text-ink-700 max-w-prose"></ol>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Section 11 — Footer
+         ══════════════════════════════════════════════════════════════════ -->
+    <footer class="mt-24 pt-10 border-t border-ink-100 text-xs text-ink-500 space-y-2">
+      <p>
+        <span class="text-ink-700">Data-driven, not deterministic.</span>
+        The Reddit dataset is heavily self-selected (~93–99% of reports are acceptances), so percentiles are relative to
+        admitted students, not raw applicant pools. Treat every verdict as a floor estimate, not an admission probability.
+      </p>
+      <p>
+        Source: <a class="underline decoration-dotted underline-offset-4 hover:text-ink-900"
+                  href="https://github.com/monkalways/offer-optics" target="_blank" rel="noopener">github.com/monkalways/offer-optics</a> ·
+        Last refreshed: <span id="footer-refreshed" class="tabular-nums"></span>
+      </p>
+    </footer>
+  </main>
+
+  <noscript>
+    <div class="max-w-6xl mx-auto px-6 py-10">
+      <div class="rounded-md border border-red-200 bg-red-50 p-5 text-sm text-red-900">
+        This dashboard requires JavaScript to render. All the data is already in
+        <code>docs/data.json</code> — you can read it directly.
+      </div>
+    </div>
+  </noscript>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
