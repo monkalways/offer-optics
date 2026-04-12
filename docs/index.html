@@ -92,6 +92,7 @@
         <li><a href="#programs"     data-nav-target="programs">Programs</a></li>
         <li><a href="#checklist"    data-nav-target="checklist">Checklist</a></li>
         <li><a href="#data-quality" data-nav-target="data-quality">Method</a></li>
+        <li><a href="#appendix"     data-nav-target="appendix">Appendix</a></li>
       </ul>
 
       <button id="theme-toggle" class="topnav__theme-btn" type="button"
@@ -404,7 +405,131 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════
-         Section 11 — Footer
+         Appendix — Dataset & methodology overview
+         ══════════════════════════════════════════════════════════════════ -->
+    <section id="appendix" class="mb-16 md:mb-24" aria-labelledby="appendix-heading">
+      <div class="section-marker">
+        <span class="section-marker__num">VIII.</span>
+        <p class="section-marker__kicker">Appendix</p>
+      </div>
+      <h2 id="appendix-heading" class="section-heading font-display italic text-ink-900 mb-6">
+        Dataset &amp; methodology
+      </h2>
+
+      <div class="space-y-8">
+        <!-- What is this data -->
+        <div class="rounded-lg border border-ink-100 bg-card p-6 md:p-8">
+          <h3 class="text-[11px] tracking-[0.18em] uppercase text-ink-500 font-medium mb-4">What this analysis is built on</h3>
+          <p class="text-[14.5px] text-ink-700 leading-relaxed mb-4">
+            Every year, students in the <strong class="text-ink-900">r/OntarioUniversities</strong> and
+            <strong class="text-ink-900">r/AlbertaGrade12s</strong> Reddit communities voluntarily report their
+            university application outcomes — offers, rejections, deferrals, and waitlists — via public Google Forms.
+            Each submission includes the student's top-6 average, the program they applied to, the decision they received,
+            their province of residence, and (in later cycles) supplementary application details.
+          </p>
+          <p class="text-[14.5px] text-ink-700 leading-relaxed mb-4">
+            This dashboard ingests, normalizes, and analyzes <strong class="text-ink-900">four cycles</strong> of these
+            crowdsourced reports (2022–2023 through 2025–2026), covering a combined
+            <strong class="text-ink-900" id="appendix-total-rows">8,600+</strong> individual application outcomes
+            across <strong class="text-ink-900" id="appendix-total-programs">27</strong> tracked programs.
+            The analysis focuses on Justin's Tier-1 and Tier-2 target programs, computing per-program
+            accepted-average distributions, out-of-province subsets, year-over-year trends, and a percentile-based
+            placement verdict calibrated to Justin's projected Grade 12 top-6 average.
+          </p>
+          <p class="text-[14.5px] text-ink-700 leading-relaxed">
+            Application requirements (deadlines, supplementary apps, prerequisites, fees) are curated separately
+            from each university's official admissions pages — not from the Reddit data. These are stored in
+            <code class="text-[13px] px-1.5 py-0.5 bg-ink-50 border border-ink-100 rounded text-ink-700">config/requirements.yaml</code>
+            with per-entry confidence levels and source URLs.
+          </p>
+        </div>
+
+        <!-- Data sources table -->
+        <div class="rounded-lg border border-ink-100 bg-card overflow-hidden">
+          <h3 class="text-[11px] tracking-[0.18em] uppercase text-ink-500 font-medium px-6 pt-5 pb-3">Data sources</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm" id="appendix-sources-table">
+              <thead>
+                <tr class="text-left text-[10.5px] tracking-wider uppercase text-ink-400 bg-ink-50/60 border-b border-ink-100">
+                  <th class="px-6 py-2.5 font-medium">Cycle</th>
+                  <th class="px-4 py-2.5 font-medium">Region</th>
+                  <th class="px-4 py-2.5 font-medium tabular-nums">Rows</th>
+                  <th class="px-4 py-2.5 font-medium tabular-nums">Programs matched</th>
+                  <th class="px-4 py-2.5 font-medium">Status</th>
+                  <th class="px-4 py-2.5 font-medium">Source</th>
+                </tr>
+              </thead>
+              <tbody id="appendix-sources-tbody" class="divide-y divide-ink-100 text-[13px] text-ink-700"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Key limitations -->
+        <div class="rounded-lg border border-ink-100 bg-card p-6 md:p-8">
+          <h3 class="text-[11px] tracking-[0.18em] uppercase text-ink-500 font-medium mb-4">Key limitations to keep in mind</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex gap-3">
+              <span class="text-ink-300 text-lg leading-none mt-0.5">1</span>
+              <div>
+                <p class="text-[13.5px] text-ink-900 font-medium mb-1">Severe self-selection bias</p>
+                <p class="text-[13px] text-ink-600 leading-relaxed">~93–99% of Reddit reports are acceptances. Students who get rejected rarely post. All "accepted average" numbers are floor estimates for who gets in — not 50/50 cutoff lines.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-ink-300 text-lg leading-none mt-0.5">2</span>
+              <div>
+                <p class="text-[13.5px] text-ink-900 font-medium mb-1">Small out-of-province samples</p>
+                <p class="text-[13px] text-ink-600 leading-relaxed">OOP reports range from 4–12 per Tier-1 program across all cycles. The McMaster BHSc OOP floor (97.8%, n=5) is flagged as directional only — one data point could shift it by several percentage points.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-ink-300 text-lg leading-none mt-0.5">3</span>
+              <div>
+                <p class="text-[13.5px] text-ink-900 font-medium mb-1">Reddit population ≠ all applicants</p>
+                <p class="text-[13px] text-ink-600 leading-relaxed">The dataset captures a self-selected slice of the applicant pool — predominantly Ontario high-school students active on r/OntarioUniversities. Alberta, BC, and international applicants are underrepresented.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-ink-300 text-lg leading-none mt-0.5">4</span>
+              <div>
+                <p class="text-[13.5px] text-ink-900 font-medium mb-1">Schema drift across cycles</p>
+                <p class="text-[13px] text-ink-600 leading-relaxed">The 4 Google Forms used different question sets (10 fields in 2022–23 → 21 in 2023–24 → 15 in 2024–25/25–26). All are normalized to a canonical schema; see the QA report for mapping coverage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pipeline overview -->
+        <div class="rounded-lg border border-ink-100 bg-card p-6 md:p-8">
+          <h3 class="text-[11px] tracking-[0.18em] uppercase text-ink-500 font-medium mb-4">How the pipeline works</h3>
+          <div class="flex flex-wrap gap-2 text-[12.5px] text-ink-700">
+            <span class="px-3 py-1.5 bg-ink-50 border border-ink-100 rounded-md font-medium">1. Fetch sheets</span>
+            <span class="text-ink-300 self-center">→</span>
+            <span class="px-3 py-1.5 bg-ink-50 border border-ink-100 rounded-md font-medium">2. Normalize schemas</span>
+            <span class="text-ink-300 self-center">→</span>
+            <span class="px-3 py-1.5 bg-ink-50 border border-ink-100 rounded-md font-medium">3. Build SQLite</span>
+            <span class="text-ink-300 self-center">→</span>
+            <span class="px-3 py-1.5 bg-ink-50 border border-ink-100 rounded-md font-medium">4. Load requirements</span>
+            <span class="text-ink-300 self-center">→</span>
+            <span class="px-3 py-1.5 bg-ink-50 border border-ink-100 rounded-md font-medium">5. Analyze placement</span>
+            <span class="text-ink-300 self-center">→</span>
+            <span class="px-3 py-1.5 bg-ink-50 border border-ink-100 rounded-md font-medium text-ink-900">6. Dashboard</span>
+          </div>
+          <p class="mt-4 text-[13px] text-ink-500 leading-relaxed">
+            All tools live in
+            <code class="text-[12px] px-1.5 py-0.5 bg-ink-50 border border-ink-100 rounded text-ink-700">tools/</code>,
+            workflows in
+            <code class="text-[12px] px-1.5 py-0.5 bg-ink-50 border border-ink-100 rounded text-ink-700">workflows/</code>.
+            The full source is at
+            <a href="https://github.com/monkalways/offer-optics" target="_blank" rel="noopener"
+               class="text-ink-700 underline decoration-dotted underline-offset-4 hover:text-ink-900">github.com/monkalways/offer-optics</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         Footer
          ══════════════════════════════════════════════════════════════════ -->
     <footer class="mt-24 pt-10 border-t border-ink-100 text-xs text-ink-500 space-y-2">
       <p>

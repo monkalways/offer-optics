@@ -1027,6 +1027,75 @@ function renderDataQuality(dq) {
 }
 
 // ────────────────────────────────────────────────────────────────────
+// Appendix — populate data sources table and total row count
+// ────────────────────────────────────────────────────────────────────
+
+function renderAppendix(data) {
+  const dq = data.data_quality;
+  if (!dq || !dq.cycles) return;
+
+  // Total rows
+  const totalRows = dq.cycles.reduce((sum, c) => sum + (c.n_rows || 0), 0);
+  const totalEl = document.getElementById("appendix-total-rows");
+  if (totalEl) totalEl.textContent = totalRows.toLocaleString() + "+";
+
+  // Total programs
+  const totalPrograms = (data.tier1 || []).length + (data.tier2 || []).length
+    + (data.tier3 || []).length + (data.tier4 || []).length;
+  const progsEl = document.getElementById("appendix-total-programs");
+  if (progsEl) progsEl.textContent = String(totalPrograms);
+
+  // Sources table
+  const tbody = document.getElementById("appendix-sources-tbody");
+  if (!tbody) return;
+  tbody.innerHTML = "";
+
+  const sourceUrls = {
+    "2022-2023":    "https://docs.google.com/spreadsheets/d/18xQRBO1X2llysir9GwHPhdRPeJGL-osKhOX7WC4e_3o/",
+    "2023-2024":    "https://docs.google.com/spreadsheets/d/1X5oygD0Mu8v899bRBvklzB-t6saHMS7mrqfH_xsiq2Y/",
+    "2024-2025":    "https://docs.google.com/spreadsheets/d/1j48oJsjcAqS9K2wQ-x-W27gYr5LuOT-a96dt_ZZpjrw/",
+    "2025-2026":    "https://docs.google.com/spreadsheets/d/1NCN-1lw39N9lRyB9bJPfrkJy8v3V-yjnnZ1HjrG5I9A/",
+    "2025-2026-ab": "https://docs.google.com/spreadsheets/d/1fm2jDtnOyD6102mmWVXoCTNs0miMJ6-hyh5WjFKYP6Q/",
+  };
+
+  const subreddits = {
+    "ON": "r/OntarioUniversities",
+    "AB": "r/AlbertaGrade12s",
+  };
+
+  dq.cycles.forEach(c => {
+    const tr = document.createElement("tr");
+    const statusBadge = c.live
+      ? `<span class="inline-flex items-center gap-1 text-[11px] font-medium text-green-700"><span class="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span> Live</span>`
+      : `<span class="text-[11px] text-ink-400">Closed</span>`;
+    const sourceUrl = sourceUrls[c.cycle] || "#";
+    const subreddit = subreddits[c.region] || c.region || "—";
+
+    tr.innerHTML = `
+      <td class="px-6 py-3 font-medium text-ink-900">${esc(c.cycle)}</td>
+      <td class="px-4 py-3">${esc(subreddit)}</td>
+      <td class="px-4 py-3 tabular-nums">${(c.n_rows || 0).toLocaleString()}</td>
+      <td class="px-4 py-3 tabular-nums">${(c.n_programs_mapped || 0).toLocaleString()}</td>
+      <td class="px-4 py-3">${statusBadge}</td>
+      <td class="px-4 py-3"><a href="${esc(sourceUrl)}" target="_blank" rel="noopener" class="program-link">Spreadsheet ↗</a></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Totals row
+  const totalMapped = dq.cycles.reduce((s, c) => s + (c.n_programs_mapped || 0), 0);
+  const tfoot = document.createElement("tr");
+  tfoot.className = "bg-ink-50/60 font-medium text-ink-900";
+  tfoot.innerHTML = `
+    <td class="px-6 py-2.5" colspan="2">Total</td>
+    <td class="px-4 py-2.5 tabular-nums">${totalRows.toLocaleString()}</td>
+    <td class="px-4 py-2.5 tabular-nums">${totalMapped.toLocaleString()}</td>
+    <td class="px-4 py-2.5" colspan="2"></td>
+  `;
+  tbody.appendChild(tfoot);
+}
+
+// ────────────────────────────────────────────────────────────────────
 // Anchor-scroll handler: auto-open any <details> whose id matches the hash
 // ────────────────────────────────────────────────────────────────────
 
@@ -1182,6 +1251,7 @@ async function main() {
     renderTier34Note(data.tier3 || [], data.tier4 || []);
     renderChecklist(data);
     renderDataQuality(data.data_quality);
+    renderAppendix(data);
     wireAnchorAutoOpen();
     wireNavActiveState();
   } catch (err) {
