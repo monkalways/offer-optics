@@ -188,8 +188,6 @@ function renderMetaStamp(data) {
 function renderProfile(profile) {
   const p = profile || {};
   document.getElementById("profile-name").textContent = p.name || "—";
-  document.getElementById("profile-school").textContent =
-    [p.city, p.province].filter(Boolean).join(", ") || "—";
 
   const appType = p.applicant_type;
   const groupLabel = appType === "105"
