@@ -193,12 +193,12 @@
       "guelph_biomed",
       "ottawa_biomed",
       "brock_medsci",
-      "ualberta_bsc_physiol"
+      "ualberta_bsc_physiol",
+      "waterloo_math_cs",
+      "waterloo_se"
     ],
     "tier_3_waterloo_backups": [
       "waterloo_cs_bba",
-      "waterloo_se",
-      "waterloo_math_cs",
       "waterloo_math",
       "uoft_lifesci_utm",
       "uoft_lifesci_utsc"

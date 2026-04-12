@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-11T23:26:38",
+  "build_timestamp": "2026-04-11T23:27:25",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -215,12 +215,12 @@
         "guelph_biomed",
         "ottawa_biomed",
         "brock_medsci",
-        "ualberta_bsc_physiol"
+        "ualberta_bsc_physiol",
+        "waterloo_math_cs",
+        "waterloo_se"
       ],
       "tier_3_waterloo_backups": [
         "waterloo_cs_bba",
-        "waterloo_se",
-        "waterloo_math_cs",
         "waterloo_math",
         "uoft_lifesci_utm",
         "uoft_lifesci_utsc"
@@ -1665,6 +1665,179 @@
       ]
     },
     {
+      "program_key": "waterloo_math_cs",
+      "program": "Mathematics / Computer Science (joint)",
+      "university": "University of Waterloo",
+      "tier": 2,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "medium",
+      "confidence": "high",
+      "n_accepted": 91,
+      "median_accepted_avg": 95.0,
+      "min_avg": 88.3,
+      "p25": 93.0,
+      "p50": 95.0,
+      "p75": 96.5,
+      "max_avg": 99.7,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 28.6,
+      "justin_percentile_mid": 57.1,
+      "justin_percentile_high": 86.8,
+      "oop_n": 3,
+      "oop_min": 91.0,
+      "oop_mean": 95.9,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 57.1th percentile of accepted reports for University of Waterloo Mathematics / Computer Science (joint) (n=91, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 28.6-86.8th percentile. OOP subset (small sample, n=3): mean accepted 95.9%, min 91.0%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of TARGET. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 7
+        },
+        {
+          "bin": 92,
+          "n": 6
+        },
+        {
+          "bin": 93,
+          "n": 17
+        },
+        {
+          "bin": 94,
+          "n": 11
+        },
+        {
+          "bin": 95,
+          "n": 14
+        },
+        {
+          "bin": 96,
+          "n": 17
+        },
+        {
+          "bin": 97,
+          "n": 8
+        },
+        {
+          "bin": 98,
+          "n": 8
+        },
+        {
+          "bin": 99,
+          "n": 2
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
       "program_key": "queens_lifesci",
       "program": "Life Sciences",
       "university": "Queen's University",
@@ -2016,6 +2189,179 @@
         {
           "bin": 100,
           "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "waterloo_se",
+      "program": "Software Engineering",
+      "university": "University of Waterloo",
+      "tier": 2,
+      "verdict": "reach",
+      "verdict_label": "Reach",
+      "verdict_gpa_only": "reach",
+      "ec_weight": "medium",
+      "confidence": "medium",
+      "n_accepted": 36,
+      "median_accepted_avg": 97.3,
+      "min_avg": 86.3,
+      "p25": 96.0,
+      "p50": 97.3,
+      "p75": 98.2,
+      "max_avg": 100.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 11.1,
+      "justin_percentile_mid": 19.4,
+      "justin_percentile_high": 58.3,
+      "oop_n": 6,
+      "oop_min": 89.2,
+      "oop_mean": 95.9,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": null,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "casper_required": null,
+      "interview_required": null,
+      "references_required": null,
+      "deadline_ouac": null,
+      "deadline_supp": null,
+      "deadline_doc": null,
+      "decision_window": null,
+      "fee_cad": null,
+      "official_url": null,
+      "min_average_competitive": null,
+      "prereq_courses": [],
+      "prereq_notes": null,
+      "requirements_confidence": null,
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 19.4th percentile of accepted reports for University of Waterloo Software Engineering (n=36, median accepted avg 97.3%). Projection range (93.5-97.5%) places him at the 11.1-58.3th percentile. OOP subset (small sample, n=6): mean accepted 95.9%, min 89.2%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 2
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 1
+        },
+        {
+          "bin": 95,
+          "n": 3
+        },
+        {
+          "bin": 96,
+          "n": 6
+        },
+        {
+          "bin": 97,
+          "n": 7
+        },
+        {
+          "bin": 98,
+          "n": 10
+        },
+        {
+          "bin": 99,
+          "n": 3
+        },
+        {
+          "bin": 100,
+          "n": 2
         }
       ]
     },
@@ -2729,352 +3075,6 @@
         {
           "bin": 100,
           "n": 0
-        }
-      ]
-    },
-    {
-      "program_key": "waterloo_math_cs",
-      "program": "Mathematics / Computer Science (joint)",
-      "university": "University of Waterloo",
-      "tier": 3,
-      "verdict": "target",
-      "verdict_label": "Target",
-      "verdict_gpa_only": "target",
-      "ec_weight": "medium",
-      "confidence": "high",
-      "n_accepted": 91,
-      "median_accepted_avg": 95.0,
-      "min_avg": 88.3,
-      "p25": 93.0,
-      "p50": 95.0,
-      "p75": 96.5,
-      "max_avg": 99.7,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 28.6,
-      "justin_percentile_mid": 57.1,
-      "justin_percentile_high": 86.8,
-      "oop_n": 3,
-      "oop_min": 91.0,
-      "oop_mean": 95.9,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": null,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": null,
-      "interview_required": null,
-      "references_required": null,
-      "deadline_ouac": null,
-      "deadline_supp": null,
-      "deadline_doc": null,
-      "decision_window": null,
-      "fee_cad": null,
-      "official_url": null,
-      "min_average_competitive": null,
-      "prereq_courses": [],
-      "prereq_notes": null,
-      "requirements_confidence": null,
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 57.1th percentile of accepted reports for University of Waterloo Mathematics / Computer Science (joint) (n=91, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 28.6-86.8th percentile. OOP subset (small sample, n=3): mean accepted 95.9%, min 91.0%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of TARGET. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 0
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 1
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 0
-        },
-        {
-          "bin": 91,
-          "n": 7
-        },
-        {
-          "bin": 92,
-          "n": 6
-        },
-        {
-          "bin": 93,
-          "n": 17
-        },
-        {
-          "bin": 94,
-          "n": 11
-        },
-        {
-          "bin": 95,
-          "n": 14
-        },
-        {
-          "bin": 96,
-          "n": 17
-        },
-        {
-          "bin": 97,
-          "n": 8
-        },
-        {
-          "bin": 98,
-          "n": 8
-        },
-        {
-          "bin": 99,
-          "n": 2
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
-      "program_key": "waterloo_se",
-      "program": "Software Engineering",
-      "university": "University of Waterloo",
-      "tier": 3,
-      "verdict": "reach",
-      "verdict_label": "Reach",
-      "verdict_gpa_only": "reach",
-      "ec_weight": "medium",
-      "confidence": "medium",
-      "n_accepted": 36,
-      "median_accepted_avg": 97.3,
-      "min_avg": 86.3,
-      "p25": 96.0,
-      "p50": 97.3,
-      "p75": 98.2,
-      "max_avg": 100.0,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 11.1,
-      "justin_percentile_mid": 19.4,
-      "justin_percentile_high": 58.3,
-      "oop_n": 6,
-      "oop_min": 89.2,
-      "oop_mean": 95.9,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": null,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "casper_required": null,
-      "interview_required": null,
-      "references_required": null,
-      "deadline_ouac": null,
-      "deadline_supp": null,
-      "deadline_doc": null,
-      "decision_window": null,
-      "fee_cad": null,
-      "official_url": null,
-      "min_average_competitive": null,
-      "prereq_courses": [],
-      "prereq_notes": null,
-      "requirements_confidence": null,
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 19.4th percentile of accepted reports for University of Waterloo Software Engineering (n=36, median accepted avg 97.3%). Projection range (93.5-97.5%) places him at the 11.1-58.3th percentile. OOP subset (small sample, n=6): mean accepted 95.9%, min 89.2%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 1
-        },
-        {
-          "bin": 87,
-          "n": 1
-        },
-        {
-          "bin": 88,
-          "n": 0
-        },
-        {
-          "bin": 89,
-          "n": 2
-        },
-        {
-          "bin": 90,
-          "n": 0
-        },
-        {
-          "bin": 91,
-          "n": 0
-        },
-        {
-          "bin": 92,
-          "n": 0
-        },
-        {
-          "bin": 93,
-          "n": 0
-        },
-        {
-          "bin": 94,
-          "n": 1
-        },
-        {
-          "bin": 95,
-          "n": 3
-        },
-        {
-          "bin": 96,
-          "n": 6
-        },
-        {
-          "bin": 97,
-          "n": 7
-        },
-        {
-          "bin": 98,
-          "n": 10
-        },
-        {
-          "bin": 99,
-          "n": 3
-        },
-        {
-          "bin": 100,
-          "n": 2
         }
       ]
     },
@@ -5462,7 +5462,7 @@
         "n_programs_mapped": 126,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:26:35"
+        "fetched_at": "2026-04-11T23:27:21"
       },
       {
         "cycle": "2023-2024",
@@ -5473,7 +5473,7 @@
         "n_programs_mapped": 225,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:26:35"
+        "fetched_at": "2026-04-11T23:27:21"
       },
       {
         "cycle": "2024-2025",
@@ -5484,7 +5484,7 @@
         "n_programs_mapped": 370,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-11T23:26:35"
+        "fetched_at": "2026-04-11T23:27:21"
       },
       {
         "cycle": "2025-2026",
@@ -5495,7 +5495,7 @@
         "n_programs_mapped": 519,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:26:35"
+        "fetched_at": "2026-04-11T23:27:21"
       },
       {
         "cycle": "2025-2026-ab",
@@ -5506,7 +5506,7 @@
         "n_programs_mapped": 21,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-11T23:26:35"
+        "fetched_at": "2026-04-11T23:27:21"
       }
     ],
     "caveats": [

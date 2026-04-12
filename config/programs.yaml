@@ -169,7 +169,7 @@ programs:
       - "(?i)double\\s*degree.*cs"
 
   - key: waterloo_se
-    tier: 3
+    tier: 2
     university: University of Waterloo
     university_key: waterloo
     program: Software Engineering
@@ -180,7 +180,7 @@ programs:
       - "(?i)waterloo.*\\bse\\b"
 
   - key: waterloo_math_cs
-    tier: 3
+    tier: 2
     university: University of Waterloo
     university_key: waterloo
     program: Mathematics / Computer Science (joint)
