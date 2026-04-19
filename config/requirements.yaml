@@ -52,7 +52,7 @@ requirements:
     application_deadline_ouac: 2026-01-15        # OUAC equal-consideration; Jan 15 is the universal Ontario UG date
     application_deadline_supp: 2026-02-01        # supplementary app deadline; commonly Feb 1 (verify)
     document_deadline: 2026-02-01
-    decision_release_window: "Early to mid May"
+    decision_release_window: "Two waves: early March and early May (first week of each)"
 
     supp_app_required: true
     supp_app_type: "Written supplementary application (reflective essay-style questions)"
