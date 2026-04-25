@@ -410,18 +410,19 @@ def build_action_items(profile: dict, programs_tier1: list[dict],
     items: list[dict] = []
     today = date.today()
 
-    # Summer 2026 plans
+    # Summer 2026 plans (skip steps that have a matching `*_completed` / `*_received`
+    # / `*_confirmed` flag — those reminders are done and shouldn't clutter the timeline)
     summer = profile.get("extracurriculars", {}).get("summer_2026_plans", {})
     for entry in summer.get("confirmed", []):
         prog_name = entry.get("program", "")
-        if entry.get("confirmation_deadline"):
+        if entry.get("confirmation_deadline") and not entry.get("enrollment_confirmed"):
             items.append({
                 "date": entry["confirmation_deadline"],
                 "label": f"Confirm enrollment: {prog_name}",
                 "category": "summer_program",
                 "priority": "high",
             })
-        if entry.get("payment_deadline"):
+        if entry.get("payment_deadline") and not entry.get("payment_completed"):
             cost = entry.get("cost_usd")
             cost_str = f" (${cost:,} USD)" if cost else ""
             items.append({
@@ -430,13 +431,22 @@ def build_action_items(profile: dict, programs_tier1: list[dict],
                 "category": "summer_program",
                 "priority": "high",
             })
-        if entry.get("welcome_letter_expected"):
+        if entry.get("welcome_letter_expected") and not entry.get("welcome_letter_received"):
             items.append({
                 "date": entry["welcome_letter_expected"],
                 "label": f"Welcome letter expected: {prog_name}",
                 "category": "summer_program",
                 "priority": "info",
             })
+
+    # Dashboard-ops reminders (data refreshes, internal todos)
+    for reminder in profile.get("dashboard_reminders", []):
+        items.append({
+            "date": reminder.get("date"),
+            "label": reminder.get("label", ""),
+            "category": reminder.get("category", "reminder"),
+            "priority": reminder.get("priority", "medium"),
+        })
     for entry in summer.get("pending_decisions", []):
         items.append({
             "date": None,

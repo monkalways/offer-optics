@@ -151,8 +151,11 @@
           "location": "Boston, MA",
           "cost_usd": 2800,
           "confirmation_deadline": "2026-04-15",
+          "enrollment_confirmed": true,
           "payment_deadline": "2026-04-22",
-          "welcome_letter_expected": "2026-05-15"
+          "payment_completed": true,
+          "welcome_letter_expected": "2026-05-15",
+          "welcome_letter_received": true
         }
       ],
       "pending_decisions": [
@@ -216,6 +219,14 @@
       "ualberta_pharmacology_honors"
     ]
   },
+  "dashboard_reminders": [
+    {
+      "date": "2026-05-04",
+      "label": "Re-pull live 2025-26 spreadsheets — McMaster BHSc May acceptance wave expected (twin-peak pattern: early Mar + early May, ~21 acceptances per wave in 2024-25)",
+      "category": "data_refresh",
+      "priority": "high"
+    }
+  ],
   "_profile_provenance": {
     "captured_on": "2026-04-07",
     "updated_on": "2026-04-11",

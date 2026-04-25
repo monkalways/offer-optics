@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-25T11:45:59",
+  "build_timestamp": "2026-04-25T12:22:22",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -175,8 +175,11 @@
             "location": "Boston, MA",
             "cost_usd": 2800,
             "confirmation_deadline": "2026-04-15",
+            "enrollment_confirmed": true,
             "payment_deadline": "2026-04-22",
-            "welcome_letter_expected": "2026-05-15"
+            "payment_completed": true,
+            "welcome_letter_expected": "2026-05-15",
+            "welcome_letter_received": true
           }
         ],
         "pending_decisions": [
@@ -237,7 +240,15 @@
         "ualberta_pharmacy",
         "ualberta_pharmacology_honors"
       ]
-    }
+    },
+    "dashboard_reminders": [
+      {
+        "date": "2026-05-04",
+        "label": "Re-pull live 2025-26 spreadsheets — McMaster BHSc May acceptance wave expected (twin-peak pattern: early Mar + early May, ~21 acceptances per wave in 2024-25)",
+        "category": "data_refresh",
+        "priority": "high"
+      }
+    ]
   },
   "tier1": [
     {
@@ -5380,25 +5391,11 @@
   ],
   "action_items": [
     {
-      "date": "2026-04-15",
-      "label": "Confirm enrollment: Harvard Medical School MEDscience Summer Program — TECH Foundations",
-      "category": "summer_program",
+      "date": "2026-05-04",
+      "label": "Re-pull live 2025-26 spreadsheets — McMaster BHSc May acceptance wave expected (twin-peak pattern: early Mar + early May, ~21 acceptances per wave in 2024-25)",
+      "category": "data_refresh",
       "priority": "high",
-      "days_from_today": -10
-    },
-    {
-      "date": "2026-04-22",
-      "label": "Submit payment: Harvard Medical School MEDscience Summer Program — TECH Foundations ($2,800 USD)",
-      "category": "summer_program",
-      "priority": "high",
-      "days_from_today": -3
-    },
-    {
-      "date": "2026-05-15",
-      "label": "Welcome letter expected: Harvard Medical School MEDscience Summer Program — TECH Foundations",
-      "category": "summer_program",
-      "priority": "info",
-      "days_from_today": 20
+      "days_from_today": 9
     },
     {
       "date": "2027-01-15",

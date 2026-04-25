@@ -136,6 +136,11 @@ requirements:
       and class time is for inquiry/discussion — so the PSE rubric heavily
       rewards demonstrated self-direction and time management.
 
+      In-cycle observation (2025-26): a clustered wave of acceptances landed
+      in the Reddit dataset on 2026-04-14 (offers spanning 95–99% averages),
+      ahead of the official "by mid-May" commitment. The decision_release_window
+      string captures this rolling pattern.
+
     application_deadline_ouac: 2026-01-15
     application_deadline_supp: 2026-02-15        # PSE deadline confirmed from supp app page
     document_deadline: 2026-02-15
