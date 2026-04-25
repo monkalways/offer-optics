@@ -38,31 +38,49 @@ requirements:
     tier: 1
     source_url: https://bhsc.mcmaster.ca/future-students/admissions/
     fallback_source_url: https://hhsp.healthsci.mcmaster.ca/
-    curated_on: 2026-04-08
-    confidence: medium
+    curated_on: 2026-04-25
+    confidence: high
     curator_notes: |
-      McMaster's bhsc.mcmaster.ca and hhsp.healthsci.mcmaster.ca are both
-      Cloudflare-protected and refused our automated fetches (403). These
-      values come from public knowledge of the program plus the Reddit dataset.
-      All fields should be re-verified by manually opening the official page.
-      The bhsc.mcmaster.ca subdomain 301-redirects to hhsp.healthsci.mcmaster.ca
-      as of April 2026 — the Honours Health Sciences Program (HHSP) is the
-      program's current home.
+      Format details verified against the official 2025 Supplementary
+      Application Questions PDF (archived from hhsp.healthsci.mcmaster.ca,
+      Wayback snapshot 2025-01-23). Live HHSP pages are Cloudflare-protected
+      and refuse automated fetches, but the archived official PDF gives
+      authoritative supp-app structure, character limits, and the GenAI
+      prohibition. Date fields below assume the 2026-27 cycle mirrors the
+      published 2024-25 timing — re-verify in September 2026 when that
+      cycle's PDF is posted. The bhsc.mcmaster.ca subdomain 301-redirects
+      to hhsp.healthsci.mcmaster.ca; HHSP is the program's current home.
 
     application_deadline_ouac: 2026-01-15        # OUAC equal-consideration; Jan 15 is the universal Ontario UG date
-    application_deadline_supp: 2026-02-01        # supplementary app deadline; commonly Feb 1 (verify)
-    document_deadline: 2026-02-01
+    application_deadline_supp: 2026-02-05        # close of the ~3–4 day portal window in early Feb (2024-25 cycle was Feb 3–6); not a hard single-date deadline — instructions emailed late Jan
+    document_deadline: 2026-02-05
     decision_release_window: "Two waves: early March and early May (first week of each)"
 
     supp_app_required: true
-    supp_app_type: "Written supplementary application (reflective essay-style questions)"
+    supp_app_type: "2 written essays (1500 characters each, including spaces); choose 1 of 3 prompts for Q1 + 1 of 3 prompts for Q2"
     supp_app_url: https://hhsp.healthsci.mcmaster.ca/future-students/supplementary-application/
     supp_app_notes: |
-      Opens in September. Applicants receive submission instructions via email
-      in January. Reflective questions covering experiences, motivations, and
-      values. Must be completed independently — sharing or posting answers
-      online disqualifies the application. The supp app is the primary
-      differentiator above the ~90% grade floor.
+      McMaster posts the year's Supp App Questions PDF publicly in September,
+      so applicants see the prompts months before the portal opens. Applicants
+      choose 1 of 3 options for Question 1 and 1 of 3 options for Question 2
+      (so 2 essays drawn from a pool of 6 prompts), with a hard 1500-character
+      cap per response (including punctuation and spaces). Submission
+      instructions are emailed in late January, and the online portal is open
+      for only ~3–4 days in early February (Feb 3–6 in the 2024-25 cycle).
+      Extensions are not granted.
+
+      Prompts are problem-based and philosophical, designed to test how an
+      applicant thinks — 2025 prompts covered cognitive engagement in the
+      age of GenAI, Indigenous Seven Grandfather Teachings, interdisciplinary
+      synergies between health and other fields, and admissions-policy design.
+
+      Generative AI is explicitly prohibited: "use of generative AI to write
+      the response are not permitted, and may result in removal from the
+      applicant pool." Proofreading tools and human feedback are acceptable
+      but "the writing itself must be your own work." Posting answers online
+      or working with others on responses is also disqualifying.
+
+      The supp app is the primary differentiator above the ~90% grade floor.
 
     casper_required: false
     casper_format: null
@@ -106,29 +124,46 @@ requirements:
     tier: 1
     source_url: https://bhsc.queensu.ca/future-students/admission
     supp_app_source_url: https://bhsc.queensu.ca/future-students/supplementary-application
-    curated_on: 2026-04-08
+    curated_on: 2026-04-25
     confidence: high
     curator_notes: |
-      Most fields confirmed from the official Queen's BHSc admission and
-      supplementary application pages. Dates marked `medium` confidence are
-      from the supplementary app page; the OUAC date is the universal Ontario
-      Jan 15. Queen's BHSc has both an on-campus stream and an online stream;
-      the on-campus stream is what most applicants pursue and is what is
-      reflected here.
+      Format and timing details confirmed against the official Queen's BHSc
+      supplementary application page and the queensu.ca PSE FAQ on 2026-04-25.
+      The OUAC date is the universal Ontario Jan 15. Queen's BHSc has both an
+      on-campus stream (QH) and an online stream; the on-campus stream is what
+      most applicants pursue and is what is reflected here. The on-campus
+      program uses a flipped-classroom model — most lectures are asynchronous
+      and class time is for inquiry/discussion — so the PSE rubric heavily
+      rewards demonstrated self-direction and time management.
 
     application_deadline_ouac: 2026-01-15
     application_deadline_supp: 2026-02-15        # PSE deadline confirmed from supp app page
     document_deadline: 2026-02-15
-    decision_release_window: "April"
+    decision_release_window: "April through mid-May (rolling; official FAQ commits to communicating all decisions by mid-May)"
 
     supp_app_required: true
-    supp_app_type: "Personal Statement of Experience (PSE) — 1 written response + 1 video response"
+    supp_app_type: "Personal Statement of Experience (PSE) on Kira Talent — 1 timed written response (10 min, 335-word cap) + 1 video response (2 min prep + 2 min delivery)"
     supp_app_url: https://bhsc.queensu.ca/future-students/supplementary-application
     supp_app_notes: |
-      One written response and one video response. "Queen's does not accept
-      late submissions." Additional materials (reference letters, CV, etc.)
-      will not be reviewed. Specific question text and rubric are released
-      to applicants annually. Required for the on-campus stream.
+      Delivered through Kira Talent. Applicants complete the written response
+      first (10 minutes to write and submit, 335-word hard cap — the FAQ warns
+      "exceeding the word limit will negatively affect your application"),
+      then the video response (2 minutes to prepare, 2 minutes to deliver).
+      Total assessment is ~30 minutes; can be done in one sitting or split
+      across sessions, but the written piece must be finished before starting
+      the video.
+
+      Mandatory practice questions are part of the check-in process so
+      applicants can get comfortable with the platform before submitting.
+      Question text is not released in advance; applicants get questions at
+      random and re-takes also draw new questions at random.
+
+      "Queen's does not accept late submissions." Additional materials
+      (reference letters, CV, etc.) will not be reviewed. Required for the
+      on-campus stream. Read by trained committees including reviewers from
+      Health Sciences, Nursing, and Commerce. Kira Talent does not recommend
+      third-party browser extensions (e.g. Grammarly) during submission due to
+      platform compatibility issues.
 
     casper_required: false
     casper_format: null

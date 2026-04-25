@@ -759,6 +759,20 @@ function buildProgramCard(p, ecInsight, timelineMonths, openByDefault) {
   `;
   body.appendChild(reqGrid);
 
+  // Supp app details (full notes for programs with supp apps)
+  if (p.supp_app_required && p.supp_app_notes) {
+    const suppDiv = el("div", "mt-4 rounded-lg border border-ink-100 bg-ink-50/50 p-4 text-[13px] text-ink-700 leading-relaxed space-y-2");
+    const paragraphs = p.supp_app_notes
+      .split(/\n\s*\n/)
+      .map(t => t.trim())
+      .filter(Boolean);
+    suppDiv.innerHTML = `
+      <p class="text-[10.5px] tracking-[0.15em] uppercase text-ink-500 font-semibold mb-2">Supplementary application details</p>
+      ${paragraphs.map(para => `<p>${esc(para).replace(/\n/g, " ")}</p>`).join("")}
+    `;
+    body.appendChild(suppDiv);
+  }
+
   // Prereq courses
   if (p.prereq_courses && p.prereq_courses.length) {
     const prereqDiv = el("div", "mt-3");

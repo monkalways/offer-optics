@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-19T16:02:26",
+  "build_timestamp": "2026-04-25T11:40:53",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -269,15 +269,16 @@
       "oop_caveat": null,
       "oop_signal": "none",
       "supp_app_required": true,
-      "supp_app_type": "Personal Statement of Experience (PSE) — 1 written response + 1 video response",
+      "supp_app_type": "Personal Statement of Experience (PSE) on Kira Talent — 1 timed written response (10 min, 335-word cap) + 1 video response (2 min prep + 2 min delivery)",
       "supp_app_url": "https://bhsc.queensu.ca/future-students/supplementary-application",
+      "supp_app_notes": "Delivered through Kira Talent. Applicants complete the written response\nfirst (10 minutes to write and submit, 335-word hard cap — the FAQ warns\n\"exceeding the word limit will negatively affect your application\"),\nthen the video response (2 minutes to prepare, 2 minutes to deliver).\nTotal assessment is ~30 minutes; can be done in one sitting or split\nacross sessions, but the written piece must be finished before starting\nthe video.\n\nMandatory practice questions are part of the check-in process so\napplicants can get comfortable with the platform before submitting.\nQuestion text is not released in advance; applicants get questions at\nrandom and re-takes also draw new questions at random.\n\n\"Queen's does not accept late submissions.\" Additional materials\n(reference letters, CV, etc.) will not be reviewed. Required for the\non-campus stream. Read by trained committees including reviewers from\nHealth Sciences, Nursing, and Commerce. Kira Talent does not recommend\nthird-party browser extensions (e.g. Grammarly) during submission due to\nplatform compatibility issues.\n",
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
       "deadline_ouac": "2027-01-15",
       "deadline_supp": "2027-02-15",
       "deadline_doc": "2027-02-15",
-      "decision_window": "April",
+      "decision_window": "April through mid-May (rolling; official FAQ commits to communicating all decisions by mid-May)",
       "fee_cad": 156,
       "official_url": "https://bhsc.queensu.ca/future-students/admission",
       "min_average_competitive": 90.0,
@@ -448,14 +449,15 @@
       "oop_caveat": "Justin's HIGH projection 97.5% is below the observed OOP floor 97.8% (small sample n=5 — directional only)",
       "oop_signal": "adverse_small_sample",
       "supp_app_required": true,
-      "supp_app_type": "Written supplementary application (reflective essay-style questions)",
+      "supp_app_type": "2 written essays (1500 characters each, including spaces); choose 1 of 3 prompts for Q1 + 1 of 3 prompts for Q2",
       "supp_app_url": "https://hhsp.healthsci.mcmaster.ca/future-students/supplementary-application/",
+      "supp_app_notes": "McMaster posts the year's Supp App Questions PDF publicly in September,\nso applicants see the prompts months before the portal opens. Applicants\nchoose 1 of 3 options for Question 1 and 1 of 3 options for Question 2\n(so 2 essays drawn from a pool of 6 prompts), with a hard 1500-character\ncap per response (including punctuation and spaces). Submission\ninstructions are emailed in late January, and the online portal is open\nfor only ~3–4 days in early February (Feb 3–6 in the 2024-25 cycle).\nExtensions are not granted.\n\nPrompts are problem-based and philosophical, designed to test how an\napplicant thinks — 2025 prompts covered cognitive engagement in the\nage of GenAI, Indigenous Seven Grandfather Teachings, interdisciplinary\nsynergies between health and other fields, and admissions-policy design.\n\nGenerative AI is explicitly prohibited: \"use of generative AI to write\nthe response are not permitted, and may result in removal from the\napplicant pool.\" Proofreading tools and human feedback are acceptable\nbut \"the writing itself must be your own work.\" Posting answers online\nor working with others on responses is also disqualifying.\n\nThe supp app is the primary differentiator above the ~90% grade floor.\n",
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
       "deadline_ouac": "2027-01-15",
-      "deadline_supp": "2027-02-01",
-      "deadline_doc": "2027-02-01",
+      "deadline_supp": "2027-02-05",
+      "deadline_doc": "2027-02-05",
       "decision_window": "Two waves: early March and early May (first week of each)",
       "fee_cad": 156,
       "official_url": "https://bhsc.mcmaster.ca/future-students/admissions/",
@@ -467,7 +469,7 @@
         "Grade 12 Chemistry (SCH4U) — strongly recommended"
       ],
       "prereq_notes": "English 4U is the only formally required prerequisite; Bio + Chem are\nrecommended. Justin's Alberta equivalents are ELA 30-1, Biology 30,\nChemistry 30 — all satisfied. McMaster will use his top-6 Grade 12\nacademic average for assessment.\n",
-      "requirements_confidence": "medium",
+      "requirements_confidence": "high",
       "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 21.0th percentile of accepted reports for McMaster University Bachelor of Health Sciences (Honours) (n=62, median accepted avg 97.0%). Projection range (93.5-97.5%) places him at the 11.3-69.4th percentile. OOP DIRECTIONAL SIGNAL (small sample, treat with caution): only 5 OOP-accepted reports across 4 cycles, all clustered above 97.8%. Even Justin's HIGH projection of 97.5% is below the observed OOP minimum, but with n=5 this is a YELLOW FLAG, not a hard threshold — one additional data point could shift the floor by several percentage points. Suggests OOP bar may be tougher than in-province; do not let it override the percentile-based verdict. Supp-app leverage (very high weight at this program): VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for. EC adjustment applied: GPA-only verdict would be REACH, upgraded to TARGET via strong supplementary-application leverage. ECs alone never upgrade a reach to a safety — the upgrade is capped at target. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": "VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for.",
       "histogram_bins": [
@@ -628,6 +630,7 @@
       "supp_app_required": true,
       "supp_app_type": "Admission Information Form (AIF)",
       "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
+      "supp_app_notes": "The AIF asks about academic background, extracurriculars, programming\nexperience, contests, and reasons for choosing Waterloo CS. It is a\nrequired part of the application — the program page states\n\"supplementary information forms, including the Admission Information\nForm, are required for admission.\" Reddit comments frequently cite\nhackathon wins, CS contest results (CCC, Euclid, AMC), and\ncommunity/competitive programming as common AIF entries.\n",
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -808,6 +811,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": "Life Sciences admission category does not require a supplementary\napplication. Some other A&S programs (Engineering, Music, etc.) do, but\nLife Sci is judged on academic record alone.\n",
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -985,6 +989,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -1164,6 +1169,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -1343,6 +1349,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -1521,6 +1528,7 @@
       "supp_app_required": true,
       "supp_app_type": "Admission Information Form (AIF)",
       "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -1699,6 +1707,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -1878,6 +1887,7 @@
       "supp_app_required": true,
       "supp_app_type": "Admission Information Form (AIF)",
       "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -2057,6 +2067,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -2238,6 +2249,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -2414,6 +2426,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -2591,6 +2604,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -2768,6 +2782,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -2944,6 +2959,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -3117,6 +3133,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -3290,6 +3307,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -3465,6 +3483,7 @@
       "supp_app_required": false,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
@@ -3643,6 +3662,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -3816,6 +3836,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -3989,6 +4010,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -4162,6 +4184,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -4335,6 +4358,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -4508,6 +4532,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -4681,6 +4706,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -4854,6 +4880,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -5027,6 +5054,7 @@
       "supp_app_required": null,
       "supp_app_type": null,
       "supp_app_url": null,
+      "supp_app_notes": null,
       "casper_required": null,
       "interview_required": null,
       "references_required": null,
@@ -5356,210 +5384,210 @@
       "label": "Confirm enrollment: Harvard Medical School MEDscience Summer Program — TECH Foundations",
       "category": "summer_program",
       "priority": "high",
-      "days_from_today": -4
+      "days_from_today": -10
     },
     {
       "date": "2026-04-22",
       "label": "Submit payment: Harvard Medical School MEDscience Summer Program — TECH Foundations ($2,800 USD)",
       "category": "summer_program",
       "priority": "high",
-      "days_from_today": 3
+      "days_from_today": -3
     },
     {
       "date": "2026-05-15",
       "label": "Welcome letter expected: Harvard Medical School MEDscience Summer Program — TECH Foundations",
       "category": "summer_program",
       "priority": "info",
-      "days_from_today": 26
+      "days_from_today": 20
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 271
+      "days_from_today": 265
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 286
+      "days_from_today": 280
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 286
+      "days_from_today": 280
     },
     {
       "date": "2027-01-30",
       "label": "Supplementary application due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 286
+      "days_from_today": 280
     },
     {
       "date": "2027-01-30",
       "label": "Documents due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 286
-    },
-    {
-      "date": "2027-02-01",
-      "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
-      "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 288
-    },
-    {
-      "date": "2027-02-01",
-      "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
-      "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 288
+      "days_from_today": 280
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 288
+      "days_from_today": 282
     },
     {
       "date": "2027-02-02",
       "label": "Documents due: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 289
+      "days_from_today": 283
+    },
+    {
+      "date": "2027-02-05",
+      "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 286
+    },
+    {
+      "date": "2027-02-05",
+      "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 286
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 300
+      "days_from_today": 294
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 300
+      "days_from_today": 294
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 300
+      "days_from_today": 294
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 300
+      "days_from_today": 294
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 302
+      "days_from_today": 296
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 302
+      "days_from_today": 296
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 302
+      "days_from_today": 296
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 302
+      "days_from_today": 296
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 302
+      "days_from_today": 296
     },
     {
       "date": "2027-03-01",
       "label": "OUAC equal-consideration: University of Alberta — BSc Physiology",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 316
+      "days_from_today": 310
     },
     {
       "date": "2028-02-29",
       "label": "Documents due: University of Alberta — BSc Physiology",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 681
+      "days_from_today": 675
     },
     {
       "date": null,
