@@ -131,9 +131,16 @@
         "period": "2024 – Present"
       },
       {
-        "name": "Executive Member — Mathematics & Computer Science Club (Old Scona)",
+        "name": "Co-President — Mathematics Club (Old Scona)",
         "period": "2024 – Present",
-        "description": "Organizes peer-led sessions on Data Structures & Algorithms; facilitates school-wide participation in math and coding contests."
+        "role": "Co-President (elected)",
+        "description": "Elected co-president of the school mathematics club. Organizes peer-led sessions and facilitates school-wide participation in math contests including Waterloo competitions."
+      },
+      {
+        "name": "Co-President — Computer Science Club (Old Scona)",
+        "period": "2024 – Present",
+        "role": "Co-President (elected)",
+        "description": "Elected co-president of the school computer science club. Leads sessions on Data Structures & Algorithms and coordinates school participation in coding competitions including CCC."
       }
     ],
 
@@ -158,15 +165,16 @@
           "welcome_letter_received": true
         }
       ],
-      "pending_decisions": [
+      "pending_decisions": [],
+      "rejected": [
         {
           "program": "HYRS 2026 (Heritage Youth Researcher Summer)",
           "applied": true,
-          "essay_source": "data/justin/HYRS_2026_Essay_Justin_Wei.docx",
-          "decision_expected": "spring 2026"
+          "decision": "not accepted (confirmed 2026-05)",
+          "essay_source": "data/justin/HYRS_2026_Essay_Justin_Wei.docx"
         }
       ],
-      "notes": "Harvard MEDScience is a 1-week program (June 22-26), so it does NOT compete with HYRS — Justin can do both if HYRS accepts him. With Harvard MEDScience confirmed, the formal-clinical-research gap from his earlier profile is partially filled even without HYRS; HYRS now becomes additive (lab research) rather than gap-filling (any clinical exposure)."
+      "notes": "HYRS rejected (2026-05). Harvard MEDScience (June 22-26) remains confirmed and is the primary summer credential. Formal lab-research experience gap remains — consider U of A lab volunteer, AHS summer research, or reaching out to an Edmonton researcher to collaborate on validating the IB CS IA ML tool."
     },
 
 

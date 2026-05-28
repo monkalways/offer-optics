@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-04-25T12:22:22",
+  "build_timestamp": "2026-05-27T17:24:40",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -158,9 +158,16 @@
           "period": "2024 – Present"
         },
         {
-          "name": "Executive Member — Mathematics & Computer Science Club (Old Scona)",
+          "name": "Co-President — Mathematics Club (Old Scona)",
           "period": "2024 – Present",
-          "description": "Organizes peer-led sessions on Data Structures & Algorithms; facilitates school-wide participation in math and coding contests."
+          "role": "Co-President (elected)",
+          "description": "Elected co-president of the school mathematics club. Organizes peer-led sessions and facilitates school-wide participation in math contests including Waterloo competitions."
+        },
+        {
+          "name": "Co-President — Computer Science Club (Old Scona)",
+          "period": "2024 – Present",
+          "role": "Co-President (elected)",
+          "description": "Elected co-president of the school computer science club. Leads sessions on Data Structures & Algorithms and coordinates school participation in coding competitions including CCC."
         }
       ],
       "other_achievements": [
@@ -182,15 +189,16 @@
             "welcome_letter_received": true
           }
         ],
-        "pending_decisions": [
+        "pending_decisions": [],
+        "rejected": [
           {
             "program": "HYRS 2026 (Heritage Youth Researcher Summer)",
             "applied": true,
-            "essay_source": "data/justin/HYRS_2026_Essay_Justin_Wei.docx",
-            "decision_expected": "spring 2026"
+            "decision": "not accepted (confirmed 2026-05)",
+            "essay_source": "data/justin/HYRS_2026_Essay_Justin_Wei.docx"
           }
         ],
-        "notes": "Harvard MEDScience is a 1-week program (June 22-26), so it does NOT compete with HYRS — Justin can do both if HYRS accepts him. With Harvard MEDScience confirmed, the formal-clinical-research gap from his earlier profile is partially filled even without HYRS; HYRS now becomes additive (lab research) rather than gap-filling (any clinical exposure)."
+        "notes": "HYRS rejected (2026-05). Harvard MEDScience (June 22-26) remains confirmed and is the primary summer credential. Formal lab-research experience gap remains — consider U of A lab volunteer, AHS summer research, or reaching out to an Edmonton researcher to collaborate on validating the IB CS IA ML tool."
       },
       "ec_strengths_by_target": {
         "mcmaster_bhsc": "VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for.",
@@ -252,6 +260,185 @@
   },
   "tier1": [
     {
+      "program_key": "mcmaster_bhsc",
+      "program": "Bachelor of Health Sciences (Honours)",
+      "university": "McMaster University",
+      "tier": 1,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "reach",
+      "ec_weight": "very_high",
+      "confidence": "high",
+      "n_accepted": 86,
+      "median_accepted_avg": 97.0,
+      "min_avg": 88.7,
+      "p25": 95.3,
+      "p50": 97.0,
+      "p75": 97.5,
+      "max_avg": 100.0,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 16.3,
+      "justin_percentile_mid": 27.9,
+      "justin_percentile_high": 76.7,
+      "oop_n": 7,
+      "oop_min": 97.0,
+      "oop_mean": 98.5,
+      "oop_caveat": "Justin's midpoint 95.5% is below the observed OOP floor 97.0% (small sample n=7 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": true,
+      "supp_app_type": "2 written essays (1500 characters each, including spaces); choose 1 of 3 prompts for Q1 + 1 of 3 prompts for Q2",
+      "supp_app_url": "https://hhsp.healthsci.mcmaster.ca/future-students/supplementary-application/",
+      "supp_app_notes": "McMaster posts the year's Supp App Questions PDF publicly in September,\nso applicants see the prompts months before the portal opens. Applicants\nchoose 1 of 3 options for Question 1 and 1 of 3 options for Question 2\n(so 2 essays drawn from a pool of 6 prompts), with a hard 1500-character\ncap per response (including punctuation and spaces). Submission\ninstructions are emailed in late January, and the online portal is open\nfor only ~3–4 days in early February (Feb 3–6 in the 2024-25 cycle).\nExtensions are not granted.\n\nPrompts are problem-based and philosophical, designed to test how an\napplicant thinks — 2025 prompts covered cognitive engagement in the\nage of GenAI, Indigenous Seven Grandfather Teachings, interdisciplinary\nsynergies between health and other fields, and admissions-policy design.\n\nGenerative AI is explicitly prohibited: \"use of generative AI to write\nthe response are not permitted, and may result in removal from the\napplicant pool.\" Proofreading tools and human feedback are acceptable\nbut \"the writing itself must be your own work.\" Posting answers online\nor working with others on responses is also disqualifying.\n\nThe supp app is the primary differentiator above the ~90% grade floor.\n",
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": "2027-02-05",
+      "deadline_doc": "2027-02-05",
+      "decision_window": "Two waves: early March and early May (first week of each)",
+      "fee_cad": 156,
+      "official_url": "https://bhsc.mcmaster.ca/future-students/admissions/",
+      "min_average_competitive": 90.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U) — required",
+        "5 best Grade 12 4U/4M courses including the required English",
+        "Grade 12 Biology (SBI4U) — strongly recommended",
+        "Grade 12 Chemistry (SCH4U) — strongly recommended"
+      ],
+      "prereq_notes": "English 4U is the only formally required prerequisite; Bio + Chem are\nrecommended. Justin's Alberta equivalents are ELA 30-1, Biology 30,\nChemistry 30 — all satisfied. McMaster will use his top-6 Grade 12\nacademic average for assessment.\n",
+      "requirements_confidence": "high",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 27.9th percentile of accepted reports for McMaster University Bachelor of Health Sciences (Honours) (n=86, median accepted avg 97.0%). Projection range (93.5-97.5%) places him at the 16.3-76.7th percentile. OOP DIRECTIONAL SIGNAL (small sample, n=7): mean accepted 98.5%, min 97.0%. Justin's midpoint 95.5% is below the observed OOP minimum but his high projection 97.5% clears it. Treat as directional only. Supp-app leverage (very high weight at this program): VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for. EC adjustment applied: GPA-only verdict would be REACH, upgraded to TARGET via strong supplementary-application leverage. ECs alone never upgrade a reach to a safety — the upgrade is capped at target. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": "VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for.",
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 4
+        },
+        {
+          "bin": 91,
+          "n": 4
+        },
+        {
+          "bin": 92,
+          "n": 3
+        },
+        {
+          "bin": 93,
+          "n": 2
+        },
+        {
+          "bin": 94,
+          "n": 5
+        },
+        {
+          "bin": 95,
+          "n": 10
+        },
+        {
+          "bin": 96,
+          "n": 13
+        },
+        {
+          "bin": 97,
+          "n": 27
+        },
+        {
+          "bin": 98,
+          "n": 13
+        },
+        {
+          "bin": 99,
+          "n": 3
+        },
+        {
+          "bin": 100,
+          "n": 1
+        }
+      ]
+    },
+    {
       "program_key": "queens_bhsc",
       "program": "Bachelor of Health Sciences",
       "university": "Queen's University",
@@ -261,7 +448,7 @@
       "verdict_gpa_only": "target",
       "ec_weight": "very_high",
       "confidence": "high",
-      "n_accepted": 68,
+      "n_accepted": 73,
       "median_accepted_avg": 96.4,
       "min_avg": 82.5,
       "p25": 95.0,
@@ -271,9 +458,9 @@
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 7.4,
-      "justin_percentile_mid": 36.8,
-      "justin_percentile_high": 70.6,
+      "justin_percentile_low": 6.8,
+      "justin_percentile_mid": 37.0,
+      "justin_percentile_high": 72.6,
       "oop_n": 8,
       "oop_min": 93.5,
       "oop_mean": 96.2,
@@ -302,7 +489,7 @@
       ],
       "prereq_notes": "Minimum 75% cumulative average required for consideration. Justin's\nAlberta equivalents satisfy these: ELA 30-1 (must hit ≥80% — currently\nprojected 85-90), Biology 30, Chemistry 30, Math 30-1 (Pure Math = AB\nAdvanced Functions equivalent), Math 31 (= Calculus & Vectors), French\n30-1. **The 80% English minimum is the field to watch — Justin's ELA\n30-1 projection of 85-90 has cushion but no margin for slipping.**\n",
       "requirements_confidence": "high",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 36.8th percentile of accepted reports for Queen's University Bachelor of Health Sciences (n=68, median accepted avg 96.4%). Projection range (93.5-97.5%) places him at the 7.4-70.6th percentile. OOP subset (small sample, n=8): mean accepted 96.2%, min 93.5%. Justin's range is consistent with the observed OOP cluster. Supp-app leverage (very high weight at this program): VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 37.0th percentile of accepted reports for Queen's University Bachelor of Health Sciences (n=73, median accepted avg 96.4%). Projection range (93.5-97.5%) places him at the 6.8-72.6th percentile. OOP subset (small sample, n=8): mean accepted 96.2%, min 93.5%. Justin's range is consistent with the observed OOP cluster. Supp-app leverage (very high weight at this program): VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": "VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive.",
       "histogram_bins": [
         {
@@ -403,11 +590,11 @@
         },
         {
           "bin": 94,
-          "n": 5
+          "n": 6
         },
         {
           "bin": 95,
-          "n": 17
+          "n": 19
         },
         {
           "bin": 96,
@@ -415,7 +602,7 @@
         },
         {
           "bin": 97,
-          "n": 15
+          "n": 17
         },
         {
           "bin": 98,
@@ -432,185 +619,6 @@
       ]
     },
     {
-      "program_key": "mcmaster_bhsc",
-      "program": "Bachelor of Health Sciences (Honours)",
-      "university": "McMaster University",
-      "tier": 1,
-      "verdict": "target",
-      "verdict_label": "Target",
-      "verdict_gpa_only": "reach",
-      "ec_weight": "very_high",
-      "confidence": "high",
-      "n_accepted": 63,
-      "median_accepted_avg": 97.0,
-      "min_avg": 90.0,
-      "p25": 95.8,
-      "p50": 97.0,
-      "p75": 98.0,
-      "max_avg": 100.0,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 11.1,
-      "justin_percentile_mid": 22.2,
-      "justin_percentile_high": 69.8,
-      "oop_n": 5,
-      "oop_min": 97.8,
-      "oop_mean": 98.9,
-      "oop_caveat": "Justin's HIGH projection 97.5% is below the observed OOP floor 97.8% (small sample n=5 — directional only)",
-      "oop_signal": "adverse_small_sample",
-      "supp_app_required": true,
-      "supp_app_type": "2 written essays (1500 characters each, including spaces); choose 1 of 3 prompts for Q1 + 1 of 3 prompts for Q2",
-      "supp_app_url": "https://hhsp.healthsci.mcmaster.ca/future-students/supplementary-application/",
-      "supp_app_notes": "McMaster posts the year's Supp App Questions PDF publicly in September,\nso applicants see the prompts months before the portal opens. Applicants\nchoose 1 of 3 options for Question 1 and 1 of 3 options for Question 2\n(so 2 essays drawn from a pool of 6 prompts), with a hard 1500-character\ncap per response (including punctuation and spaces). Submission\ninstructions are emailed in late January, and the online portal is open\nfor only ~3–4 days in early February (Feb 3–6 in the 2024-25 cycle).\nExtensions are not granted.\n\nPrompts are problem-based and philosophical, designed to test how an\napplicant thinks — 2025 prompts covered cognitive engagement in the\nage of GenAI, Indigenous Seven Grandfather Teachings, interdisciplinary\nsynergies between health and other fields, and admissions-policy design.\n\nGenerative AI is explicitly prohibited: \"use of generative AI to write\nthe response are not permitted, and may result in removal from the\napplicant pool.\" Proofreading tools and human feedback are acceptable\nbut \"the writing itself must be your own work.\" Posting answers online\nor working with others on responses is also disqualifying.\n\nThe supp app is the primary differentiator above the ~90% grade floor.\n",
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-15",
-      "deadline_supp": "2027-02-05",
-      "deadline_doc": "2027-02-05",
-      "decision_window": "Two waves: early March and early May (first week of each)",
-      "fee_cad": 156,
-      "official_url": "https://bhsc.mcmaster.ca/future-students/admissions/",
-      "min_average_competitive": 90.0,
-      "prereq_courses": [
-        "Grade 12 English (ENG4U) — required",
-        "5 best Grade 12 4U/4M courses including the required English",
-        "Grade 12 Biology (SBI4U) — strongly recommended",
-        "Grade 12 Chemistry (SCH4U) — strongly recommended"
-      ],
-      "prereq_notes": "English 4U is the only formally required prerequisite; Bio + Chem are\nrecommended. Justin's Alberta equivalents are ELA 30-1, Biology 30,\nChemistry 30 — all satisfied. McMaster will use his top-6 Grade 12\nacademic average for assessment.\n",
-      "requirements_confidence": "high",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 22.2th percentile of accepted reports for McMaster University Bachelor of Health Sciences (Honours) (n=63, median accepted avg 97.0%). Projection range (93.5-97.5%) places him at the 11.1-69.8th percentile. OOP DIRECTIONAL SIGNAL (small sample, treat with caution): only 5 OOP-accepted reports across 4 cycles, all clustered above 97.8%. Even Justin's HIGH projection of 97.5% is below the observed OOP minimum, but with n=5 this is a YELLOW FLAG, not a hard threshold — one additional data point could shift the floor by several percentage points. Suggests OOP bar may be tougher than in-province; do not let it override the percentile-based verdict. Supp-app leverage (very high weight at this program): VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for. EC adjustment applied: GPA-only verdict would be REACH, upgraded to TARGET via strong supplementary-application leverage. ECs alone never upgrade a reach to a safety — the upgrade is capped at target. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": "VERY STRONG for the written supplementary application. Cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, confirmed) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. The Harvard MEDScience credential is meaningful: he'll build AI computer vision surgical robots in a Harvard Med team while getting bedside clinical exposure (anatomy, physiology, simulated patient diagnosis & treatment, surgical exposure) — it reinforces both the clinical-exposure pillar AND the AI-meets-medicine narrative McMaster's reflective questions reward. This is exactly the profile McMaster BHSc supplementary readers look for.",
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 0
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 0
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 2
-        },
-        {
-          "bin": 91,
-          "n": 3
-        },
-        {
-          "bin": 92,
-          "n": 2
-        },
-        {
-          "bin": 93,
-          "n": 0
-        },
-        {
-          "bin": 94,
-          "n": 3
-        },
-        {
-          "bin": 95,
-          "n": 6
-        },
-        {
-          "bin": 96,
-          "n": 11
-        },
-        {
-          "bin": 97,
-          "n": 19
-        },
-        {
-          "bin": 98,
-          "n": 13
-        },
-        {
-          "bin": 99,
-          "n": 3
-        },
-        {
-          "bin": 100,
-          "n": 1
-        }
-      ]
-    },
-    {
       "program_key": "waterloo_cs",
       "program": "Computer Science (BCS)",
       "university": "University of Waterloo",
@@ -620,7 +628,7 @@
       "verdict_gpa_only": "reach",
       "ec_weight": "medium",
       "confidence": "high",
-      "n_accepted": 72,
+      "n_accepted": 107,
       "median_accepted_avg": 97.5,
       "min_avg": 76.0,
       "p25": 96.2,
@@ -630,12 +638,12 @@
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 15.3,
-      "justin_percentile_mid": 20.8,
-      "justin_percentile_high": 50.0,
-      "oop_n": 12,
+      "justin_percentile_low": 13.1,
+      "justin_percentile_mid": 19.6,
+      "justin_percentile_high": 51.4,
+      "oop_n": 15,
       "oop_min": 76.0,
-      "oop_mean": 93.5,
+      "oop_mean": 93.4,
       "oop_caveat": null,
       "oop_signal": "none",
       "supp_app_required": true,
@@ -660,7 +668,7 @@
       ],
       "prereq_notes": "Recommended: Grade 11 Introduction to Computer Science (ICS3U). For\nAlberta students, Math 30-1 maps to Advanced Functions and Math 31\n(Calculus) maps to Calculus & Vectors — Justin satisfies both at very\nstrong levels (99/99). His weakest spot is ELA 30-1 at 87.5 midpoint;\nWaterloo doesn't impose an explicit English minimum like Queen's does,\nbut a higher English mark would help his top-6 average.\n",
       "requirements_confidence": "high",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 20.8th percentile of accepted reports for University of Waterloo Computer Science (BCS) (n=72, median accepted avg 97.5%). Projection range (93.5-97.5%) places him at the 15.3-50.0th percentile. Out-of-province subset (n=12): mean accepted 93.5%, min 76.0%. No adverse OOP signal for Justin's projection range. AIF leverage (medium weight at this program): VERY STRONG for the AIF. CyberPatriot National Finalist (Linux), IMC 2024, Pascal/Fryer/CIMC distinctions, CCC, Kaggle top 5.7%, LightGBM/XGBoost, self-built ML projects — exactly what Waterloo CS AIF readers value. **NEW credential to highlight prominently: Harvard Medical School MEDscienceTECH Foundations (June 2026, confirmed) — building AI computer vision surgical robots on the Kepler platform in a team of biomedical engineers, with a shark-tank pitch demo day to medical experts.** This is directly Waterloo-CS-relevant content (AI, computer vision, robotics, team biodesign, prototype-to-pitch) and Justin should lead the AIF with it. GPA is still the bigger gate (Reddit median 97.5), but the AIF case is now materially stronger. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 19.6th percentile of accepted reports for University of Waterloo Computer Science (BCS) (n=107, median accepted avg 97.5%). Projection range (93.5-97.5%) places him at the 13.1-51.4th percentile. Out-of-province subset (n=15): mean accepted 93.4%, min 76.0%. No adverse OOP signal for Justin's projection range. AIF leverage (medium weight at this program): VERY STRONG for the AIF. CyberPatriot National Finalist (Linux), IMC 2024, Pascal/Fryer/CIMC distinctions, CCC, Kaggle top 5.7%, LightGBM/XGBoost, self-built ML projects — exactly what Waterloo CS AIF readers value. **NEW credential to highlight prominently: Harvard Medical School MEDscienceTECH Foundations (June 2026, confirmed) — building AI computer vision surgical robots on the Kepler platform in a team of biomedical engineers, with a shark-tank pitch demo day to medical experts.** This is directly Waterloo-CS-relevant content (AI, computer vision, robotics, team biodesign, prototype-to-pitch) and Justin should lead the AIF with it. GPA is still the bigger gate (Reddit median 97.5), but the AIF case is now materially stronger. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": "VERY STRONG for the AIF. CyberPatriot National Finalist (Linux), IMC 2024, Pascal/Fryer/CIMC distinctions, CCC, Kaggle top 5.7%, LightGBM/XGBoost, self-built ML projects — exactly what Waterloo CS AIF readers value. **NEW credential to highlight prominently: Harvard Medical School MEDscienceTECH Foundations (June 2026, confirmed) — building AI computer vision surgical robots on the Kepler platform in a team of biomedical engineers, with a shark-tank pitch demo day to medical experts.** This is directly Waterloo-CS-relevant content (AI, computer vision, robotics, team biodesign, prototype-to-pitch) and Justin should lead the AIF with it. GPA is still the bigger gate (Reddit median 97.5), but the AIF case is now materially stronger.",
       "histogram_bins": [
         {
@@ -745,7 +753,7 @@
         },
         {
           "bin": 90,
-          "n": 2
+          "n": 3
         },
         {
           "bin": 91,
@@ -757,31 +765,31 @@
         },
         {
           "bin": 93,
-          "n": 1
-        },
-        {
-          "bin": 94,
-          "n": 1
-        },
-        {
-          "bin": 95,
           "n": 3
         },
         {
+          "bin": 94,
+          "n": 4
+        },
+        {
+          "bin": 95,
+          "n": 5
+        },
+        {
           "bin": 96,
-          "n": 14
+          "n": 18
         },
         {
           "bin": 97,
-          "n": 11
+          "n": 20
         },
         {
           "bin": 98,
-          "n": 21
+          "n": 33
         },
         {
           "bin": 99,
-          "n": 10
+          "n": 12
         },
         {
           "bin": 100,
@@ -801,19 +809,19 @@
       "verdict_gpa_only": "safety",
       "ec_weight": "none",
       "confidence": "high",
-      "n_accepted": 150,
-      "median_accepted_avg": 94.2,
+      "n_accepted": 155,
+      "median_accepted_avg": 94.0,
       "min_avg": 73.2,
       "p25": 92.0,
-      "p50": 94.2,
-      "p75": 96.3,
+      "p50": 94.0,
+      "p75": 96.2,
       "max_avg": 99.8,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
       "justin_percentile_low": 40.0,
-      "justin_percentile_mid": 65.3,
-      "justin_percentile_high": 86.0,
+      "justin_percentile_mid": 66.5,
+      "justin_percentile_high": 86.5,
       "oop_n": 10,
       "oop_min": 89.0,
       "oop_mean": 95.1,
@@ -840,7 +848,7 @@
       ],
       "prereq_notes": "For Alberta students: ELA 30-1, Math 31 (or AP Calc), plus 3 more\nGrade 12 academic courses. Five Grade 12 academic courses minimum.\nELA 30-2 does NOT meet the requirement. Justin satisfies all of these\nwith room to spare: ELA 30-1 (~87.5), Math 31 (~99), Math 30-1 (~99),\nBio 30 (~97.5), Chem 30 (~97.5), French 30-1 (~92.5).\n\nImportant: \"challenge subjects, career courses, work experience\ncourses, and/or co-op courses\" are excluded from consideration.\nJustin's six listed courses are all academic, so this isn't a problem.\n",
       "requirements_confidence": "high",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 65.3th percentile of accepted reports for University of Toronto (St. George) Life Sciences (n=150, median accepted avg 94.2%). Projection range (93.5-97.5%) places him at the 40.0-86.0th percentile. Out-of-province subset (n=10): mean accepted 95.1%, min 89.0%. No adverse OOP signal for Justin's projection range. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 66.5th percentile of accepted reports for University of Toronto (St. George) Life Sciences (n=155, median accepted avg 94.0%). Projection range (93.5-97.5%) places him at the 40.0-86.5th percentile. Out-of-province subset (n=10): mean accepted 95.1%, min 89.0%. No adverse OOP signal for Justin's projection range. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": "NOT APPLICABLE — no supplementary application at UofT Life Sci. ECs do not affect the decision. Justin is well above the academic bar here regardless.",
       "histogram_bins": [
         {
@@ -921,11 +929,11 @@
         },
         {
           "bin": 89,
-          "n": 6
+          "n": 7
         },
         {
           "bin": 90,
-          "n": 7
+          "n": 8
         },
         {
           "bin": 91,
@@ -937,15 +945,15 @@
         },
         {
           "bin": 93,
-          "n": 14
+          "n": 15
         },
         {
           "bin": 94,
-          "n": 23
+          "n": 24
         },
         {
           "bin": 95,
-          "n": 12
+          "n": 13
         },
         {
           "bin": 96,
@@ -979,19 +987,19 @@
       "verdict_gpa_only": "safety",
       "ec_weight": "none",
       "confidence": "high",
-      "n_accepted": 87,
-      "median_accepted_avg": 94.0,
+      "n_accepted": 108,
+      "median_accepted_avg": 92.7,
       "min_avg": 82.3,
-      "p25": 91.1,
-      "p50": 94.0,
-      "p75": 95.7,
+      "p25": 89.2,
+      "p50": 92.7,
+      "p75": 95.0,
       "max_avg": 99.3,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 44.8,
-      "justin_percentile_mid": 72.4,
-      "justin_percentile_high": 88.5,
+      "justin_percentile_low": 54.6,
+      "justin_percentile_mid": 77.8,
+      "justin_percentile_high": 90.7,
       "oop_n": 2,
       "oop_min": 93.0,
       "oop_mean": 93.4,
@@ -1020,7 +1028,7 @@
       ],
       "prereq_notes": "Standard Ontario science prereqs. Justin's Alberta equivalents\nsatisfy these except Physics 30 which is not in his projected\ncourses — Guelph BIOM does not strictly require Physics 30 but it's\nrecommended.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 72.4th percentile of accepted reports for University of Guelph Biomedical Sciences (n=87, median accepted avg 94.0%). Projection range (93.5-97.5%) places him at the 44.8-88.5th percentile. OOP subset (small sample, n=2): mean accepted 93.4%, min 93.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 77.8th percentile of accepted reports for University of Guelph Biomedical Sciences (n=108, median accepted avg 92.7%). Projection range (93.5-97.5%) places him at the 54.6-90.7th percentile. OOP subset (small sample, n=2): mean accepted 93.4%, min 93.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -1077,43 +1085,43 @@
         },
         {
           "bin": 83,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 84,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 85,
-          "n": 2
+          "n": 6
         },
         {
           "bin": 86,
-          "n": 0
+          "n": 2
         },
         {
           "bin": 87,
-          "n": 3
-        },
-        {
-          "bin": 88,
-          "n": 6
-        },
-        {
-          "bin": 89,
-          "n": 3
-        },
-        {
-          "bin": 90,
           "n": 5
         },
         {
+          "bin": 88,
+          "n": 7
+        },
+        {
+          "bin": 89,
+          "n": 4
+        },
+        {
+          "bin": 90,
+          "n": 7
+        },
+        {
           "bin": 91,
-          "n": 6
+          "n": 8
         },
         {
           "bin": 92,
-          "n": 8
+          "n": 12
         },
         {
           "bin": 93,
@@ -1121,7 +1129,7 @@
         },
         {
           "bin": 94,
-          "n": 14
+          "n": 15
         },
         {
           "bin": 95,
@@ -1159,19 +1167,19 @@
       "verdict_gpa_only": "target",
       "ec_weight": "none",
       "confidence": "high",
-      "n_accepted": 156,
-      "median_accepted_avg": 95.3,
+      "n_accepted": 174,
+      "median_accepted_avg": 95.0,
       "min_avg": 87.5,
-      "p25": 93.8,
-      "p50": 95.3,
+      "p25": 93.3,
+      "p50": 95.0,
       "p75": 97.0,
       "max_avg": 99.4,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 23.1,
-      "justin_percentile_mid": 51.3,
-      "justin_percentile_high": 84.0,
+      "justin_percentile_low": 27.6,
+      "justin_percentile_mid": 56.3,
+      "justin_percentile_high": 85.6,
       "oop_n": 22,
       "oop_min": 90.0,
       "oop_mean": 94.9,
@@ -1200,7 +1208,7 @@
       ],
       "prereq_notes": "Minimum 6 Grade 12 4U/M courses (excluding co-op). For Alberta\nstudents: ELA 30-1, Biology 30, Chemistry 30, Math 31 (Calculus),\nPhysics 30 recommended. Justin satisfies all of these except Physics\n30 which is not in his projected courses — verify whether Physics 30\nis required vs recommended for Med Sci First Entry.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 51.3th percentile of accepted reports for Western University Bachelor of Medical Sciences (BMSc) (n=156, median accepted avg 95.3%). Projection range (93.5-97.5%) places him at the 23.1-84.0th percentile. Out-of-province subset (n=22): mean accepted 94.9%, min 90.0%. No adverse OOP signal for Justin's projection range. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 56.3th percentile of accepted reports for Western University Bachelor of Medical Sciences (BMSc) (n=174, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 27.6-85.6th percentile. Out-of-province subset (n=22): mean accepted 94.9%, min 90.0%. No adverse OOP signal for Justin's projection range. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -1277,7 +1285,7 @@
         },
         {
           "bin": 88,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 89,
@@ -1285,27 +1293,27 @@
         },
         {
           "bin": 90,
-          "n": 4
-        },
-        {
-          "bin": 91,
           "n": 8
         },
         {
+          "bin": 91,
+          "n": 10
+        },
+        {
           "bin": 92,
-          "n": 9
+          "n": 12
         },
         {
           "bin": 93,
-          "n": 16
+          "n": 18
         },
         {
           "bin": 94,
-          "n": 19
+          "n": 23
         },
         {
           "bin": 95,
-          "n": 28
+          "n": 30
         },
         {
           "bin": 96,
@@ -1330,6 +1338,185 @@
       ]
     },
     {
+      "program_key": "waterloo_math_cs",
+      "program": "Mathematics / Computer Science (joint)",
+      "university": "University of Waterloo",
+      "tier": 2,
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
+      "ec_weight": "medium",
+      "confidence": "high",
+      "n_accepted": 156,
+      "median_accepted_avg": 95.0,
+      "min_avg": 83.7,
+      "p25": 93.3,
+      "p50": 95.0,
+      "p75": 96.3,
+      "max_avg": 99.7,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 27.6,
+      "justin_percentile_mid": 54.5,
+      "justin_percentile_high": 89.1,
+      "oop_n": 7,
+      "oop_min": 91.0,
+      "oop_mean": 95.1,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": true,
+      "supp_app_type": "Admission Information Form (AIF)",
+      "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
+      "supp_app_notes": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-30",
+      "deadline_supp": "2027-02-13",
+      "deadline_doc": "2027-02-13",
+      "decision_window": "Mid May",
+      "fee_cad": 156,
+      "official_url": "https://uwaterloo.ca/future-students/programs/mathematics-computer-science",
+      "min_average_competitive": 93.0,
+      "prereq_courses": [
+        "Grade 12 English 4U (any)",
+        "Grade 12 Advanced Functions (MHF4U)",
+        "Grade 12 Calculus & Vectors (MCV4U)",
+        "One additional Grade 12 4U/4M course"
+      ],
+      "prereq_notes": "Same prerequisites as Waterloo CS. Justin's Math 30-1 + Math 31\nsatisfy both math requirements at elite levels.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 54.5th percentile of accepted reports for University of Waterloo Mathematics / Computer Science (joint) (n=156, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 27.6-89.1th percentile. OOP subset (small sample, n=7): mean accepted 95.1%, min 91.0%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of TARGET. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 1
+        },
+        {
+          "bin": 84,
+          "n": 1
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 1
+        },
+        {
+          "bin": 88,
+          "n": 2
+        },
+        {
+          "bin": 89,
+          "n": 1
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 8
+        },
+        {
+          "bin": 92,
+          "n": 12
+        },
+        {
+          "bin": 93,
+          "n": 23
+        },
+        {
+          "bin": 94,
+          "n": 20
+        },
+        {
+          "bin": 95,
+          "n": 24
+        },
+        {
+          "bin": 96,
+          "n": 30
+        },
+        {
+          "bin": 97,
+          "n": 17
+        },
+        {
+          "bin": 98,
+          "n": 13
+        },
+        {
+          "bin": 99,
+          "n": 2
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
       "program_key": "mcmaster_lifesci",
       "program": "Life Sciences",
       "university": "McMaster University",
@@ -1339,19 +1526,19 @@
       "verdict_gpa_only": "target",
       "ec_weight": "none",
       "confidence": "high",
-      "n_accepted": 115,
-      "median_accepted_avg": 95.7,
+      "n_accepted": 152,
+      "median_accepted_avg": 95.3,
       "min_avg": 88.0,
-      "p25": 94.2,
-      "p50": 95.7,
-      "p75": 97.0,
+      "p25": 94.5,
+      "p50": 95.3,
+      "p75": 96.3,
       "max_avg": 99.4,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 15.7,
-      "justin_percentile_mid": 49.6,
-      "justin_percentile_high": 82.6,
+      "justin_percentile_low": 12.5,
+      "justin_percentile_mid": 57.2,
+      "justin_percentile_high": 86.2,
       "oop_n": 10,
       "oop_min": 90.0,
       "oop_mean": 95.7,
@@ -1379,7 +1566,7 @@
       ],
       "prereq_notes": "Standard McMaster Science I prereqs. Calculus & Vectors (MCV4U) is\nstrongly recommended even though only Advanced Functions is required\nformally. Justin's Math 30-1 + Math 31 covers both.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 49.6th percentile of accepted reports for McMaster University Life Sciences (n=115, median accepted avg 95.7%). Projection range (93.5-97.5%) places him at the 15.7-82.6th percentile. Out-of-province subset (n=10): mean accepted 95.7%, min 90.0%. No adverse OOP signal for Justin's projection range. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 57.2th percentile of accepted reports for McMaster University Life Sciences (n=152, median accepted avg 95.3%). Projection range (93.5-97.5%) places him at the 12.5-86.2th percentile. Out-of-province subset (n=10): mean accepted 95.7%, min 90.0%. No adverse OOP signal for Justin's projection range. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -1472,7 +1659,7 @@
         },
         {
           "bin": 92,
-          "n": 6
+          "n": 7
         },
         {
           "bin": 93,
@@ -1480,206 +1667,27 @@
         },
         {
           "bin": 94,
-          "n": 22
+          "n": 30
         },
         {
           "bin": 95,
-          "n": 21
+          "n": 45
         },
         {
           "bin": 96,
-          "n": 23
+          "n": 25
         },
         {
           "bin": 97,
-          "n": 11
-        },
-        {
-          "bin": 98,
           "n": 12
         },
         {
-          "bin": 99,
-          "n": 6
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
-      "program_key": "waterloo_math_cs",
-      "program": "Mathematics / Computer Science (joint)",
-      "university": "University of Waterloo",
-      "tier": 2,
-      "verdict": "target",
-      "verdict_label": "Target",
-      "verdict_gpa_only": "target",
-      "ec_weight": "medium",
-      "confidence": "high",
-      "n_accepted": 96,
-      "median_accepted_avg": 95.0,
-      "min_avg": 83.7,
-      "p25": 93.0,
-      "p50": 95.0,
-      "p75": 96.5,
-      "max_avg": 99.7,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 29.2,
-      "justin_percentile_mid": 57.3,
-      "justin_percentile_high": 85.4,
-      "oop_n": 4,
-      "oop_min": 91.0,
-      "oop_mean": 95.7,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": true,
-      "supp_app_type": "Admission Information Form (AIF)",
-      "supp_app_url": "https://uwaterloo.ca/future-students/admissions/admission-information-form",
-      "supp_app_notes": null,
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-30",
-      "deadline_supp": "2027-02-13",
-      "deadline_doc": "2027-02-13",
-      "decision_window": "Mid May",
-      "fee_cad": 156,
-      "official_url": "https://uwaterloo.ca/future-students/programs/mathematics-computer-science",
-      "min_average_competitive": 93.0,
-      "prereq_courses": [
-        "Grade 12 English 4U (any)",
-        "Grade 12 Advanced Functions (MHF4U)",
-        "Grade 12 Calculus & Vectors (MCV4U)",
-        "One additional Grade 12 4U/4M course"
-      ],
-      "prereq_notes": "Same prerequisites as Waterloo CS. Justin's Math 30-1 + Math 31\nsatisfy both math requirements at elite levels.\n",
-      "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 57.3th percentile of accepted reports for University of Waterloo Mathematics / Computer Science (joint) (n=96, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 29.2-85.4th percentile. OOP subset (small sample, n=4): mean accepted 95.7%, min 91.0%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of TARGET. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 1
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 0
-        },
-        {
-          "bin": 87,
-          "n": 1
-        },
-        {
-          "bin": 88,
-          "n": 1
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 0
-        },
-        {
-          "bin": 91,
-          "n": 7
-        },
-        {
-          "bin": 92,
-          "n": 6
-        },
-        {
-          "bin": 93,
-          "n": 17
-        },
-        {
-          "bin": 94,
-          "n": 11
-        },
-        {
-          "bin": 95,
-          "n": 15
-        },
-        {
-          "bin": 96,
-          "n": 17
-        },
-        {
-          "bin": 97,
-          "n": 8
-        },
-        {
           "bin": 98,
-          "n": 10
+          "n": 13
         },
         {
           "bin": 99,
-          "n": 2
+          "n": 6
         },
         {
           "bin": 100,
@@ -1697,7 +1705,7 @@
       "verdict_gpa_only": "target",
       "ec_weight": "none",
       "confidence": "high",
-      "n_accepted": 84,
+      "n_accepted": 86,
       "median_accepted_avg": 94.8,
       "min_avg": 84.0,
       "p25": 93.0,
@@ -1707,9 +1715,9 @@
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 34.5,
-      "justin_percentile_mid": 59.5,
-      "justin_percentile_high": 84.5,
+      "justin_percentile_low": 33.7,
+      "justin_percentile_mid": 60.5,
+      "justin_percentile_high": 84.9,
       "oop_n": 6,
       "oop_min": 84.0,
       "oop_mean": 92.1,
@@ -1738,7 +1746,7 @@
       ],
       "prereq_notes": "No 80% English minimum like Queen's BHSc. Justin satisfies all\nprereqs comfortably with his Alberta course list.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 59.5th percentile of accepted reports for Queen's University Life Sciences (n=84, median accepted avg 94.8%). Projection range (93.5-97.5%) places him at the 34.5-84.5th percentile. OOP subset (small sample, n=6): mean accepted 92.1%, min 84.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 60.5th percentile of accepted reports for Queen's University Life Sciences (n=86, median accepted avg 94.8%). Projection range (93.5-97.5%) places him at the 33.7-84.9th percentile. OOP subset (small sample, n=6): mean accepted 92.1%, min 84.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -1807,7 +1815,7 @@
         },
         {
           "bin": 86,
-          "n": 1
+          "n": 0
         },
         {
           "bin": 87,
@@ -1835,7 +1843,7 @@
         },
         {
           "bin": 93,
-          "n": 10
+          "n": 12
         },
         {
           "bin": 94,
@@ -1843,7 +1851,7 @@
         },
         {
           "bin": 95,
-          "n": 10
+          "n": 11
         },
         {
           "bin": 96,
@@ -1877,19 +1885,19 @@
       "verdict_gpa_only": "reach",
       "ec_weight": "medium",
       "confidence": "medium",
-      "n_accepted": 37,
+      "n_accepted": 46,
       "median_accepted_avg": 97.5,
       "min_avg": 86.3,
-      "p25": 96.0,
+      "p25": 96.3,
       "p50": 97.5,
-      "p75": 98.2,
+      "p75": 98.5,
       "max_avg": 100.0,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 10.8,
-      "justin_percentile_mid": 18.9,
-      "justin_percentile_high": 56.8,
+      "justin_percentile_low": 8.7,
+      "justin_percentile_mid": 17.4,
+      "justin_percentile_high": 52.2,
       "oop_n": 6,
       "oop_min": 89.2,
       "oop_mean": 95.9,
@@ -1918,7 +1926,7 @@
       ],
       "prereq_notes": "SE requires Chemistry AND Physics — unlike CS which does not.\nJustin's projected courses include Chemistry 30 but NOT Physics 30.\nThis is a potential gap to flag.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 18.9th percentile of accepted reports for University of Waterloo Software Engineering (n=37, median accepted avg 97.5%). Projection range (93.5-97.5%) places him at the 10.8-56.8th percentile. OOP subset (small sample, n=6): mean accepted 95.9%, min 89.2%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 17.4th percentile of accepted reports for University of Waterloo Software Engineering (n=46, median accepted avg 97.5%). Projection range (93.5-97.5%) places him at the 8.7-52.2th percentile. OOP subset (small sample, n=6): mean accepted 95.9%, min 89.2%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of REACH. FINAL VERDICT: REACH. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -2015,7 +2023,7 @@
         },
         {
           "bin": 93,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 94,
@@ -2027,19 +2035,19 @@
         },
         {
           "bin": 96,
-          "n": 6
-        },
-        {
-          "bin": 97,
           "n": 7
         },
         {
+          "bin": 97,
+          "n": 8
+        },
+        {
           "bin": 98,
-          "n": 11
+          "n": 14
         },
         {
           "bin": 99,
-          "n": 3
+          "n": 6
         },
         {
           "bin": 100,
@@ -2239,19 +2247,19 @@
       "verdict_gpa_only": "safety",
       "ec_weight": "none",
       "confidence": "high",
-      "n_accepted": 139,
-      "median_accepted_avg": 93.4,
+      "n_accepted": 148,
+      "median_accepted_avg": 93.2,
       "min_avg": 72.0,
-      "p25": 91.0,
-      "p50": 93.4,
-      "p75": 95.3,
+      "p25": 90.7,
+      "p50": 93.2,
+      "p75": 95.2,
       "max_avg": 99.0,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 54.0,
-      "justin_percentile_mid": 77.7,
-      "justin_percentile_high": 94.2,
+      "justin_percentile_low": 54.7,
+      "justin_percentile_mid": 78.4,
+      "justin_percentile_high": 94.6,
       "oop_n": 5,
       "oop_min": 89.4,
       "oop_mean": 92.7,
@@ -2277,7 +2285,7 @@
       ],
       "prereq_notes": "Minimum 70% combined average across science/math prereqs. Justin's\nAlberta equivalents (Bio 30 + Chem 30 + Math 31) easily satisfy.\nThe \"any 2 of 4\" structure is more flexible than most Ontario\nbiomed programs — Justin doesn't strictly need Physics 30.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 77.7th percentile of accepted reports for University of Ottawa Biomedical Sciences / Health Sciences (n=139, median accepted avg 93.4%). Projection range (93.5-97.5%) places him at the 54.0-94.2th percentile. OOP subset (small sample, n=5): mean accepted 92.7%, min 89.4%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 78.4th percentile of accepted reports for University of Ottawa Biomedical Sciences / Health Sciences (n=148, median accepted avg 93.2%). Projection range (93.5-97.5%) places him at the 54.7-94.6th percentile. OOP subset (small sample, n=5): mean accepted 92.7%, min 89.4%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -2354,27 +2362,27 @@
         },
         {
           "bin": 88,
-          "n": 2
+          "n": 3
         },
         {
           "bin": 89,
-          "n": 7
+          "n": 9
         },
         {
           "bin": 90,
-          "n": 13
+          "n": 14
         },
         {
           "bin": 91,
-          "n": 6
+          "n": 7
         },
         {
           "bin": 92,
-          "n": 21
+          "n": 22
         },
         {
           "bin": 93,
-          "n": 18
+          "n": 19
         },
         {
           "bin": 94,
@@ -2382,7 +2390,7 @@
         },
         {
           "bin": 95,
-          "n": 21
+          "n": 23
         },
         {
           "bin": 96,
@@ -2407,6 +2415,183 @@
       ]
     },
     {
+      "program_key": "western_health_sci",
+      "program": "Health Sciences (BHSc)",
+      "university": "Western University",
+      "tier": 3,
+      "verdict": "safety",
+      "verdict_label": "Safety",
+      "verdict_gpa_only": "safety",
+      "ec_weight": "none",
+      "confidence": "high",
+      "n_accepted": 85,
+      "median_accepted_avg": 94.7,
+      "min_avg": 86.0,
+      "p25": 93.0,
+      "p50": 94.7,
+      "p75": 96.0,
+      "max_avg": 99.7,
+      "justin_low": 93.5,
+      "justin_mid": 95.5,
+      "justin_high": 97.5,
+      "justin_percentile_low": 30.6,
+      "justin_percentile_mid": 67.1,
+      "justin_percentile_high": 94.1,
+      "oop_n": 6,
+      "oop_min": 90.0,
+      "oop_mean": 94.5,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "supp_app_notes": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-01-15",
+      "deadline_supp": null,
+      "deadline_doc": "2027-02-15",
+      "decision_window": "March through May (rolling)",
+      "fee_cad": 156,
+      "official_url": "https://welcome.uwo.ca/what-can-i-study/undergraduate-programs/health-sciences.html",
+      "min_average_competitive": 87.0,
+      "prereq_courses": [
+        "Grade 12 English (ENG4U)",
+        "5 additional Grade 12 4U/M courses"
+      ],
+      "prereq_notes": "No specific science prerequisites at first-year entry — students can\nchoose Health Sciences without Bio/Chem/Math at this stage. Some Year 2\nspecializations (Nursing, Kinesiology) have additional prereqs and\nhigher cutoffs.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 67.1th percentile of accepted reports for Western University Health Sciences (BHSc) (n=85, median accepted avg 94.7%). Projection range (93.5-97.5%) places him at the 30.6-94.1th percentile. OOP subset (small sample, n=6): mean accepted 94.5%, min 90.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 1
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 1
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 3
+        },
+        {
+          "bin": 91,
+          "n": 4
+        },
+        {
+          "bin": 92,
+          "n": 9
+        },
+        {
+          "bin": 93,
+          "n": 11
+        },
+        {
+          "bin": 94,
+          "n": 17
+        },
+        {
+          "bin": 95,
+          "n": 16
+        },
+        {
+          "bin": 96,
+          "n": 11
+        },
+        {
+          "bin": 97,
+          "n": 7
+        },
+        {
+          "bin": 98,
+          "n": 4
+        },
+        {
+          "bin": 99,
+          "n": 1
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
       "program_key": "uoft_lifesci_utsc",
       "program": "Life Sciences",
       "university": "University of Toronto (Scarborough)",
@@ -2416,19 +2601,19 @@
       "verdict_gpa_only": "safety",
       "ec_weight": "none",
       "confidence": "medium",
-      "n_accepted": 38,
-      "median_accepted_avg": 92.5,
+      "n_accepted": 45,
+      "median_accepted_avg": 91.8,
       "min_avg": 79.0,
-      "p25": 90.7,
-      "p50": 92.5,
-      "p75": 94.2,
+      "p25": 90.1,
+      "p50": 91.8,
+      "p75": 94.0,
       "max_avg": 98.1,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 71.1,
-      "justin_percentile_mid": 94.7,
-      "justin_percentile_high": 97.4,
+      "justin_percentile_low": 73.3,
+      "justin_percentile_mid": 95.6,
+      "justin_percentile_high": 97.8,
       "oop_n": 3,
       "oop_min": 92.5,
       "oop_mean": 93.8,
@@ -2455,7 +2640,7 @@
       ],
       "prereq_notes": "Same as UTM and St. George Life Sciences. Alberta equivalents:\nELA 30-1, Math 31, plus 3 more academic Grade 12 courses.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 94.7th percentile of accepted reports for University of Toronto (Scarborough) Life Sciences (n=38, median accepted avg 92.5%). Projection range (93.5-97.5%) places him at the 71.1-97.4th percentile. OOP subset (small sample, n=3): mean accepted 93.8%, min 92.5%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 95.6th percentile of accepted reports for University of Toronto (Scarborough) Life Sciences (n=45, median accepted avg 91.8%). Projection range (93.5-97.5%) places him at the 73.3-97.8th percentile. OOP subset (small sample, n=3): mean accepted 93.8%, min 92.5%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -2520,7 +2705,7 @@
         },
         {
           "bin": 85,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 86,
@@ -2536,15 +2721,15 @@
         },
         {
           "bin": 89,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 90,
-          "n": 6
+          "n": 9
         },
         {
           "bin": 91,
-          "n": 5
+          "n": 6
         },
         {
           "bin": 92,
@@ -2556,7 +2741,7 @@
         },
         {
           "bin": 94,
-          "n": 5
+          "n": 6
         },
         {
           "bin": 95,
@@ -2594,19 +2779,19 @@
       "verdict_gpa_only": "safety",
       "ec_weight": "none",
       "confidence": "medium",
-      "n_accepted": 31,
+      "n_accepted": 33,
       "median_accepted_avg": 93.0,
       "min_avg": 80.0,
       "p25": 89.0,
       "p50": 93.0,
-      "p75": 95.2,
+      "p75": 95.0,
       "max_avg": 99.2,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 58.1,
-      "justin_percentile_mid": 83.9,
-      "justin_percentile_high": 93.5,
+      "justin_percentile_low": 57.6,
+      "justin_percentile_mid": 84.8,
+      "justin_percentile_high": 93.9,
       "oop_n": 0,
       "oop_min": null,
       "oop_mean": null,
@@ -2633,7 +2818,7 @@
       ],
       "prereq_notes": "For Alberta: ELA 30-1, Math 31 (or AP Calculus), plus 3 more academic\nGrade 12 courses. Same Alberta requirements as UofT StG.\n",
       "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 83.9th percentile of accepted reports for University of Toronto (Mississauga) Life Sciences (n=31, median accepted avg 93.0%). Projection range (93.5-97.5%) places him at the 58.1-93.5th percentile. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 84.8th percentile of accepted reports for University of Toronto (Mississauga) Life Sciences (n=33, median accepted avg 93.0%). Projection range (93.5-97.5%) places him at the 57.6-93.9th percentile. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: SAFETY. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -2726,7 +2911,7 @@
         },
         {
           "bin": 92,
-          "n": 4
+          "n": 5
         },
         {
           "bin": 93,
@@ -2734,7 +2919,7 @@
         },
         {
           "bin": 94,
-          "n": 3
+          "n": 4
         },
         {
           "bin": 95,
@@ -2763,183 +2948,6 @@
       ]
     },
     {
-      "program_key": "western_health_sci",
-      "program": "Health Sciences (BHSc)",
-      "university": "Western University",
-      "tier": 3,
-      "verdict": "target",
-      "verdict_label": "Target",
-      "verdict_gpa_only": "target",
-      "ec_weight": "none",
-      "confidence": "high",
-      "n_accepted": 63,
-      "median_accepted_avg": 94.7,
-      "min_avg": 86.0,
-      "p25": 93.0,
-      "p50": 94.7,
-      "p75": 96.7,
-      "max_avg": 99.7,
-      "justin_low": 93.5,
-      "justin_mid": 95.5,
-      "justin_high": 97.5,
-      "justin_percentile_low": 31.7,
-      "justin_percentile_mid": 61.9,
-      "justin_percentile_high": 92.1,
-      "oop_n": 6,
-      "oop_min": 90.0,
-      "oop_mean": 94.5,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": false,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "supp_app_notes": null,
-      "casper_required": false,
-      "interview_required": false,
-      "references_required": false,
-      "deadline_ouac": "2027-01-15",
-      "deadline_supp": null,
-      "deadline_doc": "2027-02-15",
-      "decision_window": "March through May (rolling)",
-      "fee_cad": 156,
-      "official_url": "https://welcome.uwo.ca/what-can-i-study/undergraduate-programs/health-sciences.html",
-      "min_average_competitive": 87.0,
-      "prereq_courses": [
-        "Grade 12 English (ENG4U)",
-        "5 additional Grade 12 4U/M courses"
-      ],
-      "prereq_notes": "No specific science prerequisites at first-year entry — students can\nchoose Health Sciences without Bio/Chem/Math at this stage. Some Year 2\nspecializations (Nursing, Kinesiology) have additional prereqs and\nhigher cutoffs.\n",
-      "requirements_confidence": "medium",
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 61.9th percentile of accepted reports for Western University Health Sciences (BHSc) (n=63, median accepted avg 94.7%). Projection range (93.5-97.5%) places him at the 31.7-92.1th percentile. OOP subset (small sample, n=6): mean accepted 94.5%, min 90.0%. Justin's range is consistent with the observed OOP cluster. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 1
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 1
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 2
-        },
-        {
-          "bin": 91,
-          "n": 2
-        },
-        {
-          "bin": 92,
-          "n": 8
-        },
-        {
-          "bin": 93,
-          "n": 8
-        },
-        {
-          "bin": 94,
-          "n": 11
-        },
-        {
-          "bin": 95,
-          "n": 8
-        },
-        {
-          "bin": 96,
-          "n": 10
-        },
-        {
-          "bin": 97,
-          "n": 7
-        },
-        {
-          "bin": 98,
-          "n": 4
-        },
-        {
-          "bin": 99,
-          "n": 1
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
       "program_key": "waterloo_health_sci",
       "program": "Health Sciences",
       "university": "University of Waterloo",
@@ -2948,20 +2956,20 @@
       "verdict_label": "Target",
       "verdict_gpa_only": "target",
       "ec_weight": "none",
-      "confidence": "medium",
-      "n_accepted": 59,
-      "median_accepted_avg": 95.0,
-      "min_avg": 88.0,
-      "p25": 93.2,
-      "p50": 95.0,
-      "p75": 96.3,
+      "confidence": "high",
+      "n_accepted": 79,
+      "median_accepted_avg": 94.5,
+      "min_avg": 87.8,
+      "p25": 92.7,
+      "p50": 94.5,
+      "p75": 96.1,
       "max_avg": 98.8,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 28.8,
-      "justin_percentile_mid": 54.2,
-      "justin_percentile_high": 94.9,
+      "justin_percentile_low": 36.7,
+      "justin_percentile_mid": 64.6,
+      "justin_percentile_high": 96.2,
       "oop_n": 1,
       "oop_min": 97.0,
       "oop_mean": 97.0,
@@ -2984,7 +2992,7 @@
       "prereq_courses": [],
       "prereq_notes": null,
       "requirements_confidence": null,
-      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 54.2th percentile of accepted reports for University of Waterloo Health Sciences (n=59, median accepted avg 95.0%). Projection range (93.5-97.5%) places him at the 28.8-94.9th percentile. OOP DIRECTIONAL SIGNAL (small sample, n=1): mean accepted 97.0%, min 97.0%. Justin's midpoint 95.5% is below the observed OOP minimum but his high projection 97.5% clears it. Treat as directional only. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 64.6th percentile of accepted reports for University of Waterloo Health Sciences (n=79, median accepted avg 94.5%). Projection range (93.5-97.5%) places him at the 36.7-96.2th percentile. OOP DIRECTIONAL SIGNAL (small sample, n=1): mean accepted 97.0%, min 97.0%. Justin's midpoint 95.5% is below the observed OOP minimum but his high projection 97.5% clears it. Treat as directional only. This program does not use a supplementary application; ECs do not affect the admission decision. Verdict is driven entirely by GPA percentile. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -3057,15 +3065,15 @@
         },
         {
           "bin": 87,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 88,
-          "n": 1
+          "n": 2
         },
         {
           "bin": 89,
-          "n": 1
+          "n": 2
         },
         {
           "bin": 90,
@@ -3073,23 +3081,23 @@
         },
         {
           "bin": 91,
-          "n": 4
+          "n": 6
         },
         {
           "bin": 92,
-          "n": 4
+          "n": 8
         },
         {
           "bin": 93,
-          "n": 7
+          "n": 14
         },
         {
           "bin": 94,
-          "n": 9
+          "n": 11
         },
         {
           "bin": 95,
-          "n": 7
+          "n": 9
         },
         {
           "bin": 96,
@@ -3118,27 +3126,27 @@
       "program": "Mathematics (general)",
       "university": "University of Waterloo",
       "tier": 3,
-      "verdict": "insufficient_data",
-      "verdict_label": "Insufficient data",
-      "verdict_gpa_only": "insufficient_data",
+      "verdict": "target",
+      "verdict_label": "Target",
+      "verdict_gpa_only": "target",
       "ec_weight": "medium",
-      "confidence": "insufficient",
-      "n_accepted": 6,
-      "median_accepted_avg": 94.0,
+      "confidence": "low",
+      "n_accepted": 11,
+      "median_accepted_avg": 95.2,
       "min_avg": 90.0,
-      "p25": 93.0,
-      "p50": 94.0,
-      "p75": 96.0,
-      "max_avg": 97.3,
+      "p25": 93.7,
+      "p50": 95.2,
+      "p75": 97.0,
+      "max_avg": 98.3,
       "justin_low": 93.5,
       "justin_mid": 95.5,
       "justin_high": 97.5,
-      "justin_percentile_low": 33.3,
-      "justin_percentile_mid": 66.7,
-      "justin_percentile_high": 100.0,
-      "oop_n": 1,
+      "justin_percentile_low": 18.2,
+      "justin_percentile_mid": 54.5,
+      "justin_percentile_high": 90.9,
+      "oop_n": 2,
       "oop_min": 90.0,
-      "oop_mean": 90.0,
+      "oop_mean": 94.2,
       "oop_caveat": null,
       "oop_signal": "none",
       "supp_app_required": null,
@@ -3158,7 +3166,7 @@
       "prereq_courses": [],
       "prereq_notes": null,
       "requirements_confidence": null,
-      "reasoning": "Only 6 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "reasoning": "Justin's projected top-6 midpoint of 95.5% sits at the 54.5th percentile of accepted reports for University of Waterloo Mathematics (general) (n=11, median accepted avg 95.2%). Projection range (93.5-97.5%) places him at the 18.2-90.9th percentile. OOP subset (small sample, n=2): mean accepted 94.2%, min 90.0%. Justin's range is consistent with the observed OOP cluster. AIF content will be strong but does not change the grade-driven verdict of TARGET. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -3255,7 +3263,7 @@
         },
         {
           "bin": 93,
-          "n": 1
+          "n": 2
         },
         {
           "bin": 94,
@@ -3263,7 +3271,7 @@
         },
         {
           "bin": 95,
-          "n": 0
+          "n": 2
         },
         {
           "bin": 96,
@@ -3271,11 +3279,11 @@
         },
         {
           "bin": 97,
-          "n": 1
+          "n": 2
         },
         {
           "bin": 98,
-          "n": 0
+          "n": 1
         },
         {
           "bin": 99,
@@ -5237,9 +5245,9 @@
         },
         {
           "cycle": "2025-2026",
-          "n": 24,
-          "mean": 96.9,
-          "min": 90.0,
+          "n": 47,
+          "mean": 95.9,
+          "min": 88.7,
           "max": 100.0
         }
       ]
@@ -5271,7 +5279,7 @@
         },
         {
           "cycle": "2025-2026",
-          "n": 39,
+          "n": 44,
           "mean": 96.0,
           "min": 82.5,
           "max": 99.7
@@ -5305,9 +5313,9 @@
         },
         {
           "cycle": "2025-2026",
-          "n": 12,
-          "mean": 97.9,
-          "min": 96.2,
+          "n": 47,
+          "mean": 97.2,
+          "min": 90.0,
           "max": 99.5
         }
       ]
@@ -5395,349 +5403,199 @@
       "label": "Re-pull live 2025-26 spreadsheets — McMaster BHSc May acceptance wave expected (twin-peak pattern: early Mar + early May, ~21 acceptances per wave in 2024-25)",
       "category": "data_refresh",
       "priority": "high",
-      "days_from_today": 9
-    },
-    {
-      "date": "2027-01-15",
-      "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
-      "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 265
+      "days_from_today": -23
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 265
+      "days_from_today": 233
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 233
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 265
+      "days_from_today": 233
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 265
+      "days_from_today": 233
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 265
+      "days_from_today": 233
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 265
+      "days_from_today": 233
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 265
+      "days_from_today": 233
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 265
+      "days_from_today": 233
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 280
+      "days_from_today": 248
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 280
+      "days_from_today": 248
     },
     {
       "date": "2027-01-30",
       "label": "Supplementary application due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 280
+      "days_from_today": 248
     },
     {
       "date": "2027-01-30",
       "label": "Documents due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 280
+      "days_from_today": 248
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 282
+      "days_from_today": 250
     },
     {
       "date": "2027-02-02",
       "label": "Documents due: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 283
+      "days_from_today": 251
     },
     {
       "date": "2027-02-05",
       "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 286
+      "days_from_today": 254
     },
     {
       "date": "2027-02-05",
       "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 286
+      "days_from_today": 254
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 294
+      "days_from_today": 262
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 294
+      "days_from_today": 262
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 294
+      "days_from_today": 262
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 294
+      "days_from_today": 262
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 296
+      "days_from_today": 264
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 296
+      "days_from_today": 264
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 296
+      "days_from_today": 264
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 296
+      "days_from_today": 264
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 296
+      "days_from_today": 264
     },
     {
       "date": "2027-03-01",
       "label": "OUAC equal-consideration: University of Alberta — BSc Physiology",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 310
+      "days_from_today": 278
     },
     {
       "date": "2028-02-29",
       "label": "Documents due: University of Alberta — BSc Physiology",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 675
-    },
-    {
-      "date": null,
-      "date_label": "spring 2026",
-      "label": "Decision pending: HYRS 2026 (Heritage Youth Researcher Summer)",
-      "category": "summer_program",
-      "priority": "info"
+      "days_from_today": 643
     }
   ],
-  "ec_insights": {
-    "mcmaster_bhsc": {
-      "n_with_ec_data": 33,
-      "n_accepted_total": 63,
-      "coverage_pct": 52.4,
-      "category_frequencies": {
-        "CS / Technical Projects": 18,
-        "Leadership": 10,
-        "STEM Competitions": 7,
-        "Arts / Music": 6,
-        "Community Service": 6,
-        "Academic Awards": 6,
-        "Entrepreneurship": 4,
-        "Research / Lab": 3,
-        "Athletics": 3,
-        "Healthcare / Clinical": 1
-      },
-      "top_categories": [
-        "CS / Technical Projects",
-        "Leadership",
-        "STEM Competitions",
-        "Arts / Music",
-        "Community Service"
-      ],
-      "sample_quotes": [
-        "community youth council pres, ski instructor",
-        "unremarkable interview",
-        "Didn’t talk exclusively about any ecs, or related to Mac, just gave genuine answers without stumbling and looking into the camera",
-        "chose essay 1C and 2B",
-        "A club president, nothing much else"
-      ],
-      "justin_alignment": {
-        "matched": [
-          "Academic Awards",
-          "Arts / Music",
-          "Community Service",
-          "CS / Technical Projects",
-          "Healthcare / Clinical",
-          "Leadership",
-          "Research / Lab",
-          "STEM Competitions"
-        ],
-        "missing": [
-          "Athletics",
-          "Entrepreneurship"
-        ],
-        "match_rate_pct": 80.0
-      }
-    },
-    "queens_bhsc": {
-      "n_with_ec_data": 36,
-      "n_accepted_total": 68,
-      "coverage_pct": 52.9,
-      "category_frequencies": {
-        "CS / Technical Projects": 19,
-        "Community Service": 16,
-        "Leadership": 12,
-        "Arts / Music": 5,
-        "Healthcare / Clinical": 4,
-        "STEM Competitions": 4,
-        "Athletics": 3,
-        "Academic Awards": 2,
-        "Entrepreneurship": 1
-      },
-      "top_categories": [
-        "CS / Technical Projects",
-        "Community Service",
-        "Leadership",
-        "Arts / Music",
-        "Healthcare / Clinical"
-      ],
-      "sample_quotes": [
-        "talked about MUN for speaking portion",
-        "3x Student Council, AP classes, Competitive tennis, volunteering, etc",
-        "talked abt my experiences as a tutor and as HOSA pres of my school chapter.",
-        "Talked about how I brought my group together despite conflicting feelings during a class debate for the video response, forgot what I wrote about for written question!",
-        "National Tennis Player"
-      ],
-      "justin_alignment": {
-        "matched": [
-          "Academic Awards",
-          "Arts / Music",
-          "Community Service",
-          "CS / Technical Projects",
-          "Healthcare / Clinical",
-          "Leadership",
-          "STEM Competitions"
-        ],
-        "missing": [
-          "Athletics",
-          "Entrepreneurship"
-        ],
-        "match_rate_pct": 77.8
-      }
-    },
-    "waterloo_cs": {
-      "n_with_ec_data": 63,
-      "n_accepted_total": 75,
-      "coverage_pct": 84.0,
-      "category_frequencies": {
-        "CS / Technical Projects": 55,
-        "Leadership": 37,
-        "STEM Competitions": 26,
-        "Community Service": 21,
-        "Arts / Music": 21,
-        "Academic Awards": 19,
-        "Entrepreneurship": 11,
-        "Athletics": 10,
-        "Research / Lab": 6,
-        "Healthcare / Clinical": 1
-      },
-      "top_categories": [
-        "CS / Technical Projects",
-        "Leadership",
-        "STEM Competitions",
-        "Community Service",
-        "Arts / Music"
-      ],
-      "sample_quotes": [
-        "basically ran my entire school's tech, including website, equipment, photography, etc.",
-        "CS- Club president, won a peel wide hackathon, a sustainability project with university of sydney, all waterloo contests distinctions on almost all of them",
-        "Made a hackathon org with 100+ attendees, board leadership, internship at an IT corp, student council treasurer, distinction on csmc, lead web dev at another hackathon, 2nd place in cities for trivia comps",
-        "National level Violin, Varsity Baseball, First Robotics, Hockey, Olympiads, Orchestra Concertmaster, Food Service Job, SHAD, All Waterloo Math contests",
-        "IBM DS Professional Certification, S&C Electric Co-op (MES Engineer), Humber River Hospital Co-op, Health and Wellness SHSM, Yale FM Course, Investing Website (400hrs), First Place UofT Seek Jr, First Place OMFA Community Bands u19, UofT MedSoc Me..."
-      ],
-      "justin_alignment": {
-        "matched": [
-          "Academic Awards",
-          "Arts / Music",
-          "Community Service",
-          "CS / Technical Projects",
-          "Healthcare / Clinical",
-          "Leadership",
-          "Research / Lab",
-          "STEM Competitions"
-        ],
-        "missing": [
-          "Athletics",
-          "Entrepreneurship"
-        ],
-        "match_rate_pct": 80.0
-      }
-    }
-  },
+  "ec_insights": {},
   "data_quality": {
     "cycles": [
       {
@@ -5749,18 +5607,18 @@
         "n_programs_mapped": 136,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-25T11:45:54"
+        "fetched_at": "2026-05-27T17:24:37"
       },
       {
         "cycle": "2023-2024",
         "region": "ON",
-        "n_rows": 1475,
-        "n_decisions_mapped": 1474,
-        "n_universities_mapped": 1460,
+        "n_rows": 1476,
+        "n_decisions_mapped": 1475,
+        "n_universities_mapped": 1461,
         "n_programs_mapped": 238,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-25T11:45:54"
+        "fetched_at": "2026-05-27T17:24:37"
       },
       {
         "cycle": "2024-2025",
@@ -5771,29 +5629,29 @@
         "n_programs_mapped": 383,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-04-25T11:45:54"
+        "fetched_at": "2026-05-27T17:24:37"
       },
       {
         "cycle": "2025-2026",
         "region": "ON",
-        "n_rows": 4252,
-        "n_decisions_mapped": 4252,
-        "n_universities_mapped": 4224,
-        "n_programs_mapped": 593,
+        "n_rows": 5754,
+        "n_decisions_mapped": 5754,
+        "n_universities_mapped": 5720,
+        "n_programs_mapped": 1030,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-25T11:45:54"
+        "fetched_at": "2026-05-27T17:24:37"
       },
       {
         "cycle": "2025-2026-ab",
         "region": "AB",
-        "n_rows": 142,
-        "n_decisions_mapped": 142,
-        "n_universities_mapped": 124,
+        "n_rows": 145,
+        "n_decisions_mapped": 145,
+        "n_universities_mapped": 127,
         "n_programs_mapped": 22,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-04-25T11:45:54"
+        "fetched_at": "2026-05-27T17:24:37"
       }
     ],
     "caveats": [

@@ -41,6 +41,7 @@ SCOPES: list[str] = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/forms.body.readonly",
+    "https://www.googleapis.com/auth/presentations",
 ]
 
 
@@ -108,6 +109,10 @@ def get_sheets_service():
 
 def get_forms_service():
     return build("forms", "v1", credentials=get_credentials(), cache_discovery=False)
+
+
+def get_slides_service():
+    return build("slides", "v1", credentials=get_credentials(), cache_discovery=False)
 
 
 def whoami() -> str:
