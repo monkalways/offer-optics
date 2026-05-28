@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justin Wei — 2026–27 University Admission Analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,600;1,8..60,700&family=DM+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* === VIEWPORT BASE (mandatory) === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #0e1520; }
+.deck-viewport { position: fixed; inset: 0; overflow: hidden; background: #0e1520; }
+.deck-stage {
+  position: absolute; left: 0; top: 0;
+  width: 1920px; height: 1080px;
+  overflow: hidden; transform-origin: 0 0;
+}
+.slide {
+  position: absolute; inset: 0;
+  width: 1920px; height: 1080px;
+  overflow: hidden; display: block;
+  visibility: hidden; opacity: 0; pointer-events: none;
+}
+.slide.active { visibility: visible; opacity: 1; pointer-events: auto; z-index: 1; }
+img, video, canvas, svg { max-width: 100%; max-height: 100%; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; }
+}
+
+/* === SIGNAL DESIGN SYSTEM === */
+:root {
+  --navy:        #1C2644;
+  --navy-alt:    #232F55;
+  --cream:       #F0ECE3;
+  --cream-alt:   #E6E0D4;
+  --text-warm:   #E2DCD0;
+  --text-muted-dark: #8A96A8;
+  --text-hint-dark:  #4E5A6E;
+  --ink:         #1A2030;
+  --text-muted-light: #5A6270;
+  --text-hint-light:  #9AA0A8;
+  --gold:        #C8A870;
+  --border-dark: #2E3D5C;
+  --border-light: #CAC4B4;
+  /* verdict/severity */
+  --safety-bg:   #1F3D2B; --safety-fg: #6BC98E;
+  --target-bg:   #1A2C50; --target-fg: #6BA4D8;
+  --reach-bg:    #3D2800; --reach-fg: #D4A055;
+  --critical-bg: #3D1212; --critical-fg: #E06060;
+  --high-bg:     #3D2200; --high-fg:  #D4854A;
+  --medium-bg:   #3D3300; --medium-fg: #C8B055;
+}
+
+/* === DARK / LIGHT SURFACES === */
+.slide.dark  { background: var(--navy); }
+.slide.light { background: var(--cream); }
+
+/* subtle grid on dark slides */
+.slide.dark::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    repeating-linear-gradient(0deg,   rgba(200,168,112,0.04) 0, rgba(200,168,112,0.04) 1px, transparent 1px, transparent 80px),
+    repeating-linear-gradient(90deg,  rgba(200,168,112,0.04) 0, rgba(200,168,112,0.04) 1px, transparent 1px, transparent 80px);
+}
+
+/* === TYPOGRAPHY === */
+.ss4   { font-family: 'Source Serif 4', serif; }
+.dm    { font-family: 'DM Sans', sans-serif; }
+.mono  { font-family: 'IBM Plex Mono', monospace; }
+
+.t-display { font-family: 'Source Serif 4', serif; font-size: 116px; font-weight: 700; line-height: 0.96; letter-spacing: -0.02em; }
+.t-h1      { font-family: 'Source Serif 4', serif; font-size: 80px;  font-weight: 600; line-height: 1.05; letter-spacing: -0.015em; }
+.t-h2      { font-family: 'Source Serif 4', serif; font-size: 54px;  font-weight: 600; line-height: 1.1; }
+.t-h3      { font-family: 'Source Serif 4', serif; font-size: 34px;  font-weight: 600; line-height: 1.2; }
+.t-lead    { font-family: 'DM Sans', sans-serif;   font-size: 26px;  font-weight: 300; line-height: 1.55; }
+.t-body    { font-family: 'DM Sans', sans-serif;   font-size: 20px;  font-weight: 400; line-height: 1.55; }
+.t-small   { font-family: 'DM Sans', sans-serif;   font-size: 16px;  font-weight: 400; line-height: 1.5; }
+.t-caption { font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; }
+.t-kicker  { font-family: 'IBM Plex Mono', monospace; font-size: 17px; letter-spacing: 0.18em; text-transform: uppercase; }
+.t-stat    { font-family: 'Source Serif 4', serif; font-size: 96px;  font-weight: 600; line-height: 1; }
+.t-stat-sm { font-family: 'Source Serif 4', serif; font-size: 64px;  font-weight: 600; line-height: 1; }
+
+/* Signal moment: italics always gold */
+em { font-style: italic; color: var(--gold); }
+
+/* colors by surface */
+.dark  .c-primary   { color: var(--text-warm); }
+.dark  .c-secondary { color: var(--text-muted-dark); }
+.dark  .c-hint      { color: var(--text-hint-dark); }
+.dark  .c-gold      { color: var(--gold); }
+.light .c-primary   { color: var(--ink); }
+.light .c-secondary { color: var(--text-muted-light); }
+.light .c-hint      { color: var(--text-hint-light); }
+.light .c-gold      { color: var(--gold); }
+
+/* === LAYOUT PRIMITIVES === */
+.pad-slide { padding: 0 144px; }
+.pad-top   { padding-top: 72px; }
+
+.gold-rule-h { height: 2px; background: var(--gold); }
+.gold-rule-v { width: 2px; background: linear-gradient(to bottom, transparent 0%, var(--gold) 20%, var(--gold) 80%, transparent 100%); }
+
+/* chrome bar at top of each slide */
+.chrome {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 88px; padding: 0 144px;
+  border-bottom: 1px solid;
+}
+.dark  .chrome { border-color: var(--border-dark); }
+.light .chrome { border-color: var(--border-light); }
+
+/* content area below chrome */
+.body-area {
+  position: absolute;
+  top: 88px; left: 0; right: 0; bottom: 80px;
+  padding: 0 144px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+/* footer line */
+.footer-line {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 80px; padding: 0 144px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-top: 1px solid;
+}
+.dark  .footer-line { border-color: var(--border-dark); }
+.light .footer-line { border-color: var(--border-light); }
+
+/* === VERDICT / SEVERITY BADGES === */
+.badge {
+  display: inline-flex; align-items: center;
+  padding: 6px 18px; border-radius: 3px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px; letter-spacing: 0.1em; font-weight: 500;
+  text-transform: uppercase;
+}
+.badge-safety   { background: var(--safety-bg);   color: var(--safety-fg); }
+.badge-target   { background: var(--target-bg);   color: var(--target-fg); }
+.badge-reach    { background: var(--reach-bg);    color: var(--reach-fg); }
+.badge-critical { background: var(--critical-bg); color: var(--critical-fg); }
+.badge-high     { background: var(--high-bg);     color: var(--high-fg); }
+.badge-medium   { background: var(--medium-bg);   color: var(--medium-fg); }
+
+/* === TABLES === */
+.signal-table {
+  width: 100%; border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+}
+.signal-table th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
+  font-weight: 500; padding: 0 0 20px 0; text-align: left;
+  border-bottom: 1px solid;
+}
+.signal-table td {
+  font-size: 19px; padding: 18px 0;
+  border-bottom: 1px solid;
+  vertical-align: middle;
+}
+.dark  .signal-table th { color: var(--text-hint-dark);  border-color: var(--border-dark); }
+.dark  .signal-table td { color: var(--text-warm);        border-color: var(--border-dark); }
+.light .signal-table th { color: var(--text-hint-light);  border-color: var(--border-light); }
+.light .signal-table td { color: var(--ink);               border-color: var(--border-light); }
+
+.signal-table td.num { font-family: 'Source Serif 4', serif; font-weight: 600; font-size: 20px; color: var(--gold); }
+.signal-table td.warn { color: #E06060; font-weight: 500; }
+
+.signal-table tr:last-child td { border-bottom: none; }
+
+/* === CALLOUT BOXES === */
+.callout {
+  border-left: 3px solid var(--gold);
+  padding: 20px 32px;
+  background: rgba(200,168,112,0.06);
+}
+.callout-warn {
+  border-left: 3px solid #C94040;
+  padding: 20px 32px;
+  background: rgba(201,64,64,0.08);
+}
+
+/* === STAT BLOCKS === */
+.stat-block { border-left: 2px solid var(--gold); padding-left: 28px; }
+.stat-block.dim { border-color: rgba(200,168,112,0.3); }
+
+/* === ANIMATION === */
+.slide.active .anim-up {
+  animation: slideUp 0.55s ease both;
+}
+.slide.active .anim-up:nth-child(1) { animation-delay: 0.05s; }
+.slide.active .anim-up:nth-child(2) { animation-delay: 0.15s; }
+.slide.active .anim-up:nth-child(3) { animation-delay: 0.25s; }
+.slide.active .anim-up:nth-child(4) { animation-delay: 0.35s; }
+.slide.active .anim-up:nth-child(5) { animation-delay: 0.45s; }
+.slide.active .anim-up:nth-child(6) { animation-delay: 0.55s; }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.slide.active .anim-fade {
+  animation: fadeIn 0.6s ease both;
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+/* === PROGRESS BAR === */
+#progress-bar {
+  position: fixed; top: 0; left: 0; height: 3px;
+  background: var(--gold); z-index: 100;
+  transition: width 0.3s ease;
+}
+
+/* === DECK CONTROLS === */
+.deck-controls {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  height: 52px; z-index: 100;
+  display: flex; align-items: center; justify-content: center; gap: 40px;
+  background: rgba(14,21,32,0.92); backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(46,61,92,0.5);
+}
+.deck-controls button {
+  background: none; border: 1px solid var(--border-dark);
+  color: var(--text-muted-dark); padding: 8px 24px;
+  font-family: 'IBM Plex Mono', monospace; font-size: 13px;
+  cursor: pointer; letter-spacing: 0.1em; text-transform: uppercase;
+  transition: border-color 0.2s, color 0.2s;
+}
+.deck-controls button:hover { border-color: var(--gold); color: var(--gold); }
+.deck-controls button:disabled { opacity: 0.3; cursor: default; }
+#slide-counter { font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: var(--text-hint-dark); letter-spacing: 0.15em; min-width: 80px; text-align: center; }
+
+/* === SLIDE 7 — TIMELINE CHAIN === */
+.chain { display: flex; align-items: flex-start; gap: 0; }
+.chain-step { display: flex; flex-direction: column; align-items: center; flex: 1; }
+.chain-dot {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--navy-alt); border: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'IBM Plex Mono', monospace; font-size: 13px;
+  color: var(--gold); font-weight: 500; flex-shrink: 0;
+}
+.chain-connector {
+  flex: 1; height: 2px; margin-top: 23px;
+  background: linear-gradient(to right, var(--gold), rgba(200,168,112,0.3));
+}
+.chain-label { margin-top: 20px; text-align: center; padding: 0 8px; }
+
+/* === SLIDE 8 — GPA LEVER === */
+.gpa-track { position: relative; height: 120px; background: var(--navy-alt); border-radius: 4px; overflow: visible; }
+.gpa-fill { height: 100%; border-radius: 4px 0 0 4px; background: linear-gradient(to right, var(--border-dark), var(--gold)); position: relative; }
+.gpa-marker { position: absolute; top: -16px; right: -2px; width: 4px; height: 152px; background: var(--gold); }
+.gpa-label { position: absolute; right: -70px; top: 50%; transform: translateY(-50%); font-family: 'Source Serif 4', serif; font-size: 36px; font-weight: 600; color: var(--gold); white-space: nowrap; }
+.gpa-target-line { position: absolute; top: -16px; height: 152px; width: 2px; background: rgba(200,168,112,0.4); border-left: 2px dashed rgba(200,168,112,0.4); }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div class="deck-viewport">
+  <div class="deck-stage" id="stage">
+
+    <!-- ====================== SLIDE 1 — COVER ====================== -->
+    <div class="slide dark active" id="slide-1">
+      <!-- top gold rule -->
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);"></div>
+
+      <!-- left content column -->
+      <div style="position:absolute;left:144px;top:0;bottom:0;width:980px;display:flex;flex-direction:column;justify-content:center;">
+        <div class="t-kicker c-hint anim-up" style="margin-bottom:52px;">Confidential Analysis · May 2026</div>
+        <div class="t-display c-primary anim-up" style="margin-bottom:40px;">
+          Justin Wei —<br>
+          <em>2026–27</em> University<br>
+          Admission Analysis
+        </div>
+        <div class="gold-rule-h anim-up" style="width:80px;margin-bottom:40px;"></div>
+        <div class="t-lead c-secondary anim-up">
+          Where he stands · What the gaps are · What to do next
+        </div>
+      </div>
+
+      <!-- right stat panel -->
+      <div style="position:absolute;right:0;top:0;bottom:0;width:620px;background:var(--navy-alt);border-left:1px solid var(--border-dark);">
+        <div class="gold-rule-v" style="position:absolute;left:0;top:0;bottom:0;"></div>
+        <div style="position:absolute;left:80px;top:50%;transform:translateY(-50%);" class="anim-fade">
+          <div class="t-caption c-hint" style="margin-bottom:56px;">Data Snapshot</div>
+          <div class="stat-block" style="margin-bottom:48px;">
+            <div class="t-stat c-primary">10,430</div>
+            <div class="t-small c-secondary" style="margin-top:8px;">Admission records analyzed</div>
+          </div>
+          <div class="stat-block dim" style="margin-bottom:48px;">
+            <div class="t-stat c-primary">4</div>
+            <div class="t-small c-secondary" style="margin-top:8px;">Admission cycles (2022–2026)</div>
+          </div>
+          <div class="stat-block dim">
+            <div class="t-stat c-primary">6</div>
+            <div class="t-small c-secondary" style="margin-top:8px;">Programs in scope</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom rule + meta -->
+      <div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:rgba(200,168,112,0.3);"></div>
+      <div class="t-caption" style="position:absolute;bottom:28px;left:144px;color:var(--text-hint-dark);">Offer Optics · Reddit-Sourced Data · 2025–26 Cycle Closed</div>
+      <div class="t-caption" style="position:absolute;bottom:28px;right:144px;color:var(--text-hint-dark);">01 / 12</div>
+    </div>
+
+    <!-- ====================== SLIDE 2 — THE VERDICT ====================== -->
+    <div class="slide light" id="slide-2">
+      <div class="chrome">
+        <div class="t-kicker" style="color:var(--text-hint-light);">At a Glance</div>
+        <div class="t-caption" style="color:var(--text-hint-light);">02 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:52px;">
+        <div class="t-h1 anim-up" style="color:var(--ink);margin-bottom:14px;">The <em>Verdict</em></div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:40px;"></div>
+        <table class="signal-table anim-up">
+          <thead>
+            <tr>
+              <th style="width:290px;">Program</th>
+              <th style="width:60px;">Tier</th>
+              <th style="width:160px;">Verdict</th>
+              <th>Justin vs Pool</th>
+              <th>OOP Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>McMaster BHSc</strong></td>
+              <td class="num">1</td>
+              <td><span class="badge badge-target">Target</span></td>
+              <td>28th percentile · 1.3% below median</td>
+              <td class="warn">Hard floor ~97.0%</td>
+            </tr>
+            <tr>
+              <td><strong>Queen's BHSc</strong></td>
+              <td class="num">1</td>
+              <td><span class="badge badge-target">Target</span></td>
+              <td>37th percentile · 0.4% below median</td>
+              <td style="color:var(--text-muted-light);">No OOP penalty</td>
+            </tr>
+            <tr>
+              <td><strong>Waterloo CS</strong></td>
+              <td class="num">1</td>
+              <td><span class="badge badge-reach">Reach</span></td>
+              <td>20th percentile · 2.3% below median</td>
+              <td style="color:var(--text-muted-light);">AIF compensates</td>
+            </tr>
+            <tr>
+              <td><strong>UofT Life Sci St. G</strong></td>
+              <td class="num">2</td>
+              <td><span class="badge badge-safety">Safety</span></td>
+              <td>66th percentile · 0.8% above median</td>
+              <td style="color:var(--text-muted-light);">No penalty</td>
+            </tr>
+            <tr>
+              <td><strong>Western BMSc</strong></td>
+              <td class="num">2</td>
+              <td><span class="badge badge-target">Target</span></td>
+              <td>56th percentile · 0.1% above median</td>
+              <td style="color:var(--text-muted-light);">No penalty</td>
+            </tr>
+            <tr>
+              <td><strong>Queen's Life Sci</strong></td>
+              <td class="num">2</td>
+              <td><span class="badge badge-target">Target</span></td>
+              <td>60th percentile · 0.8% above median</td>
+              <td style="color:var(--text-muted-light);">No penalty</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout anim-up" style="margin-top:36px;max-width:1200px;">
+          <span class="t-body" style="color:var(--ink);">Two realistic Tier-1 targets + a credible Reach. <strong>The gap to close is specific and fixable</strong> — ELA 30-1 is the single lever that moves all three.</span>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption" style="color:var(--text-hint-light);">Offer Optics · May 2026</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 3 — 2025-26 DATA ====================== -->
+    <div class="slide dark" id="slide-3">
+      <div class="chrome">
+        <div class="t-kicker c-hint">2025–26 Numbers — Cycle Closed</div>
+        <div class="t-caption c-hint">03 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:48px;">
+        <div class="t-h1 c-primary anim-up" style="margin-bottom:12px;">The <em>Final</em> Numbers</div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:36px;"></div>
+        <table class="signal-table anim-up" style="font-size:18px;">
+          <thead>
+            <tr>
+              <th style="width:260px;">Program</th>
+              <th style="width:90px;text-align:right;">Acc n</th>
+              <th style="width:160px;text-align:right;">Acc Median</th>
+              <th style="width:90px;text-align:right;">Rej n</th>
+              <th style="width:160px;text-align:right;">Rej Median</th>
+              <th style="width:90px;text-align:right;">WL / Def</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>McMaster BHSc</strong></td>
+              <td class="num" style="text-align:right;">47</td>
+              <td class="num" style="text-align:right;">96.7%</td>
+              <td class="num" style="text-align:right;color:var(--critical-fg);">45</td>
+              <td style="text-align:right;color:#E06060;font-weight:600;font-family:'Source Serif 4',serif;font-size:20px;">95.5% ⚠</td>
+              <td class="num" style="text-align:right;color:var(--text-muted-dark);">—</td>
+            </tr>
+            <tr>
+              <td><strong>Queen's BHSc</strong></td>
+              <td class="num" style="text-align:right;">44</td>
+              <td class="num" style="text-align:right;">95.9%</td>
+              <td class="num" style="text-align:right;">9</td>
+              <td class="num" style="text-align:right;">93.8%</td>
+              <td class="num" style="text-align:right;">13 WL</td>
+            </tr>
+            <tr>
+              <td><strong>Waterloo CS</strong></td>
+              <td class="num" style="text-align:right;">47</td>
+              <td class="num" style="text-align:right;">97.8%</td>
+              <td class="num" style="text-align:right;">1</td>
+              <td class="num" style="text-align:right;">95.0%</td>
+              <td class="num" style="text-align:right;">14 def</td>
+            </tr>
+            <tr>
+              <td><strong>UofT Life Sci</strong></td>
+              <td class="num" style="text-align:right;">87</td>
+              <td class="num" style="text-align:right;">94.6%</td>
+              <td class="num" style="text-align:right;color:var(--text-muted-dark);">0</td>
+              <td style="text-align:right;color:var(--text-hint-dark);">—</td>
+              <td class="num" style="text-align:right;color:var(--text-muted-dark);">—</td>
+            </tr>
+            <tr>
+              <td><strong>Western BMSc</strong></td>
+              <td class="num" style="text-align:right;">89</td>
+              <td class="num" style="text-align:right;">95.2%</td>
+              <td class="num" style="text-align:right;color:var(--text-muted-dark);">0</td>
+              <td style="text-align:right;color:var(--text-hint-dark);">—</td>
+              <td class="num" style="text-align:right;color:var(--text-muted-dark);">—</td>
+            </tr>
+            <tr>
+              <td><strong>Queen's Life Sci</strong></td>
+              <td class="num" style="text-align:right;">49</td>
+              <td class="num" style="text-align:right;">94.7%</td>
+              <td class="num" style="text-align:right;color:var(--text-muted-dark);">0</td>
+              <td style="text-align:right;color:var(--text-hint-dark);">—</td>
+              <td class="num" style="text-align:right;color:var(--text-muted-dark);">—</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout-warn anim-up" style="margin-top:32px;max-width:1200px;">
+          <span class="t-body" style="color:#E06060;"><strong>⚠ McMaster rejection median = 95.5%</strong> — exactly equal to Justin's current projected average. He sits at the rejection midpoint.</span>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption c-hint">Reddit-sourced · self-selected sample · see slide 12 for caveats</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 4 — McMASTER ====================== -->
+    <div class="slide light" id="slide-4">
+      <div class="chrome">
+        <div class="t-kicker" style="color:var(--text-hint-light);">McMaster BHSc — Deep Dive</div>
+        <div class="t-caption" style="color:var(--text-hint-light);">04 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:48px;">
+        <div class="t-h1 anim-up" style="color:var(--ink);margin-bottom:10px;">McMaster BHSc: <em>Target,</em> but OOP is real</div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:40px;"></div>
+
+        <div style="display:flex;gap:80px;" class="anim-up">
+          <!-- Left: OOP data -->
+          <div style="flex:1;">
+            <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:24px;">OOP (Alberta) Signal</div>
+            <table class="signal-table" style="font-size:18px;">
+              <thead>
+                <tr><th>Result</th><th>Applicant avg</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="badge badge-target">Accepted</span></td><td class="num">97.0%</td></tr>
+                <tr><td><span class="badge badge-target">Accepted</span></td><td class="num">97.5%</td></tr>
+                <tr><td><span class="badge badge-target">Accepted</span></td><td class="num">97.8%</td></tr>
+                <tr><td><span class="badge badge-target">Accepted</span></td><td class="num">99.8%</td></tr>
+                <tr><td><span class="badge badge-reach">Rejected</span></td><td class="num">93.8%</td></tr>
+                <tr><td><span class="badge badge-critical" style="background:var(--critical-bg);color:var(--critical-fg);">Rejected</span></td><td style="font-family:'Source Serif 4',serif;font-size:20px;font-weight:600;color:#E06060;">98.0% ← most important</td></tr>
+              </tbody>
+            </table>
+            <div class="callout-warn" style="margin-top:24px;">
+              <span class="t-small" style="color:#E06060;">A 98.0% OOP applicant was rejected. GPA alone does not guarantee admission — supp app quality determines it.</span>
+            </div>
+          </div>
+
+          <!-- Right: Supp app format -->
+          <div style="flex:1;border-left:1px solid var(--border-light);padding-left:64px;">
+            <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:24px;">Supplementary App Format</div>
+            <div style="display:flex;flex-direction:column;gap:20px;">
+              <div class="stat-block">
+                <div class="t-body" style="color:var(--ink);"><strong>2 written essays</strong> · 1,500 chars each</div>
+                <div class="t-small" style="color:var(--text-muted-light);margin-top:6px;">Scored 0–7 by 6 independent reviewers · 45–60 sec read</div>
+              </div>
+              <div class="stat-block dim">
+                <div class="t-body" style="color:var(--ink);"><strong>Questions are analytical,</strong> not personal</div>
+                <div class="t-small" style="color:var(--text-muted-light);margin-top:6px;">"How/why" reasoning outweighs personal narrative</div>
+              </div>
+              <div class="stat-block dim">
+                <div class="t-body" style="color:var(--ink);">Best questions for Justin:</div>
+                <div class="t-small" style="color:var(--text-muted-light);margin-top:6px;"><strong style="color:var(--gold);">Q1A</strong> — GPA replacement argument = his IB CS IA ML tool<br><strong style="color:var(--gold);">Q2A</strong> — Biodesign/biotech = Harvard MEDScience AI surgical robot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption" style="color:var(--text-hint-light);">OOP n=6 — treat as directional, not a hard threshold</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 5 — QUEEN'S BHSc ====================== -->
+    <div class="slide dark" id="slide-5">
+      <div class="chrome">
+        <div class="t-kicker c-hint">Queen's BHSc — Deep Dive</div>
+        <div class="t-caption c-hint">05 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:48px;">
+        <div class="t-h1 c-primary anim-up" style="margin-bottom:10px;">Queen's BHSc: <em>PSE quality</em> decides everything</div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:36px;"></div>
+
+        <!-- Big stat callout -->
+        <div style="display:flex;gap:48px;align-items:flex-start;margin-bottom:36px;" class="anim-up">
+          <div style="background:var(--navy-alt);border:1px solid var(--border-dark);padding:36px 48px;min-width:440px;">
+            <div class="t-caption c-hint" style="margin-bottom:16px;">The key finding</div>
+            <div style="display:flex;align-items:baseline;gap:24px;margin-bottom:12px;">
+              <div class="t-stat-sm c-gold">96.5%</div>
+              <div class="t-body c-secondary">Waitlist median</div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:24px;">
+              <div class="t-stat-sm c-primary" style="font-size:48px;">95.9%</div>
+              <div class="t-body c-secondary">Acceptance median</div>
+            </div>
+            <div class="callout" style="margin-top:24px;">
+              <span class="t-small c-secondary">Waitlisted students had <strong style="color:var(--text-warm);">higher GPAs</strong> than accepted students. The PSE — not grades — is the differentiator.</span>
+            </div>
+          </div>
+
+          <!-- Right: PSE Format + Justin's advantage -->
+          <div style="flex:1;">
+            <div class="t-caption c-hint" style="margin-bottom:20px;">KIRA Talent PSE Format</div>
+            <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:28px;">
+              <div class="stat-block">
+                <div class="t-body c-primary"><strong>Written:</strong> 335 words · 10 minutes (timed)</div>
+              </div>
+              <div class="stat-block dim">
+                <div class="t-body c-primary"><strong>Video:</strong> 2 min prep · 2 min delivery · one shot</div>
+                <div class="t-small c-secondary" style="margin-top:6px;">No OOP penalty — 4 OOP accepted, avg range 93.5%–97.6%</div>
+              </div>
+            </div>
+            <div class="t-caption c-hint" style="margin-bottom:16px;">Justin's narrative advantage</div>
+            <div class="t-small c-secondary" style="line-height:1.7;">
+              Classmate → HelpingMinds (non-profit) → Chatter mentor (100+ hrs) → IB CS IA ML tool → 30h histopathology shadowing → Harvard MEDScience AI surgical robots (Jun 2026).<br><br>
+              <em>This through-line is exactly what KIRA personal narrative prompts reward.</em>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption c-hint">No OOP penalty observed in 2025–26 data</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 6 — WATERLOO CS ====================== -->
+    <div class="slide light" id="slide-6">
+      <div class="chrome">
+        <div class="t-kicker" style="color:var(--text-hint-light);">Waterloo CS — Deep Dive</div>
+        <div class="t-caption" style="color:var(--text-hint-light);">06 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:48px;">
+        <div class="t-h1 anim-up" style="color:var(--ink);margin-bottom:10px;">Waterloo CS: A real <em>reach</em> — the honest picture</div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:36px;"></div>
+
+        <div style="display:flex;gap:56px;" class="anim-up">
+          <!-- Left: 3 stat blocks -->
+          <div style="display:flex;flex-direction:column;gap:24px;min-width:420px;">
+            <div style="background:#F0ECE3;border:1px solid var(--border-light);padding:28px 32px;">
+              <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:12px;">Acceptance median</div>
+              <div class="t-stat-sm" style="color:var(--ink);">97.8%</div>
+            </div>
+            <div style="background:#F0ECE3;border:1px solid var(--border-light);padding:28px 32px;">
+              <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:12px;">Deferred pool median (n=14)</div>
+              <div class="t-stat-sm" style="color:var(--gold);">96.2%</div>
+            </div>
+            <div style="background:#FFF8F8;border:1px solid rgba(201,64,64,0.3);padding:28px 32px;">
+              <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:12px;">Justin's current projection</div>
+              <div class="t-stat-sm" style="color:#C94040;">95.5%</div>
+              <div class="t-small" style="color:#C94040;margin-top:8px;">Below the deferral pool median</div>
+            </div>
+          </div>
+
+          <!-- Right: callout + AIF -->
+          <div style="flex:1;display:flex;flex-direction:column;gap:28px;">
+            <div class="callout" style="border-color:#C94040;background:rgba(201,64,64,0.05);">
+              <div class="t-body" style="color:var(--ink);"><strong>Without ELA lift:</strong> deferral is the realistic baseline.</div>
+              <div class="t-body" style="color:var(--ink);margin-top:8px;"><strong>With ELA to 97%+</strong> and a Harvard MEDScience-led AIF: genuine shot.</div>
+            </div>
+            <div>
+              <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:18px;">AIF credentials to lead with</div>
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div class="stat-block" style="border-color:var(--gold);">
+                  <div class="t-body" style="color:var(--ink);"><strong>Harvard MEDScience</strong> — AI surgical robots on Kepler platform (Jun 2026)</div>
+                </div>
+                <div class="stat-block dim">
+                  <div class="t-body" style="color:var(--ink);">CyberPatriot National Finalist · Linux track</div>
+                </div>
+                <div class="stat-block dim">
+                  <div class="t-body" style="color:var(--ink);">IMC 2024 Merit — represented Canada internationally</div>
+                </div>
+                <div class="stat-block dim">
+                  <div class="t-body" style="color:var(--ink);">Kaggle top 5.7% · mental health ML · published LinkedIn article bridging Chatter → ML</div>
+                </div>
+                <div class="stat-block dim">
+                  <div class="t-body" style="color:var(--ink);">IB CS IA — ML student risk detection tool</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption" style="color:var(--text-hint-light);">Low-GPA admits (94.5%, 95.67%) confirm AIF can compensate</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 7 — NARRATIVE EDGE ====================== -->
+    <div class="slide dark" id="slide-7">
+      <div class="chrome">
+        <div class="t-kicker c-hint">Justin's Narrative Edge</div>
+        <div class="t-caption c-hint">07 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:40px;">
+        <div class="t-h1 c-primary anim-up" style="margin-bottom:8px;">What Justin has that <em>most applicants don't</em></div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:36px;"></div>
+
+        <!-- Chain timeline -->
+        <div style="display:flex;align-items:flex-start;" class="anim-up">
+          <!-- Step 1 -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
+            <div class="chain-dot">01</div>
+            <div class="chain-label">
+              <div class="t-small c-secondary" style="text-align:center;">Grade 9<br><strong style="color:var(--text-warm);">Classmate dropped out</strong><br><span class="t-caption c-hint">mental health crisis</span></div>
+            </div>
+          </div>
+          <div style="flex:1;height:2px;margin-top:23px;background:linear-gradient(to right,var(--gold),rgba(200,168,112,0.5));"></div>
+          <!-- Step 2 -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
+            <div class="chain-dot">02</div>
+            <div class="chain-label">
+              <div class="t-small c-secondary" style="text-align:center;"><strong style="color:var(--text-warm);">Founded HelpingMinds</strong><br><span class="t-caption c-hint">non-profit mental health</span></div>
+            </div>
+          </div>
+          <div style="flex:1;height:2px;margin-top:23px;background:linear-gradient(to right,rgba(200,168,112,0.5),rgba(200,168,112,0.5));"></div>
+          <!-- Step 3 -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
+            <div class="chain-dot">03</div>
+            <div class="chain-label">
+              <div class="t-small c-secondary" style="text-align:center;"><strong style="color:var(--text-warm);">Chatter Mentor</strong><br><span class="t-caption c-hint">100+ hrs · neurodiverse kids</span></div>
+            </div>
+          </div>
+          <div style="flex:1;height:2px;margin-top:23px;background:linear-gradient(to right,rgba(200,168,112,0.5),rgba(200,168,112,0.5));"></div>
+          <!-- Step 4 -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
+            <div class="chain-dot">04</div>
+            <div class="chain-label">
+              <div class="t-small c-secondary" style="text-align:center;"><strong style="color:var(--text-warm);">IB CS IA</strong><br><span class="t-caption c-hint">ML student risk detection</span></div>
+            </div>
+          </div>
+          <div style="flex:1;height:2px;margin-top:23px;background:linear-gradient(to right,rgba(200,168,112,0.5),rgba(200,168,112,0.5));"></div>
+          <!-- Step 5 -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
+            <div class="chain-dot">05</div>
+            <div class="chain-label">
+              <div class="t-small c-secondary" style="text-align:center;"><strong style="color:var(--text-warm);">30h Histopathology</strong><br><span class="t-caption c-hint">Dr. Kanwal · Misericordia</span></div>
+            </div>
+          </div>
+          <div style="flex:1;height:2px;margin-top:23px;background:linear-gradient(to right,rgba(200,168,112,0.5),var(--gold));"></div>
+          <!-- Step 6 -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
+            <div class="chain-dot" style="border-color:var(--gold);background:rgba(200,168,112,0.15);">06</div>
+            <div class="chain-label">
+              <div class="t-small c-secondary" style="text-align:center;"><strong style="color:var(--gold);">Harvard MEDScience</strong><br><span class="t-caption c-hint">AI surgical robots · Jun 2026</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout anim-up" style="margin-top:40px;max-width:900px;">
+          <em>Each step causes the next. This coherence is rare in applicant pools.</em>
+        </div>
+
+        <!-- Credentials strip -->
+        <div style="margin-top:36px;display:flex;gap:24px;flex-wrap:wrap;" class="anim-up">
+          <span class="badge" style="background:rgba(200,168,112,0.1);color:var(--gold);border:1px solid rgba(200,168,112,0.3);">IMC Merit (India)</span>
+          <span class="badge" style="background:rgba(200,168,112,0.1);color:var(--gold);border:1px solid rgba(200,168,112,0.3);">CyberPatriot National Finalist</span>
+          <span class="badge" style="background:rgba(200,168,112,0.1);color:var(--gold);border:1px solid rgba(200,168,112,0.3);">COMC Distinction</span>
+          <span class="badge" style="background:rgba(200,168,112,0.1);color:var(--gold);border:1px solid rgba(200,168,112,0.3);">Kaggle Top 5.7%</span>
+          <span class="badge" style="background:rgba(200,168,112,0.1);color:var(--gold);border:1px solid rgba(200,168,112,0.3);">AP Bio 5</span>
+          <span class="badge" style="background:rgba(200,168,112,0.1);color:var(--gold);border:1px solid rgba(200,168,112,0.3);">Co-President Math + CS Club</span>
+          <span class="badge" style="background:rgba(107,164,216,0.12);color:#6BA4D8;border:1px solid rgba(107,164,216,0.3);">Published: Mental Health + ML (LinkedIn)</span>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption c-hint">Offer Optics · May 2026</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 8 — THE ONE LEVER ====================== -->
+    <div class="slide light" id="slide-8">
+      <div class="chrome">
+        <div class="t-kicker" style="color:var(--text-hint-light);">The One Lever</div>
+        <div class="t-caption" style="color:var(--text-hint-light);">08 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:44px;">
+        <div class="t-h1 anim-up" style="color:var(--ink);margin-bottom:8px;">ELA 30-1: <em>The single most impactful action</em></div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:40px;"></div>
+
+        <div style="display:flex;gap:80px;align-items:flex-start;" class="anim-up">
+          <!-- Left: visual GPA before/after -->
+          <div style="flex:1.2;">
+            <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:24px;">Top-6 Average Effect</div>
+
+            <!-- Current -->
+            <div style="margin-bottom:32px;">
+              <div class="t-small" style="color:var(--text-muted-light);margin-bottom:10px;">Current projection (ELA mid = 87.5%)</div>
+              <div style="height:64px;background:var(--cream-alt);border:1px solid var(--border-light);border-radius:3px;position:relative;overflow:hidden;">
+                <div style="width:72%;height:100%;background:linear-gradient(to right,#c8c0b0,#b8b0a0);"></div>
+                <div style="position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Source Serif 4',serif;font-size:28px;font-weight:600;color:#C94040;">95.5%</div>
+              </div>
+              <div style="display:flex;gap:16px;margin-top:12px;">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#C94040;letter-spacing:0.1em;">✗ Below McMaster OOP floor (~97.0%)</span>
+              </div>
+            </div>
+
+            <!-- Target -->
+            <div>
+              <div class="t-small" style="color:var(--text-muted-light);margin-bottom:10px;">Target (ELA → 92–93%)</div>
+              <div style="height:64px;background:var(--cream-alt);border:1px solid var(--border-light);border-radius:3px;position:relative;overflow:hidden;">
+                <div style="width:85%;height:100%;background:linear-gradient(to right,#b8a878,var(--gold));"></div>
+                <div style="position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Source Serif 4',serif;font-size:28px;font-weight:600;color:var(--ink);">97.0–97.3%</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#4A7C59;letter-spacing:0.1em;">✓ Clears McMaster OOP floor (~97.0% min observed)</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#4A7C59;letter-spacing:0.1em;">✓ Above Queen's BHSc acceptance median (95.9%)</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#4A7C59;letter-spacing:0.1em;">✓ Inside Waterloo CS competitive range (deferred median 96.2%)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: how to get there -->
+          <div style="flex:1;border-left:1px solid var(--border-light);padding-left:64px;">
+            <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:24px;">How to close the gap</div>
+            <div style="display:flex;flex-direction:column;gap:24px;">
+              <div class="stat-block">
+                <div class="t-body" style="color:var(--ink);"><strong>Weekly rhetorical analysis practice</strong></div>
+                <div class="t-small" style="color:var(--text-muted-light);margin-top:6px;">September–June · past diploma exams</div>
+              </div>
+              <div class="stat-block dim">
+                <div class="t-body" style="color:var(--ink);"><strong>Teacher-reviewed essay feedback</strong></div>
+                <div class="t-small" style="color:var(--text-muted-light);margin-top:6px;">Monthly structured reviews from ELA teacher</div>
+              </div>
+              <div class="stat-block dim">
+                <div class="t-body" style="color:var(--ink);"><strong>Reading enrichment</strong></div>
+                <div class="t-small" style="color:var(--text-muted-light);margin-top:6px;">Long-form literary nonfiction trains the analytical voice ELA exams reward</div>
+              </div>
+            </div>
+            <div class="callout" style="margin-top:32px;">
+              <em>Every other action in this plan is secondary to this one.</em>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption" style="color:var(--text-hint-light);">ELA 30-1 diploma exam · June 2027</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 9 — GAP ANALYSIS ====================== -->
+    <div class="slide dark" id="slide-9">
+      <div class="chrome">
+        <div class="t-kicker c-hint">Gap Analysis</div>
+        <div class="t-caption c-hint">09 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:44px;">
+        <div class="t-h1 c-primary anim-up" style="margin-bottom:8px;"><em>Honest</em> gap assessment</div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:32px;"></div>
+        <table class="signal-table anim-up" style="font-size:17px;">
+          <thead>
+            <tr>
+              <th style="width:380px;">Gap</th>
+              <th style="width:340px;">Programs Affected</th>
+              <th style="width:140px;">Severity</th>
+              <th>How to Close</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ELA 30-1 at 87.5% projected</strong></td>
+              <td>All 6 programs</td>
+              <td><span class="badge badge-critical">Critical</span></td>
+              <td class="t-small">Weekly practice · past diploma exams · teacher feedback</td>
+            </tr>
+            <tr>
+              <td>McMaster OOP floor not cleared</td>
+              <td>McMaster only</td>
+              <td><span class="badge badge-high">High</span></td>
+              <td class="t-small">ELA lift → top-6 to 97%+</td>
+            </tr>
+            <tr>
+              <td>Supp apps not drafted</td>
+              <td>Mac · Queen's BHSc · Waterloo</td>
+              <td><span class="badge badge-high">High</span></td>
+              <td class="t-small">Draft Oct–Nov 2026 · iterate with mentor</td>
+            </tr>
+            <tr>
+              <td>Harvard MEDScience not documented</td>
+              <td>Mac · Queen's BHSc · Waterloo</td>
+              <td><span class="badge badge-high">High</span></td>
+              <td class="t-small">Journal June 27–28 immediately after program</td>
+            </tr>
+            <tr>
+              <td>Queen's PSE video unrehearsed</td>
+              <td>Queen's BHSc</td>
+              <td><span class="badge badge-high">High</span></td>
+              <td class="t-small">3–5 KIRA mock sessions Oct 2026</td>
+            </tr>
+            <tr>
+              <td>IB CS IA not on GitHub</td>
+              <td>Mac · Queen's BHSc · Waterloo</td>
+              <td><span class="badge badge-medium">Medium</span></td>
+              <td class="t-small">GitHub repo + README · Sep 2026 (LinkedIn publishing presence already established)</td>
+            </tr>
+            <tr>
+              <td>HelpingMinds unquantified</td>
+              <td>Mac · Queen's BHSc</td>
+              <td><span class="badge badge-medium">Medium</span></td>
+              <td class="t-small">Events · reach · funds documented by Aug 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption c-hint">Offer Optics · May 2026</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 10 — ACTION PLAN ====================== -->
+    <div class="slide light" id="slide-10">
+      <div class="chrome">
+        <div class="t-kicker" style="color:var(--text-hint-light);">Action Plan</div>
+        <div class="t-caption" style="color:var(--text-hint-light);">10 / 12</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:40px;">
+        <div class="t-h1 anim-up" style="color:var(--ink);margin-bottom:8px;">What to do next — <em>priority order</em></div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:28px;"></div>
+        <div style="display:flex;gap:48px;" class="anim-up">
+          <!-- Tier A -->
+          <div style="flex:1.1;border-top:3px solid #C94040;padding-top:20px;">
+            <div class="t-caption" style="color:#C94040;margin-bottom:20px;">Tier A — Must Do ★★★</div>
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>A1. ELA 30-1 → 92–93%</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">Jun 2027 diploma exam</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>A2. Document Harvard MEDScience</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">June 26–30, 2026 — journal immediately</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>A3. Ship IB CS IA publicly</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">GitHub + LinkedIn article · Sep 2026</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>A4. Quantify HelpingMinds.ca</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">Events · reach · funds · Aug 2026</div>
+              </div>
+              <div>
+                <div class="t-small" style="color:var(--ink);"><strong>A5. Crystallize the classmate story</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">90-second oral version ready · Oct 2026</div>
+              </div>
+            </div>
+          </div>
+          <!-- Tier B -->
+          <div style="flex:1.1;border-top:3px solid var(--gold);padding-top:20px;">
+            <div class="t-caption" style="color:var(--gold);margin-bottom:20px;">Tier B — High Value ★★</div>
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>B1. Lab research replacement</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">UofA outreach or extend Misericordia to 60+ hrs · Aug 2026</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>B2. Queen's PSE KIRA video practice</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">3–5 recorded mock runs · Oct 2026</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>B3. McMaster Q1A + Q2A drafts</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">Oct–Dec 2026 · iterate with mentor</div>
+              </div>
+              <div>
+                <div class="t-small" style="color:var(--ink);"><strong>B4. Waterloo AIF draft</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">Lead with Harvard MEDScience · Nov–Jan 2027</div>
+              </div>
+            </div>
+          </div>
+          <!-- Tier C -->
+          <div style="flex:0.8;border-top:3px solid var(--border-light);padding-top:20px;">
+            <div class="t-caption" style="color:var(--text-hint-light);margin-bottom:20px;">Tier C — Strengthening ★</div>
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div style="border-bottom:1px solid var(--border-light);padding-bottom:16px;">
+                <div class="t-small" style="color:var(--ink);"><strong>C1. Euclid 2027</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">Target Distinction · Apr 2027</div>
+              </div>
+              <div>
+                <div class="t-small" style="color:var(--ink);"><strong>C2. CCC Senior 2027</strong></div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-hint-light);margin-top:4px;">Top-25 → CCO invitation · Feb 2027</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption" style="color:var(--text-hint-light);">Offer Optics · May 2026</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 11 — TIMELINE ====================== -->
+    <div class="slide dark" id="slide-11">
+      <div class="chrome">
+        <div class="t-kicker c-hint">Application Timeline</div>
+        <div class="t-caption c-hint">11 / 12</div>
+      </div>
+
+      <!-- McMaster warning banner -->
+      <div style="position:absolute;top:88px;left:0;right:0;background:#3D1212;border-bottom:1px solid rgba(201,64,64,0.4);padding:16px 144px;z-index:2;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#E06060;letter-spacing:0.1em;">⚠ CRITICAL: McMaster supp app portal opens for ONLY 3–4 days in early February. Missing it = auto-disqualification. Calendar-block now.</span>
+      </div>
+
+      <div style="position:absolute;top:164px;left:0;right:0;bottom:80px;padding:28px 144px;display:flex;gap:64px;">
+        <!-- Left column: Jun–Nov 2026 -->
+        <div style="flex:1;display:flex;flex-direction:column;gap:0;" class="anim-up">
+          <div class="t-caption c-hint" style="margin-bottom:20px;border-bottom:1px solid var(--border-dark);padding-bottom:12px;">Jun 2026 → Nov 2026</div>
+          <div style="display:flex;flex-direction:column;">
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold);min-width:100px;">Jun 2026</div>
+              <div class="t-small c-secondary">Harvard MEDScience Jun 22–26 → debrief journal Jun 27–28</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-hint-dark);min-width:100px;">Jul 2026</div>
+              <div class="t-small c-secondary">Lab research outreach · HelpingMinds metrics · extend Misericordia</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-hint-dark);min-width:100px;">Aug 2026</div>
+              <div class="t-small c-secondary">IB CS IA GitHub live · LinkedIn article · COMC registration</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold);min-width:100px;">Sep 2026</div>
+              <div class="t-small c-secondary"><strong style="color:var(--text-warm);">G12 begins</strong> — ELA 30-1 is #1 priority · OUAC setup · McMaster Q1A rough draft</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold);min-width:100px;">Oct 2026</div>
+              <div class="t-small c-secondary"><strong style="color:var(--text-warm);">OUAC opens</strong> — apply all 6 · supp app drafts · Queen's PSE mock videos</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-hint-dark);min-width:100px;">Nov 2026</div>
+              <div class="t-small c-secondary">COMC contest · Western BMSc + Queen's LS early decisions expected</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Dec 2026–May 2027 -->
+        <div style="flex:1;display:flex;flex-direction:column;gap:0;" class="anim-up">
+          <div class="t-caption c-hint" style="margin-bottom:20px;border-bottom:1px solid var(--border-dark);padding-bottom:12px;">Dec 2026 → May 2027</div>
+          <div style="display:flex;flex-direction:column;">
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-hint-dark);min-width:100px;">Dec 2026</div>
+              <div class="t-small c-secondary">G12 midterms submitted · UofT Life Sci offer expected · supp app polish</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#E06060;min-width:100px;">Jan 15 ⚠</div>
+              <div class="t-small c-secondary"><strong style="color:#E06060;">OUAC deadline</strong> · UofT/Western/Queen's LS decisions expected</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#E06060;min-width:100px;">Feb 2–5 ⚠</div>
+              <div class="t-small c-secondary"><strong style="color:#E06060;">McMaster portal (3–4 days)</strong> · Queen's PSE KIRA · Waterloo AIF ~Feb 13 · CCC Senior</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--border-dark);">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold);min-width:100px;">Mar–Apr</div>
+              <div class="t-small c-secondary">McMaster Mar wave · Queen's BHSc Mar–Apr decisions · Euclid (Apr)</div>
+            </div>
+            <div style="display:flex;gap:20px;padding:14px 0;">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold);min-width:100px;">May 2027</div>
+              <div class="t-small c-secondary"><strong style="color:var(--text-warm);">Waterloo CS decisions</strong> · McMaster May wave · Queen's BHSc final decisions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption c-hint">Offer Optics · May 2026</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 12 — EC PATTERNS ====================== -->
+    <div class="slide dark" id="slide-12">
+      <div class="chrome">
+        <div class="t-kicker c-hint">EC Patterns — Accepted Pool</div>
+        <div class="t-caption c-hint">12 / 13</div>
+      </div>
+      <div class="body-area" style="justify-content:flex-start;padding-top:40px;">
+        <div class="t-h1 c-primary anim-up" style="margin-bottom:8px;">What the <em>accepted pool</em> actually looked like</div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:28px;"></div>
+
+        <div style="display:flex;gap:0;" class="anim-up">
+
+          <!-- McMaster -->
+          <div style="flex:1;border-right:1px solid var(--border-dark);padding-right:52px;">
+            <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:18px;">
+              <div class="t-h3 c-primary">McMaster BHSc</div>
+              <div class="t-caption c-hint">n=9 accepted w/ EC data</div>
+            </div>
+            <div class="callout" style="margin-bottom:22px;padding:14px 20px;">
+              <div class="t-small" style="color:var(--text-warm);">The essays don't ask about ECs. They test <em>analytical reasoning</em> using any experience as raw material.</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small c-secondary"><strong style="color:var(--text-warm);">Accepted profiles:</strong> hospital volunteering, SHAD, school council exec, VEX robotics, HOSA</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small c-secondary">98.5% accepted: <em>"only mentioned a hobby, not formal ECs"</em> — analytical quality of response matters more than the activity</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small" style="color:#E06060;">Rejected: 97.6% wrote about One Piece · 98.67% "didn't understand the assignment" · 98.89% "nothing, questions had nothing to do with ECs"</div>
+              </div>
+              <div>
+                <div class="t-small c-secondary"><strong style="color:var(--gold);">Justin's fit:</strong> IB CS IA (analytical reasoning tool) + Harvard MEDScience (biodesign pivot) are strong essay material for analytical/ethical questions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Queen's -->
+          <div style="flex:1;border-right:1px solid var(--border-dark);padding:0 52px;">
+            <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:18px;">
+              <div class="t-h3 c-primary">Queen's BHSc</div>
+              <div class="t-caption c-hint">n=10 accepted · n=9 rej/WL</div>
+            </div>
+            <div class="callout" style="margin-bottom:22px;padding:14px 20px;">
+              <div class="t-small" style="color:var(--text-warm);">PSE completion is the gate. Two applicants — 97.0% and 99.8% avg — <em>rejected for not submitting it.</em></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small c-secondary"><strong style="color:var(--text-warm);">Accepted profiles:</strong> hospital co-op/shadowing, HOSA chapter president, youth mental health centre advisor, non-profit/initiative founding, student council</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small c-secondary">95.5% accepted: <em>"helping hands founder"</em> — direct parallel to HelpingMinds</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small c-secondary">WL 96.67%: hospital volunteering + hackathon — strong ECs, marginal GPA. PSE reflection quality is the swing variable.</div>
+              </div>
+              <div>
+                <div class="t-small c-secondary"><strong style="color:var(--gold);">Justin's fit:</strong> Chatter (100+ hrs with neurodiverse youth) + HelpingMinds founder maps directly to the clinical + initiative pattern in acceptances</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Waterloo -->
+          <div style="flex:1;padding-left:52px;">
+            <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:18px;">
+              <div class="t-h3 c-primary">Waterloo CS</div>
+              <div class="t-caption c-hint">n=27 accepted · n=6 deferred</div>
+            </div>
+            <div class="callout" style="margin-bottom:22px;padding:14px 20px;">
+              <div class="t-small" style="color:var(--text-warm);">AIF narrative coherence &gt; EC prestige. <em>Impact framing decides it</em> — not the credential list.</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small c-secondary"><strong style="color:var(--text-warm);">Accepted low-avg profiles (89–93%):</strong> CE internship @ UW, ran school's tech systems, hackathon co-founder, DECA president — strong AIF overrode the GPA gap</div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small c-secondary">95.67% accepted: wiki with 10M visits + YouTube + connected queer identity to driving school policy change — <em>coherent personal/technical narrative</em></div>
+              </div>
+              <div style="border-bottom:1px solid var(--border-dark);padding-bottom:12px;">
+                <div class="t-small" style="color:#E06060;">Deferred 99.67%: 2 ML research papers + Euclid 78 + CCC Senior Distinction ×2 + COMC 53 → deferred to Geomatics. Stronger EC list than many accepted. AIF execution was the gap.</div>
+              </div>
+              <div>
+                <div class="t-small c-secondary"><strong style="color:var(--gold);">Justin's fit:</strong> Harvard MEDScience + IB CS IA + mental health ML (LinkedIn) tie mental health → AI → clinical coherently. Lead with the through-line, not the credentials.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption c-hint">Directional only — EC field is self-reported and sparsely populated (~10–25% of applicants)</div>
+      </div>
+    </div>
+
+    <!-- ====================== SLIDE 13 — DATA NOTE ====================== -->
+    <div class="slide light" id="slide-13">
+      <div class="chrome">
+        <div class="t-kicker" style="color:var(--text-hint-light);">About This Analysis</div>
+        <div class="t-caption" style="color:var(--text-hint-light);">13 / 13</div>
+      </div>
+      <div class="body-area">
+        <div class="t-h2 anim-up" style="color:var(--ink);margin-bottom:16px;"><em>About</em> this analysis</div>
+        <div class="gold-rule-h anim-up" style="width:60px;margin-bottom:52px;"></div>
+        <div style="display:flex;flex-direction:column;gap:40px;max-width:1100px;" class="anim-up">
+          <div class="stat-block">
+            <div class="t-body" style="color:var(--ink);"><strong>10,430 rows</strong> across 4 Reddit-sourced admission cycles (2022–23 through 2025–26)</div>
+            <div class="t-small" style="color:var(--text-muted-light);margin-top:8px;">Scraped from r/OntarioUniversities, normalized and deduplicated. 2025–26 cycle finalized May 2026.</div>
+          </div>
+          <div class="stat-block dim">
+            <div class="t-body" style="color:var(--ink);"><strong>~95%+ of Reddit reports are accepted applicants</strong> — all percentiles are relative to the admitted population, not the full applicant pool</div>
+            <div class="t-small" style="color:var(--text-muted-light);margin-top:8px;">Real acceptance rates are lower; this data cannot show the full rejection distribution.</div>
+          </div>
+          <div class="stat-block dim">
+            <div class="t-body" style="color:var(--ink);"><strong>OOP samples are small</strong> (n=4–9 per Tier-1 program) — treat floors as directional, not hard thresholds</div>
+            <div class="t-small" style="color:var(--text-muted-light);margin-top:8px;">The 98.0% OOP McMaster rejection is one data point. It is meaningful, not definitive.</div>
+          </div>
+          <div class="stat-block dim">
+            <div class="t-body" style="color:var(--ink);"><strong>2026–27 supp app questions will differ</strong> from 2025–26 — prepare for the format, not specific prompts</div>
+            <div class="t-small" style="color:var(--text-muted-light);margin-top:8px;">Programs rotate questions annually. Analytical readiness and rehearsed narrative transfer across cycles.</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="t-caption" style="color:var(--text-hint-light);">Offer Optics · Confidential · May 2026</div>
+        <div class="t-caption" style="color:var(--text-hint-light);">Justin Wei · 2026–27 Cycle</div>
+      </div>
+    </div>
+
+  </div><!-- /deck-stage -->
+</div><!-- /deck-viewport -->
+
+<!-- === DECK CONTROLS === -->
+<div class="deck-controls">
+  <button id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+  <span id="slide-counter">1 / 13</span>
+  <button id="btn-next" onclick="go(1)">Next →</button>
+</div>
+
+<script>
+/* === FIXED STAGE SCALER === */
+const stage = document.getElementById('stage');
+function scale() {
+  const vw = window.innerWidth, vh = window.innerHeight;
+  const s = Math.min(vw / 1920, vh / 1080);
+  stage.style.transform = `translate(${(vw - 1920 * s) / 2}px, ${(vh - 1080 * s) / 2}px) scale(${s})`;
+}
+scale();
+window.addEventListener('resize', scale);
+
+/* === SLIDE NAVIGATION === */
+const slides = document.querySelectorAll('.slide');
+const total  = slides.length;
+let current  = 0;
+
+function activate(idx) {
+  slides[current].classList.remove('active');
+  current = (idx + total) % total;
+  slides[current].classList.add('active');
+
+  document.getElementById('slide-counter').textContent = `${current + 1} / ${total}`;
+  document.getElementById('btn-prev').disabled = current === 0;
+  document.getElementById('btn-next').disabled = current === total - 1;
+  document.getElementById('progress-bar').style.width = `${((current + 1) / total) * 100}%`;
+}
+
+function go(dir) { activate(current + dir); }
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { e.preventDefault(); go(1); }
+  if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')                     { e.preventDefault(); go(-1); }
+});
+
+/* touch swipe */
+let tx = 0;
+stage.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+stage.addEventListener('touchend',   e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
+}, { passive: true });
+
+/* init progress bar */
+document.getElementById('progress-bar').style.width = `${(1 / total) * 100}%`;
+</script>
+
+</body>
+</html>
