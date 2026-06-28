@@ -17,6 +17,7 @@ __pycache__/
 
 # Raw personal documents (contain phone/email — extracted data is in config/)
 data/
+!data/justin/Harvard_MEDScience_Journal_2026.md
 
 # Editors / OS
 .vscode/
