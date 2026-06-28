@@ -85,7 +85,7 @@ McMaster BHSc is the only program in scope where OOP status creates a materially
 | Strength | Why It Matters |
 |---|---|
 | **Coherent EC narrative** | Classmate crisis → HelpingMinds founder → Chatter mentor → IB CS IA ML tool → clinical shadowing → Harvard MEDScience. Each step causes the next. Extremely rare in applicant pools. |
-| **Harvard MEDScience (Jun 22-26, confirmed)** | Builds AI surgical robots on Kepler platform, learns biodesign, gets bedside clinical exposure. Directly relevant for McMaster Q2A (biotech device evaluation) and Waterloo AIF (AI/robotics). |
+| **Harvard MEDScience (Jun 22-26, complete ✓)** | Built Nerve-1, an AI CV surgical robot for glioblastoma removal (Roboflow + Python API). Played anesthesiologist in a 30-min live OR drill. Pitched to 4 investors; led financial Q&A and operated the AI demo. Journal written Jun 23. Directly relevant for McMaster Q2A and Waterloo AIF. |
 | **HelpingMinds.ca founder** | Non-profit leadership as a Grade 11 student. Demonstrates initiative and sustained commitment beyond a club role. |
 | **Chatter mentor (100+ hrs, 18+ months)** | Longest-sustained commitment in his profile. Neurodiverse children in communication + social skills. Directly relevant to Queen's PSE personal narrative. |
 | **30h histopathology shadowing (Misericordia)** | Rare clinical exposure for a G11 student — surgical specimens, lymph-node dissection, cancer diagnosis. Most applicants have generic hospital volunteering. |
@@ -182,7 +182,7 @@ All 44 accepted applicants in 2025-26 completed KIRA. The data shows a wide acce
 **AIF format:** Essay-based (not KIRA), asking about programming experience, math and CS contest results, reasons for choosing CS, research and projects. The AIF is where Justin's technical stack gets translated into admissions currency.
 
 **Justin's AIF strengths:**
-- Harvard MEDScience: built AI computer vision surgical robots on the Kepler platform, learned the biodesign process, pitched to medical experts at a shark-tank demo day. This is directly Waterloo-CS-relevant (AI, computer vision, robotics, team engineering, prototype-to-pitch) — it should lead the AIF.
+- Harvard MEDScience (Jun 2026, complete ✓): built Nerve-1 — AI computer vision surgical robot for glioblastoma removal — using Roboflow + Python API; trained CV model on 200 labeled images; played anesthesiologist in a 30-min live OR drill (intubation, medication decisions); pitched to 4 investors, led financial Q&A and operated live AI demo. This is directly Waterloo-CS-relevant (CV model training, API integration, robotics, prototype-to-pitch) — lead the AIF with it.
 - CyberPatriot National Finalist (Linux specialist)
 - IMC 2024 Merit (represented Canada internationally)
 - COMC Distinction + Waterloo contest distinctions (Pascal/Fryer/CIMC)
@@ -249,7 +249,7 @@ All 44 accepted applicants in 2025-26 completed KIRA. The data shows a wide acce
 | ELA 30-1 at 87.5% projected | All 6 (GPA drag) | **Critical** | Weekly practice, past diploma exams, teacher feedback → target 92-93% |
 | McMaster OOP floor not cleared | McMaster BHSc only | **High** | ELA lift → top-6 to 97.0%+ |
 | Supp app drafts not started | Mac, Queen's BHSc, Waterloo | **High** | Draft Oct–Nov; finalize Dec–Jan |
-| Harvard MEDScience story not documented | Mac, Queen's BHSc, Waterloo | **High** | Journal June 26-30, immediately after program |
+| Harvard MEDScience journal written ✓ | Mac, Queen's BHSc, Waterloo | **Medium** | Journal written Jun 23 — synthesize specific experiences into Q2A / AIF framings by Oct 2026 |
 | Queen's PSE video unrehearsed | Queen's BHSc | **High** | 3-5 recorded mock runs; practice timed written |
 | IB CS IA not publicly citable | Mac, Queen's BHSc, Waterloo | **Medium-High** | GitHub + README + LinkedIn article by Sep 2026 |
 | HelpingMinds.ca unquantified | Mac, Queen's BHSc | **Medium-High** | Gather all metrics before Oct 2026 |
@@ -273,16 +273,14 @@ The 7 months from now to January 2027 (OUAC deadline) are the most consequential
 *Deadline: June 2027 (diploma exam)*  
 Every other action in this plan is worth less than this one. At 92%, Justin's top-6 reaches ~97.3% — above McMaster's 2025-26 median (96.8%), above Queen's BHSc median (96.0%), and inside Waterloo CS's competitive range. The practice discipline: one past Alberta ELA 30-1 diploma exam per week, scored and reviewed with teacher feedback. Focus on Part A (literary analysis) where most marks are recoverable through structure. Start in September; do not wait for school to set the pace.
 
-**A2. Document Harvard MEDScience immediately after the program** ★★★  
-*Deadline: June 26-30, 2026*  
-The program runs June 22-26. On June 27-28, Justin writes a private debrief journal (not for public use yet — for supp app sourcing):
-- What specific healthcare problem did his team tackle?
-- What was the biodesign process decision point that surprised him most?
-- What did the AI surgical robot actually do, and what were its limitations?
-- What did the shark-tank pitch feel like, and what did the medical expert panelists push back on?
-- What did he see at the bedside (simulated patients, anatomy, physiology) that he could not have learned from a textbook?
+**A2. Synthesize Harvard MEDScience journal into supp app language** ★★★  
+*Journal written: June 23, 2026 (done ✓) · Synthesis deadline: October 2026*  
+The journal is complete and detailed. The next step is not more documentation — it's deliberate extraction of the specific moments that belong in Q2A and the AIF. Key specifics to frame:
+- **Nerve-1 and the CV model failure**: the Roboflow model was trained on 200 images and failed under different lighting in the live demo. Justin's team acknowledged the limitation honestly to investors. That is the McMaster Q2A answer — not "I built AI robots at Harvard" but "our model had a 200-image training set and the lighting varied between the lab and the OR; I identified the failure mode during the demo and proposed retraining with augmented lighting conditions." That is a 7, not a 5.
+- **Anesthesiologist role**: intubation, choosing ketamine/epinephrine/rocuronium under time pressure, monitoring vitals for 30 minutes, the stress of the OR environment. This is clinical specificity that almost no peer applicant will have.
+- **Investor pitch**: Justin handled financial Q&A and operated the live AI demo. The investors asked about the financial model, additional funding use, and future plans. What did Justin say? Extract his actual answers for the AIF leadership section.
 
-These specifics are what separates a 6 from a 7 on McMaster's rubric. "I built AI robots at Harvard" is a 5. "Our team's first prototype assumed the operating environment was stable — the surgeon on the evaluation panel laughed and said nothing in the OR holds still, and we redesigned the tracking algorithm in 18 hours" is a 7.
+These three moments, told precisely, are worth far more than a paragraph summary of the program.
 
 **A3. Ship IB CS IA as a public-facing deliverable** ★★★  
 *Deadline: September 2026*  
