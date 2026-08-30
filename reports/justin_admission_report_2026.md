@@ -391,3 +391,7 @@ Despite these caveats, the dataset is large enough (10,303 rows, 4 cycles) that 
 ---
 
 *Updated May 23, 2026 with final 2025-26 cycle data. All major decision waves confirmed complete. Dataset: 10,303 normalized rows across 4 cycles. Justin's profile sourced from `config/justin_profile.json` as of 2026-05-16. Re-run `tools/analyze_program.py` after G12 midterm grades are available to refresh placement verdicts.*
+
+---
+
+> **Correction (2026-08-30):** the "Kaggle top 5.7% on health datasets" line cited above (from the 2026 résumé) is **not supported** by the Kaggle-API-verified competition record. Verified: five projects Jan–Aug 2026; best placement 665/3,361 (top 20%) in Playground S6E8 Smartphone Addiction; Flu Shot Learning #488 public LB; the two January entries are unranked. Use only the verified figures — see `stem_competitions.ml_competitions` in `config/justin_profile.json` and `E:\workspaces\kaggle\hyrs-2026\ml-competition-portfolio.md`.
