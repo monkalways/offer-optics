@@ -203,7 +203,7 @@
           "RESOLVED 2026-08-31 — HE ASKED THE MECHANISM QUESTION. Outcome (from his reflection): there are two competing explanations for why voltage breaks the bond and no answer — Hongjian does not know which is right either. Justin's own words: 'That the open question was the point of the research, rather than a gap in it, is the most useful thing I learned all summer.' This is the strongest single sentence in his file",
           "RESOLVED 2026-08-31 — ASKED, ANSWER IS NO: no school-year return to the lab. Consequence: the September clean-runway-for-ELA picture is confirmed, and the placement is definitively a closed summer chapter — frame it in applications with a clear start and end",
           "RESOLVED 2026-08-31 — ASKED, ANSWER IS NO: no poster, acknowledgment or publication from either project. Do NOT imply any authorship/acknowledgment in applications; the citable artifacts are the payroll-backed 122 hours, the reference letter, the voltage-series data he generated, and his own reflection",
-          "BACKFILL THE JOURNAL — 66 paid July hours against 7 logged sessions means roughly half the work is undocumented. Reconstruct what he can now; this record is what February's supplementary answers get written from.",
+          "PARTIALLY CLOSED 2026-08-31 — journal re-confirmed as July-only (7 sessions, Jul 8-29; matches what was already on file). THE GAP IS AUGUST: 122 total paid hours minus 66 July = ~56 paid August hours (~7 sessions) with zero dated records. The reflection essay covers August thematically but not what was actually run. RECOMMENDED: a 30-minute reconstruction with Justin now, while ~2.5 weeks out — even one bullet per August session (date, what was run, on which instrument, for which project). This is what February's 'describe your research experience' answers get their specifics from",
           "Close the open loop: pending message from Hongjian about the chemicals (July 27 journal entry)."
         ],
         "missed_opportunity_note": "Offering to do data analysis (curve fitting, automation) on the Zetasizer/rheometer/UTM datasets would have made the position Waterloo-CS-relevant and made him more useful to the group. With the placement ending August 13 there is little runway left, but it is still worth raising — if Hongjian has analysis he would value, doing it remotely over the fall would extend the relationship past the end date and produce a genuine technical contribution.",
@@ -268,7 +268,7 @@
           "https://www.linkedin.com/pulse/from-titanic-mental-health-power-one-decimal-point-justin-wei-rfzvc/",
           "https://www.linkedin.com/pulse/my-best-technique-completely-useless-thats-when-i-knew-justin-wei-r6bqc/",
           "https://www.linkedin.com/pulse/i-spent-3-days-feature-engineering-only-beaten-single-justin-wei-ztepc/",
-          "Smartphone-addiction article: drafted, publishing after the final leaderboard (expected ~2026-08-31)"
+          "https://www.linkedin.com/pulse/i-spent-twelve-days-tuning-model-answer-public-whole-time-justin-wei-bpvxc/ (published 2026-08-31, after the final leaderboard)"
         ],
         "how_to_frame_for_applications": "Do NOT lead with rank. Lead with (a) five end-to-end projects in eight months, four in health, (b) three published technical write-ups each built around a methodological lesson, (c) the S6E8 project's explicit choice of an explainable result over a higher borrowed one — that is the integrity/judgment signal BHSc readers want, and (d) the verified 665/3,361 as the credential. The 'through-line' paragraph of the portfolio (can survey/passive data screen for health outcomes, and how to evaluate such models honestly) is the sentence that ties Kaggle to BHSc and the CS IA. For Waterloo AIF: the CV-design and stacking work is the technical depth signal; the CCC result remains the contest credential."
       },
@@ -338,9 +338,9 @@
         "academic_integrity_caution": "Publish the TOOL (code, README written fresh in his own framing, demo) — not the assessed IA document itself. Posting the submitted IA write-up publicly while the IB session is still live risks another student copying it and similarity checks flagging both. Confirm the specific rule with Justin's IB coordinator; default to withholding the document until results are released. This does not restrict publishing the codebase or a newly written project README."
       },
       {
-        "name": "ML competition technical write-ups (LinkedIn, 3 published + 1 drafted)",
+        "name": "ML competition technical write-ups (LinkedIn, 4 published)",
         "period": "2026-01 – Present (portfolio dates the competitions Jan-Aug 2026, not 2024)",
-        "description": "Three published technical retrospectives, each built around a methodological lesson: threshold calibration (Titanic -> mental health), why the same technique is useless under AUC (Flu Shot), and honest-CV-vs-leaderboard (F1). Fourth article on the Smartphone Addiction stack drafted, publishing after the 2026-08-31 close. Full verified record in stem_competitions.ml_competitions."
+        "description": "Three published technical retrospectives, each built around a methodological lesson: threshold calibration (Titanic -> mental health), why the same technique is useless under AUC (Flu Shot), and honest-CV-vs-leaderboard (F1). Fourth article published 2026-08-31: the Smartphone Addiction project (twelve days of tuning vs the answer public the whole time). Full verified record in stem_competitions.ml_competitions."
       }
     ],
 
