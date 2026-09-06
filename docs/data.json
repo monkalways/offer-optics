@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-08-31T19:56:53",
+  "build_timestamp": "2026-09-06T11:11:45",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -103,7 +103,8 @@
           "org": "Dr. Surinder Kanwal, Misericordia Community Hospital, Covenant Health",
           "period": "July 2025",
           "hours": 30,
-          "description": "Observed surgical specimen processing, margin evaluation, and lymph-node dissection for cancer diagnosis."
+          "description": "Observed surgical specimen processing, margin evaluation, and lymph-node dissection for cancer diagnosis.",
+          "reference_letter": "IN PROGRESS 2026-09-06 — asking Dr. Kanwal for a recommendation letter (third letter source, alongside Hongjian Zhang for the lab and Dr. Bakir for the clinic; she covers the 2025 clinical exposure). Ghost-draft for her review at data/justin/Kanwal_Reference_Letter_Draft_2026.md — send it with a one-line memo of exact July 2025 dates and the ~30-hour total. Same purpose and timeline as the others: Loran / Schulich Leader / TD scholarships + hours verification, wanted ~end of September; Ontario admission targets accept no letters."
         },
         {
           "name": "Youth Summer Program (MED YSP)",
@@ -5751,245 +5752,245 @@
       "label": "Grade 12 begins — confirm the school-year commitment level for the Zeng lab and the clinic placement, and start weekly ELA 30-1 diploma practice",
       "category": "action",
       "priority": "high",
-      "days_from_today": 1
+      "days_from_today": -5
     },
     {
       "date": "2026-09-15",
       "label": "2026-27 official admission requirements and dates publish around now — re-verify config/requirements.yaml against primary sources and remove the +365-day date shift in build_webdash.py",
       "category": "data_refresh",
       "priority": "high",
-      "days_from_today": 15
+      "days_from_today": 9
     },
     {
       "date": "2026-10-01",
       "label": "OUAC applications open — create the account and apply to all target programs",
       "category": "application",
       "priority": "high",
-      "days_from_today": 31
+      "days_from_today": 25
     },
     {
       "date": "2026-11-01",
       "label": "Register at usaco.org and check the published 2026-27 contest dates — the season starts in January (2025-26 opened Jan 9-12), so registration and scheduling need to happen in the fall",
       "category": "competition",
       "priority": "medium",
-      "days_from_today": 62
+      "days_from_today": 56
     },
     {
       "date": "2027-01-09",
       "label": "USACO contest 1 (approx. — 2026-27 dates unpublished). Roughly two contests fall before the Waterloo AIF; a Gold division placement earned here would be citable.",
       "category": "competition",
       "priority": "medium",
-      "days_from_today": 131
+      "days_from_today": 125
     },
     {
       "date": "2027-01-15",
       "label": "OUAC deadline — all applications submitted",
       "category": "application",
       "priority": "high",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 137
+      "days_from_today": 131
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 152
+      "days_from_today": 146
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 152
+      "days_from_today": 146
     },
     {
       "date": "2027-01-30",
       "label": "Supplementary application due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 152
+      "days_from_today": 146
     },
     {
       "date": "2027-01-30",
       "label": "Documents due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 152
+      "days_from_today": 146
     },
     {
       "date": "2027-02-01",
       "label": "CCC Senior — the highest-value CS credential available this cycle. Run by Waterloo's own CEMC; top-25 earns a Canadian Computing Olympiad invitation. Priority over USACO for the Waterloo AIF.",
       "category": "competition",
       "priority": "high",
-      "days_from_today": 154
+      "days_from_today": 148
     },
     {
       "date": "2027-02-01",
       "label": "McMaster BHSc supplementary application window opens for only 3-4 days (2025-26 window was Feb 2-5). Missing it is auto-disqualification.",
       "category": "application",
       "priority": "critical",
-      "days_from_today": 154
+      "days_from_today": 148
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 154
+      "days_from_today": 148
     },
     {
       "date": "2027-02-02",
       "label": "Documents due: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 155
+      "days_from_today": 149
     },
     {
       "date": "2027-02-05",
       "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 158
+      "days_from_today": 152
     },
     {
       "date": "2027-02-05",
       "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 158
+      "days_from_today": 152
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 166
+      "days_from_today": 160
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 166
+      "days_from_today": 160
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 166
+      "days_from_today": 160
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 166
+      "days_from_today": 160
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 168
+      "days_from_today": 162
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 168
+      "days_from_today": 162
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 168
+      "days_from_today": 162
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 168
+      "days_from_today": 162
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 168
+      "days_from_today": 162
     },
     {
       "date": "2027-03-01",
       "label": "OUAC equal-consideration: University of Alberta — BSc Physiology",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 182
+      "days_from_today": 176
     },
     {
       "date": "2028-02-29",
       "label": "Documents due: University of Alberta — BSc Physiology",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 547
+      "days_from_today": 541
     }
   ],
   "ec_insights": {},
