@@ -63,11 +63,11 @@
     "healthcare_exposure": [
       {
         "name": "Medical Shadowing — Histopathology",
-        "org": "Dr. Surinder Kanwal, Misericordia Community Hospital, Covenant Health",
-        "period": "July 2025",
+        "org": "Dr. Surinder Paul Kanwal, MD FRCPC — Anatomical Pathologist, Misericordia Community Hospital (Covenant Health); Clinical Associate Professor, University of Alberta",
+        "period": "July-August 2025 (per Dr. Kanwal's signed letter of 2026-09-16; earlier profile said July only — use her wording in applications since her letter is the verification document)",
         "hours": 30,
         "description": "Observed surgical specimen processing, margin evaluation, and lymph-node dissection for cancer diagnosis.",
-        "reference_letter": "IN PROGRESS 2026-09-06 — asking Dr. Kanwal for a recommendation letter (third letter source, alongside Hongjian Zhang for the lab and Dr. Bakir for the clinic; she covers the 2025 clinical exposure). Ghost-draft for her review at data/justin/Kanwal_Reference_Letter_Draft_2026.md — send it with a one-line memo of exact July 2025 dates and the ~30-hour total. Same purpose and timeline as the others: Loran / Schulich Leader / TD scholarships + hours verification, wanted ~end of September; Ontario admission targets accept no letters."
+        "reference_letter": "RECEIVED 2026-09-16 — signed letter from Dr. Kanwal on her letterhead, confirming ~30 hours of shadowing under her supervision in July-August 2025, with her cell and albertaprecisionlabs.ca email for verification. Content highlights beyond the ghost-draft: her own observations that he was 'quick in picking up all the strands which lean towards the diagnosis', that the quality of his questions astonished her for a 16-year-old, his composure watching cancer diagnosis and treatment discussion, and 'remarkable tact and compassion' with peers and faculty. She also independently vouches for the trajectory (lab, clinic, health-sciences intention). Uses: Loran / Schulich Leader / TD scholarship files + hours verification; Ontario admission targets accept no letters. Store the signed PDF/scan in data/justin/ (gitignored). Her 'Clinical Associate Professor, University of Alberta' title adds academic weight — she is the only letter writer with a faculty appointment."
       },
       {
         "name": "Youth Summer Program (MED YSP)",

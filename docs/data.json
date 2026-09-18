@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-09-06T11:11:45",
+  "build_timestamp": "2026-09-18T10:51:16",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -100,11 +100,11 @@
       "healthcare_exposure": [
         {
           "name": "Medical Shadowing — Histopathology",
-          "org": "Dr. Surinder Kanwal, Misericordia Community Hospital, Covenant Health",
-          "period": "July 2025",
+          "org": "Dr. Surinder Paul Kanwal, MD FRCPC — Anatomical Pathologist, Misericordia Community Hospital (Covenant Health); Clinical Associate Professor, University of Alberta",
+          "period": "July-August 2025 (per Dr. Kanwal's signed letter of 2026-09-16; earlier profile said July only — use her wording in applications since her letter is the verification document)",
           "hours": 30,
           "description": "Observed surgical specimen processing, margin evaluation, and lymph-node dissection for cancer diagnosis.",
-          "reference_letter": "IN PROGRESS 2026-09-06 — asking Dr. Kanwal for a recommendation letter (third letter source, alongside Hongjian Zhang for the lab and Dr. Bakir for the clinic; she covers the 2025 clinical exposure). Ghost-draft for her review at data/justin/Kanwal_Reference_Letter_Draft_2026.md — send it with a one-line memo of exact July 2025 dates and the ~30-hour total. Same purpose and timeline as the others: Loran / Schulich Leader / TD scholarships + hours verification, wanted ~end of September; Ontario admission targets accept no letters."
+          "reference_letter": "RECEIVED 2026-09-16 — signed letter from Dr. Kanwal on her letterhead, confirming ~30 hours of shadowing under her supervision in July-August 2025, with her cell and albertaprecisionlabs.ca email for verification. Content highlights beyond the ghost-draft: her own observations that he was 'quick in picking up all the strands which lean towards the diagnosis', that the quality of his questions astonished her for a 16-year-old, his composure watching cancer diagnosis and treatment discussion, and 'remarkable tact and compassion' with peers and faculty. She also independently vouches for the trajectory (lab, clinic, health-sciences intention). Uses: Loran / Schulich Leader / TD scholarship files + hours verification; Ontario admission targets accept no letters. Store the signed PDF/scan in data/justin/ (gitignored). Her 'Clinical Associate Professor, University of Alberta' title adds academic weight — she is the only letter writer with a faculty appointment."
         },
         {
           "name": "Youth Summer Program (MED YSP)",
@@ -531,7 +531,8 @@
         "mcmaster_lifesci",
         "queens_lifesci",
         "guelph_biomed",
-        "ualberta_bsc_physiol",
+        "ualberta_bsc_neuroscience",
+        "ualberta_bsc_biolsci",
         "waterloo_math_cs",
         "waterloo_se"
       ],
@@ -546,14 +547,42 @@
       ],
       "tier_4_others": [
         "brock_medsci",
-        "ualberta_bsc_biolsci",
+        "ualberta_bsc_physiol",
         "ualberta_bsc_biochem",
         "ualberta_bsc_cellbiol",
         "ualberta_bsc_immunology",
         "ualberta_bsc_pharmacology",
-        "ualberta_bsc_neuroscience",
         "ualberta_pharmacy",
         "ualberta_pharmacology_honors"
+      ]
+    },
+    "ualberta_application": {
+      "decided_on": "2026-09-17",
+      "portal": "ApplyAlberta (not OUAC) — one application, up to two program choices, $150 fee",
+      "choice_1": "ualberta_bsc_neuroscience",
+      "choice_2": "ualberta_bsc_biolsci",
+      "dropped": "ualberta_bsc_physiol (was the Tier 2 in-province pick Apr–Sep 2026; two-choice limit)",
+      "rationale": "Neuroscience Honors is the only UAlberta program that matches the mental-health / ML / Harvard neuro-robot narrative and carries a built-in thesis. Biological Sciences in slot 2 is the in-faculty safety net: UAlberta evaluates choice 2 automatically if choice 1 is not offered, and all three programs admit on the same 'low 80s to mid 90s' band. Order by preference, not odds.",
+      "competitiveness": "Official 3-cycle admitted range for Neuroscience and Neuroscience Honors (high school): low 80s to mid 90s. Justin's 5-course admission average is ~96–97 at current ELA projection — at or just above the top of the range, not far clear of it. Honors program is new (2025-26) so the range could firm up; margin absorbs that.",
+      "physics_gap": "Justin has no Physics 20. Admission is unaffected (two sciences satisfied by Bio 30 / Chem 30 / Math 31). Year-1 PHYS 124 requires Physics 20. DECISION: if the Honors Neuroscience offer comes through, take Physics 20 in summer 2027 (Metro Continuing Education or Argyll Centre). Do NOT add Physics to the G12 timetable — every hour comes out of ELA 30-1.",
+      "dates_2027": {
+        "application_opens": "2026-10-01",
+        "entrance_awards_close": "2027-01-10",
+        "science_deadline": "2027-03-01",
+        "self_report_final_marks_by": "2027-04-30",
+        "offer_acceptance": "2027-05-01",
+        "final_documents": "2027-08-01"
+      },
+      "advising_questions": [
+        "Can a student admitted to Honors Neuroscience without Physics 20 get a PHYS 124 prerequisite waiver, or defer PHYS 124/126 to year 2? Which does the department prefer?",
+        "Does Honors Neuroscience issue conditional offers on final Grade 11 marks alone, or does it wait for first-semester Grade 12 marks?"
+      ],
+      "sources": [
+        "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-neuroscience.html",
+        "https://www.ualberta.ca/en/neuroscience-and-mental-health-institute/education/current-students/undergraduate/program-requirements.html",
+        "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html",
+        "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html",
+        "https://apps.ualberta.ca/catalogue/course/phys/124"
       ]
     },
     "dashboard_reminders": [
@@ -570,10 +599,40 @@
         "priority": "high"
       },
       {
-        "date": "2026-10-01",
-        "label": "OUAC applications open — create the account and apply to all target programs",
+        "date": "2026-09-17",
+        "label": "OUAC 2027 Undergraduate application OPENED (not Oct 1). Justin is Group B (non-Ontario): create the account with his legal name as on the Alberta transcript, self-report G10-12 courses, add the Ontario program choices ($159 for 3, $51 each after), and note the OUAC Reference Number for every transcript. First distribution to universities Sept 21.",
         "category": "application",
         "priority": "high"
+      },
+      {
+        "date": "2026-09-30",
+        "label": "Email UAlberta Faculty of Science advising: (1) PHYS 124 waiver or year-2 deferral for a Honors Neuroscience admit without Physics 20; (2) does Honors Neuroscience issue conditional offers on G11 marks alone?",
+        "category": "action",
+        "priority": "high"
+      },
+      {
+        "date": "2026-10-01",
+        "label": "UAlberta (ApplyAlberta) opens — apply with BSc Honors Neuroscience as choice 1 and BSc Biological Sciences as choice 2 ($150). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
+        "category": "application",
+        "priority": "high"
+      },
+      {
+        "date": "2027-01-10",
+        "label": "UAlberta entrance awards application closes",
+        "category": "application",
+        "priority": "medium"
+      },
+      {
+        "date": "2027-03-01",
+        "label": "UAlberta Faculty of Science application deadline (backstop — the application should have been in since October)",
+        "category": "application_deadline",
+        "priority": "medium"
+      },
+      {
+        "date": "2027-07-01",
+        "label": "IF admitted to Honors Neuroscience: take Physics 20 in summer school (Metro Continuing Education / Argyll Centre) so PHYS 124 can be taken in year 1. Register in spring 2027.",
+        "category": "action",
+        "priority": "medium"
       },
       {
         "date": "2026-11-01",
@@ -2405,8 +2464,8 @@
       ]
     },
     {
-      "program_key": "ualberta_bsc_physiol",
-      "program": "BSc Physiology",
+      "program_key": "ualberta_bsc_biolsci",
+      "program": "BSc Biological Sciences",
       "university": "University of Alberta",
       "tier": 2,
       "verdict": "insufficient_data",
@@ -2414,23 +2473,203 @@
       "verdict_gpa_only": "insufficient_data",
       "ec_weight": "none",
       "confidence": "insufficient",
-      "n_accepted": 1,
-      "median_accepted_avg": 97.0,
+      "n_accepted": 3,
+      "median_accepted_avg": 91.0,
+      "min_avg": 90.8,
+      "p25": 90.8,
+      "p50": 91.0,
+      "p75": 92.0,
+      "max_avg": 92.0,
+      "justin_low": 93.8,
+      "justin_mid": 95.8,
+      "justin_high": 97.8,
+      "justin_percentile_low": 100.0,
+      "justin_percentile_mid": 100.0,
+      "justin_percentile_high": 100.0,
+      "oop_n": 3,
+      "oop_min": 90.8,
+      "oop_mean": 91.3,
+      "oop_caveat": null,
+      "oop_signal": "none",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "supp_app_notes": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-03-01",
+      "deadline_supp": null,
+      "deadline_doc": "2027-08-01",
+      "decision_window": "Rolling from late fall (early conditional offers on G11 marks) through spring",
+      "fee_cad": 150,
+      "official_url": "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-major-biological-sciences.html",
+      "min_average_competitive": 88.0,
+      "prereq_courses": [
+        "English Language Arts 30-1",
+        "Mathematics 30-1",
+        "Biology 30",
+        "Chemistry 30",
+        "One other approved Grade 12 course (Physics 30 recommended)"
+      ],
+      "prereq_notes": "Honors/Specialization entry lists ELA 30-1, Bio 30, Chem 30, Math 30-1\n+ one other; the general BSc rule (two of Bio/Chem/Physics/Math 31/CSE)\napplies to the Major. Justin satisfies both. Official 3-cycle admitted\nrange for Science (general) and BSc Honors: \"low 80s to mid 90s\".\nmin_average_competitive set to 88 as a conservative mid-range figure.\n",
+      "requirements_confidence": "high",
+      "reasoning": "Only 3 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 1
+        },
+        {
+          "bin": 91,
+          "n": 1
+        },
+        {
+          "bin": 92,
+          "n": 1
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_neuroscience",
+      "program": "BSc Honors Neuroscience",
+      "university": "University of Alberta",
+      "tier": 2,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 3,
+      "median_accepted_avg": 98.0,
       "min_avg": 97.0,
       "p25": 97.0,
-      "p50": 97.0,
-      "p75": 97.0,
-      "max_avg": 97.0,
+      "p50": 98.0,
+      "p75": 98.3,
+      "max_avg": 98.3,
       "justin_low": 93.8,
       "justin_mid": 95.8,
       "justin_high": 97.8,
       "justin_percentile_low": 0.0,
       "justin_percentile_mid": 0.0,
-      "justin_percentile_high": 100.0,
-      "oop_n": 1,
+      "justin_percentile_high": 33.3,
+      "oop_n": 3,
       "oop_min": 97.0,
-      "oop_mean": 97.0,
-      "oop_caveat": "Justin's midpoint 95.8% is below the observed OOP floor 97.0% (small sample n=1 — directional only)",
+      "oop_mean": 97.8,
+      "oop_caveat": "Justin's midpoint 95.8% is below the observed OOP floor 97.0% (small sample n=3 — directional only)",
       "oop_signal": "adverse_small_sample",
       "supp_app_required": false,
       "supp_app_type": null,
@@ -2441,21 +2680,20 @@
       "references_required": false,
       "deadline_ouac": "2027-03-01",
       "deadline_supp": null,
-      "deadline_doc": "2028-02-29",
-      "decision_window": "March through June (rolling)",
-      "fee_cad": 125,
-      "official_url": "https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/physiology.html",
-      "min_average_competitive": 82.0,
+      "deadline_doc": "2027-08-01",
+      "decision_window": "Rolling from late fall (early conditional offers on G11 marks) through spring",
+      "fee_cad": 150,
+      "official_url": "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-neuroscience.html",
+      "min_average_competitive": 90.0,
       "prereq_courses": [
         "English Language Arts 30-1",
-        "Biology 30",
-        "Chemistry 30",
         "Mathematics 30-1",
-        "One additional 30-level academic course"
+        "Two of: Biology 30, Chemistry 30, Physics 30, Mathematics 31, CSE Advanced (5 cr)",
+        "One other approved Grade 12 course"
       ],
-      "prereq_notes": "UAlberta uses Alberta high school courses directly — no OUAC\nequivalency needed. Justin satisfies all prerequisites at well\nabove the competitive range. Physics 30 is recommended but not\nrequired. As an in-province applicant, Justin has the strongest\npossible residency position here.\n",
-      "requirements_confidence": "medium",
-      "reasoning": "Only 1 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "prereq_notes": "Admission average = the 5 courses above. Published minimum 80% for\nHonors (70% for Major); official 3-cycle admitted range for both\nNeuroscience and Neuroscience Honors is \"low 80s to mid 90s\"\n(student association paraphrases it as mid 80s to low 90s). Justin's\n5-course average is ~96-97 at the current ELA projection, i.e. at or\njust above the top of the observed range. min_average_competitive\nabove is set to 90 as a conservative mid-range figure.\nJustin satisfies all admission prereqs (ELA 30-1, Math 30-1, Bio 30,\nChem 30, Math 31, French 30-1).\nPHYSICS GAP: year-1 foundation courses include PHYS 124 and PHYS 126.\nPHYS 124 requires Physics 20 (Physics 30 recommended). Justin has NO\nPhysics 20. Not an admission issue; a registration issue. Family\ndecision 2026-09-17: if the Honors Neuroscience offer comes through,\ntake Physics 20 in summer 2027 (Metro Continuing Education / Argyll\nCentre). Alternatives: Physics Dept prerequisite-waiver form, or defer\nboth physics courses to year 2 (no later neuro courses chain on them).\nAsk Science advising which route they prefer.\n",
+      "requirements_confidence": "high",
+      "reasoning": "Only 3 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
       "ec_strength_text": null,
       "histogram_bins": [
         {
@@ -2572,7 +2810,7 @@
         },
         {
           "bin": 98,
-          "n": 0
+          "n": 2
         },
         {
           "bin": 99,
@@ -4174,180 +4412,6 @@
       ]
     },
     {
-      "program_key": "ualberta_bsc_biolsci",
-      "program": "BSc Biological Sciences",
-      "university": "University of Alberta",
-      "tier": 4,
-      "verdict": "insufficient_data",
-      "verdict_label": "Insufficient data",
-      "verdict_gpa_only": "insufficient_data",
-      "ec_weight": "none",
-      "confidence": "insufficient",
-      "n_accepted": 3,
-      "median_accepted_avg": 91.0,
-      "min_avg": 90.8,
-      "p25": 90.8,
-      "p50": 91.0,
-      "p75": 92.0,
-      "max_avg": 92.0,
-      "justin_low": 93.8,
-      "justin_mid": 95.8,
-      "justin_high": 97.8,
-      "justin_percentile_low": 100.0,
-      "justin_percentile_mid": 100.0,
-      "justin_percentile_high": 100.0,
-      "oop_n": 3,
-      "oop_min": 90.8,
-      "oop_mean": 91.3,
-      "oop_caveat": null,
-      "oop_signal": "none",
-      "supp_app_required": null,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "supp_app_notes": null,
-      "casper_required": null,
-      "interview_required": null,
-      "references_required": null,
-      "deadline_ouac": null,
-      "deadline_supp": null,
-      "deadline_doc": null,
-      "decision_window": null,
-      "fee_cad": null,
-      "official_url": null,
-      "min_average_competitive": null,
-      "prereq_courses": [],
-      "prereq_notes": null,
-      "requirements_confidence": null,
-      "reasoning": "Only 3 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 0
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 0
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 1
-        },
-        {
-          "bin": 91,
-          "n": 1
-        },
-        {
-          "bin": 92,
-          "n": 1
-        },
-        {
-          "bin": 93,
-          "n": 0
-        },
-        {
-          "bin": 94,
-          "n": 0
-        },
-        {
-          "bin": 95,
-          "n": 0
-        },
-        {
-          "bin": 96,
-          "n": 0
-        },
-        {
-          "bin": 97,
-          "n": 0
-        },
-        {
-          "bin": 98,
-          "n": 0
-        },
-        {
-          "bin": 99,
-          "n": 0
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
       "program_key": "ualberta_bsc_immunology",
       "program": "BSc Immunology and Infection",
       "university": "University of Alberta",
@@ -4510,180 +4574,6 @@
         {
           "bin": 98,
           "n": 0
-        },
-        {
-          "bin": 99,
-          "n": 0
-        },
-        {
-          "bin": 100,
-          "n": 0
-        }
-      ]
-    },
-    {
-      "program_key": "ualberta_bsc_neuroscience",
-      "program": "BSc Neuroscience",
-      "university": "University of Alberta",
-      "tier": 4,
-      "verdict": "insufficient_data",
-      "verdict_label": "Insufficient data",
-      "verdict_gpa_only": "insufficient_data",
-      "ec_weight": "none",
-      "confidence": "insufficient",
-      "n_accepted": 3,
-      "median_accepted_avg": 98.0,
-      "min_avg": 97.0,
-      "p25": 97.0,
-      "p50": 98.0,
-      "p75": 98.3,
-      "max_avg": 98.3,
-      "justin_low": 93.8,
-      "justin_mid": 95.8,
-      "justin_high": 97.8,
-      "justin_percentile_low": 0.0,
-      "justin_percentile_mid": 0.0,
-      "justin_percentile_high": 33.3,
-      "oop_n": 3,
-      "oop_min": 97.0,
-      "oop_mean": 97.8,
-      "oop_caveat": "Justin's midpoint 95.8% is below the observed OOP floor 97.0% (small sample n=3 — directional only)",
-      "oop_signal": "adverse_small_sample",
-      "supp_app_required": null,
-      "supp_app_type": null,
-      "supp_app_url": null,
-      "supp_app_notes": null,
-      "casper_required": null,
-      "interview_required": null,
-      "references_required": null,
-      "deadline_ouac": null,
-      "deadline_supp": null,
-      "deadline_doc": null,
-      "decision_window": null,
-      "fee_cad": null,
-      "official_url": null,
-      "min_average_competitive": null,
-      "prereq_courses": [],
-      "prereq_notes": null,
-      "requirements_confidence": null,
-      "reasoning": "Only 3 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
-      "ec_strength_text": null,
-      "histogram_bins": [
-        {
-          "bin": 70,
-          "n": 0
-        },
-        {
-          "bin": 71,
-          "n": 0
-        },
-        {
-          "bin": 72,
-          "n": 0
-        },
-        {
-          "bin": 73,
-          "n": 0
-        },
-        {
-          "bin": 74,
-          "n": 0
-        },
-        {
-          "bin": 75,
-          "n": 0
-        },
-        {
-          "bin": 76,
-          "n": 0
-        },
-        {
-          "bin": 77,
-          "n": 0
-        },
-        {
-          "bin": 78,
-          "n": 0
-        },
-        {
-          "bin": 79,
-          "n": 0
-        },
-        {
-          "bin": 80,
-          "n": 0
-        },
-        {
-          "bin": 81,
-          "n": 0
-        },
-        {
-          "bin": 82,
-          "n": 0
-        },
-        {
-          "bin": 83,
-          "n": 0
-        },
-        {
-          "bin": 84,
-          "n": 0
-        },
-        {
-          "bin": 85,
-          "n": 0
-        },
-        {
-          "bin": 86,
-          "n": 0
-        },
-        {
-          "bin": 87,
-          "n": 0
-        },
-        {
-          "bin": 88,
-          "n": 0
-        },
-        {
-          "bin": 89,
-          "n": 0
-        },
-        {
-          "bin": 90,
-          "n": 0
-        },
-        {
-          "bin": 91,
-          "n": 0
-        },
-        {
-          "bin": 92,
-          "n": 0
-        },
-        {
-          "bin": 93,
-          "n": 0
-        },
-        {
-          "bin": 94,
-          "n": 0
-        },
-        {
-          "bin": 95,
-          "n": 0
-        },
-        {
-          "bin": 96,
-          "n": 0
-        },
-        {
-          "bin": 97,
-          "n": 1
-        },
-        {
-          "bin": 98,
-          "n": 2
         },
         {
           "bin": 99,
@@ -5028,6 +4918,186 @@
         {
           "bin": 97,
           "n": 0
+        },
+        {
+          "bin": 98,
+          "n": 0
+        },
+        {
+          "bin": 99,
+          "n": 0
+        },
+        {
+          "bin": 100,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "program_key": "ualberta_bsc_physiol",
+      "program": "BSc Physiology",
+      "university": "University of Alberta",
+      "tier": 4,
+      "verdict": "insufficient_data",
+      "verdict_label": "Insufficient data",
+      "verdict_gpa_only": "insufficient_data",
+      "ec_weight": "none",
+      "confidence": "insufficient",
+      "n_accepted": 1,
+      "median_accepted_avg": 97.0,
+      "min_avg": 97.0,
+      "p25": 97.0,
+      "p50": 97.0,
+      "p75": 97.0,
+      "max_avg": 97.0,
+      "justin_low": 93.8,
+      "justin_mid": 95.8,
+      "justin_high": 97.8,
+      "justin_percentile_low": 0.0,
+      "justin_percentile_mid": 0.0,
+      "justin_percentile_high": 100.0,
+      "oop_n": 1,
+      "oop_min": 97.0,
+      "oop_mean": 97.0,
+      "oop_caveat": "Justin's midpoint 95.8% is below the observed OOP floor 97.0% (small sample n=1 — directional only)",
+      "oop_signal": "adverse_small_sample",
+      "supp_app_required": false,
+      "supp_app_type": null,
+      "supp_app_url": null,
+      "supp_app_notes": null,
+      "casper_required": false,
+      "interview_required": false,
+      "references_required": false,
+      "deadline_ouac": "2027-03-01",
+      "deadline_supp": null,
+      "deadline_doc": "2027-08-01",
+      "decision_window": "March through June (rolling)",
+      "fee_cad": 150,
+      "official_url": "https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/physiology.html",
+      "min_average_competitive": 82.0,
+      "prereq_courses": [
+        "English Language Arts 30-1",
+        "Biology 30",
+        "Chemistry 30",
+        "Mathematics 30-1",
+        "One additional 30-level academic course"
+      ],
+      "prereq_notes": "UAlberta uses Alberta high school courses directly — no OUAC\nequivalency needed. Justin satisfies all prerequisites at well\nabove the competitive range. Physics 30 is recommended but not\nrequired. As an in-province applicant, Justin has the strongest\npossible residency position here.\n",
+      "requirements_confidence": "medium",
+      "reasoning": "Only 1 accepted reports on record — sample too small for a reliable percentile. Treat as insufficient data; rely on the official requirements and Justin's academic record directly.",
+      "ec_strength_text": null,
+      "histogram_bins": [
+        {
+          "bin": 70,
+          "n": 0
+        },
+        {
+          "bin": 71,
+          "n": 0
+        },
+        {
+          "bin": 72,
+          "n": 0
+        },
+        {
+          "bin": 73,
+          "n": 0
+        },
+        {
+          "bin": 74,
+          "n": 0
+        },
+        {
+          "bin": 75,
+          "n": 0
+        },
+        {
+          "bin": 76,
+          "n": 0
+        },
+        {
+          "bin": 77,
+          "n": 0
+        },
+        {
+          "bin": 78,
+          "n": 0
+        },
+        {
+          "bin": 79,
+          "n": 0
+        },
+        {
+          "bin": 80,
+          "n": 0
+        },
+        {
+          "bin": 81,
+          "n": 0
+        },
+        {
+          "bin": 82,
+          "n": 0
+        },
+        {
+          "bin": 83,
+          "n": 0
+        },
+        {
+          "bin": 84,
+          "n": 0
+        },
+        {
+          "bin": 85,
+          "n": 0
+        },
+        {
+          "bin": 86,
+          "n": 0
+        },
+        {
+          "bin": 87,
+          "n": 0
+        },
+        {
+          "bin": 88,
+          "n": 0
+        },
+        {
+          "bin": 89,
+          "n": 0
+        },
+        {
+          "bin": 90,
+          "n": 0
+        },
+        {
+          "bin": 91,
+          "n": 0
+        },
+        {
+          "bin": 92,
+          "n": 0
+        },
+        {
+          "bin": 93,
+          "n": 0
+        },
+        {
+          "bin": 94,
+          "n": 0
+        },
+        {
+          "bin": 95,
+          "n": 0
+        },
+        {
+          "bin": 96,
+          "n": 0
+        },
+        {
+          "bin": 97,
+          "n": 1
         },
         {
           "bin": 98,
@@ -5752,245 +5822,294 @@
       "label": "Grade 12 begins — confirm the school-year commitment level for the Zeng lab and the clinic placement, and start weekly ELA 30-1 diploma practice",
       "category": "action",
       "priority": "high",
-      "days_from_today": -5
+      "days_from_today": -17
     },
     {
       "date": "2026-09-15",
       "label": "2026-27 official admission requirements and dates publish around now — re-verify config/requirements.yaml against primary sources and remove the +365-day date shift in build_webdash.py",
       "category": "data_refresh",
       "priority": "high",
-      "days_from_today": 9
+      "days_from_today": -3
+    },
+    {
+      "date": "2026-09-17",
+      "label": "OUAC 2027 Undergraduate application OPENED (not Oct 1). Justin is Group B (non-Ontario): create the account with his legal name as on the Alberta transcript, self-report G10-12 courses, add the Ontario program choices ($159 for 3, $51 each after), and note the OUAC Reference Number for every transcript. First distribution to universities Sept 21.",
+      "category": "application",
+      "priority": "high",
+      "days_from_today": -1
+    },
+    {
+      "date": "2026-09-30",
+      "label": "Email UAlberta Faculty of Science advising: (1) PHYS 124 waiver or year-2 deferral for a Honors Neuroscience admit without Physics 20; (2) does Honors Neuroscience issue conditional offers on G11 marks alone?",
+      "category": "action",
+      "priority": "high",
+      "days_from_today": 12
     },
     {
       "date": "2026-10-01",
-      "label": "OUAC applications open — create the account and apply to all target programs",
+      "label": "UAlberta (ApplyAlberta) opens — apply with BSc Honors Neuroscience as choice 1 and BSc Biological Sciences as choice 2 ($150). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 25
+      "days_from_today": 13
     },
     {
       "date": "2026-11-01",
       "label": "Register at usaco.org and check the published 2026-27 contest dates — the season starts in January (2025-26 opened Jan 9-12), so registration and scheduling need to happen in the fall",
       "category": "competition",
       "priority": "medium",
-      "days_from_today": 56
+      "days_from_today": 44
     },
     {
       "date": "2027-01-09",
       "label": "USACO contest 1 (approx. — 2026-27 dates unpublished). Roughly two contests fall before the Waterloo AIF; a Gold division placement earned here would be citable.",
       "category": "competition",
       "priority": "medium",
-      "days_from_today": 125
+      "days_from_today": 113
+    },
+    {
+      "date": "2027-01-10",
+      "label": "UAlberta entrance awards application closes",
+      "category": "application",
+      "priority": "medium",
+      "days_from_today": 114
     },
     {
       "date": "2027-01-15",
       "label": "OUAC deadline — all applications submitted",
       "category": "application",
       "priority": "high",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-15",
       "label": "OUAC equal-consideration: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 131
+      "days_from_today": 119
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 146
+      "days_from_today": 134
     },
     {
       "date": "2027-01-30",
       "label": "OUAC equal-consideration: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 146
+      "days_from_today": 134
     },
     {
       "date": "2027-01-30",
       "label": "Supplementary application due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 146
+      "days_from_today": 134
     },
     {
       "date": "2027-01-30",
       "label": "Documents due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 146
+      "days_from_today": 134
     },
     {
       "date": "2027-02-01",
       "label": "CCC Senior — the highest-value CS credential available this cycle. Run by Waterloo's own CEMC; top-25 earns a Canadian Computing Olympiad invitation. Priority over USACO for the Waterloo AIF.",
       "category": "competition",
       "priority": "high",
-      "days_from_today": 148
+      "days_from_today": 136
     },
     {
       "date": "2027-02-01",
       "label": "McMaster BHSc supplementary application window opens for only 3-4 days (2025-26 window was Feb 2-5). Missing it is auto-disqualification.",
       "category": "application",
       "priority": "critical",
-      "days_from_today": 148
+      "days_from_today": 136
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 148
+      "days_from_today": 136
     },
     {
       "date": "2027-02-02",
       "label": "Documents due: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 149
+      "days_from_today": 137
     },
     {
       "date": "2027-02-05",
       "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 152
+      "days_from_today": 140
     },
     {
       "date": "2027-02-05",
       "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 152
+      "days_from_today": 140
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 160
+      "days_from_today": 148
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 160
+      "days_from_today": 148
     },
     {
       "date": "2027-02-13",
       "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 160
+      "days_from_today": 148
     },
     {
       "date": "2027-02-13",
       "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 160
+      "days_from_today": 148
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 162
+      "days_from_today": 150
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 162
+      "days_from_today": 150
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 162
+      "days_from_today": 150
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 162
+      "days_from_today": 150
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 162
+      "days_from_today": 150
     },
     {
       "date": "2027-03-01",
-      "label": "OUAC equal-consideration: University of Alberta — BSc Physiology",
+      "label": "UAlberta Faculty of Science application deadline (backstop — the application should have been in since October)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 176
+      "days_from_today": 164
     },
     {
-      "date": "2028-02-29",
-      "label": "Documents due: University of Alberta — BSc Physiology",
+      "date": "2027-03-01",
+      "label": "OUAC equal-consideration: University of Alberta — BSc Biological Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 541
+      "days_from_today": 164
+    },
+    {
+      "date": "2027-03-01",
+      "label": "OUAC equal-consideration: University of Alberta — BSc Honors Neuroscience",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 164
+    },
+    {
+      "date": "2027-07-01",
+      "label": "IF admitted to Honors Neuroscience: take Physics 20 in summer school (Metro Continuing Education / Argyll Centre) so PHYS 124 can be taken in year 1. Register in spring 2027.",
+      "category": "action",
+      "priority": "medium",
+      "days_from_today": 286
+    },
+    {
+      "date": "2027-08-01",
+      "label": "Documents due: University of Alberta — BSc Biological Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 317
+    },
+    {
+      "date": "2027-08-01",
+      "label": "Documents due: University of Alberta — BSc Honors Neuroscience",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 317
     }
   ],
   "ec_insights": {},
@@ -6005,7 +6124,7 @@
         "n_programs_mapped": 136,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-05-27T17:24:37"
+        "fetched_at": "2026-09-18T10:51:01"
       },
       {
         "cycle": "2023-2024",
@@ -6016,7 +6135,7 @@
         "n_programs_mapped": 238,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-05-27T17:24:37"
+        "fetched_at": "2026-09-18T10:51:01"
       },
       {
         "cycle": "2024-2025",
@@ -6027,7 +6146,7 @@
         "n_programs_mapped": 383,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-05-27T17:24:37"
+        "fetched_at": "2026-09-18T10:51:01"
       },
       {
         "cycle": "2025-2026",
@@ -6038,7 +6157,7 @@
         "n_programs_mapped": 1030,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-05-27T17:24:37"
+        "fetched_at": "2026-09-18T10:51:01"
       },
       {
         "cycle": "2025-2026-ab",
@@ -6049,7 +6168,7 @@
         "n_programs_mapped": 22,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-05-27T17:24:37"
+        "fetched_at": "2026-09-18T10:51:01"
       }
     ],
     "caveats": [
