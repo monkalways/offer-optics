@@ -20,7 +20,7 @@ import argparse
 import json
 import sqlite3
 import sys
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 
@@ -35,11 +35,9 @@ DOCS_DIR = PROJECT_ROOT / "docs"
 OUT_PATH = DOCS_DIR / "data.json"
 
 # Justin's application cycle is 2026-2027 (G12 fall 2026 → entry fall 2027).
-# The curated requirements.yaml uses the 2025-2026 cycle as a template; we shift
-# every date by +1 year for the dashboard so the checklist reflects Justin's
-# actual cycle. Add 365 days (close enough; OUAC dates rarely shift more than ±1).
+# requirements.yaml holds real 2026-2027 dates as of 2026-09-18, so they are
+# rendered as-is (the earlier +365-day shift from the 2025-26 template is gone).
 JUSTIN_CYCLE_LABEL = "2026-2027"
-DATE_SHIFT_DAYS = 365
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -59,16 +57,6 @@ def load_analysis_json(program_key: str) -> dict | None:
     if not path.exists():
         return None
     return json.loads(path.read_text(encoding="utf-8"))
-
-
-def shift_date(iso_date: str | None, days: int = DATE_SHIFT_DAYS) -> str | None:
-    if not iso_date:
-        return None
-    try:
-        dt = datetime.strptime(iso_date, "%Y-%m-%d").date()
-    except ValueError:
-        return iso_date  # leave non-ISO strings alone
-    return (dt + timedelta(days=days)).isoformat()
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -196,10 +184,10 @@ def query_requirements_for(conn: sqlite3.Connection, program_key: str) -> dict |
         "fee_cad", "notes",
     ]
     d = dict(zip(cols, row))
-    # Add Justin-cycle (2026-2027) shifted dates
-    d["deadline_ouac"] = shift_date(d["deadline_ouac_template"])
-    d["deadline_supp"] = shift_date(d["deadline_supp_template"])
-    d["deadline_doc"] = shift_date(d["deadline_doc_template"])
+    # The *_template columns now hold real 2026-2027 dates; expose them unchanged
+    d["deadline_ouac"] = d["deadline_ouac_template"] or None
+    d["deadline_supp"] = d["deadline_supp_template"] or None
+    d["deadline_doc"] = d["deadline_doc_template"] or None
     # Parse the JSON-encoded prereq list
     try:
         d["prereq_courses"] = json.loads(d.pop("prereq_courses_json") or "[]")
@@ -460,8 +448,13 @@ def build_action_items(profile: dict, programs_tier1: list[dict],
     seen: set[tuple] = set()
     for prog in programs_tier1 + programs_tier2:
         program_label = f"{prog['university']} — {prog['program']}"
+        # UAlberta applies through ApplyAlberta, not OUAC; Waterloo's own
+        # (non-OUAC-universal) date is still an OUAC submission deadline.
+        app_label = ("Application deadline (ApplyAlberta): {p}"
+                     if prog["program_key"].startswith("ualberta_")
+                     else "OUAC application deadline: {p}")
         for field, label_template in [
-            ("deadline_ouac", "OUAC equal-consideration: {p}"),
+            ("deadline_ouac", app_label),
             ("deadline_supp", "Supplementary application due: {p}"),
             ("deadline_doc", "Documents due: {p}"),
         ]:
@@ -522,15 +515,15 @@ CAVEATS = [
     },
     {
         "label": "Tier-2 requirements confidence: medium",
-        "body": "All 9 Tier-2 requirement entries are confidence=medium. Prerequisite courses are high-confidence (well-known and stable); specific dates default to the universal Jan 15 OUAC date and competitive averages are educated guesses anchored to Reddit data.",
+        "body": "Most Ontario Tier-2 requirement entries are confidence=medium. Prerequisite courses are high-confidence (well-known and stable); competitive averages are educated guesses anchored to Reddit data. The two UAlberta Tier-2 entries were curated from official pages (high confidence).",
     },
     {
-        "label": "Tier-3/4 not curated",
-        "body": "Tier-3 (Waterloo CS variants) and Tier-4 (UAlberta) program requirements have NOT been curated. Their checklist rows are blank.",
+        "label": "Tier-3 not curated",
+        "body": "Tier-3 (Waterloo CS variants) program requirements have NOT been curated. Their checklist rows are blank.",
     },
     {
-        "label": "Dates are shifted +1 year from cycle template",
-        "body": "Curated requirements use the 2025-2026 cycle as a template. The dashboard shifts every date by +365 days to reflect Justin's actual application cycle (2026-2027). OUAC and supp deadlines may shift by ±1 day in the actual cycle — verify against official sources before relying on exact dates.",
+        "label": "Dates are real 2026-2027 cycle dates (verified 2026-09-18)",
+        "body": "OUAC (Jan 15, 2027), Waterloo (Eng Jan 15 / docs Feb 1; CS & Math Feb 1 / docs Feb 15), Queen's (PSE Feb 15; documents Mar 31), U of T (Jan 15; documents Feb 1) and UAlberta (Mar 1; final documents Aug 1) were verified on official pages. Some Tier-2 document deadlines are carried forward from the 2025-26 pattern, and the McMaster BHSc supp-app window (early/mid-February 2027) is an estimate until HHSP posts the exact dates — see curator_notes in config/requirements.yaml.",
     },
 ]
 

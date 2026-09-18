@@ -14,21 +14,29 @@
 #   confidence                  — high | medium | low | needs_verification
 #   curator_notes               — anything the curator wants future-self to know
 #
-#   Dates are ISO YYYY-MM-DD. They reference the 2025-2026 (last published)
-#   cycle as a template; OUAC dates almost never shift more than ±1 day year
-#   over year, so Justin's 2026-2027 dates will fall on the same calendar dates
-#   ±1. Mark `dates_cycle_template` so the dashboard can flag this.
+#   Dates are ISO YYYY-MM-DD and are REAL 2026-2027 cycle dates (fall-2026
+#   application for fall-2027 entry). The dashboard renders them as-is; the
+#   old +365-day shift in tools/build_webdash.py was removed on 2026-09-18.
+#   Each entry's curator_notes says whether its dates were verified against
+#   the official 2026-27 page or carried forward from the 2025-26 pattern.
 #
 #   Use null (not omitted) when a field is genuinely unknown, so the dashboard
 #   can display "—" rather than silently dropping the field.
 
-dates_cycle_template: "2025-2026"
+dates_cycle_template: "2026-2027"
 dates_note: |
-  The dates below are from the most recent published cycle (2025-2026, i.e.
-  fall-2025 application for fall-2026 entry). Justin's actual cycle is 2026-2027
-  (fall-2026 application for fall-2027 entry); his dates will fall on the same
-  calendar dates ±1 day. Re-curate these once each program publishes its 2026-2027
-  dates (typically August-October 2026).
+  Dates are Justin's actual 2026-2027 cycle dates. Verified 2026-09-18 against
+  official pages: OUAC (opened 2026-09-17; equal consideration 2027-01-15),
+  Waterloo (Engineering 2027-01-15 / docs 2027-02-01; all other programs incl.
+  CS and Math 2027-02-01 / docs 2027-02-15 — a change from the Jan 30 / Feb 13
+  pattern of prior cycles), Queen's (Health Sci PSE 2027-02-15; documents
+  2027-03-31), U of T (2027-01-15; A&S documents 2027-02-01; early-round
+  targets apply by 2026-11-07, documents by 2026-12-01), Western (equal
+  consideration 2027-01-15), UAlberta (verified 2026-09-17). McMaster HHSP
+  pages are Cloudflare-blocked; its supp-app window is only described as
+  "early/mid-February 2027, instructions emailed in January". Tier-2 document
+  deadlines not named on an official page are carried forward on the same
+  calendar date as 2025-26 and flagged in curator_notes.
 
 requirements:
 
@@ -38,7 +46,7 @@ requirements:
     tier: 1
     source_url: https://bhsc.mcmaster.ca/future-students/admissions/
     fallback_source_url: https://hhsp.healthsci.mcmaster.ca/
-    curated_on: 2026-04-25
+    curated_on: 2026-09-18
     confidence: high
     curator_notes: |
       Format details verified against the official 2025 Supplementary
@@ -46,15 +54,33 @@ requirements:
       Wayback snapshot 2025-01-23). Live HHSP pages are Cloudflare-protected
       and refuse automated fetches, but the archived official PDF gives
       authoritative supp-app structure, character limits, and the GenAI
-      prohibition. Date fields below assume the 2026-27 cycle mirrors the
-      published 2024-25 timing — re-verify in September 2026 when that
-      cycle's PDF is posted. The bhsc.mcmaster.ca subdomain 301-redirects
-      to hhsp.healthsci.mcmaster.ca; HHSP is the program's current home.
+      prohibition. The bhsc.mcmaster.ca subdomain 301-redirects to
+      hhsp.healthsci.mcmaster.ca; HHSP is the program's current home.
+      2026-09-18 re-verification: OUAC 2027-01-15 confirmed (OUAC). HHSP's
+      2026-27 pages (and the 2027 questions PDF, which search engines have
+      indexed) are Cloudflare-blocked to us; search snippets of the HHSP
+      site say questions are posted in September, submission instructions
+      are emailed in January, and the Level I submission deadline is
+      "early/mid-February 2027". The supp date below is therefore an
+      ESTIMATE from the 2024-25 window (Feb 3-6).
+      2026-09-18 (later, via the r.jina.ai proxy which gets past Cloudflare):
+      the HHSP supplementary-application page, the Level I page and the
+      2027 questions page ALL still read "Coming Soon" for every 2026-27
+      date (questions posted / OUAC deadline / instructions email / portal
+      access / offers). The 2026 questions PDF has been taken down (404).
+      Level I page verified: "over 8,000 applicants annually for only 240
+      spots"; "minimum secondary school grade point average of 90%";
+      "Simply meeting the academic requirements does not ensure admission."
+      PREREQ CORRECTION: the earlier curation said only English was
+      required — the official Level I page and future.mcmaster.ca list SIX
+      required courses (see prereq_courses), including a non-math /
+      non-science / non-technology credit. Re-check the HHSP page monthly
+      until the 2027 dates and PDF appear (reminder in the profile).
 
-    application_deadline_ouac: 2026-01-15        # OUAC equal-consideration; Jan 15 is the universal Ontario UG date
-    application_deadline_supp: 2026-02-05        # close of the ~3–4 day portal window in early Feb (2024-25 cycle was Feb 3–6); not a hard single-date deadline — instructions emailed late Jan
-    document_deadline: 2026-02-05
-    decision_release_window: "Two waves: early March and early May (first week of each)"
+    application_deadline_ouac: 2027-01-15        # OUAC equal-consideration, verified 2026-09-18
+    application_deadline_supp: 2027-02-05        # ESTIMATE — "early/mid-February 2027" portal window (~3–4 days); instructions emailed in January; confirm on the HHSP page
+    document_deadline: 2027-02-05
+    decision_release_window: "Early May (HHSP FAQ, verified 2026-09-18: 'Admission offers will be made in early May'; earlier curation also noted an early-March wave — unconfirmed)"
 
     supp_app_required: true
     supp_app_type: "2 written essays (1500 characters each, including spaces); choose 1 of 3 prompts for Q1 + 1 of 3 prompts for Q2"
@@ -80,6 +106,19 @@ requirements:
       but "the writing itself must be your own work." Posting answers online
       or working with others on responses is also disqualifying.
 
+      HHSP Supplementary Application FAQs (verified 2026-09-18): "The
+      Supplementary Application submission deadline is firm and no
+      extensions will be given if this deadline is missed." Generative AI
+      "is not permitted and may result in removal from the applicant pool
+      or withdrawal of an offer of admission" — i.e. it can be enforced
+      after an offer. Discussing answers with others, posting them online,
+      and HIRING ADMISSIONS CONSULTANTS are all named as academic-integrity
+      breaches. Each application is scored by multiple reviewers (faculty,
+      staff, Level IV students) with extra reviewers when scores diverge.
+      The 2-of-6-prompts / 1500-character format is from the 2025 PDF; the
+      2027 PDF is not posted yet, so treat the format as unconfirmed for
+      this cycle.
+
       The supp app is the primary differentiator above the ~90% grade floor.
 
     casper_required: false
@@ -92,14 +131,28 @@ requirements:
     min_average_competitive: 90.0
     prereq_courses:
       - "Grade 12 English (ENG4U) — required"
-      - "5 best Grade 12 4U/4M courses including the required English"
-      - "Grade 12 Biology (SBI4U) — strongly recommended"
-      - "Grade 12 Chemistry (SCH4U) — strongly recommended"
+      - "Grade 12 Biology (SBI4U) — required"
+      - "Grade 12 Chemistry (SCH4U) — required"
+      - "One of Advanced Functions (MHF4U), Calculus & Vectors (MCV4U), or Data Management (MDM4U) — required"
+      - "One non-math, non-science, non-technology 4U/4M credit — required"
+      - "One additional Grade 12 U/M course (six courses total)"
     prereq_notes: |
-      English 4U is the only formally required prerequisite; Bio + Chem are
-      recommended. Justin's Alberta equivalents are ELA 30-1, Biology 30,
-      Chemistry 30 — all satisfied. McMaster will use his top-6 Grade 12
-      academic average for assessment.
+      Verified 2026-09-18 on the HHSP Level I page and future.mcmaster.ca:
+      six required courses, and the 90% minimum is computed on those six
+      (the "six mandatory courses"), not a free top-6. Justin's Alberta set
+      maps exactly onto them — ELA 30-1 (English), Biology 30, Chemistry 30,
+      Math 30-1 or Math 31 (math), French 30-1 (the non-math / non-science /
+      non-technology credit), and the other math as the sixth course. So
+      the six courses McMaster averages are the same six he is taking, and
+      ELA 30-1 (weakest, ~87.5 midpoint) is inside that average with no
+      substitute available. HHSP Future Students FAQ: "For applicants who
+      present more than one of these math courses, the highest grade at the
+      time of review will be used" — Math 30-1 (diploma 100%) is the math
+      mark that counts. future.mcmaster.ca: "Applicants from other
+      provinces / jurisdictions should contact the Admissions Office if
+      they are unsure about the eligibility of a particular course" —
+      email McMaster Admissions in October to confirm French 30-1 satisfies
+      the non-STEM credit and Math 31 the math prerequisite.
 
     oop_eligible: true
     oop_notes: |
@@ -124,12 +177,16 @@ requirements:
     tier: 1
     source_url: https://bhsc.queensu.ca/future-students/admission
     supp_app_source_url: https://bhsc.queensu.ca/future-students/supplementary-application
-    curated_on: 2026-04-25
+    curated_on: 2026-09-18
     confidence: high
     curator_notes: |
       Format and timing details confirmed against the official Queen's BHSc
       supplementary application page and the queensu.ca PSE FAQ on 2026-04-25.
-      The OUAC date is the universal Ontario Jan 15. Queen's BHSc has both an
+      2026-09-18: 2027 dates verified on queensu.ca/admission/applying/
+      dates-deadlines — Health Sciences supplementary application deadline
+      February 15, 2027; all documents by March 31, 2027; Queen's recommends
+      applying on OUAC by November 20 to have time for the Major Admission
+      Award (MAA) application. The OUAC date is the universal Ontario Jan 15. Queen's BHSc has both an
       on-campus stream (QH) and an online stream; the on-campus stream is what
       most applicants pursue and is what is reflected here. The on-campus
       program uses a flipped-classroom model — most lectures are asynchronous
@@ -141,9 +198,9 @@ requirements:
       ahead of the official "by mid-May" commitment. The decision_release_window
       string captures this rolling pattern.
 
-    application_deadline_ouac: 2026-01-15
-    application_deadline_supp: 2026-02-15        # PSE deadline confirmed from supp app page
-    document_deadline: 2026-02-15
+    application_deadline_ouac: 2027-01-15
+    application_deadline_supp: 2027-02-15        # PSE deadline verified 2026-09-18 on the Queen's dates page
+    document_deadline: 2027-03-31                # Queen's universal document deadline (verified 2026-09-18); send the transcript with the OUAC application regardless
     decision_release_window: "April through mid-May (rolling; official FAQ commits to communicating all decisions by mid-May)"
 
     supp_app_required: true
@@ -213,18 +270,23 @@ requirements:
     source_url: https://uwaterloo.ca/future-students/programs/computer-science
     deadlines_source_url: https://uwaterloo.ca/future-students/admissions/deadlines
     aif_source_url: https://uwaterloo.ca/future-students/admissions/admission-information-form
-    curated_on: 2026-04-08
+    curated_on: 2026-09-18
     confidence: high
     curator_notes: |
       Confirmed from the Waterloo CS program page and Waterloo's deadlines
       page. CS is in the Math Faculty, NOT Engineering, so it follows the
-      January 30 general deadline rather than the January 15 Engineering
-      deadline. The "individual selection from the low to mid-90s" wording is
-      Waterloo's own published competitive average for CS.
+      general deadline rather than the January 15 Engineering deadline. The
+      "individual selection from the low to mid-90s" wording is Waterloo's
+      own published competitive average for CS.
+      2026-09-18: fall-2027 dates verified on uwaterloo.ca/future-students/
+      admissions/deadlines. CHANGE from prior cycles: the general (non-Eng)
+      application deadline is now February 1, 2027 (was Jan 30) and the
+      documents/AIF deadline is February 15, 2027 (was Feb 13). Do not plan
+      around the extra days — submit with the Jan 15 OUAC wave anyway.
 
-    application_deadline_ouac: 2026-01-30        # Waterloo's general (non-Eng) deadline
-    application_deadline_supp: 2026-02-13        # AIF deadline — same as general document deadline
-    document_deadline: 2026-02-13
+    application_deadline_ouac: 2027-02-01        # Waterloo's general (non-Eng) deadline, verified 2026-09-18
+    application_deadline_supp: 2027-02-15        # AIF deadline — same as the documents deadline
+    document_deadline: 2027-02-15
     decision_release_window: "Mid May (with a deferral round before final decisions)"
 
     supp_app_required: true
@@ -298,13 +360,15 @@ requirements:
     curator_notes: |
       Prereqs verified from the linked Schulich page. Western's BMSc is a
       Year 3 designation; first-year applicants apply to "Medical Sciences
-      First Entry" (a guaranteed-progression pathway). Dates and competitive
-      avg are based on standard Western practice — verify against the main
-      welcome.uwo.ca page before the dashboard goes live.
+      First Entry" (a guaranteed-progression pathway). Competitive avg is
+      based on standard Western practice. 2026-09-18: Western's fall-2027
+      equal-consideration date of January 15, 2027 confirmed; the document
+      deadline is carried forward on the 2025-26 calendar date (not named
+      on an official page we could fetch).
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-15
+    document_deadline: 2027-02-15                # carried forward from the 2025-26 pattern
     decision_release_window: "March through May (rolling)"
 
     supp_app_required: false
@@ -357,11 +421,13 @@ requirements:
       students apply for specialization in Year 2. The 4U prerequisites and
       competitive avg below are based on public knowledge and the fact that
       School of Health Studies is one of Western's lower-cutoff first-entry
-      programs. Verify against the welcome.uwo.ca page.
+      programs. Verify against the welcome.uwo.ca page. 2026-09-18: OUAC
+      2027-01-15 confirmed (Western equal consideration); document
+      deadline carried forward on the 2025-26 calendar date.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-15
+    document_deadline: 2027-02-15                # carried forward from the 2025-26 pattern
     decision_release_window: "March through May (rolling)"
 
     supp_app_required: false
@@ -409,11 +475,13 @@ requirements:
       based on public knowledge of McMaster's Science I admission pathway.
       Life Sciences is a Level II major selected after a common Science I
       first year. Verify all dates and the competitive average against
-      McMaster's site before the dashboard ships.
+      McMaster's site before the dashboard ships. 2026-09-18: OUAC
+      2027-01-15 confirmed; document deadline carried forward on the
+      2025-26 calendar date.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-01
+    document_deadline: 2027-02-01                # carried forward from the 2025-26 pattern
     decision_release_window: "March through May"
 
     supp_app_required: false
@@ -464,11 +532,13 @@ requirements:
       the Faculty of Health Sciences which houses BHSc). It's a BSc Honours
       plan and does NOT require the BHSc supplementary PSE. Prereqs and
       cutoffs verified against public knowledge; specific dates from the
-      universal OUAC schedule.
+      universal OUAC schedule. 2026-09-18: OUAC 2027-01-15 confirmed;
+      Queen's universal document deadline of March 31, 2027 verified on the
+      queensu.ca dates page.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-15
+    document_deadline: 2027-03-31
     decision_release_window: "March through April"
 
     supp_app_required: false
@@ -516,11 +586,13 @@ requirements:
       same Jan 15 OUAC date and the same "mid to high 80s" target as the
       St. George campus, but with a slightly lower realized competitive
       average per Reddit data. Justin can apply to UTM and StG separately
-      under different OUAC choices.
+      under different OUAC choices. 2026-09-18: U of T's fall-2027 dates
+      page gives Jan 15 (application) and Feb 1 (documents) for St. George
+      A&S; UTM follows the same framework.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-02
+    document_deadline: 2027-02-01
     decision_release_window: "January through late May (rolling)"
 
     supp_app_required: false
@@ -566,10 +638,12 @@ requirements:
       UTSC Life Sciences mirrors the UTM/StG admission framework. Slightly
       different on-campus departmental layout but the application process,
       deadlines, and Alberta requirements are the same as UTM and StG.
+      2026-09-18: dates aligned to the verified U of T fall-2027 page
+      (Jan 15 application, Feb 1 documents).
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-02
+    document_deadline: 2027-02-01
     decision_release_window: "January through late May (rolling)"
 
     supp_app_required: false
@@ -615,11 +689,13 @@ requirements:
       Guelph BSc Bio-Medical Science (BIOM major). Standard Ontario science
       prereqs. Guelph is generally less competitive than the McMaster /
       Queen's / Western health sci programs but has a respected biomedical
-      curriculum and is a popular pre-med pathway.
+      curriculum and is a popular pre-med pathway. 2026-09-18: OUAC
+      2027-01-15 confirmed; document deadline carried forward on the
+      2025-26 calendar date.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-15
+    document_deadline: 2027-02-15                # carried forward from the 2025-26 pattern
     decision_release_window: "April through May"
 
     supp_app_required: false
@@ -672,10 +748,12 @@ requirements:
       Medicine, Neuroscience, etc.) declared after first year. The
       uOttawa catalog notes "Requirements for this program have been
       modified" — verify the 2026-2027 prereqs against the current page.
+      2026-09-18: OUAC 2027-01-15 confirmed; document deadline carried
+      forward on the 2025-26 calendar date.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-15
+    document_deadline: 2027-02-15                # carried forward from the 2025-26 pattern
     decision_release_window: "March through May (rolling)"
 
     supp_app_required: false
@@ -724,10 +802,12 @@ requirements:
       "Medical Sciences" program in the same faculty — they overlap heavily).
       Treat this entry as covering Brock's biomedical-sciences track. Lower
       cutoff than the Tier-2 majors above; serves as a safety option.
+      2026-09-18: OUAC 2027-01-15 confirmed; document deadline carried
+      forward on the 2025-26 calendar date.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
-    document_deadline: 2026-02-15
+    document_deadline: 2027-02-15                # carried forward from the 2025-26 pattern
     decision_release_window: "April through May"
 
     supp_app_required: false
@@ -777,14 +857,13 @@ requirements:
       choices, so Physiology is off the list unless a second application is
       filed. Kept curated as the alternate if that pairing changes.
       UAlberta does not use OUAC; applications go through ApplyAlberta.
-      Dates are in the 2025-26 template convention (dashboard adds +365d).
-      Verified 2027 dates: opens 2026-10-01, deadline 2027-03-01, final
-      documents 2027-08-01. Fixed document_deadline (was 2027-03-01, which
-      shifted to 2028 on the dashboard).
+      Verified 2027 dates (2026-09-17): opens 2026-10-01, Faculty of Science
+      deadline 2027-03-01, final documents 2027-08-01. Dates below are real
+      2027 dates (the dashboard's +365d shift was removed 2026-09-18).
 
-    application_deadline_ouac: 2026-03-01
+    application_deadline_ouac: 2027-03-01
     application_deadline_supp: null
-    document_deadline: 2026-08-01
+    document_deadline: 2027-08-01
     decision_release_window: "March through June (rolling)"
 
     supp_app_required: false
@@ -851,18 +930,19 @@ requirements:
       out of high school"). Also offered as a BSc Major with the same
       first-year courses. Applications go through ApplyAlberta, NOT OUAC;
       one application = up to two program choices; fee $150.
-      Dates below are in the 2025-26 template convention (dashboard adds
-      +365d). Verified 2027 dates: application opens 2026-10-01; entrance
-      awards close 2027-01-10; Faculty of Science deadline 2027-03-01;
-      self-report final marks by 2027-04-30; offer acceptance 2027-05-01;
-      final documents 2027-08-01. Rolling admission from final G11 marks +
+      Dates below are real 2027 dates (the dashboard's +365d shift was
+      removed 2026-09-18). Verified 2027 dates: application opens
+      2026-10-01; entrance awards close 2027-01-10; Faculty of Science
+      deadline 2027-03-01; self-report final marks by 2027-04-30; offer
+      acceptance 2027-05-01; final documents 2027-08-01. Rolling admission
+      from final G11 marks +
       available G12 marks, so a conditional offer in late fall 2026 is
       realistic (G11 avg 97.0). CONFIRM with Science advising whether
       Honors Neuroscience issues early offers on G11 marks alone.
 
-    application_deadline_ouac: 2026-03-01
+    application_deadline_ouac: 2027-03-01
     application_deadline_supp: null
-    document_deadline: 2026-08-01
+    document_deadline: 2027-08-01
     decision_release_window: "Rolling from late fall (early conditional offers on G11 marks) through spring"
 
     supp_app_required: false
@@ -936,11 +1016,11 @@ requirements:
       Integrative Physiology; Molecular, Cellular & Developmental Biology.
       Department ranked #2 in Canada for biological sciences (2026-27
       Science viewbook). Same dates/fee/process as Neuroscience; see that
-      entry. Dates in 2025-26 template convention (dashboard adds +365d).
+      entry. Dates are real 2027 dates.
 
-    application_deadline_ouac: 2026-03-01
+    application_deadline_ouac: 2027-03-01
     application_deadline_supp: null
-    document_deadline: 2026-08-01
+    document_deadline: 2027-08-01
     decision_release_window: "Rolling from late fall (early conditional offers on G11 marks) through spring"
 
     supp_app_required: false
@@ -987,15 +1067,17 @@ requirements:
     tier: 2
     source_url: https://uwaterloo.ca/future-students/programs/mathematics-computer-science
     deadlines_source_url: https://uwaterloo.ca/future-students/admissions/deadlines
-    curated_on: 2026-04-12
+    curated_on: 2026-09-18
     confidence: medium
     curator_notes: |
       Waterloo Math/CS is in the Math Faculty (NOT Engineering), so it
-      follows the Jan 30 general deadline. Same AIF process as Waterloo CS.
+      follows the general deadline. Same AIF process as Waterloo CS.
+      2026-09-18: fall-2027 general deadline verified as February 1, 2027
+      (documents/AIF February 15, 2027) on Waterloo's deadlines page.
 
-    application_deadline_ouac: 2026-01-30
-    application_deadline_supp: 2026-02-13
-    document_deadline: 2026-02-13
+    application_deadline_ouac: 2027-02-01
+    application_deadline_supp: 2027-02-15
+    document_deadline: 2027-02-15
     decision_release_window: "Mid May"
 
     supp_app_required: true
@@ -1031,15 +1113,18 @@ requirements:
     tier: 2
     source_url: https://uwaterloo.ca/future-students/programs/software-engineering
     deadlines_source_url: https://uwaterloo.ca/future-students/admissions/deadlines
-    curated_on: 2026-04-12
+    curated_on: 2026-09-18
     confidence: medium
     curator_notes: |
       Waterloo SE is in the Faculty of ENGINEERING, so it uses the
-      Jan 15 Engineering deadline (NOT Jan 30 like CS/Math programs).
+      Jan 15 Engineering deadline (NOT Feb 1 like CS/Math programs).
+      2026-09-18: fall-2027 Engineering dates verified on Waterloo's
+      deadlines page — application January 15, 2027; documents/AIF
+      February 1, 2027.
 
-    application_deadline_ouac: 2026-01-15
-    application_deadline_supp: 2026-01-30
-    document_deadline: 2026-01-30
+    application_deadline_ouac: 2027-01-15
+    application_deadline_supp: 2027-02-01
+    document_deadline: 2027-02-01
     decision_release_window: "Mid May"
 
     supp_app_required: true
@@ -1079,7 +1164,7 @@ requirements:
     source_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences
     alberta_source_url: https://www.artsci.utoronto.ca/future/ready-apply/admission-requirements/other-canadian-provinces
     dates_source_url: https://future.utoronto.ca/apply/important-application-dates/
-    curated_on: 2026-04-08
+    curated_on: 2026-09-18
     confidence: high
     curator_notes: |
       Confirmed from the official Faculty of Arts & Science Life Sciences
@@ -1087,10 +1172,16 @@ requirements:
       page, and the U of T important application dates page. The "JOIN U of T"
       portal is mentioned for non-Ontario applicants but UofT undergrad is
       still primarily through OUAC for Canadian students.
+      2026-09-18: fall-2027 dates verified on future.utoronto.ca — A&S
+      St. George application deadline January 15, documents (non-Rotman)
+      February 1. U of T also names early-round targets: apply by November
+      7, 2026 and submit documents by December 1, 2026 to be reviewed in
+      the earlier admission rounds. With a 97.0 G11 average Justin should
+      hit the early round — an early UofT offer would de-risk the winter.
 
-    application_deadline_ouac: 2026-01-15
+    application_deadline_ouac: 2027-01-15
     application_deadline_supp: null              # No supp app for Life Sci
-    document_deadline: 2026-02-02                # A&S extends some document deadlines to Feb 2
+    document_deadline: 2027-02-01                # A&S documents deadline (non-Rotman), verified 2026-09-18
     decision_release_window: "January through late May"
 
     supp_app_required: false

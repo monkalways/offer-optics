@@ -509,9 +509,21 @@
       "priority": "high"
     },
     {
-      "date": "2026-09-15",
-      "label": "2026-27 official admission requirements and dates publish around now — re-verify config/requirements.yaml against primary sources and remove the +365-day date shift in build_webdash.py",
-      "category": "data_refresh",
+      "date": "2026-10-01",
+      "label": "Email McMaster Admissions (per future.mcmaster.ca: out-of-province applicants should confirm course eligibility): does French 30-1 satisfy the BHSc non-math/non-science/non-technology 4U/M credit, and Math 31 the math prerequisite? McMaster averages the six required courses, so this fixes which six count.",
+      "category": "action",
+      "priority": "high"
+    },
+    {
+      "date": "2026-10-15",
+      "label": "McMaster BHSc: as of 2026-09-18 every 2027 date on hhsp.healthsci.mcmaster.ca still reads 'Coming Soon' and the 2026 questions PDF is gone. Re-check for the 2027 Supplementary Application Questions PDF and the exact early/mid-February 2027 window (dashboard shows Feb 5 as an estimate). The agent can read the site via the r.jina.ai proxy.",
+      "category": "action",
+      "priority": "high"
+    },
+    {
+      "date": "2026-11-07",
+      "label": "U of T early-round target: OUAC application in by Nov 7 and documents by Dec 1 to be reviewed in the earlier admission rounds (verified on future.utoronto.ca 2026-09-18). Aim for an early UofT Life Sci offer.",
+      "category": "application",
       "priority": "high"
     },
     {
@@ -583,7 +595,7 @@
   ],
   "_profile_provenance": {
     "captured_on": "2026-04-07",
-    "updated_on": "2026-09-17",
+    "updated_on": "2026-09-18",
     "captured_from": "user-provided in initial planning conversation; ECs extracted 2026-04-11 from resume + HYRS essay + Harvard MEDScience essay in data/justin/",
     "update_log": [
       "2026-04-11 — ECs extracted from data/justin/ documents; Harvard MEDScience acceptance added",

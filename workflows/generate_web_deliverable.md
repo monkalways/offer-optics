@@ -105,7 +105,9 @@ If `docs/` gets corrupted or deleted:
 - **Chart.js parent needs explicit height** — `styles.css` sets `.chart-box` heights; don't remove them or the canvases collapse to 0px.
 - **Tailwind config load order** — the inline `window.tailwind = { config: ... }` must stay before `<script src="https://cdn.tailwindcss.com"></script>`. Reversing the order silently breaks custom colors.
 - **The Justin marker plugin is passed inline** to the distribution chart only (via `plugins: [justinMarkerPlugin]`). Don't `Chart.register()` it globally or it bleeds onto the YoY line chart.
-- **Cycle dates are shifted +1 year** from the `config/requirements.yaml` template (which uses the 2025-26 cycle as a reference). When real 2026-27 dates are published, update the template and the shift becomes redundant.
+- **Dates are rendered as-is.** Until 2026-09-18 `config/requirements.yaml` held 2025-26 template dates and `build_webdash.py` shifted them +365 days; the yaml now holds real 2026-27 dates and the shift was removed. If a future cycle reuses this repo, re-curate the yaml dates rather than reintroducing a shift — the shift silently double-shifted any entry that was already written as a real date (the 2026-09-17 UAlberta Physiology bug).
+- **Tiers and verdicts come from `.tmp/applications.sqlite`, not from `programs.yaml` directly.** Running `build_webdash.py` alone after a `programs.yaml` or `requirements.yaml` edit leaves stale tiers/deadlines in `data.json`. Always run the full sequence (normalize_data → build_sqlite → load_requirements → analyze_program → build_webdash).
+- **Official university pages that block fetches:** hhsp.healthsci.mcmaster.ca (Cloudflare, including its PDFs), ouac.on.ca and guidance.ouac.on.ca (403). Workaround that worked on 2026-09-18: prefix the URL with `https://r.jina.ai/` (a rendering proxy) — it returned the HHSP supp-app, Level I, FAQ and questions pages. It did NOT get through for ouac.on.ca or hhsp's `/future-students/admissions/`. uwaterloo.ca, queensu.ca and future.utoronto.ca fetch fine directly. web.archive.org is blocked for the agent outright.
 
 ## Privacy note
 

@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-09-18T10:51:16",
+  "build_timestamp": "2026-09-18T13:43:02",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -593,9 +593,21 @@
         "priority": "high"
       },
       {
-        "date": "2026-09-15",
-        "label": "2026-27 official admission requirements and dates publish around now — re-verify config/requirements.yaml against primary sources and remove the +365-day date shift in build_webdash.py",
-        "category": "data_refresh",
+        "date": "2026-10-01",
+        "label": "Email McMaster Admissions (per future.mcmaster.ca: out-of-province applicants should confirm course eligibility): does French 30-1 satisfy the BHSc non-math/non-science/non-technology 4U/M credit, and Math 31 the math prerequisite? McMaster averages the six required courses, so this fixes which six count.",
+        "category": "action",
+        "priority": "high"
+      },
+      {
+        "date": "2026-10-15",
+        "label": "McMaster BHSc: as of 2026-09-18 every 2027 date on hhsp.healthsci.mcmaster.ca still reads 'Coming Soon' and the 2026 questions PDF is gone. Re-check for the 2027 Supplementary Application Questions PDF and the exact early/mid-February 2027 window (dashboard shows Feb 5 as an estimate). The agent can read the site via the r.jina.ai proxy.",
+        "category": "action",
+        "priority": "high"
+      },
+      {
+        "date": "2026-11-07",
+        "label": "U of T early-round target: OUAC application in by Nov 7 and documents by Dec 1 to be reviewed in the earlier admission rounds (verified on future.utoronto.ca 2026-09-18). Aim for an early UofT Life Sci offer.",
+        "category": "application",
         "priority": "high"
       },
       {
@@ -698,24 +710,26 @@
       "supp_app_required": true,
       "supp_app_type": "2 written essays (1500 characters each, including spaces); choose 1 of 3 prompts for Q1 + 1 of 3 prompts for Q2",
       "supp_app_url": "https://hhsp.healthsci.mcmaster.ca/future-students/supplementary-application/",
-      "supp_app_notes": "McMaster posts the year's Supp App Questions PDF publicly in September,\nso applicants see the prompts months before the portal opens. Applicants\nchoose 1 of 3 options for Question 1 and 1 of 3 options for Question 2\n(so 2 essays drawn from a pool of 6 prompts), with a hard 1500-character\ncap per response (including punctuation and spaces). Submission\ninstructions are emailed in late January, and the online portal is open\nfor only ~3–4 days in early February (Feb 3–6 in the 2024-25 cycle).\nExtensions are not granted.\n\nPrompts are problem-based and philosophical, designed to test how an\napplicant thinks — 2025 prompts covered cognitive engagement in the\nage of GenAI, Indigenous Seven Grandfather Teachings, interdisciplinary\nsynergies between health and other fields, and admissions-policy design.\n\nGenerative AI is explicitly prohibited: \"use of generative AI to write\nthe response are not permitted, and may result in removal from the\napplicant pool.\" Proofreading tools and human feedback are acceptable\nbut \"the writing itself must be your own work.\" Posting answers online\nor working with others on responses is also disqualifying.\n\nThe supp app is the primary differentiator above the ~90% grade floor.\n",
+      "supp_app_notes": "McMaster posts the year's Supp App Questions PDF publicly in September,\nso applicants see the prompts months before the portal opens. Applicants\nchoose 1 of 3 options for Question 1 and 1 of 3 options for Question 2\n(so 2 essays drawn from a pool of 6 prompts), with a hard 1500-character\ncap per response (including punctuation and spaces). Submission\ninstructions are emailed in late January, and the online portal is open\nfor only ~3–4 days in early February (Feb 3–6 in the 2024-25 cycle).\nExtensions are not granted.\n\nPrompts are problem-based and philosophical, designed to test how an\napplicant thinks — 2025 prompts covered cognitive engagement in the\nage of GenAI, Indigenous Seven Grandfather Teachings, interdisciplinary\nsynergies between health and other fields, and admissions-policy design.\n\nGenerative AI is explicitly prohibited: \"use of generative AI to write\nthe response are not permitted, and may result in removal from the\napplicant pool.\" Proofreading tools and human feedback are acceptable\nbut \"the writing itself must be your own work.\" Posting answers online\nor working with others on responses is also disqualifying.\n\nHHSP Supplementary Application FAQs (verified 2026-09-18): \"The\nSupplementary Application submission deadline is firm and no\nextensions will be given if this deadline is missed.\" Generative AI\n\"is not permitted and may result in removal from the applicant pool\nor withdrawal of an offer of admission\" — i.e. it can be enforced\nafter an offer. Discussing answers with others, posting them online,\nand HIRING ADMISSIONS CONSULTANTS are all named as academic-integrity\nbreaches. Each application is scored by multiple reviewers (faculty,\nstaff, Level IV students) with extra reviewers when scores diverge.\nThe 2-of-6-prompts / 1500-character format is from the 2025 PDF; the\n2027 PDF is not posted yet, so treat the format as unconfirmed for\nthis cycle.\n\nThe supp app is the primary differentiator above the ~90% grade floor.\n",
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
       "deadline_ouac": "2027-01-15",
       "deadline_supp": "2027-02-05",
       "deadline_doc": "2027-02-05",
-      "decision_window": "Two waves: early March and early May (first week of each)",
+      "decision_window": "Early May (HHSP FAQ, verified 2026-09-18: 'Admission offers will be made in early May'; earlier curation also noted an early-March wave — unconfirmed)",
       "fee_cad": 156,
       "official_url": "https://bhsc.mcmaster.ca/future-students/admissions/",
       "min_average_competitive": 90.0,
       "prereq_courses": [
         "Grade 12 English (ENG4U) — required",
-        "5 best Grade 12 4U/4M courses including the required English",
-        "Grade 12 Biology (SBI4U) — strongly recommended",
-        "Grade 12 Chemistry (SCH4U) — strongly recommended"
+        "Grade 12 Biology (SBI4U) — required",
+        "Grade 12 Chemistry (SCH4U) — required",
+        "One of Advanced Functions (MHF4U), Calculus & Vectors (MCV4U), or Data Management (MDM4U) — required",
+        "One non-math, non-science, non-technology 4U/4M credit — required",
+        "One additional Grade 12 U/M course (six courses total)"
       ],
-      "prereq_notes": "English 4U is the only formally required prerequisite; Bio + Chem are\nrecommended. Justin's Alberta equivalents are ELA 30-1, Biology 30,\nChemistry 30 — all satisfied. McMaster will use his top-6 Grade 12\nacademic average for assessment.\n",
+      "prereq_notes": "Verified 2026-09-18 on the HHSP Level I page and future.mcmaster.ca:\nsix required courses, and the 90% minimum is computed on those six\n(the \"six mandatory courses\"), not a free top-6. Justin's Alberta set\nmaps exactly onto them — ELA 30-1 (English), Biology 30, Chemistry 30,\nMath 30-1 or Math 31 (math), French 30-1 (the non-math / non-science /\nnon-technology credit), and the other math as the sixth course. So\nthe six courses McMaster averages are the same six he is taking, and\nELA 30-1 (weakest, ~87.5 midpoint) is inside that average with no\nsubstitute available. HHSP Future Students FAQ: \"For applicants who\npresent more than one of these math courses, the highest grade at the\ntime of review will be used\" — Math 30-1 (diploma 100%) is the math\nmark that counts. future.mcmaster.ca: \"Applicants from other\nprovinces / jurisdictions should contact the Admissions Office if\nthey are unsure about the eligibility of a particular course\" —\nemail McMaster Admissions in October to confirm French 30-1 satisfies\nthe non-STEM credit and Math 31 the math prerequisite.\n",
       "requirements_confidence": "high",
       "reasoning": "Justin's projected top-6 midpoint of 95.8% sits at the 32.6th percentile of accepted reports for McMaster University Bachelor of Health Sciences (Honours) (n=86, median accepted avg 97.0%). Projection range (93.8-97.8%) places him at the 16.3-80.2th percentile. OOP DIRECTIONAL SIGNAL (small sample, n=7): mean accepted 98.5%, min 97.0%. Justin's midpoint 95.8% is below the observed OOP minimum but his high projection 97.8% clears it. Treat as directional only. Supp-app leverage (very high weight at this program): VERY STRONG for the written supplementary application, and stronger as of August 2026. **New this summer: a paid research assistantship in Prof. Hongbo Zeng's group at UofA (Tier 1 Canada Research Chair, FRSC/FCAE/FAIMBE) and a recurring twice-weekly clinical volunteer placement.** Together these close the two soft spots the May 23 analysis identified — no formal lab research, and clinical exposure that was high-quality but episodic (a single 30-hour block). McMaster's rubric rewards sustained commitment over one-off prestige, so a placement running twice weekly from July onward is worth more to the reader than another summer program would have been. Base profile: cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, complete ✓) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. Harvard MEDScience is now completed with strong Q2A material: built Nerve-1 (AI CV robot for glioblastoma) using Roboflow + Python API; played anesthesiologist in 30-min live OR drill with real intubation and medication decisions under pressure; pitched to 4 investors, led financial Q&A. The Roboflow CV model failure during the demo (lighting variation, 200-image training set) is exactly the kind of specific, honest reflection McMaster's rubric rewards at the top end. Journal written June 23. This is exactly the profile McMaster BHSc supplementary readers look for. EC adjustment applied: GPA-only verdict would be REACH, upgraded to TARGET via strong supplementary-application leverage. ECs alone never upgrade a reach to a safety — the upgrade is capped at target. FINAL VERDICT: TARGET. Caveat: Reddit dataset is heavily self-selected toward acceptances (~95-99% of reports are accepts), so percentiles are relative to admitted students, not raw applicant pools.",
       "ec_strength_text": "VERY STRONG for the written supplementary application, and stronger as of August 2026. **New this summer: a paid research assistantship in Prof. Hongbo Zeng's group at UofA (Tier 1 Canada Research Chair, FRSC/FCAE/FAIMBE) and a recurring twice-weekly clinical volunteer placement.** Together these close the two soft spots the May 23 analysis identified — no formal lab research, and clinical exposure that was high-quality but episodic (a single 30-hour block). McMaster's rubric rewards sustained commitment over one-off prestige, so a placement running twice weekly from July onward is worth more to the reader than another summer program would have been. Base profile: cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, complete ✓) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. Harvard MEDScience is now completed with strong Q2A material: built Nerve-1 (AI CV robot for glioblastoma) using Roboflow + Python API; played anesthesiologist in 30-min live OR drill with real intubation and medication decisions under pressure; pitched to 4 investors, led financial Q&A. The Roboflow CV model failure during the demo (lighting variation, 200-image training set) is exactly the kind of specific, honest reflection McMaster's rubric rewards at the top end. Journal written June 23. This is exactly the profile McMaster BHSc supplementary readers look for.",
@@ -883,7 +897,7 @@
       "references_required": false,
       "deadline_ouac": "2027-01-15",
       "deadline_supp": "2027-02-15",
-      "deadline_doc": "2027-02-15",
+      "deadline_doc": "2027-03-31",
       "decision_window": "April through mid-May (rolling; official FAQ commits to communicating all decisions by mid-May)",
       "fee_cad": 156,
       "official_url": "https://bhsc.queensu.ca/future-students/admission",
@@ -1061,9 +1075,9 @@
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
-      "deadline_ouac": "2027-01-30",
-      "deadline_supp": "2027-02-13",
-      "deadline_doc": "2027-02-13",
+      "deadline_ouac": "2027-02-01",
+      "deadline_supp": "2027-02-15",
+      "deadline_doc": "2027-02-15",
       "decision_window": "Mid May (with a deferral round before final decisions)",
       "fee_cad": 156,
       "official_url": "https://uwaterloo.ca/future-students/programs/computer-science",
@@ -1244,7 +1258,7 @@
       "references_required": false,
       "deadline_ouac": "2027-01-15",
       "deadline_supp": null,
-      "deadline_doc": "2027-02-02",
+      "deadline_doc": "2027-02-01",
       "decision_window": "January through late May",
       "fee_cad": 156,
       "official_url": "https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/life-sciences",
@@ -1780,9 +1794,9 @@
       "casper_required": false,
       "interview_required": false,
       "references_required": false,
-      "deadline_ouac": "2027-01-30",
-      "deadline_supp": "2027-02-13",
-      "deadline_doc": "2027-02-13",
+      "deadline_ouac": "2027-02-01",
+      "deadline_supp": "2027-02-15",
+      "deadline_doc": "2027-02-15",
       "decision_window": "Mid May",
       "fee_cad": 156,
       "official_url": "https://uwaterloo.ca/future-students/programs/mathematics-computer-science",
@@ -2140,7 +2154,7 @@
       "references_required": false,
       "deadline_ouac": "2027-01-15",
       "deadline_supp": null,
-      "deadline_doc": "2027-02-15",
+      "deadline_doc": "2027-03-31",
       "decision_window": "March through April",
       "fee_cad": 156,
       "official_url": "https://www.queensu.ca/admission/programs/life-sciences",
@@ -2319,8 +2333,8 @@
       "interview_required": false,
       "references_required": false,
       "deadline_ouac": "2027-01-15",
-      "deadline_supp": "2027-01-30",
-      "deadline_doc": "2027-01-30",
+      "deadline_supp": "2027-02-01",
+      "deadline_doc": "2027-02-01",
       "decision_window": "Mid May",
       "fee_cad": 156,
       "official_url": "https://uwaterloo.ca/future-students/programs/software-engineering",
@@ -3389,7 +3403,7 @@
       "references_required": false,
       "deadline_ouac": "2027-01-15",
       "deadline_supp": null,
-      "deadline_doc": "2027-02-02",
+      "deadline_doc": "2027-02-01",
       "decision_window": "January through late May (rolling)",
       "fee_cad": 156,
       "official_url": "https://www.utsc.utoronto.ca/biosci/",
@@ -3567,7 +3581,7 @@
       "references_required": false,
       "deadline_ouac": "2027-01-15",
       "deadline_supp": null,
-      "deadline_doc": "2027-02-02",
+      "deadline_doc": "2027-02-01",
       "decision_window": "January through late May (rolling)",
       "fee_cad": 156,
       "official_url": "https://www.utm.utoronto.ca/future-students/admissions/admission-requirements",
@@ -5825,13 +5839,6 @@
       "days_from_today": -17
     },
     {
-      "date": "2026-09-15",
-      "label": "2026-27 official admission requirements and dates publish around now — re-verify config/requirements.yaml against primary sources and remove the +365-day date shift in build_webdash.py",
-      "category": "data_refresh",
-      "priority": "high",
-      "days_from_today": -3
-    },
-    {
       "date": "2026-09-17",
       "label": "OUAC 2027 Undergraduate application OPENED (not Oct 1). Justin is Group B (non-Ontario): create the account with his legal name as on the Alberta transcript, self-report G10-12 courses, add the Ontario program choices ($159 for 3, $51 each after), and note the OUAC Reference Number for every transcript. First distribution to universities Sept 21.",
       "category": "application",
@@ -5847,10 +5854,24 @@
     },
     {
       "date": "2026-10-01",
+      "label": "Email McMaster Admissions (per future.mcmaster.ca: out-of-province applicants should confirm course eligibility): does French 30-1 satisfy the BHSc non-math/non-science/non-technology 4U/M credit, and Math 31 the math prerequisite? McMaster averages the six required courses, so this fixes which six count.",
+      "category": "action",
+      "priority": "high",
+      "days_from_today": 13
+    },
+    {
+      "date": "2026-10-01",
       "label": "UAlberta (ApplyAlberta) opens — apply with BSc Honors Neuroscience as choice 1 and BSc Biological Sciences as choice 2 ($150). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
       "category": "application",
       "priority": "high",
       "days_from_today": 13
+    },
+    {
+      "date": "2026-10-15",
+      "label": "McMaster BHSc: as of 2026-09-18 every 2027 date on hhsp.healthsci.mcmaster.ca still reads 'Coming Soon' and the 2026 questions PDF is gone. Re-check for the 2027 Supplementary Application Questions PDF and the exact early/mid-February 2027 window (dashboard shows Feb 5 as an estimate). The agent can read the site via the r.jina.ai proxy.",
+      "category": "action",
+      "priority": "high",
+      "days_from_today": 27
     },
     {
       "date": "2026-11-01",
@@ -5858,6 +5879,13 @@
       "category": "competition",
       "priority": "medium",
       "days_from_today": 44
+    },
+    {
+      "date": "2026-11-07",
+      "label": "U of T early-round target: OUAC application in by Nov 7 and documents by Dec 1 to be reviewed in the earlier admission rounds (verified on future.utoronto.ca 2026-09-18). Aim for an early UofT Life Sci offer.",
+      "category": "application",
+      "priority": "high",
+      "days_from_today": 50
     },
     {
       "date": "2027-01-09",
@@ -5882,87 +5910,59 @@
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: McMaster University — Bachelor of Health Sciences (Honours)",
+      "label": "OUAC application deadline: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
       "days_from_today": 119
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: Queen's University — Bachelor of Health Sciences",
+      "label": "OUAC application deadline: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
       "days_from_today": 119
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: University of Toronto (St. George) — Life Sciences",
+      "label": "OUAC application deadline: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 119
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: University of Guelph — Biomedical Sciences",
+      "label": "OUAC application deadline: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 119
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: Western University — Bachelor of Medical Sciences (BMSc)",
+      "label": "OUAC application deadline: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 119
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: McMaster University — Life Sciences",
+      "label": "OUAC application deadline: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 119
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: Queen's University — Life Sciences",
+      "label": "OUAC application deadline: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 119
     },
     {
       "date": "2027-01-15",
-      "label": "OUAC equal-consideration: University of Waterloo — Software Engineering",
+      "label": "OUAC application deadline: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 119
-    },
-    {
-      "date": "2027-01-30",
-      "label": "OUAC equal-consideration: University of Waterloo — Computer Science (BCS)",
-      "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 134
-    },
-    {
-      "date": "2027-01-30",
-      "label": "OUAC equal-consideration: University of Waterloo — Mathematics / Computer Science (joint)",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 134
-    },
-    {
-      "date": "2027-01-30",
-      "label": "Supplementary application due: University of Waterloo — Software Engineering",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 134
-    },
-    {
-      "date": "2027-01-30",
-      "label": "Documents due: University of Waterloo — Software Engineering",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 134
     },
     {
       "date": "2027-02-01",
@@ -5980,17 +5980,45 @@
     },
     {
       "date": "2027-02-01",
+      "label": "OUAC application deadline: University of Waterloo — Computer Science (BCS)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 136
+    },
+    {
+      "date": "2027-02-01",
+      "label": "Documents due: University of Toronto (St. George) — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 136
+    },
+    {
+      "date": "2027-02-01",
+      "label": "OUAC application deadline: University of Waterloo — Mathematics / Computer Science (joint)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 136
+    },
+    {
+      "date": "2027-02-01",
       "label": "Documents due: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 136
     },
     {
-      "date": "2027-02-02",
-      "label": "Documents due: University of Toronto (St. George) — Life Sciences",
+      "date": "2027-02-01",
+      "label": "Supplementary application due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 137
+      "days_from_today": 136
+    },
+    {
+      "date": "2027-02-01",
+      "label": "Documents due: University of Waterloo — Software Engineering",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 136
     },
     {
       "date": "2027-02-05",
@@ -6007,34 +6035,6 @@
       "days_from_today": 140
     },
     {
-      "date": "2027-02-13",
-      "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
-      "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 148
-    },
-    {
-      "date": "2027-02-13",
-      "label": "Documents due: University of Waterloo — Computer Science (BCS)",
-      "category": "application_deadline",
-      "priority": "high",
-      "days_from_today": 148
-    },
-    {
-      "date": "2027-02-13",
-      "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 148
-    },
-    {
-      "date": "2027-02-13",
-      "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
-      "category": "application_deadline",
-      "priority": "medium",
-      "days_from_today": 148
-    },
-    {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
@@ -6043,7 +6043,14 @@
     },
     {
       "date": "2027-02-15",
-      "label": "Documents due: Queen's University — Bachelor of Health Sciences",
+      "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 150
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
       "days_from_today": 150
@@ -6064,7 +6071,14 @@
     },
     {
       "date": "2027-02-15",
-      "label": "Documents due: Queen's University — Life Sciences",
+      "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 150
+    },
+    {
+      "date": "2027-02-15",
+      "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 150
@@ -6078,17 +6092,31 @@
     },
     {
       "date": "2027-03-01",
-      "label": "OUAC equal-consideration: University of Alberta — BSc Biological Sciences",
+      "label": "Application deadline (ApplyAlberta): University of Alberta — BSc Biological Sciences",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 164
     },
     {
       "date": "2027-03-01",
-      "label": "OUAC equal-consideration: University of Alberta — BSc Honors Neuroscience",
+      "label": "Application deadline (ApplyAlberta): University of Alberta — BSc Honors Neuroscience",
       "category": "application_deadline",
       "priority": "medium",
       "days_from_today": 164
+    },
+    {
+      "date": "2027-03-31",
+      "label": "Documents due: Queen's University — Bachelor of Health Sciences",
+      "category": "application_deadline",
+      "priority": "high",
+      "days_from_today": 194
+    },
+    {
+      "date": "2027-03-31",
+      "label": "Documents due: Queen's University — Life Sciences",
+      "category": "application_deadline",
+      "priority": "medium",
+      "days_from_today": 194
     },
     {
       "date": "2027-07-01",
@@ -6124,7 +6152,7 @@
         "n_programs_mapped": 136,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-09-18T10:51:01"
+        "fetched_at": "2026-09-18T11:55:26"
       },
       {
         "cycle": "2023-2024",
@@ -6135,7 +6163,7 @@
         "n_programs_mapped": 238,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-09-18T10:51:01"
+        "fetched_at": "2026-09-18T11:55:26"
       },
       {
         "cycle": "2024-2025",
@@ -6146,7 +6174,7 @@
         "n_programs_mapped": 383,
         "live": 0,
         "refresh_until": null,
-        "fetched_at": "2026-09-18T10:51:01"
+        "fetched_at": "2026-09-18T11:55:26"
       },
       {
         "cycle": "2025-2026",
@@ -6157,7 +6185,7 @@
         "n_programs_mapped": 1030,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-09-18T10:51:01"
+        "fetched_at": "2026-09-18T11:55:26"
       },
       {
         "cycle": "2025-2026-ab",
@@ -6168,7 +6196,7 @@
         "n_programs_mapped": 22,
         "live": 1,
         "refresh_until": "2026-05-31",
-        "fetched_at": "2026-09-18T10:51:01"
+        "fetched_at": "2026-09-18T11:55:26"
       }
     ],
     "caveats": [
@@ -6194,15 +6222,15 @@
       },
       {
         "label": "Tier-2 requirements confidence: medium",
-        "body": "All 9 Tier-2 requirement entries are confidence=medium. Prerequisite courses are high-confidence (well-known and stable); specific dates default to the universal Jan 15 OUAC date and competitive averages are educated guesses anchored to Reddit data."
+        "body": "Most Ontario Tier-2 requirement entries are confidence=medium. Prerequisite courses are high-confidence (well-known and stable); competitive averages are educated guesses anchored to Reddit data. The two UAlberta Tier-2 entries were curated from official pages (high confidence)."
       },
       {
-        "label": "Tier-3/4 not curated",
-        "body": "Tier-3 (Waterloo CS variants) and Tier-4 (UAlberta) program requirements have NOT been curated. Their checklist rows are blank."
+        "label": "Tier-3 not curated",
+        "body": "Tier-3 (Waterloo CS variants) program requirements have NOT been curated. Their checklist rows are blank."
       },
       {
-        "label": "Dates are shifted +1 year from cycle template",
-        "body": "Curated requirements use the 2025-2026 cycle as a template. The dashboard shifts every date by +365 days to reflect Justin's actual application cycle (2026-2027). OUAC and supp deadlines may shift by ±1 day in the actual cycle — verify against official sources before relying on exact dates."
+        "label": "Dates are real 2026-2027 cycle dates (verified 2026-09-18)",
+        "body": "OUAC (Jan 15, 2027), Waterloo (Eng Jan 15 / docs Feb 1; CS & Math Feb 1 / docs Feb 15), Queen's (PSE Feb 15; documents Mar 31), U of T (Jan 15; documents Feb 1) and UAlberta (Mar 1; final documents Aug 1) were verified on official pages. Some Tier-2 document deadlines are carried forward from the 2025-26 pattern, and the McMaster BHSc supp-app window (early/mid-February 2027) is an estimate until HHSP posts the exact dates — see curator_notes in config/requirements.yaml."
       }
     ]
   }
