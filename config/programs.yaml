@@ -210,11 +210,11 @@ programs:
   # ─────────── Tier 4: UAlberta in-province options ───────────
 
   - key: ualberta_bsc_biolsci
-    tier: 4
+    tier: 2
     university: University of Alberta
     university_key: ualberta
     program: BSc Biological Sciences
-    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/biological-sciences.html
+    official_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-major-biological-sciences.html
     match_patterns:
       - "(?i)(u\\s*of\\s*a|ualberta|alberta).*bio(logical)?\\s*sci"
 
@@ -239,7 +239,7 @@ programs:
       - "(?i)\\bmcdb\\b"  # UAlberta acronym
 
   - key: ualberta_bsc_physiol
-    tier: 2
+    tier: 4
     university: University of Alberta
     university_key: ualberta
     program: BSc Physiology
@@ -266,11 +266,11 @@ programs:
       - "(?i)(u\\s*of\\s*a|ualberta|alberta).*pharmacology(?!\\s*honor)"
 
   - key: ualberta_bsc_neuroscience
-    tier: 4
+    tier: 2
     university: University of Alberta
     university_key: ualberta
-    program: BSc Neuroscience
-    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/neuroscience.html
+    program: BSc Honors Neuroscience
+    official_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-neuroscience.html
     match_patterns:
       - "(?i)(u\\s*of\\s*a|ualberta|alberta).*neurosci"
 

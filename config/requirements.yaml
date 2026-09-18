@@ -766,19 +766,25 @@ requirements:
       grades.
 
   - program_key: ualberta_bsc_physiol
-    tier: 2
+    tier: 4
     source_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/physiology.html
-    curated_on: 2026-04-12
+    curated_on: 2026-09-17
     confidence: medium
     curator_notes: |
-      UAlberta BSc Physiology — promoted to Tier 2 as Justin's top
-      in-province pre-med option. UAlberta does not use OUAC; applications
-      go through ApplyAlberta. The deadline below is the ApplyAlberta
-      equal-consideration date (not OUAC).
+      DEMOTED 2026-09-17 (Tier 2 -> 4). The family chose BSc Honors
+      Neuroscience (choice 1) + BSc Biological Sciences (choice 2) as the
+      UAlberta pairing; a UAlberta application allows only two program
+      choices, so Physiology is off the list unless a second application is
+      filed. Kept curated as the alternate if that pairing changes.
+      UAlberta does not use OUAC; applications go through ApplyAlberta.
+      Dates are in the 2025-26 template convention (dashboard adds +365d).
+      Verified 2027 dates: opens 2026-10-01, deadline 2027-03-01, final
+      documents 2027-08-01. Fixed document_deadline (was 2027-03-01, which
+      shifted to 2028 on the dashboard).
 
     application_deadline_ouac: 2026-03-01
     application_deadline_supp: null
-    document_deadline: 2027-03-01
+    document_deadline: 2026-08-01
     decision_release_window: "March through June (rolling)"
 
     supp_app_required: false
@@ -815,7 +821,7 @@ requirements:
       UAlberta Hospital, Stollery Children's Hospital, and Cross Cancer
       Institute research labs — all on campus.
 
-    application_fee_cad: 125
+    application_fee_cad: 150
 
     notes: |
       The classic UAlberta pre-med major. Covers organ systems,
@@ -826,6 +832,156 @@ requirements:
       Reddit data is too sparse for a reliable placement verdict (n=2),
       but Justin's 95.5% top-6 is far above UAlberta's competitive
       threshold (~82%). Genuine safety.
+
+  - program_key: ualberta_bsc_neuroscience
+    tier: 2
+    source_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-neuroscience.html
+    program_requirements_url: https://www.ualberta.ca/en/neuroscience-and-mental-health-institute/education/current-students/undergraduate/program-requirements.html
+    averages_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html
+    dates_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html
+    curated_on: 2026-09-17
+    confidence: high
+    curator_notes: |
+      Curated 2026-09-17 from official UAlberta pages. Promoted to Tier 2 as
+      Justin's UAlberta CHOICE 1 (in-province backup), paired with
+      ualberta_bsc_biolsci as choice 2 on the same application. Replaces
+      ualberta_bsc_physiol, which the family dropped 2026-09-17.
+      Honors program was rebuilt for 2025-26 (new curriculum). Direct entry
+      from high school confirmed on the NMHI page ("can enter the program
+      out of high school"). Also offered as a BSc Major with the same
+      first-year courses. Applications go through ApplyAlberta, NOT OUAC;
+      one application = up to two program choices; fee $150.
+      Dates below are in the 2025-26 template convention (dashboard adds
+      +365d). Verified 2027 dates: application opens 2026-10-01; entrance
+      awards close 2027-01-10; Faculty of Science deadline 2027-03-01;
+      self-report final marks by 2027-04-30; offer acceptance 2027-05-01;
+      final documents 2027-08-01. Rolling admission from final G11 marks +
+      available G12 marks, so a conditional offer in late fall 2026 is
+      realistic (G11 avg 97.0). CONFIRM with Science advising whether
+      Honors Neuroscience issues early offers on G11 marks alone.
+
+    application_deadline_ouac: 2026-03-01
+    application_deadline_supp: null
+    document_deadline: 2026-08-01
+    decision_release_window: "Rolling from late fall (early conditional offers on G11 marks) through spring"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 90.0
+    prereq_courses:
+      - "English Language Arts 30-1"
+      - "Mathematics 30-1"
+      - "Two of: Biology 30, Chemistry 30, Physics 30, Mathematics 31, CSE Advanced (5 cr)"
+      - "One other approved Grade 12 course"
+    prereq_notes: |
+      Admission average = the 5 courses above. Published minimum 80% for
+      Honors (70% for Major); official 3-cycle admitted range for both
+      Neuroscience and Neuroscience Honors is "low 80s to mid 90s"
+      (student association paraphrases it as mid 80s to low 90s). Justin's
+      5-course average is ~96-97 at the current ELA projection, i.e. at or
+      just above the top of the observed range. min_average_competitive
+      above is set to 90 as a conservative mid-range figure.
+      Justin satisfies all admission prereqs (ELA 30-1, Math 30-1, Bio 30,
+      Chem 30, Math 31, French 30-1).
+      PHYSICS GAP: year-1 foundation courses include PHYS 124 and PHYS 126.
+      PHYS 124 requires Physics 20 (Physics 30 recommended). Justin has NO
+      Physics 20. Not an admission issue; a registration issue. Family
+      decision 2026-09-17: if the Honors Neuroscience offer comes through,
+      take Physics 20 in summer 2027 (Metro Continuing Education / Argyll
+      Centre). Alternatives: Physics Dept prerequisite-waiver form, or defer
+      both physics courses to year 2 (no later neuro courses chain on them).
+      Ask Science advising which route they prefer.
+
+    oop_eligible: true
+    oop_notes: |
+      Justin is in-province (Edmonton). No OOP consideration. On-campus
+      research connection already exists via the Zeng lab RA position.
+
+    application_fee_cad: 150
+
+    notes: |
+      Honors requires a 3.3 GPA every year; a student who slips is moved
+      to the Neuroscience Major, not out of the university. Year 4 is a
+      thesis stream (NEURO 498/499) or a non-thesis research-project
+      stream. Any UAlberta BSc qualifies for the UAlberta MD application.
+      Best narrative fit of the in-province options (mental-health
+      through-line, ML risk-detection IA, Harvard MEDScience neuro robot).
+      Keep the time cost low: this is a backup; nothing here should pull
+      hours from ELA 30-1.
+
+  - program_key: ualberta_bsc_biolsci
+    tier: 2
+    source_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-major-biological-sciences.html
+    department_url: https://www.ualberta.ca/en/biological-sciences/undergraduate-studies/index.html
+    averages_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html
+    dates_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html
+    curated_on: 2026-09-17
+    confidence: high
+    curator_notes: |
+      Curated 2026-09-17. Promoted to Tier 2 as Justin's UAlberta CHOICE 2
+      on the same ApplyAlberta application as ualberta_bsc_neuroscience.
+      UAlberta evaluates choice 2 automatically if choice 1 is not offered,
+      so this is the in-faculty safety net. Offered as Major or Honors;
+      concentrations: Ecology, Evolution & Environmental Biology;
+      Integrative Physiology; Molecular, Cellular & Developmental Biology.
+      Department ranked #2 in Canada for biological sciences (2026-27
+      Science viewbook). Same dates/fee/process as Neuroscience; see that
+      entry. Dates in 2025-26 template convention (dashboard adds +365d).
+
+    application_deadline_ouac: 2026-03-01
+    application_deadline_supp: null
+    document_deadline: 2026-08-01
+    decision_release_window: "Rolling from late fall (early conditional offers on G11 marks) through spring"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 88.0
+    prereq_courses:
+      - "English Language Arts 30-1"
+      - "Mathematics 30-1"
+      - "Biology 30"
+      - "Chemistry 30"
+      - "One other approved Grade 12 course (Physics 30 recommended)"
+    prereq_notes: |
+      Honors/Specialization entry lists ELA 30-1, Bio 30, Chem 30, Math 30-1
+      + one other; the general BSc rule (two of Bio/Chem/Physics/Math 31/CSE)
+      applies to the Major. Justin satisfies both. Official 3-cycle admitted
+      range for Science (general) and BSc Honors: "low 80s to mid 90s".
+      min_average_competitive set to 88 as a conservative mid-range figure.
+
+    oop_eligible: true
+    oop_notes: |
+      In-province applicant. No OOP consideration.
+
+    application_fee_cad: 150
+
+    notes: |
+      The broader, more flexible life-sciences degree. Undergraduate
+      research via the Research Certificate in Science and the Donald W.
+      Clarke summer fellowship; paid Science Internship Program work terms
+      from second year. No physics dependency for admission. Chosen over
+      Physiology as choice 2 because it keeps more doors open; admission
+      odds are essentially identical across the three.
 
   - program_key: waterloo_math_cs
     tier: 2

@@ -7,7 +7,7 @@
   "province": "AB",
   "country": "Canada",
   "applicant_type": "105",
-  "_applicant_type_note": "OUAC code 105 = out-of-province / non-Ontario high-school applicant",
+  "_applicant_type_note": "OUAC code 105 = out-of-province / non-Ontario high-school applicant. Since 2024 OUAC runs one Undergraduate application and assigns Group A (current Ontario HS students) or Group B (everyone else) from the applicant's answers; Justin is Group B. Group B has no universal Jan 15 deadline (each university sets its own) but every target recommends applying by Jan 15. UAlberta programs do NOT go through OUAC — they use ApplyAlberta.",
   "grade_12_projected_courses": [
     { "course": "Math 30-1",    "low": 100, "high": 100, "midpoint": 100.0, "confirmed": true, "note": "FINAL — 100%. Completed in G11 with a 100% class mark and scored 100% on the January/June 2026 diploma exam (results released 2026-07-21), so the 70/30 blend holds at 100%. No longer a projection; this course is locked and carries zero remaining downside." },
     { "course": "Math 31",      "low": 98, "high": 100, "midpoint": 99.0, "note": "Well supported: Math 30-1 final 100% and an AP Calculus BC score of 5/5 (May 2026 session), which examines material beyond the Math 31 syllabus. The 100 target is a reasonable expectation rather than a stretch. THREE THINGS THAT MAKE IT MATTER MORE THAN IT LOOKS: (1) Math 31 is a REQUIRED admission course for Waterloo CS — verified 2026-08-03 against Waterloo's Alberta admission requirements page, which lists Mathematics 30-1, Mathematics 31 and English Language Arts 30-1. A weak mark here damages the reach application directly. (2) Math 31 has NO diploma exam, so the mark is 100% school-awarded — entirely within his control, and entirely determined by consistent classroom performance rather than one exam day. (3) The AP Calculus BC 5 does NOT substitute for it: AP is not used in admission anywhere, so the Math 31 classroom mark is what universities actually see. RISK: complacency. Familiar material is not the same as an automatic 100 — Math 31 has its own curriculum and assessment style and Old Scona grades strictly. Treat this as a maintenance course requiring consistency, not an investment course requiring extra hours; the marginal hour still belongs to ELA 30-1." },
@@ -447,7 +447,8 @@
       "mcmaster_lifesci",
       "queens_lifesci",
       "guelph_biomed",
-      "ualberta_bsc_physiol",
+      "ualberta_bsc_neuroscience",
+      "ualberta_bsc_biolsci",
       "waterloo_math_cs",
       "waterloo_se"
     ],
@@ -462,14 +463,42 @@
     ],
     "tier_4_others": [
       "brock_medsci",
-      "ualberta_bsc_biolsci",
+      "ualberta_bsc_physiol",
       "ualberta_bsc_biochem",
       "ualberta_bsc_cellbiol",
       "ualberta_bsc_immunology",
       "ualberta_bsc_pharmacology",
-      "ualberta_bsc_neuroscience",
       "ualberta_pharmacy",
       "ualberta_pharmacology_honors"
+    ]
+  },
+  "ualberta_application": {
+    "decided_on": "2026-09-17",
+    "portal": "ApplyAlberta (not OUAC) — one application, up to two program choices, $150 fee",
+    "choice_1": "ualberta_bsc_neuroscience",
+    "choice_2": "ualberta_bsc_biolsci",
+    "dropped": "ualberta_bsc_physiol (was the Tier 2 in-province pick Apr–Sep 2026; two-choice limit)",
+    "rationale": "Neuroscience Honors is the only UAlberta program that matches the mental-health / ML / Harvard neuro-robot narrative and carries a built-in thesis. Biological Sciences in slot 2 is the in-faculty safety net: UAlberta evaluates choice 2 automatically if choice 1 is not offered, and all three programs admit on the same 'low 80s to mid 90s' band. Order by preference, not odds.",
+    "competitiveness": "Official 3-cycle admitted range for Neuroscience and Neuroscience Honors (high school): low 80s to mid 90s. Justin's 5-course admission average is ~96–97 at current ELA projection — at or just above the top of the range, not far clear of it. Honors program is new (2025-26) so the range could firm up; margin absorbs that.",
+    "physics_gap": "Justin has no Physics 20. Admission is unaffected (two sciences satisfied by Bio 30 / Chem 30 / Math 31). Year-1 PHYS 124 requires Physics 20. DECISION: if the Honors Neuroscience offer comes through, take Physics 20 in summer 2027 (Metro Continuing Education or Argyll Centre). Do NOT add Physics to the G12 timetable — every hour comes out of ELA 30-1.",
+    "dates_2027": {
+      "application_opens": "2026-10-01",
+      "entrance_awards_close": "2027-01-10",
+      "science_deadline": "2027-03-01",
+      "self_report_final_marks_by": "2027-04-30",
+      "offer_acceptance": "2027-05-01",
+      "final_documents": "2027-08-01"
+    },
+    "advising_questions": [
+      "Can a student admitted to Honors Neuroscience without Physics 20 get a PHYS 124 prerequisite waiver, or defer PHYS 124/126 to year 2? Which does the department prefer?",
+      "Does Honors Neuroscience issue conditional offers on final Grade 11 marks alone, or does it wait for first-semester Grade 12 marks?"
+    ],
+    "sources": [
+      "https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-neuroscience.html",
+      "https://www.ualberta.ca/en/neuroscience-and-mental-health-institute/education/current-students/undergraduate/program-requirements.html",
+      "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html",
+      "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html",
+      "https://apps.ualberta.ca/catalogue/course/phys/124"
     ]
   },
   "dashboard_reminders": [
@@ -486,10 +515,40 @@
       "priority": "high"
     },
     {
-      "date": "2026-10-01",
-      "label": "OUAC applications open — create the account and apply to all target programs",
+      "date": "2026-09-17",
+      "label": "OUAC 2027 Undergraduate application OPENED (not Oct 1). Justin is Group B (non-Ontario): create the account with his legal name as on the Alberta transcript, self-report G10-12 courses, add the Ontario program choices ($159 for 3, $51 each after), and note the OUAC Reference Number for every transcript. First distribution to universities Sept 21.",
       "category": "application",
       "priority": "high"
+    },
+    {
+      "date": "2026-09-30",
+      "label": "Email UAlberta Faculty of Science advising: (1) PHYS 124 waiver or year-2 deferral for a Honors Neuroscience admit without Physics 20; (2) does Honors Neuroscience issue conditional offers on G11 marks alone?",
+      "category": "action",
+      "priority": "high"
+    },
+    {
+      "date": "2026-10-01",
+      "label": "UAlberta (ApplyAlberta) opens — apply with BSc Honors Neuroscience as choice 1 and BSc Biological Sciences as choice 2 ($150). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2027-01-10",
+      "label": "UAlberta entrance awards application closes",
+      "category": "application",
+      "priority": "medium"
+    },
+    {
+      "date": "2027-03-01",
+      "label": "UAlberta Faculty of Science application deadline (backstop — the application should have been in since October)",
+      "category": "application_deadline",
+      "priority": "medium"
+    },
+    {
+      "date": "2027-07-01",
+      "label": "IF admitted to Honors Neuroscience: take Physics 20 in summer school (Metro Continuing Education / Argyll Centre) so PHYS 124 can be taken in year 1. Register in spring 2027.",
+      "category": "action",
+      "priority": "medium"
     },
     {
       "date": "2026-11-01",
@@ -524,12 +583,13 @@
   ],
   "_profile_provenance": {
     "captured_on": "2026-04-07",
-    "updated_on": "2026-08-03",
+    "updated_on": "2026-09-17",
     "captured_from": "user-provided in initial planning conversation; ECs extracted 2026-04-11 from resume + HYRS essay + Harvard MEDScience essay in data/justin/",
     "update_log": [
       "2026-04-11 — ECs extracted from data/justin/ documents; Harvard MEDScience acceptance added",
       "2026-06-28 — Harvard MEDScience updated post-completion from the June 23 journal; G11 transcript ingested",
-      "2026-08-03 — July checkpoint: Math 30-1 diploma confirmed at 100 (course locked); top-6 range recomputed to 93.8/95.8/97.8; added Zeng lab RA position, clinic volunteering, and USACO progress; current_grade → 12"
+      "2026-08-03 — July checkpoint: Math 30-1 diploma confirmed at 100 (course locked); top-6 range recomputed to 93.8/95.8/97.8; added Zeng lab RA position, clinic volunteering, and USACO progress; current_grade → 12",
+      "2026-09-17 — OUAC 2027 application opened (Group B, not '105'); UAlberta plan decided: Honors Neuroscience choice 1 + Biological Sciences choice 2 replace Physiology; Physics 20 gap recorded with summer-2027 plan; UAlberta 2027 dates and advising questions added"
     ],
     "next_to_collect": [
       "Zeng lab: specific project, techniques, day-to-day supervisor, school-year continuation",
