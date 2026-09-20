@@ -503,7 +503,7 @@
   },
   "ouac_application": {
     "status_on": "2026-09-20",
-    "progress": "Steps 1 (My Personal Details), 2 (My Background) and 3 (My Choices) COMPLETE 2026-09-20. Step 4 (My Supporting Documents) in progress; step 5 (Review and Payment) not started. The application is NOT transmitted to any university until payment is made — finish step 5 promptly so the university portals (Join U of T, Western Student Center, Quest, Mosaic, SOLUS) get created and the per-university self-report forms unlock.",
+    "progress": "SUBMITTED AND PAID 2026-09-20 ($799). All five steps complete. OUAC transmits on its weekly distribution; each university then emails portal instructions (Join U of T, Western Student Center, Waterloo Quest, McMaster Mosaic, Queen's SOLUS). Next: create each portal account, self-report final Grade 11 marks and Grade 12 courses in progress, order Alberta myPass transcripts when each university asks (UofT wants documents by Dec 1 for the early round).",
     "applicant_group": "B (non-Ontario high school)",
     "choices": [
       {
@@ -566,32 +566,8 @@
       "priority": "high"
     },
     {
-      "date": "2026-10-01",
-      "label": "Email McMaster Admissions (per future.mcmaster.ca: out-of-province applicants should confirm course eligibility): does French 30-1 satisfy the BHSc non-math/non-science/non-technology 4U/M credit, and Math 31 the math prerequisite? McMaster averages the six required courses, so this fixes which six count.",
-      "category": "action",
-      "priority": "high"
-    },
-    {
-      "date": "2026-10-15",
-      "label": "McMaster BHSc: as of 2026-09-18 every 2027 date on hhsp.healthsci.mcmaster.ca still reads 'Coming Soon' and the 2026 questions PDF is gone. Re-check for the 2027 Supplementary Application Questions PDF and the exact early/mid-February 2027 window (dashboard shows Feb 5 as an estimate). The agent can read the site via the r.jina.ai proxy.",
-      "category": "action",
-      "priority": "high"
-    },
-    {
-      "date": "2026-11-07",
-      "label": "U of T early-round target: OUAC application in by Nov 7 and documents by Dec 1 to be reviewed in the earlier admission rounds (verified on future.utoronto.ca 2026-09-18). Aim for an early UofT Life Sci offer.",
-      "category": "application",
-      "priority": "high"
-    },
-    {
       "date": "2026-09-17",
-      "label": "OUAC 2027 application: steps 1-3 DONE 2026-09-20 (five choices: Queen's BHSc, McMaster BHSc, Western Med Sci (Physiology interest, Ivey AEO no) + Scholar's Electives, UofT Life Sci St. George with colleges Vic / UC / New, Waterloo CS co-op). Remaining: step 4 supporting documents, step 5 review + payment ($799 incl. $508 of Group B document-evaluation fees). Nothing is sent to universities until paid. Group B: grades are self-reported per university after transmission; official transcripts via Alberta myPass.",
-      "category": "application",
-      "priority": "high"
-    },
-    {
-      "date": "2026-09-27",
-      "label": "Finish OUAC steps 4-5 and PAY so the application transmits (the Sept 21 first distribution has passed; the next weekly distribution picks it up). University portal accounts and self-report forms only appear after transmission — needed for the UofT Nov 7 early-round target.",
+      "label": "OUAC 2027 application SUBMITTED AND PAID 2026-09-20 ($799): Queen's BHSc, McMaster BHSc, Western Med Sci (Physiology interest, Ivey AEO no, Scholar's Electives yes), UofT Life Sci St. George (Vic / UC / New), Waterloo CS co-op. Group B: grades are self-reported per university after transmission; official transcripts via Alberta myPass.",
       "category": "application",
       "priority": "high"
     },
@@ -603,15 +579,81 @@
     },
     {
       "date": "2026-10-01",
+      "label": "Email McMaster Admissions (per future.mcmaster.ca: out-of-province applicants should confirm course eligibility): does French 30-1 satisfy the BHSc non-math/non-science/non-technology 4U/M credit, and Math 31 the math prerequisite? McMaster averages the six required courses, so this fixes which six count.",
+      "category": "action",
+      "priority": "high"
+    },
+    {
+      "date": "2026-10-01",
       "label": "UAlberta (ApplyAlberta) opens — apply with BSc Honors Neuroscience as choice 1 and BSc Biological Sciences as choice 2 ($150). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
       "category": "application",
       "priority": "high"
+    },
+    {
+      "date": "2026-10-04",
+      "label": "OUAC transmitted (paid Sept 20). Expect acknowledgement emails from all five universities by now — create each portal account (Join U of T, Western Student Center, Waterloo Quest, McMaster Mosaic, Queen's SOLUS), self-report final Grade 11 marks and Grade 12 courses in progress in each, and note each university's transcript instructions. Chase any university that has not emailed by Oct 10.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2026-10-15",
+      "label": "McMaster BHSc: as of 2026-09-18 every 2027 date on hhsp.healthsci.mcmaster.ca still reads 'Coming Soon' and the 2026 questions PDF is gone. Re-check for the 2027 Supplementary Application Questions PDF and the exact early/mid-February 2027 window (dashboard shows Feb 5 as an estimate). The agent can read the site via the r.jina.ai proxy.",
+      "category": "action",
+      "priority": "high"
+    },
+    {
+      "date": "2026-11-01",
+      "label": "Register at usaco.org and check the published 2026-27 contest dates — the season starts in January (2025-26 opened Jan 9-12), so registration and scheduling need to happen in the fall",
+      "category": "competition",
+      "priority": "medium"
+    },
+    {
+      "date": "2026-11-07",
+      "label": "U of T early-round target: OUAC application in by Nov 7 and documents by Dec 1 to be reviewed in the earlier admission rounds (verified on future.utoronto.ca 2026-09-18). Aim for an early UofT Life Sci offer.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2026-11-20",
+      "label": "Order Alberta myPass transcripts to UofT (documents due Dec 1 for the early round) and to any other university that has asked by now; put the OUAC Reference Number on each request.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2026-12-02",
+      "label": "Victoria College Student Profile — early-consideration deadline (final ~Feb 2). Required because Vic is ranked first on the UofT choice; short form on extracurriculars and academic goals, assemble from the HYRS / MEDScience essays. Opens in Join U of T once the OUAC application has transmitted.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2027-01-09",
+      "label": "USACO contest 1 (approx. — 2026-27 dates unpublished). Roughly two contests fall before the Waterloo AIF; a Gold division placement earned here would be citable.",
+      "category": "competition",
+      "priority": "medium"
     },
     {
       "date": "2027-01-10",
       "label": "UAlberta entrance awards application closes",
       "category": "application",
       "priority": "medium"
+    },
+    {
+      "date": "2027-01-15",
+      "label": "OUAC deadline — all applications submitted",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2027-02-01",
+      "label": "CCC Senior — the highest-value CS credential available this cycle. Run by Waterloo's own CEMC; top-25 earns a Canadian Computing Olympiad invitation. Priority over USACO for the Waterloo AIF.",
+      "category": "competition",
+      "priority": "high"
+    },
+    {
+      "date": "2027-02-01",
+      "label": "McMaster BHSc supplementary application window opens for only 3-4 days (2025-26 window was Feb 2-5). Missing it is auto-disqualification.",
+      "category": "application",
+      "priority": "critical"
     },
     {
       "date": "2027-02-14",
@@ -630,42 +672,6 @@
       "label": "IF admitted to Honors Neuroscience: take Physics 20 in summer school (Metro Continuing Education / Argyll Centre) so PHYS 124 can be taken in year 1. Register in spring 2027.",
       "category": "action",
       "priority": "medium"
-    },
-    {
-      "date": "2026-11-01",
-      "label": "Register at usaco.org and check the published 2026-27 contest dates — the season starts in January (2025-26 opened Jan 9-12), so registration and scheduling need to happen in the fall",
-      "category": "competition",
-      "priority": "medium"
-    },
-    {
-      "date": "2026-12-02",
-      "label": "Victoria College Student Profile — early-consideration deadline (final ~Feb 2). Required because Vic is ranked first on the UofT choice; short form on extracurriculars and academic goals, assemble from the HYRS / MEDScience essays. Opens in Join U of T once the OUAC application has transmitted.",
-      "category": "application",
-      "priority": "high"
-    },
-    {
-      "date": "2027-01-09",
-      "label": "USACO contest 1 (approx. — 2026-27 dates unpublished). Roughly two contests fall before the Waterloo AIF; a Gold division placement earned here would be citable.",
-      "category": "competition",
-      "priority": "medium"
-    },
-    {
-      "date": "2027-02-01",
-      "label": "CCC Senior — the highest-value CS credential available this cycle. Run by Waterloo's own CEMC; top-25 earns a Canadian Computing Olympiad invitation. Priority over USACO for the Waterloo AIF.",
-      "category": "competition",
-      "priority": "high"
-    },
-    {
-      "date": "2027-01-15",
-      "label": "OUAC deadline — all applications submitted",
-      "category": "application",
-      "priority": "high"
-    },
-    {
-      "date": "2027-02-01",
-      "label": "McMaster BHSc supplementary application window opens for only 3-4 days (2025-26 window was Feb 2-5). Missing it is auto-disqualification.",
-      "category": "application",
-      "priority": "critical"
     }
   ],
   "_profile_provenance": {
