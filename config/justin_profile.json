@@ -501,6 +501,63 @@
       "https://apps.ualberta.ca/catalogue/course/phys/124"
     ]
   },
+  "ouac_application": {
+    "status_on": "2026-09-20",
+    "progress": "Steps 1 (My Personal Details), 2 (My Background) and 3 (My Choices) COMPLETE 2026-09-20. Step 4 (My Supporting Documents) in progress; step 5 (Review and Payment) not started. The application is NOT transmitted to any university until payment is made — finish step 5 promptly so the university portals (Join U of T, Western Student Center, Quest, Mosaic, SOLUS) get created and the per-university self-report forms unlock.",
+    "applicant_group": "B (non-Ontario high school)",
+    "choices": [
+      {
+        "rank": 1,
+        "program_key": "queens_bhsc",
+        "ouac_code": "QH",
+        "program": "Queen's University - Health Sciences",
+        "year_level": "First Year"
+      },
+      {
+        "rank": 2,
+        "program_key": "mcmaster_bhsc",
+        "ouac_code": "MNS",
+        "program": "McMaster University - Honours Health Sciences",
+        "year_level": "First Year"
+      },
+      {
+        "rank": 3,
+        "program_key": "western_bmsc",
+        "ouac_code": "ESM",
+        "program": "Western University - MN: Medical Sciences (BMSc & BSc)",
+        "subject_of_major_interest": "Physiology",
+        "subject_note": "Changed from Pathology 2026-09-20 for fit. Non-binding: all Med Sci First Entry students share Medical Sciences 1-2 and enter a BMSc module in Year 3 on second-year marks. Western offers first-year physics for students without Grade 12 physics, so no Physics 20 needed here.",
+        "ivey_aeo": false,
+        "ivey_note": "No is correct: Ivey AEO is pre-admission to the Ivey HBA business program for Years 3-4 (separate supplementary application, 90%+ average, then 80% in Years 1-2). Irrelevant to a pre-med path; declining has no effect on Med Sci admission, and Ivey HBA can still be applied to in second year if plans change.",
+        "scholars_electives": true,
+        "year_level": "First Year"
+      },
+      {
+        "rank": 4,
+        "program_key": "uoft_lifesci_stgeorge",
+        "ouac_code": "TLG",
+        "program": "University of Toronto - Life Sciences (including Psychology) - St. George Campus",
+        "college_preferences": [
+          "Victoria College",
+          "University College",
+          "New College"
+        ],
+        "college_note": "SET 2026-09-20: Victoria / University College / New College (agent recommendation adopted; vice-principal still to be consulted, can be edited in OUAC before Jan 15). Vic must be first choice AND needs the Victoria College Student Profile (opens in Join U of T after transmission; last cycle early deadline Dec 2, final Feb 2, extended Feb 16). Can be changed in OUAC any time before the Jan 15 deadline. Trinity (Applicant Profile: Dec 2 early / Feb 2 final) and Victoria (Student Profile) require extra forms and must be ranked first; the other five colleges need nothing extra. AGENT RECOMMENDATION 2026-09-20 (pending the vice-principal's view): 1 Victoria (best-resourced college, admission scholarships judged on extracurriculars — his strength — Vic One; selection is grades + a short Student Profile that can be assembled from the HYRS/MEDScience essays; profile early deadline ~Dec 2, final ~Feb 2; the profile only unlocks after the OUAC application transmits), 2 University College (no form, centre of campus beside the science buildings, three residences, UC One), 3 Innis (2,200 students, suite-style residence with kitchens across from Robarts, expansion opening fall 2026) or New College (6,400, residence next to the life-sci buildings). Skip Trinity unless he actively wants it (essay-heavy Applicant Profile in December, higher federated fees, social rather than academic advantage) and Woodsworth (commuter-oriented, small mostly upper-year residence).",
+        "year_level": "First Year"
+      },
+      {
+        "rank": 5,
+        "program_key": "waterloo_cs",
+        "ouac_code": "WCS",
+        "program": "University of Waterloo - Computer Science (Co-op and Regular)",
+        "co_op": true,
+        "year_level": "First Year"
+      }
+    ],
+    "fees_cad": "Total $799 at Review Fees (2026-09-20): OUAC base $159 (3 choices) + $102 (2 extra choices) + McMaster BHSc supplementary-application fee $30 + document evaluation fees $508 (Group B / non-Ontario applicants pay each university once: Queen's $95, McMaster $95, Western $125, UofT $98, Waterloo $95). Adding a second program at a university already on the list costs only $51. Non-refundable.",
+    "not_chosen_yet": "McMaster Life Sci, Queen's Life Sci, Guelph, Waterloo Math/CS and SE are Tier-2 backups not on the OUAC list; each is +$51 if added. UofT Life Sci already sits as the Ontario safety and UAlberta (ApplyAlberta) is the in-province safety, so the list is defensible as is.",
+    "scholars_electives_note": "Selecting Scholar's Electives on OUAC is only step one. Western (welcome.uwo.ca, verified 2026-09-20): needs 'at least a 90% final admission average', then 'complete the Scholar's Electives Program Supplemental Application' in the Western portal after the Western username arrives; deadline February 14; decisions mid-April; 50-75 students per cohort across faculties; second-year research with a faculty mentor; stay-in rule 80% sessional average with no grade below 65%. 'Admission to your desired faculty is not tied to your application to the Scholar's Electives program' — no downside if not selected."
+  },
   "dashboard_reminders": [
     {
       "date": "2026-09-01",
@@ -528,7 +585,13 @@
     },
     {
       "date": "2026-09-17",
-      "label": "OUAC 2027 Undergraduate application OPENED (not Oct 1). Justin is Group B (non-Ontario): create the account with his legal name as on the Alberta transcript; the OUAC 'My Background' section asks for every high school attended Grades 9-12 (schools and years — OUAC does not collect Alberta marks); add the Ontario program choices ($159 for 3, $51 each after); note the OUAC Reference Number. Grades are then self-reported to EACH university through its own portal after applying (UofT: Join U of T self-report form + transcript upload; Western: Self-Reported Grades Form listing all Grade 12 courses; Waterloo/McMaster/Queen's: their applicant portals) and official transcripts are ordered through Alberta myPass to each university — Grade 11 finals + Grade 12 in-progress are what they evaluate; no Grade 10 marks were asked for on any page checked 2026-09-18. First distribution to universities Sept 21.",
+      "label": "OUAC 2027 application: steps 1-3 DONE 2026-09-20 (five choices: Queen's BHSc, McMaster BHSc, Western Med Sci (Physiology interest, Ivey AEO no) + Scholar's Electives, UofT Life Sci St. George with colleges Vic / UC / New, Waterloo CS co-op). Remaining: step 4 supporting documents, step 5 review + payment ($799 incl. $508 of Group B document-evaluation fees). Nothing is sent to universities until paid. Group B: grades are self-reported per university after transmission; official transcripts via Alberta myPass.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2026-09-27",
+      "label": "Finish OUAC steps 4-5 and PAY so the application transmits (the Sept 21 first distribution has passed; the next weekly distribution picks it up). University portal accounts and self-report forms only appear after transmission — needed for the UofT Nov 7 early-round target.",
       "category": "application",
       "priority": "high"
     },
@@ -551,6 +614,12 @@
       "priority": "medium"
     },
     {
+      "date": "2027-02-14",
+      "label": "Western Scholar's Electives Supplemental Application due Feb 14 (submit in the Western portal, opened with the Western username). Needs a 90% final admission average; not selected = still considered for regular Med Sci.",
+      "category": "application_deadline",
+      "priority": "medium"
+    },
+    {
       "date": "2027-03-01",
       "label": "UAlberta Faculty of Science application deadline (backstop — the application should have been in since October)",
       "category": "application_deadline",
@@ -567,6 +636,12 @@
       "label": "Register at usaco.org and check the published 2026-27 contest dates — the season starts in January (2025-26 opened Jan 9-12), so registration and scheduling need to happen in the fall",
       "category": "competition",
       "priority": "medium"
+    },
+    {
+      "date": "2026-12-02",
+      "label": "Victoria College Student Profile — early-consideration deadline (final ~Feb 2). Required because Vic is ranked first on the UofT choice; short form on extracurriculars and academic goals, assemble from the HYRS / MEDScience essays. Opens in Join U of T once the OUAC application has transmitted.",
+      "category": "application",
+      "priority": "high"
     },
     {
       "date": "2027-01-09",
@@ -595,7 +670,7 @@
   ],
   "_profile_provenance": {
     "captured_on": "2026-04-07",
-    "updated_on": "2026-09-18",
+    "updated_on": "2026-09-20",
     "captured_from": "user-provided in initial planning conversation; ECs extracted 2026-04-11 from resume + HYRS essay + Harvard MEDScience essay in data/justin/",
     "update_log": [
       "2026-04-11 — ECs extracted from data/justin/ documents; Harvard MEDScience acceptance added",
