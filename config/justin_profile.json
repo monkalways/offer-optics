@@ -450,7 +450,8 @@
       "queens_lifesci",
       "guelph_biomed",
       "ualberta_bsc_neuroscience",
-      "ualberta_bsc_biolsci",
+      "ualberta_bsc_immunology",
+      "ucalgary_bhsc",
       "waterloo_math_cs",
       "waterloo_se"
     ],
@@ -468,7 +469,7 @@
       "ualberta_bsc_physiol",
       "ualberta_bsc_biochem",
       "ualberta_bsc_cellbiol",
-      "ualberta_bsc_immunology",
+      "ualberta_bsc_biolsci",
       "ualberta_bsc_pharmacology",
       "ualberta_pharmacy",
       "ualberta_pharmacology_honors"
@@ -478,8 +479,9 @@
     "decided_on": "2026-09-17",
     "portal": "ApplyAlberta (not OUAC) — one application, up to two program choices, $150 fee",
     "choice_1": "ualberta_bsc_neuroscience",
-    "choice_2": "ualberta_bsc_biolsci",
-    "dropped": "ualberta_bsc_physiol (was the Tier 2 in-province pick Apr–Sep 2026; two-choice limit)",
+    "choice_2": "ualberta_bsc_immunology",
+    "choice_2_changed": "2026-09-24 — was ualberta_bsc_biolsci (Major). Switched to BSc Honors Immunology and Infection after the survey of all UAlberta health/life-science programs: same admission band, adds a thesis, joint Science/Medicine program, 3.0 continuation bar, no physics dependency; an Honors admit who slips moves to the Major, so the safety-net role is kept. If the family meant the MAJOR stream in Immunology and Infection, change the program name on ApplyAlberta — the key stays the same.",
+    "dropped": "ualberta_bsc_physiol (was the Tier 2 in-province pick Apr–Sep 2026; two-choice limit); ualberta_bsc_biolsci (choice 2 Sep 17–24, 2026)",
     "rationale": "Neuroscience Honors is the only UAlberta program that matches the mental-health / ML / Harvard neuro-robot narrative and carries a built-in thesis. Biological Sciences in slot 2 is the in-faculty safety net: UAlberta evaluates choice 2 automatically if choice 1 is not offered, and all three programs admit on the same 'low 80s to mid 90s' band. Order by preference, not odds.",
     "competitiveness": "Official 3-cycle admitted range for Neuroscience and Neuroscience Honors (high school): low 80s to mid 90s. Justin's 5-course admission average is ~96–97 at current ELA projection — at or just above the top of the range, not far clear of it. Honors program is new (2025-26) so the range could firm up; margin absorbs that.",
     "physics_gap": "Justin has no Physics 20. Admission is unaffected (two sciences satisfied by Bio 30 / Chem 30 / Math 31). Year-1 PHYS 124 requires Physics 20. DECISION: if the Honors Neuroscience offer comes through, take Physics 20 in summer 2027 (Metro Continuing Education or Argyll Centre). Do NOT add Physics to the G12 timetable — every hour comes out of ELA 30-1.",
@@ -502,6 +504,26 @@
       "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html",
       "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html",
       "https://apps.ualberta.ca/catalogue/course/phys/124"
+    ]
+  },
+  "ucalgary_application": {
+    "decided_on": "2026-09-24",
+    "portal": "UCalgary online application (NOT OUAC, NOT ApplyAlberta) + BHSc Supplementary Application; both open 2026-10-01",
+    "program_key": "ucalgary_bhsc",
+    "major_to_declare": "Biomedical Sciences is the default pre-med major; Bioinformatics would use the ML/CS side; decide before submitting (all three share the same admission requirements and the 'high 80s with supplemental consideration' line)",
+    "dates_2027": {
+      "application_opens": "2026-10-01",
+      "supplementary_deadline": "2027-03-01",
+      "early_admission": "fall/winter on Grade 11 marks (BHSc participates)",
+      "final_averages_published": "2027-05"
+    },
+    "supplementary": "Four written questions, blind-scored by three reviewers; not a résumé; must be his own work. Questions appear in the portal after the application is submitted. Slot the writing into the December-February block with the McMaster/Queen's essays.",
+    "fee_cad": "UCalgary domestic application fee (~$125 — confirm at payment)",
+    "rationale": "Established honours BHSc inside the Cumming School of Medicine, ~100 seats, research from year 2, in-province tuition, 3 h from home; structurally the closest peer to McMaster/Queen's BHSc. The family's April 2026 'no UCalgary' preference was lifted 2026-09-24.",
+    "sources": [
+      "https://cumming.ucalgary.ca/bhsc",
+      "https://cumming.ucalgary.ca/bhsc/future-students/admissions",
+      "https://www.ucalgary.ca/future-students/undergraduate/explore-programs/health-science"
     ]
   },
   "ouac_application": {
@@ -653,7 +675,7 @@
         "https://calendar.ucalgary.ca/pages/d11b4800e47040a287de3426e4a83bcf"
       ]
     },
-    "tier_impact": "No change to the submitted OUAC list or the UAlberta pairing. Open decision: whether to ADD UCalgary BHSc as a separate application (decide by mid-October; application opens Oct 1, early-admission window in the fall, supplementary due Mar 1, 2027)."
+    "tier_impact": "DECIDED 2026-09-24: UCalgary BHSc ADDED as a separate application (ucalgary_bhsc, Tier 2; opens Oct 1, supplementary due Mar 1, 2027). UAlberta choice 2 switched to Honors Immunology and Infection. OUAC list unchanged."
   },
   "dashboard_reminders": [
     {
@@ -682,7 +704,13 @@
     },
     {
       "date": "2026-10-01",
-      "label": "UAlberta (ApplyAlberta) opens — apply with BSc Honors Neuroscience as choice 1 and BSc Biological Sciences as choice 2 ($150). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
+      "label": "UAlberta (ApplyAlberta) opens — apply with BSc Honors Neuroscience as choice 1 and BSc Honors Immunology and Infection as choice 2 ($150; decided 2026-09-24). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2026-10-01",
+      "label": "UCalgary BHSc (Cumming School of Medicine) application AND the BHSc Supplementary Application open — separate UCalgary portal (~$125). Submit the application early so the four supplementary questions unlock and early admission on Grade 11 marks is possible. Decided 2026-09-24.",
       "category": "application",
       "priority": "high"
     },
@@ -697,12 +725,6 @@
       "label": "University presentation at Old Scona (recommended by Mr. Karas) — attend; bring questions on out-of-province document handling, early offers, and the Historical Academic Report.",
       "category": "action",
       "priority": "medium"
-    },
-    {
-      "date": "2026-10-14",
-      "label": "DECIDE: add UCalgary BHSc (Cumming School of Medicine; honours, ~100 seats, four-question supplementary blind-scored, due Mar 1 2027; early admission on G11 marks)? Apply only if Justin would choose it over UAlberta Honors Neuroscience or an Ontario Life Sci offer. UAlberta's new BHSc assessed 2026-09-24: do not swap into the UAlberta slots.",
-      "category": "action",
-      "priority": "high"
     },
     {
       "date": "2026-10-15",
@@ -772,6 +794,12 @@
     },
     {
       "date": "2027-03-01",
+      "label": "UCalgary BHSc Supplementary Application deadline (four questions, blind-scored). Do not leave it to the deadline — aim for mid-February alongside the Queen's PSE.",
+      "category": "application_deadline",
+      "priority": "critical"
+    },
+    {
+      "date": "2027-03-01",
       "label": "UAlberta Faculty of Science application deadline (backstop — the application should have been in since October)",
       "category": "application_deadline",
       "priority": "medium"
@@ -785,7 +813,7 @@
   ],
   "_profile_provenance": {
     "captured_on": "2026-04-07",
-    "updated_on": "2026-09-20",
+    "updated_on": "2026-09-24",
     "captured_from": "user-provided in initial planning conversation; ECs extracted 2026-04-11 from resume + HYRS essay + Harvard MEDScience essay in data/justin/",
     "update_log": [
       "2026-04-11 — ECs extracted from data/justin/ documents; Harvard MEDScience acceptance added",

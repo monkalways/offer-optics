@@ -1000,7 +1000,7 @@ requirements:
       hours from ELA 30-1.
 
   - program_key: ualberta_bsc_biolsci
-    tier: 2
+    tier: 4   # demoted 2026-09-24 — replaced as UAlberta choice 2 by Honors Immunology and Infection; kept curated as the fallback
     source_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-major-biological-sciences.html
     department_url: https://www.ualberta.ca/en/biological-sciences/undergraduate-studies/index.html
     averages_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html
@@ -1062,6 +1062,160 @@ requirements:
       from second year. No physics dependency for admission. Chosen over
       Physiology as choice 2 because it keeps more doors open; admission
       odds are essentially identical across the three.
+
+  - program_key: ualberta_bsc_immunology
+    tier: 2
+    source_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-immunology-and-infection.html
+    worksheet_url: https://www.ualberta.ca/en/science/media-library/studentservices/documents/2024/degree-planning-worksheets/bsc-honors-worksheets/immunology-and-infection-honors-worksheet.pdf
+    averages_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html
+    dates_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html
+    curated_on: 2026-09-24
+    confidence: high
+    curator_notes: |
+      Promoted to Tier 2 on 2026-09-24 as Justin's UAlberta CHOICE 2 on the
+      ApplyAlberta application (replacing BSc Biological Sciences Major after
+      the 2026-09-24 survey of all 84 UAlberta health/life-science programs).
+      Official program page: "jointly offered by the Faculty of Science and the
+      Faculty of Medicine"; direct entry from high school; research thesis
+      embedded; "students must maintain higher academic standards than those
+      in a BSc Major degree". Calendar: Honors continuation requires 24+ units
+      with a minimum 3.0 GPA (Neuroscience/Pharmacology need 3.3). The 2024
+      Science honours worksheet lists NO physics course, so this program does
+      not depend on the Physics 20 summer plan. Faculty of Science admitted
+      range for BSc Honors (3 cycles): "low 80s to mid 90s"; Honors minimum
+      80% on the five admission subjects. Same ApplyAlberta application, fee
+      and dates as Neuroscience. An Honors admit who slips below 3.0 is moved
+      to the Major, so this keeps the safety-net role BiolSci Major had.
+
+    application_deadline_ouac: 2027-03-01
+    application_deadline_supp: null
+    document_deadline: 2027-08-01
+    decision_release_window: "Rolling from late fall (early conditional offers on G11 marks) through spring"
+
+    supp_app_required: false
+    supp_app_type: null
+    supp_app_url: null
+    supp_app_notes: null
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 88.0
+    prereq_courses:
+      - "English Language Arts 30-1"
+      - "Mathematics 30-1"
+      - "Two of: Biology 30, Chemistry 30, Physics 30, Mathematics 31, CSE Advanced (5 cr)"
+      - "One other approved Grade 12 course"
+    prereq_notes: |
+      Standard Faculty of Science honours admission. Justin satisfies it with
+      ELA 30-1, Math 30-1, Bio 30 + Chem 30 (the two sciences) and French
+      30-1 / Math 31. Honors minimum 80%; his 5-course average is ~96-97.
+      No physics anywhere in the honours worksheet.
+
+    oop_eligible: true
+    oop_notes: |
+      In-province applicant. No OOP consideration.
+
+    application_fee_cad: 150
+
+    notes: |
+      Chosen over Biological Sciences Major because it adds a thesis and a
+      Science-Medicine joint program at the same admission band, with the
+      friendlier 3.0 continuation bar and no physics dependency. Connects
+      to the histopathology / cancer-diagnosis shadowing (Dr. Kanwal) and
+      the Zeng-lab biomaterials work. Any UAlberta BSc qualifies for the
+      UAlberta MD application (min GPA 3.30 for Albertans).
+
+  - program_key: ucalgary_bhsc
+    tier: 2
+    source_url: https://cumming.ucalgary.ca/bhsc
+    admissions_url: https://cumming.ucalgary.ca/bhsc/future-students/admissions
+    requirements_url: https://www.ucalgary.ca/future-students/undergraduate/explore-programs/health-science
+    early_admission_url: https://www.ucalgary.ca/pubs/calendar/archives/2022/a-5-1-3.html
+    curated_on: 2026-09-24
+    confidence: high
+    curator_notes: |
+      ADDED 2026-09-24 by family decision (the April 2026 "no UCalgary" rule
+      was a preference and has been lifted). Cumming School of Medicine's
+      "inquiry-based, multidisciplinary, and research-intensive undergraduate
+      health sciences honours degree"; majors Biomedical Sciences,
+      Bioinformatics, Health and Society; ~100 first-year admits per year
+      across majors (calendar). Established program (in calendars since at
+      least 2007). NOT through OUAC or ApplyAlberta: separate UCalgary online
+      application (opens 2026-10-01) plus the BHSc Supplementary Application
+      (four questions, "not asking for your resume", "completed by you and
+      you alone", de-identified and blind-scored by three reviewers);
+      supplementary deadline 2027-03-01 (Change-of-Program applicants Feb 1).
+      Admission = academic average + supplementary score. Requirements read
+      from the UCalgary program page (Alberta curriculum) in Chrome on
+      2026-09-24: ELA 30-1, Math 30-1 (min 70%), Biology 30, Chemistry 30, one
+      approved course; "Estimated competitive admission average: High 80s
+      with supplemental consideration" (same requirement node for all three
+      majors). Final fall-2027 admission averages are published in May 2027.
+      BHSc participates in UCalgary early admission (average from 20-level
+      marks, or 30-level where available), so a conditional offer on the 97.0
+      G11 record is realistic. The program states it "is not a pre-med
+      program" and publishes no medical-school placement statistic.
+      Application fee: UCalgary domestic fee (~$125; confirm at payment).
+
+    application_deadline_ouac: 2027-03-01        # UCalgary application deadline for the BHSc (aligned with the supplementary deadline); verify the general Canadian HS deadline when the 2027 dates page is up
+    application_deadline_supp: 2027-03-01        # BHSc Supplementary Application deadline (cumming.ucalgary.ca/bhsc/future-students/admissions)
+    document_deadline: 2027-03-01                # carried with the application; UCalgary asks for final transcripts in early August; confirm
+    decision_release_window: "Early admission offers in the fall/winter on Grade 11 marks + supplementary; remaining decisions by spring (final averages published May 2027)"
+
+    supp_app_required: true
+    supp_app_type: "BHSc Supplementary Application: four written questions, blind-scored by three reviewers; opens with the UCalgary application on Oct 1, 2026"
+    supp_app_url: https://cumming.ucalgary.ca/bhsc/future-students/admissions
+    supp_app_notes: |
+      Four questions "that help understand how you think and express
+      yourself"; they "do not have 'right' or 'wrong' answers", are "not
+      asking for your resume", and "must be completed by you and you alone".
+      Name and identifiers are removed and three reviewers score
+      independently. The questions are not published in advance; they
+      appear in the portal after the UCalgary application is submitted.
+      Overlaps in kind with the McMaster/Queen's essay work; schedule it in
+      the same December-February writing block.
+
+    casper_required: false
+    casper_format: null
+    interview_required: false
+    interview_format: null
+    references_required: false
+    references_count: null
+
+    min_average_competitive: 90.0   # "High 80s with supplemental consideration"; 90 is the conservative planning figure; actual admits reported low-to-mid 90s (unofficial)
+    prereq_courses:
+      - "English Language Arts 30-1"
+      - "Mathematics 30-1 (minimum 70%)"
+      - "Biology 30"
+      - "Chemistry 30"
+      - "One approved course or option (e.g., Social Studies 30-1, a 30-level language, Mathematics 31, Physics 30)"
+    prereq_notes: |
+      No physics requirement. Justin's set (ELA 30-1, Math 30-1, Bio 30,
+      Chem 30 + French 30-1 or Math 31) satisfies it. Only one of
+      Art/Dance/Drama/Music may count toward the average.
+
+    oop_eligible: true
+    oop_notes: |
+      Justin is an Alberta resident: in-province tuition and no OOP factor.
+      The Alberta Reddit sheet has ~47 UCalgary rows; program-level mapping
+      is now enabled via match_patterns, so the dashboard may show a few
+      BHSc data points (treat as anecdotal).
+
+    application_fee_cad: 125
+
+    notes: |
+      The strongest BHSc in Alberta and the closest structural peer to
+      McMaster/Queen's BHSc west of Ontario: small honours cohort inside a
+      medical faculty, research from second year, in-province tuition,
+      three hours from home. Justin is above its grade line; the four
+      essays are the differentiator. No preferential route into the
+      UCalgary MD program (admits on GPA/MCAT from any degree; Alberta
+      residents favoured regardless of undergrad school).
 
   - program_key: waterloo_math_cs
     tier: 2

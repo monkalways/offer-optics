@@ -450,9 +450,12 @@ def build_action_items(profile: dict, programs_tier1: list[dict],
         program_label = f"{prog['university']} — {prog['program']}"
         # UAlberta applies through ApplyAlberta, not OUAC; Waterloo's own
         # (non-OUAC-universal) date is still an OUAC submission deadline.
-        app_label = ("Application deadline (ApplyAlberta): {p}"
-                     if prog["program_key"].startswith("ualberta_")
-                     else "OUAC application deadline: {p}")
+        if prog["program_key"].startswith("ualberta_"):
+            app_label = "Application deadline (ApplyAlberta): {p}"
+        elif prog["program_key"].startswith("ucalgary_"):
+            app_label = "Application deadline (UCalgary portal): {p}"
+        else:
+            app_label = "OUAC application deadline: {p}"
         for field, label_template in [
             ("deadline_ouac", app_label),
             ("deadline_supp", "Supplementary application due: {p}"),

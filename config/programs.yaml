@@ -207,10 +207,22 @@ programs:
     match_patterns:
       - "(?i)waterloo.*health\\s*sci"
 
+  # ─────────── UCalgary (added 2026-09-24 — family decision) ───────────
+
+  - key: ucalgary_bhsc
+    tier: 2
+    university: University of Calgary
+    university_key: ucalgary
+    program: Bachelor of Health Sciences (Honours) — Cumming School of Medicine
+    official_url: https://cumming.ucalgary.ca/bhsc
+    match_patterns:
+      - "(?i)(u\\s*of\\s*c|ucalgary|calgary).*(health\\s*sci|bhsc)"
+      - "(?i)(u\\s*of\\s*c|ucalgary|calgary).*(biomedical\\s*sci|bioinformatics|health\\s*(and|&)\\s*society)"
+
   # ─────────── Tier 4: UAlberta in-province options ───────────
 
   - key: ualberta_bsc_biolsci
-    tier: 2
+    tier: 4   # demoted 2026-09-24: replaced as choice 2 by Honors Immunology and Infection
     university: University of Alberta
     university_key: ualberta
     program: BSc Biological Sciences
@@ -248,11 +260,11 @@ programs:
       - "(?i)(u\\s*of\\s*a|ualberta|alberta).*physio"
 
   - key: ualberta_bsc_immunology
-    tier: 4
+    tier: 2   # promoted 2026-09-24: UAlberta choice 2 (replaces Biological Sciences)
     university: University of Alberta
     university_key: ualberta
-    program: BSc Immunology and Infection
-    official_url: https://www.ualberta.ca/en/science/programs/undergraduate-programs/programs/immunology-and-infection.html
+    program: BSc Honors Immunology and Infection
+    official_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-immunology-and-infection.html
     match_patterns:
       - "(?i)(u\\s*of\\s*a|ualberta|alberta).*(immunology|infection)"
 
