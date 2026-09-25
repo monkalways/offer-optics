@@ -201,7 +201,7 @@ requirements:
     application_deadline_ouac: 2027-01-15
     application_deadline_supp: 2027-02-15        # PSE deadline verified 2026-09-18 on the Queen's dates page
     document_deadline: 2027-03-31                # Queen's universal document deadline (verified 2026-09-18); send the transcript with the OUAC application regardless
-    decision_release_window: "April through mid-May (rolling; official FAQ commits to communicating all decisions by mid-May)"
+    decision_release_window: "Rolling; Queen's assesses applications and makes offers until mid-May; accept by June 1 (queensu.ca key dates, verified 2026-09-21). 2025-26 Reddit data showed a BHSc offer cluster on April 14."
 
     supp_app_required: true
     supp_app_type: "Personal Statement of Experience (PSE) on Kira Talent — 1 timed written response (10 min, 335-word cap) + 1 video response (2 min prep + 2 min delivery)"
@@ -287,7 +287,7 @@ requirements:
     application_deadline_ouac: 2027-02-01        # Waterloo's general (non-Eng) deadline, verified 2026-09-18
     application_deadline_supp: 2027-02-15        # AIF deadline — same as the documents deadline
     document_deadline: 2027-02-15
-    decision_release_window: "Mid May (with a deferral round before final decisions)"
+    decision_release_window: "January through mid-May; most Math/Engineering offers in May after second-semester midterm grades; all offers sent by mid-May (uwaterloo.ca/future-students/applicants/offer-timing, verified 2026-09-21)"
 
     supp_app_required: true
     supp_app_type: "Admission Information Form (AIF)"
@@ -369,7 +369,7 @@ requirements:
     application_deadline_ouac: 2027-01-15
     application_deadline_supp: null
     document_deadline: 2027-02-15                # carried forward from the 2025-26 pattern
-    decision_release_window: "March through May (rolling)"
+    decision_release_window: "Rounds from December to May; every application reviewed in every round; largest round around mid-May; 'no disadvantage to getting an offer in the last round' (welcome.uwo.ca Waiting For An Admission Decision, verified 2026-09-21)"
 
     supp_app_required: false
     supp_app_type: null
@@ -1078,7 +1078,7 @@ requirements:
     application_deadline_ouac: 2027-02-01
     application_deadline_supp: 2027-02-15
     document_deadline: 2027-02-15
-    decision_release_window: "Mid May"
+    decision_release_window: "January through mid-May; most offers in May (Waterloo offer-timing page, verified 2026-09-21)"
 
     supp_app_required: true
     supp_app_type: "Admission Information Form (AIF)"
@@ -1125,7 +1125,7 @@ requirements:
     application_deadline_ouac: 2027-01-15
     application_deadline_supp: 2027-02-01
     document_deadline: 2027-02-01
-    decision_release_window: "Mid May"
+    decision_release_window: "January through mid-May; most offers in May (Waterloo offer-timing page, verified 2026-09-21)"
 
     supp_app_required: true
     supp_app_type: "Admission Information Form (AIF)"
@@ -1182,7 +1182,7 @@ requirements:
     application_deadline_ouac: 2027-01-15
     application_deadline_supp: null              # No supp app for Life Sci
     document_deadline: 2027-02-01                # A&S documents deadline (non-Rotman), verified 2026-09-18
-    decision_release_window: "January through late May"
+    decision_release_window: "Rounds from January through late May (possibly summer); apply by Nov 7 and complete documents by Dec 1 to be in the FIRST round as well as later rounds (future.utoronto.ca, verified 2026-09-21)"
 
     supp_app_required: false
     supp_app_type: null
