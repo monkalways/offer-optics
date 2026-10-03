@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-10-03T14:26:45",
+  "build_timestamp": "2026-10-03T14:43:21",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -592,6 +592,7 @@
       ]
     },
     "ucalgary_application": {
+      "submitted_2026_10_03": "SUBMITTED AND PAID 2026-10-03 (payment confirmed by the parent). BHSc Honours, major Biomedical Sciences, Faculty of Medicine, Fall 2027; single program choice. UCalgary orders the Old Scona transcript itself. Summary saved at data/justin/UCalgary_Application_Summary_2026-10-03.pdf (gitignored). OPEN: the form records curriculum as International Baccalaureate - Justin is an IB COURSE candidate (three exams May 2027: Mathematics Analysis and Approaches SL, Biology HL, French B SL), not a Diploma candidate; ask UCalgary to confirm the record is right. Next: open the BHSc Supplementary Application (four questions, due 2027-03-01).",
       "decided_on": "2026-09-24",
       "portal": "UCalgary online application (NOT OUAC, NOT ApplyAlberta) + BHSc Supplementary Application; both open 2026-10-01",
       "program_key": "ucalgary_bhsc",
