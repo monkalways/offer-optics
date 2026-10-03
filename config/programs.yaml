@@ -222,7 +222,7 @@ programs:
   # ─────────── Tier 4: UAlberta in-province options ───────────
 
   - key: ualberta_bsc_biolsci
-    tier: 4   # demoted 2026-09-24: replaced as choice 2 by Honors Immunology and Infection
+    tier: 2   # restored 2026-10-03: submitted as UAlberta choice 2 (Major, minor Computing Science)
     university: University of Alberta
     university_key: ualberta
     program: BSc Biological Sciences
@@ -260,7 +260,7 @@ programs:
       - "(?i)(u\\s*of\\s*a|ualberta|alberta).*physio"
 
   - key: ualberta_bsc_immunology
-    tier: 2   # promoted 2026-09-24: UAlberta choice 2 (replaces Biological Sciences)
+    tier: 4   # demoted 2026-10-03: not applied to; family kept Biological Sciences as choice 2
     university: University of Alberta
     university_key: ualberta
     program: BSc Honors Immunology and Infection

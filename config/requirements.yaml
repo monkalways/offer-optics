@@ -1000,7 +1000,7 @@ requirements:
       hours from ELA 30-1.
 
   - program_key: ualberta_bsc_biolsci
-    tier: 4   # demoted 2026-09-24 — replaced as UAlberta choice 2 by Honors Immunology and Infection; kept curated as the fallback
+    tier: 2   # restored 2026-10-03 — submitted as UAlberta choice 2
     source_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-major-biological-sciences.html
     department_url: https://www.ualberta.ca/en/biological-sciences/undergraduate-studies/index.html
     averages_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html
@@ -1064,7 +1064,7 @@ requirements:
       odds are essentially identical across the three.
 
   - program_key: ualberta_bsc_immunology
-    tier: 2
+    tier: 4   # demoted 2026-10-03 — not applied to; kept curated for reference
     source_url: https://www.ualberta.ca/en/undergraduate-programs/bachelor-of-science-with-honors-immunology-and-infection.html
     worksheet_url: https://www.ualberta.ca/en/science/media-library/studentservices/documents/2024/degree-planning-worksheets/bsc-honors-worksheets/immunology-and-infection-honors-worksheet.pdf
     averages_source_url: https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/competitive-requirements.html
