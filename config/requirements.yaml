@@ -1147,8 +1147,7 @@ requirements:
       across majors (calendar). Established program (in calendars since at
       least 2007). NOT through OUAC or ApplyAlberta: separate UCalgary online
       application (opens 2026-10-01) plus the BHSc Supplementary Application
-      (four questions, "not asking for your resume", "completed by you and
-      you alone", de-identified and blind-scored by three reviewers);
+      (four questions, "not asking for your resume", de-identified and blind-scored by three reviewers);
       supplementary deadline 2027-03-01 (Change-of-Program applicants Feb 1).
       Admission = academic average + supplementary score. Requirements read
       from the UCalgary program page (Alberta curriculum) in Chrome on
@@ -1172,11 +1171,19 @@ requirements:
     supp_app_url: https://cumming.ucalgary.ca/bhsc/future-students/admissions
     supp_app_notes: |
       Four questions "that help understand how you think and express
-      yourself"; they "do not have 'right' or 'wrong' answers", are "not
-      asking for your resume", and "must be completed by you and you alone".
+      yourself"; they "do not have 'right' or 'wrong' answers", and are "not
+      asking for your resume".
       Name and identifiers are removed and three reviewers score
       independently. The questions are not published in advance; they
       appear in the portal after the UCalgary application is submitted.
+      PORTAL (recorded 2026-10-05, from the family): the supplementary is
+      completed at https://icarus.med.ucalgary.ca/authenticate.html (Cumming
+      School of Medicine system, separate login from the UCalgary
+      application). 2026-27 prompts as seen in the portal, 350 words each:
+      (1) what collaboration means to you; (2) a creative work that means
+      something to you; (3) "If I could......"; (4) a societal barrier,
+      possibly invisible/unacknowledged, and its impact; plus an optional
+      "additional information" box (100 words).
       Overlaps in kind with the McMaster/Queen's essay work; schedule it in
       the same December-February writing block.
 
