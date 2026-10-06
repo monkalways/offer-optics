@@ -294,7 +294,7 @@
       "advanced_placement": {
         "scores": [
           { "exam": "AP Calculus BC", "score": 5, "max": 5, "session": "May 2026 (results released July 2026)", "added_on": "2026-08-03" },
-          { "exam": "AP Biology", "score": 5, "max": 5, "session": "prior year" }
+          { "exam": "AP Biology", "score": 5, "max": 5, "session": "May 2025 (confirmed by the parent 2026-10-05)" }
         ],
         "summary": "Two AP examinations, both scored 5/5 — Calculus BC and Biology. 5 is the top score on the AP scale.",
         "why_it_matters": "Three distinct uses. (1) CORROBORATION: an externally validated 5 in Calculus BC independently confirms the math ability that his Alberta marks assert — Math 30-1 final 100%, Math 31 projected 100%. An out-of-province admissions reader who does not know Old Scona's grading culture can calibrate against a College Board score in a way they cannot against a school mark. Same function for AP Biology against his Biology 30 projection. (2) DE-RISKS MATH 31: he has already been examined at BC level, which covers material beyond Math 31, so the projected 100 in Math 31 is now a well-supported expectation rather than an optimistic one. This matters because Math 31 is one of the six top-6 courses. (3) POSSIBLE FIRST-YEAR CREDIT: most Canadian universities grant transfer credit or advanced standing for AP scores of 4 or 5, and a BC 5 commonly maps to first-year calculus. Worth checking each target program's AP transfer-credit policy once offers arrive — this is a practical benefit for first-year course load, not an admissions factor.",
@@ -575,13 +575,18 @@
     "progress": "SUBMITTED AND PAID 2026-09-20 ($799). All five steps complete. OUAC transmits on its weekly distribution; each university then emails portal instructions (Join U of T, Western Student Center, Waterloo Quest, McMaster Mosaic, Queen's SOLUS). Next: create each portal account, self-report final Grade 11 marks and Grade 12 courses in progress, order Alberta myPass transcripts when each university asks (UofT wants documents by Dec 1 for the early round).",
     "school_advice_2026_09_21": "Reply from Mr. Jeff Karas (vice-principal, Old Scona) to Justin's OUAC questions. (1) Rounds: depends on the program — most take a large early intake then add students later, others admit rolling in batches; acceptances usually start December-January. (2) Transcripts: request through myPass, individually to EACH university; the most important transcript is the one sent after courses are complete. IN THE MEANTIME students submit a HISTORICAL ACADEMIC REPORT that Mr. Karas signs and stamps — ask him for one; this is the interim document to upload to the university portals. (3) He said choice ranking matters ('they will try to place you in your first choice program first'). That describes single-institution systems such as ApplyAlberta (UAlberta evaluates choice 1, then choice 2) but NOT OUAC across universities: OUAC's own FAQ says the order 'is not usually a factor in the universities' admission decisions' and a university 'must make its policy clear' where it is an exception (known exceptions: uOttawa wait lists use the top 3 choices; UofT Engineering — neither is on Justin's list). No change to the submitted ranking needed. He also recommends the university presentation at school on October 6.",
     "university_acknowledgements": {
-      "as_of": "2026-10-03",
-      "uoft": "Received. Portal login details and next steps to follow by email in October — nothing to do until then.",
+      "as_of": "2026-10-05",
+      "uoft": "Received. Join U of T applicant portal access granted 2026-10-05 — Studies in Life Sciences (Faculty of Arts and Science, Fall 2027) shows 'Awaiting Required Documents'. See portal_status_2026_10_05.",
       "mcmaster": "Received. Action: activate MacID with the barcode and student number in the email, set a password within 7 days of the MacID Activation email (one-time password expires), then log in to the Applicant Portal 30 minutes later.",
       "waterloo": "Received. Action: log in to the Waterloo applicant portal with the personal email and the one-time PIN, set a password, record the applicant number. Admission Information Form for CS is due 2027-02-01.",
       "queens": "Not yet received as of 2026-10-03.",
       "western": "Not yet received as of 2026-10-03.",
-      "portal_urls": {"mcmaster": "https://admissions.mcmaster.ca/apply/status", "waterloo": "https://undergrad.uwaterloo.ca/portal/status"},
+      "portal_urls": {"mcmaster": "https://admissions.mcmaster.ca/apply/status", "waterloo": "https://undergrad.uwaterloo.ca/portal/status", "uoft": "https://apply.adm.utoronto.ca/portal/status"},
+      "portal_status_2026_10_05": "U of T: status 'Awaiting Required Documents'. Required Documents list: (1) Transcript for Previous Years of Secondary/High School; (2) Interim or Mid-Term Transcript/Report Card for Current Year; (3) Self-Reported Grades (Canadian Secondary - Alberta) - Mandatory form; (4) Victoria College Student Profile, labelled Optional by the portal but needed for Vic consideration since Vic is ranked first. Corrections go through OUAC and take up to a week to display. Anticipated Fall 2027 decision rounds (subject to change): weeks of Jan 25, Feb 22, Mar 15, Apr 12, and May 17 / May 24. Late documents are reviewed space permitting only.",
+      "mcmaster_course_eligibility_reply_2026_10_05": "Email from McMaster Student Recruitment (Office of the Registrar) answering Justin's Oct 3 questions. (1) French 30-1 satisfies the non-math / non-science / non-technology requirement; languages, arts and social sciences all qualify. (2) Math 31, Math 30-1 and Math 30-2 all satisfy the math requirement and the highest is used - Math 30-1 at 100. (3) Alberta applicants are averaged on FIVE 30/31-level courses, not six: ELA 30-1, one math, Biology 30, Chemistry 30, one non-math/science/technology course. (4) Courses finished before June 30 of the graduating year are treated the same, so Math 30-1 taken in Grade 11 counts. Not stated: which course is used when both French and Social Studies 30-1 are presented. Projected five-course average at current midpoints: (88.5 + 100 + 97.5 + 97.5 + 92.5) / 5 = 95.2; ELA 30-1 is now one fifth of the McMaster average.",
+      "uoft_self_reported_grades": "SUBMITTED 2026-10-05, checked row by row against the myPass Detailed Academic Report. The form's dropdown uses generic course names, so Alberta courses were mapped as follows - keep the same rows when updating. Grade 11 (all Final, not repeated): English 11 = ELA 20-1 (90, 2026); Pre-Calculus 11 = Mathematics 20-1 (100, 2025); Biology 11 = Biology 20 (98, 2026); Chemistry 11 = Chemistry 20 (99, 2026); French 11 = French 9Y 20 (98, 2026); Social Studies 11 = Social Studies 20-1 (90, 2026); Other section: Biology (Higher) 25 (87, 2026). Grade 12: Pre-Calculus 12 = Mathematics 30-1 (100, Final, 2026); IPR with completion 2027: English 12 = ELA 30-1, Calculus 12 = Mathematics 31, Biology 12 = Biology 30, Chemistry 12 = Chemistry 30, French 12 = French 9Y 30; Other section: Social Studies 30-1 (IPR, 2027); AP Calculus BC 5 (Final, 2026); AP Biology 5 (Final, 2025). Not reported, per the form's FAQ: Grade 10 courses, Career and Technology Studies modules (FAQ 17 career courses), separate IB exam rows (FAQ 12: IB courses are reported as percentages). TO DO: replace each IPR with the mark when first-term results arrive; update the form if a course is dropped.",
+      "uoft_victoria_college_profile": "SUBMITTED 2026-10-05. The form is tick boxes plus one 500-character activity list, not essays. Deadlines on the form: Dec 1, 2026 early consideration, Feb 1, 2027 final. Domestic applicants must rank Victoria College first on OUAC and complete the profile to be considered. Answers: financial need No; activity types Community Service, Creative and Performing Arts, School Involvement, Volunteer Involvement (Athletics not ticked); three activities listed in this order - Chatter Social Skills Program volunteer mentor, Hongbo Zeng Research Group paid research assistant (summer 2026, 122 hours), co-president of the Old Scona Mathematics and Computer Science Clubs; program of interest Other - Life Sciences. Remaining answers (community program, new Canadian, residence, first generation, self-identification) were entered by the family and are not recorded here. OPEN: the Chatter entry was typed as '120+ hours' while every other record says 100+ - confirm the figure with Justin and use one number on all applications.",
+      "uoft_documents": "2026-10-05: myPass Detailed Academic Report uploaded as 'Transcript for Previous Years of Secondary/High School' - shown under Received Documents dated 2026-10-05 (U of T allows 5-7 business days to confirm items). 'Interim or Mid-Term Transcript/Report Card for Current Year' deliberately NOT uploaded yet: the item asks for interim or mid-term results and the myPass report shows only 'In Progress'. Upload the first Grade 12 Old Scona report card when issued, by Dec 1 for the first round; if no report card exists by late November, upload the myPass report there instead and add the report card later. Expect a later request for an official myPass transcript.",
       "portal_status_2026_10_03": "McMaster: MacID active; checklist shows supplementary application and Old Scona transcript awaiting (upload only once Grade 12 first-term marks appear), junior high waived; course-eligibility questions sent via contact form. Waterloo: Declaration of Academic Experience submitted and myPass Detailed Academic Report uploaded; Supplementary Information Form (contests, past 12 months) and AIF 2027 outstanding; documents deadline 2027-02-15.",
       "note": "Login identifiers and PINs are deliberately not stored here (public repo)."
     },
@@ -789,6 +794,12 @@
     },
     {
       "date": "2026-10-09",
+      "label": "U of T applicant portal (access received Oct 5): Self-Reported Grades form SUBMITTED Oct 5. Previous-years transcript (myPass Detailed Academic Report) uploaded Oct 5. Check around Oct 15 that both show as received. Still to do: upload the first Grade 12 report card as the interim/mid-term item and replace the form's IPR rows with those marks, both by Dec 1. Everything complete by Dec 1 keeps Justin in the first decision round (week of Jan 25).",
+      "category": "application",
+      "priority": "high"
+    },
+    {
+      "date": "2026-10-09",
       "label": "U of T National Book Award school nomination deadline (11:59 pm EDT) — Old Scona submits.",
       "category": "application_deadline",
       "priority": "high"
@@ -830,14 +841,20 @@
       "priority": "high"
     },
     {
+      "date": "2026-11-16",
+      "label": "U of T: upload Justin's first Grade 12 report card as the 'Interim or Mid-Term Transcript/Report Card for Current Year' item (Join U of T > Upload Documents) as soon as Old Scona issues it, and replace the IPR rows on the Self-Reported Grades form with the same marks. Hard date Dec 1 for the first decision round. If no report card exists by Nov 25, upload the myPass Detailed Academic Report to that item instead and add the report card later.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
       "date": "2026-11-20",
       "label": "Order Alberta myPass transcripts to UofT (documents due Dec 1 for the early round) and to any other university that has asked by now; put the OUAC Reference Number on each request.",
       "category": "application",
       "priority": "high"
     },
     {
-      "date": "2026-12-02",
-      "label": "Victoria College Student Profile — early-consideration deadline (final ~Feb 2). Required because Vic is ranked first on the UofT choice; short form on extracurriculars and academic goals, assemble from the HYRS / MEDScience essays. Opens in Join U of T once the OUAC application has transmitted.",
+      "date": "2026-12-01",
+      "label": "DONE 2026-10-05 — Victoria College Student Profile submitted (early-consideration deadline Dec 1, 2026; final Feb 1, 2027, per the form). Nothing further needed unless an answer changes.",
       "category": "application",
       "priority": "high"
     },
