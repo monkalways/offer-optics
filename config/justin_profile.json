@@ -9,12 +9,49 @@
   "applicant_type": "105",
   "_applicant_type_note": "OUAC code 105 = out-of-province / non-Ontario high-school applicant. Since 2024 OUAC runs one Undergraduate application and assigns Group A (current Ontario HS students) or Group B (everyone else) from the applicant's answers; Justin is Group B. Group B has no universal Jan 15 deadline (each university sets its own) but every target recommends applying by Jan 15. UAlberta programs do NOT go through OUAC — they use ApplyAlberta.",
   "grade_12_projected_courses": [
-    { "course": "Math 30-1",    "low": 100, "high": 100, "midpoint": 100.0, "confirmed": true, "note": "FINAL — 100%. Completed in G11 with a 100% class mark and scored 100% on the January/June 2026 diploma exam (results released 2026-07-21), so the 70/30 blend holds at 100%. No longer a projection; this course is locked and carries zero remaining downside." },
-    { "course": "Math 31",      "low": 98, "high": 100, "midpoint": 99.0, "note": "Well supported: Math 30-1 final 100% and an AP Calculus BC score of 5/5 (May 2026 session), which examines material beyond the Math 31 syllabus. The 100 target is a reasonable expectation rather than a stretch. THREE THINGS THAT MAKE IT MATTER MORE THAN IT LOOKS: (1) Math 31 is a REQUIRED admission course for Waterloo CS — verified 2026-08-03 against Waterloo's Alberta admission requirements page, which lists Mathematics 30-1, Mathematics 31 and English Language Arts 30-1. A weak mark here damages the reach application directly. (2) Math 31 has NO diploma exam, so the mark is 100% school-awarded — entirely within his control, and entirely determined by consistent classroom performance rather than one exam day. (3) The AP Calculus BC 5 does NOT substitute for it: AP is not used in admission anywhere, so the Math 31 classroom mark is what universities actually see. RISK: complacency. Familiar material is not the same as an automatic 100 — Math 31 has its own curriculum and assessment style and Old Scona grades strictly. Treat this as a maintenance course requiring consistency, not an investment course requiring extra hours; the marginal hour still belongs to ELA 30-1." },
-    { "course": "ELA 30-1",     "low": 85, "high": 92,  "midpoint": 88.5, "note": "FULL-YEAR course, September 2026 – June 2027; diploma exam June 2027 (confirmed 2026-08-03). ELA 20-1 final was 90% with strong teacher comments on analytical writing — upper bound raised to 92% from the original 90%. IDENTIFIED WEAKNESS: Part B (Reading), the 70-question machine-scored component worth 50% of the diploma. CHECKPOINT 2026-08-30: Step 0 baseline done — Released Items 2021 Part B cold = 92%; official Part B practice test (abed.vretta.com/#/en/public-practice) = 95%; official Part A practice test = 84 (needs teacher marking against the official scoring guide to be trusted). Poetry reading 3x/week since Aug 14. Part B is stronger than assumed; Part A writing is now the less-certain component. Because the course runs full-year with a June diploma, the interim marks universities see in December and February are PURE CLASSROOM WORK with no diploma component — so the admission decision runs entirely on September-to-February coursework, and the June diploma determines only whether the conditional offer survives. See reports/ela_30_1_improvement_plan.md." },
-    { "course": "Biology 30",   "low": 95, "high": 100, "midpoint": 97.5, "note": "Biology 20 final was 98% — projection unchanged." },
-    { "course": "Chemistry 30", "low": 95, "high": 100, "midpoint": 97.5, "note": "Chemistry 20 final was 99% — projection unchanged." },
-    { "course": "French 30-1",  "low": 90, "high": 95,  "midpoint": 92.5, "note": "French-9Y 20 final was 98% — projection unchanged." }
+    {
+      "course": "Math 30-1",
+      "low": 100,
+      "high": 100,
+      "midpoint": 100.0,
+      "confirmed": true,
+      "note": "FINAL — 100%. Completed in G11 with a 100% class mark and scored 100% on the January/June 2026 diploma exam (results released 2026-07-21), so the 70/30 blend holds at 100%. No longer a projection; this course is locked and carries zero remaining downside."
+    },
+    {
+      "course": "Math 31",
+      "low": 98,
+      "high": 100,
+      "midpoint": 99.0,
+      "note": "Well supported: Math 30-1 final 100% and an AP Calculus BC score of 5/5 (May 2026 session), which examines material beyond the Math 31 syllabus. The 100 target is a reasonable expectation rather than a stretch. THREE THINGS THAT MAKE IT MATTER MORE THAN IT LOOKS: (1) Math 31 is a REQUIRED admission course for Waterloo CS — verified 2026-08-03 against Waterloo's Alberta admission requirements page, which lists Mathematics 30-1, Mathematics 31 and English Language Arts 30-1. A weak mark here damages the reach application directly. (2) Math 31 has NO diploma exam, so the mark is 100% school-awarded — entirely within his control, and entirely determined by consistent classroom performance rather than one exam day. (3) The AP Calculus BC 5 does NOT substitute for it: AP is not used in admission anywhere, so the Math 31 classroom mark is what universities actually see. RISK: complacency. Familiar material is not the same as an automatic 100 — Math 31 has its own curriculum and assessment style and Old Scona grades strictly. Treat this as a maintenance course requiring consistency, not an investment course requiring extra hours; the marginal hour still belongs to ELA 30-1."
+    },
+    {
+      "course": "ELA 30-1",
+      "low": 85,
+      "high": 92,
+      "midpoint": 88.5,
+      "note": "FULL-YEAR course, September 2026 – June 2027; diploma exam June 2027 (confirmed 2026-08-03). ELA 20-1 final was 90% with strong teacher comments on analytical writing — upper bound raised to 92% from the original 90%. IDENTIFIED WEAKNESS: Part B (Reading), the 70-question machine-scored component worth 50% of the diploma. CHECKPOINT 2026-08-30: Step 0 baseline done — Released Items 2021 Part B cold = 92%; official Part B practice test (abed.vretta.com/#/en/public-practice) = 95%; official Part A practice test = 84 (needs teacher marking against the official scoring guide to be trusted). Poetry reading 3x/week since Aug 14. Part B is stronger than assumed; Part A writing is now the less-certain component. Because the course runs full-year with a June diploma, the interim marks universities see in December and February are PURE CLASSROOM WORK with no diploma component — so the admission decision runs entirely on September-to-February coursework, and the June diploma determines only whether the conditional offer survives. See reports/ela_30_1_improvement_plan.md."
+    },
+    {
+      "course": "Biology 30",
+      "low": 95,
+      "high": 100,
+      "midpoint": 97.5,
+      "note": "Biology 20 final was 98% — projection unchanged."
+    },
+    {
+      "course": "Chemistry 30",
+      "low": 95,
+      "high": 100,
+      "midpoint": 97.5,
+      "note": "Chemistry 20 final was 99% — projection unchanged."
+    },
+    {
+      "course": "French 30-1",
+      "low": 90,
+      "high": 95,
+      "midpoint": 92.5,
+      "note": "French-9Y 20 final was 98% — projection unchanged."
+    }
   ],
   "grade_12_projected_top6_average": {
     "low": 93.8,
@@ -33,6 +70,7 @@
       "French-9Y 20": 98,
       "ELA 20-1": 90,
       "Social Studies 20-1": 90,
+      "Math 20-1 (IB, Grade 10 year 2024/25)": 100,
       "OOP 2 (IB CS)": 96,
       "Computer Science 3 (IB CS)": 96,
       "Iterative Algorithms 1 (IB CS)": 96,
@@ -43,6 +81,30 @@
     }
   },
   "grade_12_midterm_average": null,
+  "grade_12_early_assessments": {
+    "note": "First gradebook items of 2026-27, from PowerSchool Individual Student Reports the parent shared. Single minor summatives; the running course grade equals the one item until more are entered. Not interim marks.",
+    "items": [
+      {
+        "course": "ELA 30-1",
+        "teacher": "Moan",
+        "date": "2026-09-11",
+        "category": "Minor Summative",
+        "item": "The Kite Runner: History Presentation",
+        "score": "19/20",
+        "percent": 95.0
+      },
+      {
+        "course": "Chemistry 30",
+        "teacher": "Lee",
+        "date": "2026-09-28",
+        "category": "Minor Summative",
+        "item": "Thermochemistry Quiz 1",
+        "score": "78.95/100",
+        "percent": 78.95,
+        "assessment": "Small weight; diploma unit, so check whether it is a concept gap before the unit exam."
+      }
+    ]
+  },
   "tests": {
     "casper_planned": null,
     "sat": null,
@@ -59,7 +121,6 @@
       "Harvard MEDScience admission email (2026-04, confirmed acceptance to TECH Foundations Session M3)"
     ],
     "narrative_theme": "A grade-9 classmate did not pass the Old Scona entrance exam and dropped out of school within 2 months due to mental-health pressure. Justin researched Alberta youth mental-health trends, combined with his math/ML strengths to self-teach LightGBM/XGBoost, and is now building an ML risk-detection tool for at-risk students as his IB CS IA — 'the tool I wish had existed for my classmate.' Career direction: bioinformatics, bridging clinical practice with data science.",
-
     "healthcare_exposure": [
       {
         "name": "Medical Shadowing — Histopathology",
@@ -130,7 +191,6 @@
         "supp_app_angle": "The strongest available intellectual bridge: Justin's IB CS IA is about early detection of at-risk students from survey response patterns. A primary care clinic is precisely where early detection of adult health problems succeeds or fails — and he has now watched the administrative load that sits between a physician and their patients (the faxing and scanning he did IS that load). If he noticed anything real about how paperwork volume, appointment length, or intake process affects what a physician is able to catch, that is a genuinely distinctive observation and connects his technical work to clinical practice. That is a far better use of this experience than listing duties."
       }
     ],
-
     "research_experience": [
       {
         "name": "Undergraduate-style Research Assistant (paid)",
@@ -152,7 +212,7 @@
         "hours_total_confirmed": 122,
         "hours_note": "122 TOTAL PAID hours across the placement (Justin's own end-of-summer reflection, 2026-08-31 — supersedes the earlier ~95-100 estimate; the July-only payroll figure was 66). 122 is the number to cite. The journal at data/justin/Zeng_Lab_Journal_2026.md still under-documents the work — do NOT estimate hours from it.",
         "compensation": "Paid, CAD $17.07/hour (Grade 1 Step 1, casual; plus 4% vacation pay and 3.46% statutory holiday pay)",
-    "employment_contract": "UAlberta Offer of Employment, Request ID 17815, dated June 15, 2026; signed by Prof. Hongbo Zeng June 19 and accepted by Justin June 20, 2026. Working title Research Assistant; employee type Casual; supervisor Hongbo Zeng; Department of Chemical and Material[s] Engineering; scheduled 16 hours/week; fund source Trust; appointment June 29 - August 31, 2026 (auto-expires). Copy provided by parent 2026-09-20 (screenshots). USE THESE DATES for any formal statement of employment; the journal's July 8 - August 13 are the actual first and last days worked. 122 paid hours remains the hours figure.",
+        "employment_contract": "UAlberta Offer of Employment, Request ID 17815, dated June 15, 2026; signed by Prof. Hongbo Zeng June 19 and accepted by Justin June 20, 2026. Working title Research Assistant; employee type Casual; supervisor Hongbo Zeng; Department of Chemical and Material[s] Engineering; scheduled 16 hours/week; fund source Trust; appointment June 29 - August 31, 2026 (auto-expires). Copy provided by parent 2026-09-20 (screenshots). USE THESE DATES for any formal statement of employment; the journal's July 8 - August 13 are the actual first and last days worked. 122 paid hours remains the hours figure.",
         "added_on": "2026-08-03",
         "detail_captured_on": "2026-08-03",
         "source": "User-reported 2026-08-03; full lab journal and concept notes at data/justin/Zeng_Lab_Journal_2026.md. Supervisor credentials verified against the official UofA directory page.",
@@ -168,7 +228,7 @@
           "caution": "The reflection is honest about the mundane (kimwipes, quiet days). That honesty IS the credibility — do not sand it off when adapting for applications."
         },
         "reference_letter": "IN PROGRESS 2026-09-20 — ghost-draft in Prof. Zeng's voice at data/justin/Zeng_Reference_Letter_Draft_2026.md (gitignored; credentials filled from the UAlberta directory 2026-09-20), to be routed through Hongjian Zhang (agreed 2026-08-31) for Prof. Zeng's signature. States the contract appointment (June 29-Aug 31 2026, casual RA, 16 h/wk, $17.07/h) and 122 paid hours, day-to-day supervision by Hongjian, both projects, the 3/5/7/9 V series. No authorship/acknowledgment/school-year role claimed. Wanted ~end of September for Loran / Schulich Leader / TD.",
-    "direct_supervisor": {
+        "direct_supervisor": {
           "name": "Hongjian Zhang",
           "role": "PhD student, Zeng group",
           "note": "THIS is the realistic reference letter writer — not Prof. Zeng. Justin works on Hongjian's project directly."
@@ -214,7 +274,6 @@
         "how_to_frame_for_bhsc": "IMPORTANT AND EASY TO GET WRONG. This is soft-matter, colloid and interfacial science in a Chemical & Materials Engineering department — it is NOT clinical or biomedical research, and a BHSc reader will spot an overclaim instantly. Do not describe it as medical research. The honest and genuinely strong bridges are through BIOMATERIALS and DRUG DELIVERY, all of which are real and present in what he actually saw: chitosan/TPP nanoparticles (Tom's work, explicitly targeting antibacterial and antifungal clinical application, and a well-established drug-delivery vehicle); self-healing alginate/PAAM hydrogels (a major tissue-engineering and wound-dressing material class); sialic acid (a biologically central cell-surface sugar); and electrically-triggered debonding adhesives (an obvious application space in removable surgical and medical adhesives). Prof. Zeng's group lists biomedical engineering among its research areas. The accurate framing is: he worked on the physical chemistry that underlies biomaterials, and can explain why colloidal stability determines whether a drug-delivery particle works. That is more impressive than a vague claim to medical research, and it is true."
       }
     ],
-
     "mental_health_focus": [
       {
         "name": "HelpingMinds.ca (Founder & President)",
@@ -239,7 +298,6 @@
         "description": "Trained in suicide prevention and stress management; supports peers at Old Scona."
       }
     ],
-
     "stem_competitions": {
       "mathematics": [
         "International Mathematics Competition 2024 — Merit Award (Lucknow, India) — represented Canada internationally",
@@ -261,11 +319,57 @@
         "independently_verified_2026_08_30": "Re-checked by the agent via the Kaggle API on this machine (account chetocheese1821): every score in the portfolio matches the submission history exactly (Titanic 0.78468, 7 subs; S4E11 0.93955/0.93797, 6 subs; S6E5 0.85696/0.85908 selected, 4 subs; S6E8 0.97048, 7 subs). Leaderboard downloads confirmed S6E8 public rank 665/3,363 pre-close and, after the 2026-08-31 close, final team count 3,532 and private score 0.97019 (final private rank 697/3,532, top 19.7%). S6E5 rank 2,749 of 3,023 confirmed. DrivenData Flu Shot (#488) has no API and remains as reported. S6E8 final rank recorded 2026-08-31.",
         "CORRECTION_2026_08_30": "The 2026 resume and the May 23 admission report cite 'Top 5.7% across 3 ML competitions on health-related datasets'. The verified record does not support that figure: Titanic has no fixed rank (perpetual competition), S4E11 was a late entry (scored, unranked), Flu Shot Learning is #488 on a public leaderboard, F1 was 2,749/3,023, and Smartphone Addiction is 665/3,361 (top 20%). An AIF/supplementary reader can open the Kaggle profile and check. USE ONLY THE VERIFIED FIGURES BELOW. The résumé line must be rewritten before any application is filed.",
         "competitions": [
-          {"n": 1, "name": "Titanic: Machine Learning from Disaster", "platform": "Kaggle", "when": "2026-01", "metric": "accuracy", "score": 0.78468, "placement": "perpetual Getting Started competition — rolling leaderboard, no fixed rank", "lesson": "decision threshold 0.50 -> 0.60 mattered more than model complexity"},
-          {"n": 2, "name": "Playground S4E11 — Exploring Mental Health Data (depression prediction)", "platform": "Kaggle", "when": "2026-01", "metric": "accuracy", "score": "0.93955 public / 0.93797 private", "placement": "late entry (closed Nov 2024) — scored, unranked", "lesson": "threshold 0.74 vs 0.50: 0.939 vs 0.915; CV and LB agreed (0.937/0.939). This dataset is the training set for the CS IA / HelpingMinds tool."},
-          {"n": 3, "name": "Flu Shot Learning — H1N1 & Seasonal Vaccines", "platform": "DrivenData", "when": "2026-02", "metric": "mean AUC-ROC (two targets)", "score": 0.8609, "placement": "#488 public leaderboard (leader 0.8658)", "lesson": "threshold trick irrelevant under AUC — forced real model improvement; doctor recommendation was the strongest predictor of uptake"},
-          {"n": 4, "name": "Playground S6E5 — F1 Pit Stop Prediction", "platform": "Kaggle", "when": "2026-05", "metric": "accuracy", "score": "0.85696 public / 0.85917 private", "placement": "2,749 / 3,023 (one-day entry; not competitive)", "lesson": "GroupKFold-by-race made CV honest but the model worse — the honest diagnostic was the wrong treatment"},
-          {"n": 5, "name": "Playground S6E8 — Predicting Smartphone Addiction", "platform": "Kaggle", "when": "2026-08", "metric": "AUC-ROC", "score": 0.97048, "placement": "FINAL: 697 / 3,532 on the private leaderboard (top 19.7%), private AUC 0.97019 (public 0.97048). User-reported from the site 2026-08-31 and consistent with API verification: team count 3,532 and private score 0.97019 confirmed via Kaggle API; the survived shake-up (665 public -> 697 private among 3,532) is itself evidence the CV didn't overfit the public LB", "lesson": "capacity before cleverness (+0.008 from 500->4000 trees); target-encoding every column (+0.0034, largest gain); never drop features on univariate correlation (-0.018); ensemble diversity is representation not architecture; deliberately declined to stack the shared 47-model library — chose an explainable top-20% over an unexplainable top-10%", "stack": "LightGBM + XGBoost + CatBoost + RealMLP (PyTorch, GPU) stacked via cross-fitted logistic regression; 691K rows"}
+          {
+            "n": 1,
+            "name": "Titanic: Machine Learning from Disaster",
+            "platform": "Kaggle",
+            "when": "2026-01",
+            "metric": "accuracy",
+            "score": 0.78468,
+            "placement": "perpetual Getting Started competition — rolling leaderboard, no fixed rank",
+            "lesson": "decision threshold 0.50 -> 0.60 mattered more than model complexity"
+          },
+          {
+            "n": 2,
+            "name": "Playground S4E11 — Exploring Mental Health Data (depression prediction)",
+            "platform": "Kaggle",
+            "when": "2026-01",
+            "metric": "accuracy",
+            "score": "0.93955 public / 0.93797 private",
+            "placement": "late entry (closed Nov 2024) — scored, unranked",
+            "lesson": "threshold 0.74 vs 0.50: 0.939 vs 0.915; CV and LB agreed (0.937/0.939). This dataset is the training set for the CS IA / HelpingMinds tool."
+          },
+          {
+            "n": 3,
+            "name": "Flu Shot Learning — H1N1 & Seasonal Vaccines",
+            "platform": "DrivenData",
+            "when": "2026-02",
+            "metric": "mean AUC-ROC (two targets)",
+            "score": 0.8609,
+            "placement": "#488 public leaderboard (leader 0.8658)",
+            "lesson": "threshold trick irrelevant under AUC — forced real model improvement; doctor recommendation was the strongest predictor of uptake"
+          },
+          {
+            "n": 4,
+            "name": "Playground S6E5 — F1 Pit Stop Prediction",
+            "platform": "Kaggle",
+            "when": "2026-05",
+            "metric": "accuracy",
+            "score": "0.85696 public / 0.85917 private",
+            "placement": "2,749 / 3,023 (one-day entry; not competitive)",
+            "lesson": "GroupKFold-by-race made CV honest but the model worse — the honest diagnostic was the wrong treatment"
+          },
+          {
+            "n": 5,
+            "name": "Playground S6E8 — Predicting Smartphone Addiction",
+            "platform": "Kaggle",
+            "when": "2026-08",
+            "metric": "AUC-ROC",
+            "score": 0.97048,
+            "placement": "FINAL: 697 / 3,532 on the private leaderboard (top 19.7%), private AUC 0.97019 (public 0.97048). User-reported from the site 2026-08-31 and consistent with API verification: team count 3,532 and private score 0.97019 confirmed via Kaggle API; the survived shake-up (665 public -> 697 private among 3,532) is itself evidence the CV didn't overfit the public LB",
+            "lesson": "capacity before cleverness (+0.008 from 500->4000 trees); target-encoding every column (+0.0034, largest gain); never drop features on univariate correlation (-0.018); ensemble diversity is representation not architecture; deliberately declined to stack the shared 47-model library — chose an explainable top-20% over an unexplainable top-10%",
+            "stack": "LightGBM + XGBoost + CatBoost + RealMLP (PyTorch, GPU) stacked via cross-fitted logistic regression; 691K rows"
+          }
         ],
         "published_writeups": [
           "https://www.linkedin.com/pulse/from-titanic-mental-health-power-one-decimal-point-justin-wei-rfzvc/",
@@ -293,8 +397,19 @@
       ],
       "advanced_placement": {
         "scores": [
-          { "exam": "AP Calculus BC", "score": 5, "max": 5, "session": "May 2026 (results released July 2026)", "added_on": "2026-08-03" },
-          { "exam": "AP Biology", "score": 5, "max": 5, "session": "May 2025 (confirmed by the parent 2026-10-05)" }
+          {
+            "exam": "AP Calculus BC",
+            "score": 5,
+            "max": 5,
+            "session": "May 2026 (results released July 2026)",
+            "added_on": "2026-08-03"
+          },
+          {
+            "exam": "AP Biology",
+            "score": 5,
+            "max": 5,
+            "session": "May 2025 (confirmed by the parent 2026-10-05)"
+          }
         ],
         "summary": "Two AP examinations, both scored 5/5 — Calculus BC and Biology. 5 is the top score on the AP scale.",
         "why_it_matters": "Three distinct uses. (1) CORROBORATION: an externally validated 5 in Calculus BC independently confirms the math ability that his Alberta marks assert — Math 30-1 final 100%, Math 31 projected 100%. An out-of-province admissions reader who does not know Old Scona's grading culture can calibrate against a College Board score in a way they cannot against a school mark. Same function for AP Biology against his Biology 30 projection. (2) DE-RISKS MATH 31: he has already been examined at BC level, which covers material beyond Math 31, so the projected 100 in Math 31 is now a well-supported expectation rather than an optimistic one. This matters because Math 31 is one of the six top-6 courses. (3) POSSIBLE FIRST-YEAR CREDIT: most Canadian universities grant transfer credit or advanced standing for AP scores of 4 or 5, and a BC 5 commonly maps to first-year calculus. Worth checking each target program's AP transfer-credit policy once offers arrive — this is a practical benefit for first-year course load, not an admissions factor.",
@@ -315,7 +430,6 @@
         }
       }
     },
-
     "technical_projects": [
       {
         "name": "Mental Health Risk Prediction Algorithm",
@@ -346,7 +460,6 @@
         "description": "Three published technical retrospectives, each built around a methodological lesson: threshold calibration (Titanic -> mental health), why the same technique is useless under AUC (Flu Shot), and honest-CV-vs-leaderboard (F1). Fourth article published 2026-08-31: the Smartphone Addiction project (twelve days of tuning vs the answer public the whole time). Full verified record in stem_competitions.ml_competitions."
       }
     ],
-
     "leadership": [
       {
         "name": "Founder & President — HelpingMinds.ca",
@@ -365,13 +478,10 @@
         "description": "Elected co-president of the school computer science club. Leads sessions on Data Structures & Algorithms and coordinates school participation in coding competitions including CCC."
       }
     ],
-
     "other_achievements": [
       "Piano — RCM Level 10 Certificate (classical performance, significant time commitment)"
     ],
-
     "self_described_team_role": "Calm Analyst & Team Specialist — steps back to check foundational assumptions before adding complexity; bridges technical execution with empathy for vulnerable populations.",
-
     "summer_2026_plans": {
       "confirmed": [
         {
@@ -418,8 +528,6 @@
       ],
       "notes": "Updated 2026-08-03 after the July checkpoint. Summer 2026 delivered: Harvard MEDScience completed (June 22-26), a paid RA position in a Tier 1 Canada Research Chair lab at UofA, a recurring twice-weekly clinical volunteer placement, USACO Bronze/Silver progress, and the IB CS IA completed and submitted to IB. The formal lab-research gap flagged in the May 23 report is CLOSED. Report item A3 is PARTIALLY done — the IA build is finished (which removes the schedule risk), but the public packaging that makes it citable on a supplementary application does not exist yet. Still fully open: quantifying HelpingMinds.ca impact metrics (A4), and ELA 30-1 diploma practice (A1), which is the highest-priority item of all."
     },
-
-
     "ec_strengths_by_target": {
       "mcmaster_bhsc": "VERY STRONG for the written supplementary application, and stronger as of August 2026. **New this summer: a paid research assistantship in Prof. Hongbo Zeng's group at UofA (Tier 1 Canada Research Chair, FRSC/FCAE/FAIMBE) and a recurring twice-weekly clinical volunteer placement.** Together these close the two soft spots the May 23 analysis identified — no formal lab research, and clinical exposure that was high-quality but episodic (a single 30-hour block). McMaster's rubric rewards sustained commitment over one-off prestige, so a placement running twice weekly from July onward is worth more to the reader than another summer program would have been. Base profile: cohesive narrative (friend → mental health research → ML tools → clinical shadowing → AI in medicine) plus rare histopathology shadowing at Misericordia + UofT MED YSP + Harvard MEDScience MEDscienceTECH Foundations (June 2026, complete ✓) + HelpingMinds founder + Chatter 100+ hours + IMC Merit + AP Bio 5 + BIBO Silver. Harvard MEDScience is now completed with strong Q2A material: built Nerve-1 (AI CV robot for glioblastoma) using Roboflow + Python API; played anesthesiologist in 30-min live OR drill with real intubation and medication decisions under pressure; pitched to 4 investors, led financial Q&A. The Roboflow CV model failure during the demo (lighting variation, 200-image training set) is exactly the kind of specific, honest reflection McMaster's rubric rewards at the top end. Journal written June 23. This is exactly the profile McMaster BHSc supplementary readers look for.",
       "queens_bhsc": "VERY STRONG for the PSE (1 written + 1 video response). Video format well-suited to Chatter mentoring and CyberPatriot team experience. Same narrative arc as McMaster, plus the Harvard MEDScience cohort (June 2026, confirmed) gives him a recent, prestigious team-engineering experience with direct clinical exposure (bedside, anatomy, surgical) to anchor the video response. Depth of sustained mental-health volunteering is distinctive. **Updated 2026-08: the Zeng lab RA position and the ongoing clinic placement give him two live, current commitments to speak about in the video rather than experiences from a year ago — recency reads well on camera, and 'I work in a lab twice a week and volunteer at a clinic twice a week' is a concrete, verifiable answer to the commitment question the PSE tends to probe.**",
@@ -477,6 +585,12 @@
   },
   "ualberta_application": {
     "submitted_2026_10_03": "SUBMITTED AND PAID 2026-10-03 ($150). As submitted - choice 1: Bachelor of Science (Honors), major Neuroscience, minor Psychology; choice 2: Bachelor of Science (Major), major Biological Sciences, minor Computing Science. Both show Awaiting Decision in the Launchpad portal; all documents required at this time received; admission runs on self-reported grades, official transcript due at end of the academic year. NOTE: choice 2 as submitted is Biological Sciences (Major), NOT the Honors Immunology and Infection decided 2026-09-24 - the parent confirmed 2026-10-03 that Biological Sciences stays as choice 2; choice_2 below updated to match.",
+    "decisions_2026_10_06": {
+      "choice_2_biological_sciences": "ADMITTED WITH CONDITIONS - letter dated 2026-10-06, seen in Launchpad 2026-10-10 (first offer of the cycle). BSc (Major), major Biological Sciences, minor Computing Science, Faculty of Science, Fall 2027. Conditions: minimum combined average of 70% at the final Grade 12 level across the five required courses, a pass in each of the five, English proficiency if applicable, outstanding documents by 2027-08-01. Offer can be revoked if the final average is significantly lower than the one presented at offer time or if marks differ from the self-report. Acceptance = reply-to-offer form in Launchpad + non-refundable tuition deposit by the deadline shown in the portal (deadline NOT yet read - scroll down on the status page). Residence guaranteed on North Campus if applied for by 2027-04-30. Letter saved at data/justin/UAlberta_BiolSci_Offer_Letter_2026-10-06.pdf (data/ is gitignored; contains student ID, CCID and home address).",
+      "choice_1_honors_neuroscience": "ON HOLD - GPA NOT COMPETITIVE - decision letter dated 2026-10-06: 'unable to offer you admission at this time based on the grades submitted', application STILL ACTIVE, re-evaluated when new information arrives or if the competitive requirements change; a further evaluation happens when final official transcripts are received. This is UAlberta's standard early-round hold, not a refusal. Interpretation: the early-round bar for the new Honors Neuroscience program sits above the published 'low 80s to mid 90s' band, or Honors early offers are not issued on Grade 11 marks; this answers advising question 2 (no early offer on G11 marks for Justin's profile). Action: report first-term Grade 12 marks through Launchpad as soon as Old Scona issues a report card (Nov 2026 and again end of semester 1, late Jan 2027), then watch the status. Optional: ask the Student Service Centre what average was used and what the current competitive line is.",
+      "open_question": "Does accepting the choice-2 Biological Sciences offer (and paying the deposit) stop the choice-1 Neuroscience re-evaluation? Ask the Student Service Centre (uab.ca/ask) BEFORE accepting. Also read the reply deadline on the Launchpad status page.",
+      "launchpad_url": "https://apply.ualberta.ca/apply/status"
+    },
     "decided_on": "2026-09-17",
     "portal": "ApplyAlberta (not OUAC) — one application, up to two program choices, $150 fee",
     "choice_1": "ualberta_bsc_neuroscience",
@@ -507,7 +621,8 @@
       "https://apps.ualberta.ca/catalogue/course/phys/124"
     ]
   },
-  "ucalgary_application": { "submitted_2026_10_03": "SUBMITTED AND PAID 2026-10-03 (payment confirmed by the parent). BHSc Honours, major Biomedical Sciences, Faculty of Medicine, Fall 2027; single program choice. UCalgary orders the Old Scona transcript itself. Summary saved at data/justin/UCalgary_Application_Summary_2026-10-03.pdf (gitignored). OPEN: the form records curriculum as International Baccalaureate - Justin is an IB COURSE candidate (three exams May 2027: Mathematics Analysis and Approaches SL, Biology HL, French B SL), not a Diploma candidate; ask UCalgary to confirm the record is right. Next: open the BHSc Supplementary Application (four questions, due 2027-03-01).",
+  "ucalgary_application": {
+    "submitted_2026_10_03": "SUBMITTED AND PAID 2026-10-03 (payment confirmed by the parent). BHSc Honours, major Biomedical Sciences, Faculty of Medicine, Fall 2027; single program choice. UCalgary orders the Old Scona transcript itself. Summary saved at data/justin/UCalgary_Application_Summary_2026-10-03.pdf (gitignored). OPEN: the form records curriculum as International Baccalaureate - Justin is an IB COURSE candidate (three exams May 2027: Mathematics Analysis and Approaches SL, Biology HL, French B SL), not a Diploma candidate; ask UCalgary to confirm the record is right. Next: open the BHSc Supplementary Application (four questions, due 2027-03-01).",
     "decided_on": "2026-09-24",
     "portal": "UCalgary online application (NOT OUAC, NOT ApplyAlberta) + BHSc Supplementary Application; both open 2026-10-01",
     "program_key": "ucalgary_bhsc",
@@ -530,7 +645,7 @@
   },
   "scholarship_applications": {
     "uoft_national_scholarship": {
-      "status": "NOMINATION FORM received from Old Scona 2026-09-28 (five questions, 600 characters each). Agent content brief at data/justin/UofT_National_Scholarship_Brief_2026.md (gitignored) — NOT draft text: U of T prohibits generative-AI content in any undergraduate award application, so Justin writes the answers himself from the verified fact sheet.",
+      "status": "NOT NOMINATED 2026-10-07: Old Scona's committee met Oct 6 and chose another candidate for the school's single nomination (email from Mr. Karas). Feedback on request: the application was strong; the story about Justin's friend not getting into OSA was compelling (empathy); for Leadership expand the Math and CS club co-presidencies (large organisations running multiple competitions) and tie in HelpingMinds; for Intellectual Engagement highlight AP, cybersecurity and research. Apply this to Wolf Scholars. The Oct 30 student application and Nov 6 reference letter no longer apply. Earlier: NOMINATION FORM received from Old Scona 2026-09-28 (five questions, 600 characters each). Agent content brief at data/justin/UofT_National_Scholarship_Brief_2026.md (gitignored) — NOT draft text: U of T prohibits generative-AI content in any undergraduate award application, so Justin writes the answers himself from the verified fact sheet.",
       "program": "Each Canadian high school nominates ONE student/yr. Nominee gets the National Book Award (a book, at graduation, regardless of university) and is a candidate for the National Scholarship (tuition + incidental + residence fees up to 4 years at U of T, ~9/yr; runners-up Arbor Scholarship $7,500 + $1,500/yr). Criteria: outstanding academics, creative thinking, broad achievement, deep commitment to school and community; enthusiasm for intellectual exploration. ~25 finalists interviewed (virtual) in Feb.",
       "dates": {
         "old_scona_internal_form": "before Oct 9 — ask the school for its date",
@@ -576,14 +691,21 @@
     "school_advice_2026_09_21": "Reply from Mr. Jeff Karas (vice-principal, Old Scona) to Justin's OUAC questions. (1) Rounds: depends on the program — most take a large early intake then add students later, others admit rolling in batches; acceptances usually start December-January. (2) Transcripts: request through myPass, individually to EACH university; the most important transcript is the one sent after courses are complete. IN THE MEANTIME students submit a HISTORICAL ACADEMIC REPORT that Mr. Karas signs and stamps — ask him for one; this is the interim document to upload to the university portals. (3) He said choice ranking matters ('they will try to place you in your first choice program first'). That describes single-institution systems such as ApplyAlberta (UAlberta evaluates choice 1, then choice 2) but NOT OUAC across universities: OUAC's own FAQ says the order 'is not usually a factor in the universities' admission decisions' and a university 'must make its policy clear' where it is an exception (known exceptions: uOttawa wait lists use the top 3 choices; UofT Engineering — neither is on Justin's list). No change to the submitted ranking needed. He also recommends the university presentation at school on October 6.",
     "university_acknowledgements": {
       "as_of": "2026-10-05",
-      "uoft": "Received. Join U of T applicant portal access granted 2026-10-05 — Studies in Life Sciences (Faculty of Arts and Science, Fall 2027) shows 'Awaiting Required Documents'. See portal_status_2026_10_05.",
+      "uoft": "Received. 2026-10-10: status APPLICATION UNDER REVIEW; previous-years transcript, Self-Reported Grades and Victoria College Student Profile all confirmed received (dated 2026-10-05); only the interim/mid-term report card is outstanding. Join U of T applicant portal access granted 2026-10-05 — Studies in Life Sciences (Faculty of Arts and Science, Fall 2027) shows 'Awaiting Required Documents'. See portal_status_2026_10_05.",
       "mcmaster": "Received. Action: activate MacID with the barcode and student number in the email, set a password within 7 days of the MacID Activation email (one-time password expires), then log in to the Applicant Portal 30 minutes later.",
       "waterloo": "Received. Action: log in to the Waterloo applicant portal with the personal email and the one-time PIN, set a password, record the applicant number. Admission Information Form for CS is due 2027-02-01.",
       "queens": "Not yet received as of 2026-10-03.",
-      "western": "Not yet received as of 2026-10-03.",
-      "portal_urls": {"mcmaster": "https://admissions.mcmaster.ca/apply/status", "waterloo": "https://undergrad.uwaterloo.ca/portal/status", "uoft": "https://apply.adm.utoronto.ca/portal/status"},
+      "western": "Received. Western Student Center (student.uwo.ca) access 2026-10-09; Application Status shows 2027 Fall/Winter, Faculty of Science, Medical Sciences: Application Received. To Do List: one item, Out of Province SS (secondary school document), status Missing, recommended submission date 2027-01-15; submit exactly as the item instructs (no mail or email); status updates take at least five business days. Self-Reported Grades Form submitted 2026-10-09 (see western_self_reported_grades); To Do item moves Missing -> Pending -> Received.",
+      "portal_urls": {
+        "mcmaster": "https://admissions.mcmaster.ca/apply/status",
+        "waterloo": "https://undergrad.uwaterloo.ca/portal/status",
+        "uoft": "https://apply.adm.utoronto.ca/portal/status",
+        "western": "https://student.uwo.ca/",
+        "ualberta": "https://apply.ualberta.ca/apply/status"
+      },
       "portal_status_2026_10_05": "U of T: status 'Awaiting Required Documents'. Required Documents list: (1) Transcript for Previous Years of Secondary/High School; (2) Interim or Mid-Term Transcript/Report Card for Current Year; (3) Self-Reported Grades (Canadian Secondary - Alberta) - Mandatory form; (4) Victoria College Student Profile, labelled Optional by the portal but needed for Vic consideration since Vic is ranked first. Corrections go through OUAC and take up to a week to display. Anticipated Fall 2027 decision rounds (subject to change): weeks of Jan 25, Feb 22, Mar 15, Apr 12, and May 17 / May 24. Late documents are reviewed space permitting only.",
       "mcmaster_course_eligibility_reply_2026_10_05": "Email from McMaster Student Recruitment (Office of the Registrar) answering Justin's Oct 3 questions. (1) French 30-1 satisfies the non-math / non-science / non-technology requirement; languages, arts and social sciences all qualify. (2) Math 31, Math 30-1 and Math 30-2 all satisfy the math requirement and the highest is used - Math 30-1 at 100. (3) Alberta applicants are averaged on FIVE 30/31-level courses, not six: ELA 30-1, one math, Biology 30, Chemistry 30, one non-math/science/technology course. (4) Courses finished before June 30 of the graduating year are treated the same, so Math 30-1 taken in Grade 11 counts. Not stated: which course is used when both French and Social Studies 30-1 are presented. Projected five-course average at current midpoints: (88.5 + 100 + 97.5 + 97.5 + 92.5) / 5 = 95.2; ELA 30-1 is now one fifth of the McMaster average.",
+      "western_self_reported_grades": "SUBMITTED 2026-10-09 at studentservices.uwo.ca/SRG, checked row by row against the myPass Detailed Academic Report. School: Old Scona Academic High School, AB, 09/2024-06/2027. Free-text rows use the Alberta course code and transcript name; credit weight Alberta (5.0), Biology (Higher) 25 Alberta (3.0); month/year = completion month. Grade 11: ELA 20-1 90; Social Studies 20-1 90; Mathematics 20-1 (IB) 100 (06/2025); Biology 20 (IB) 98; Chemistry 20 99; French 9Y 20 98; Biology (Higher) 25 (IB) 87. Grade 12: Mathematics 30-1 (IB) final 100 (06/2026); ELA 30-1, Social Studies 30-1, Mathematics 31, Biology 30, Chemistry 30, French 9Y 30 listed with 06/2027 and grades blank. Not reported: Grade 10 courses, one-credit CTS modules, AP exams (Western asks for AP courses on the transcript only). Status: the To Do item shows PENDING until an admissions officer reviews it; the form can be edited only while PENDING, then it locks at RECEIVED. Filled by the agent through Claude in Chrome, reviewed and submitted by the parent.",
       "uoft_self_reported_grades": "SUBMITTED 2026-10-05, checked row by row against the myPass Detailed Academic Report. The form's dropdown uses generic course names, so Alberta courses were mapped as follows - keep the same rows when updating. Grade 11 (all Final, not repeated): English 11 = ELA 20-1 (90, 2026); Pre-Calculus 11 = Mathematics 20-1 (100, 2025); Biology 11 = Biology 20 (98, 2026); Chemistry 11 = Chemistry 20 (99, 2026); French 11 = French 9Y 20 (98, 2026); Social Studies 11 = Social Studies 20-1 (90, 2026); Other section: Biology (Higher) 25 (87, 2026). Grade 12: Pre-Calculus 12 = Mathematics 30-1 (100, Final, 2026); IPR with completion 2027: English 12 = ELA 30-1, Calculus 12 = Mathematics 31, Biology 12 = Biology 30, Chemistry 12 = Chemistry 30, French 12 = French 9Y 30; Other section: Social Studies 30-1 (IPR, 2027); AP Calculus BC 5 (Final, 2026); AP Biology 5 (Final, 2025). Not reported, per the form's FAQ: Grade 10 courses, Career and Technology Studies modules (FAQ 17 career courses), separate IB exam rows (FAQ 12: IB courses are reported as percentages). TO DO: replace each IPR with the mark when first-term results arrive; update the form if a course is dropped.",
       "uoft_victoria_college_profile": "SUBMITTED 2026-10-05. The form is tick boxes plus one 500-character activity list, not essays. Deadlines on the form: Dec 1, 2026 early consideration, Feb 1, 2027 final. Domestic applicants must rank Victoria College first on OUAC and complete the profile to be considered. Answers: financial need No; activity types Community Service, Creative and Performing Arts, School Involvement, Volunteer Involvement (Athletics not ticked); three activities listed in this order - Chatter Social Skills Program volunteer mentor, Hongbo Zeng Research Group paid research assistant (summer 2026, 122 hours), co-president of the Old Scona Mathematics and Computer Science Clubs; program of interest Other - Life Sciences. Remaining answers (community program, new Canadian, residence, first generation, self-identification) were entered by the family and are not recorded here. OPEN: the Chatter entry was typed as '120+ hours' while every other record says 100+ - confirm the figure with Justin and use one number on all applications.",
       "uoft_documents": "2026-10-05: myPass Detailed Academic Report uploaded as 'Transcript for Previous Years of Secondary/High School' - shown under Received Documents dated 2026-10-05 (U of T allows 5-7 business days to confirm items). 'Interim or Mid-Term Transcript/Report Card for Current Year' deliberately NOT uploaded yet: the item asks for interim or mid-term results and the myPass report shows only 'In Progress'. Upload the first Grade 12 Old Scona report card when issued, by Dec 1 for the first round; if no report card exists by late November, upload the myPass report there instead and add the report card later. Expect a later request for an official myPass transcript.",
@@ -752,7 +874,7 @@
     },
     {
       "date": "2026-09-30",
-      "label": "Email UAlberta Faculty of Science advising: (1) PHYS 124 waiver or year-2 deferral for a Honors Neuroscience admit without Physics 20; (2) does Honors Neuroscience issue conditional offers on G11 marks alone?",
+      "label": "Email UAlberta Faculty of Science advising: (1) PHYS 124 waiver or year-2 deferral for a Honors Neuroscience admit without Physics 20; (2) does Honors Neuroscience issue conditional offers on G11 marks alone? [Sent 2026-10-03. Question 2 answered by the 2026-10-06 decision: Honors Neuroscience was put ON HOLD - GPA not competitive on G11 marks + Math 30-1; Biological Sciences (choice 2) admitted with conditions.]",
       "category": "action",
       "priority": "high"
     },
@@ -805,6 +927,12 @@
       "priority": "high"
     },
     {
+      "date": "2026-10-13",
+      "label": "UAlberta: read the reply deadline for the Biological Sciences offer on the Launchpad status page (scroll to 'Accept your offer') and ask the Student Service Centre (uab.ca/ask) whether accepting choice 2 and paying the deposit stops the choice-1 Honors Neuroscience re-evaluation. Do NOT accept before the answer; the offer stands until the portal deadline (standard UAlberta date 2027-05-01).",
+      "category": "application",
+      "priority": "high"
+    },
+    {
       "date": "2026-10-15",
       "label": "McMaster BHSc: as of 2026-09-18 every 2027 date on hhsp.healthsci.mcmaster.ca still reads 'Coming Soon' and the 2026 questions PDF is gone. Re-check for the 2027 Supplementary Application Questions PDF and the exact early/mid-February 2027 window (dashboard shows Feb 5 as an estimate). The agent can read the site via the r.jina.ai proxy.",
       "category": "action",
@@ -818,7 +946,7 @@
     },
     {
       "date": "2026-10-30",
-      "label": "U of T National Scholarship student application due (if nominated) — own writing only (AI prohibited). Referee's confidential letter due Nov 6; pick the referee by mid-October.",
+      "label": "CANCELLED — U of T National Scholarship: Justin was not Old Scona's nominee (decided 2026-10-06), so the Oct 30 student application and Nov 6 reference letter do not apply.",
       "category": "application_deadline",
       "priority": "high"
     },
@@ -842,7 +970,7 @@
     },
     {
       "date": "2026-11-16",
-      "label": "U of T: upload Justin's first Grade 12 report card as the 'Interim or Mid-Term Transcript/Report Card for Current Year' item (Join U of T > Upload Documents) as soon as Old Scona issues it, and replace the IPR rows on the Self-Reported Grades form with the same marks. Hard date Dec 1 for the first decision round. If no report card exists by Nov 25, upload the myPass Detailed Academic Report to that item instead and add the report card later.",
+      "label": "U of T: upload Justin's first Grade 12 report card as the 'Interim or Mid-Term Transcript/Report Card for Current Year' item (Join U of T > Upload Documents) as soon as Old Scona issues it, and replace the IPR rows on the Self-Reported Grades form with the same marks. Hard date Dec 1 for the first decision round. If no report card exists by Nov 25, upload the myPass Detailed Academic Report to that item instead and add the report card later. SAME DAY for UAlberta: report the first-term Grade 12 marks through Launchpad (apply.ualberta.ca/apply/status) so Honors Neuroscience (On Hold) is re-evaluated.",
       "category": "application",
       "priority": "high"
     },
