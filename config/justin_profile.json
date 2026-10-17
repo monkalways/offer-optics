@@ -588,7 +588,7 @@
     "decisions_2026_10_06": {
       "choice_2_biological_sciences": "ADMITTED WITH CONDITIONS - letter dated 2026-10-06, seen in Launchpad 2026-10-10 (first offer of the cycle). BSc (Major), major Biological Sciences, minor Computing Science, Faculty of Science, Fall 2027. Conditions: minimum combined average of 70% at the final Grade 12 level across the five required courses, a pass in each of the five, English proficiency if applicable, outstanding documents by 2027-08-01. Offer can be revoked if the final average is significantly lower than the one presented at offer time or if marks differ from the self-report. Acceptance = reply-to-offer form in Launchpad + non-refundable tuition deposit by the deadline shown in the portal (deadline NOT yet read - scroll down on the status page). Residence guaranteed on North Campus if applied for by 2027-04-30. Letter saved at data/justin/UAlberta_BiolSci_Offer_Letter_2026-10-06.pdf (data/ is gitignored; contains student ID, CCID and home address).",
       "choice_1_honors_neuroscience": "ON HOLD - GPA NOT COMPETITIVE - decision letter dated 2026-10-06: 'unable to offer you admission at this time based on the grades submitted', application STILL ACTIVE, re-evaluated when new information arrives or if the competitive requirements change; a further evaluation happens when final official transcripts are received. This is UAlberta's standard early-round hold, not a refusal. Interpretation: the early-round bar for the new Honors Neuroscience program sits above the published 'low 80s to mid 90s' band, or Honors early offers are not issued on Grade 11 marks; this answers advising question 2 (no early offer on G11 marks for Justin's profile). Action: report first-term Grade 12 marks through Launchpad as soon as Old Scona issues a report card (Nov 2026 and again end of semester 1, late Jan 2027), then watch the status. Optional: ask the Student Service Centre what average was used and what the current competitive line is.",
-      "open_question": "Does accepting the choice-2 Biological Sciences offer (and paying the deposit) stop the choice-1 Neuroscience re-evaluation? Ask the Student Service Centre (uab.ca/ask) BEFORE accepting. Also read the reply deadline on the Launchpad status page.",
+      "open_question": "RESOLVED 2026-10-10 from the official Accept Your Offer page (ualberta.ca/en/admissions/how-to-apply/after-you-apply/accept-your-offer.html): applicants with a second-choice offer are encouraged to accept it and pay the deposit; 'your first-choice program will continue to be assessed throughout the application cycle', and if the first choice is later offered the deposit is transferred to it. So accepting Biological Sciences does NOT stop the Neuroscience re-evaluation. Deposit: CAN $500 for Canadian students, non-refundable (not refunded if he later declines). Deadline for offers made on or before April 1: 2027-05-01 (Launchpad shows the exact date); offers Apr 2 - Aug 1 get 30 days. Declining is not reversible and does not keep choice 2 alive, so never tick DECLINE. The reply form in Launchpad ('Reply to Offer of Admission Program Choice Two') shows no deadline itself. Decision for the family: accept now ($500 at risk if an Ontario or UCalgary offer wins in spring) or wait until April; nothing is lost by waiting as long as the reply is in before the Launchpad date.",
       "launchpad_url": "https://apply.ualberta.ca/apply/status"
     },
     "decided_on": "2026-09-17",
@@ -694,14 +694,15 @@
       "uoft": "Received. 2026-10-10: status APPLICATION UNDER REVIEW; previous-years transcript, Self-Reported Grades and Victoria College Student Profile all confirmed received (dated 2026-10-05); only the interim/mid-term report card is outstanding. Join U of T applicant portal access granted 2026-10-05 — Studies in Life Sciences (Faculty of Arts and Science, Fall 2027) shows 'Awaiting Required Documents'. See portal_status_2026_10_05.",
       "mcmaster": "Received. Action: activate MacID with the barcode and student number in the email, set a password within 7 days of the MacID Activation email (one-time password expires), then log in to the Applicant Portal 30 minutes later.",
       "waterloo": "Received. Action: log in to the Waterloo applicant portal with the personal email and the one-time PIN, set a password, record the applicant number. Admission Information Form for CS is due 2027-02-01.",
-      "queens": "Not yet received as of 2026-10-03.",
+      "queens": "Received. SOLUS portal access 2026-10-16 (screenshots). Application Status: 2027 Fall, Undergraduate, Bachelor of Health Sciences (Hons.), Main campus, application date 2026-09-20, status 'Application Pending'. To Do List (all 'Initiated'): (1) Supplemental App-Health Sci, due 2027-02-15 - delivered through Kira Talent, OPENS NOVEMBER 1; within 8 days of the Queen's acknowledgement email Kira Talent emails an invitation link; written + verbal responses; confirmation email on submission; To Do updates within 8 business days; all Queen's deadlines are Eastern time. (2) Financial Aid & Awards Profile, due 2027-02-15 for consideration for all awards (stays open to 2027-07-21) - OPTIONAL, does not affect admission; found under SOLUS > Financial Aid tile > Online Award Applications > Future Students; the Major Admission Awards and Commitment Scholars Program are separate applications. (3) Complete HS Transcript, due 2027-03-31 - final results for all courses completed before this academic year. (4) Current HS Transcript (Grade 12), due 2027-03-31 - in-progress and upcoming registrations plus any interim/midterm results, to be SENT BY THE SCHOOL (myPass order plus Mr. Karas's Historical Academic Report); how-to at queensu.ca/admission/applicants/submit-documents. Side menu also has View Financial Aid Offer, Apply for Admissions, Supplementary Application. Application number not stored here.",
       "western": "Received. Western Student Center (student.uwo.ca) access 2026-10-09; Application Status shows 2027 Fall/Winter, Faculty of Science, Medical Sciences: Application Received. To Do List: one item, Out of Province SS (secondary school document), status Missing, recommended submission date 2027-01-15; submit exactly as the item instructs (no mail or email); status updates take at least five business days. Self-Reported Grades Form submitted 2026-10-09 (see western_self_reported_grades); To Do item moves Missing -> Pending -> Received.",
       "portal_urls": {
         "mcmaster": "https://admissions.mcmaster.ca/apply/status",
         "waterloo": "https://undergrad.uwaterloo.ca/portal/status",
         "uoft": "https://apply.adm.utoronto.ca/portal/status",
         "western": "https://student.uwo.ca/",
-        "ualberta": "https://apply.ualberta.ca/apply/status"
+        "ualberta": "https://apply.ualberta.ca/apply/status",
+        "queens": "https://my.queensu.ca/ (SOLUS Student Centre, NetID login)"
       },
       "portal_status_2026_10_05": "U of T: status 'Awaiting Required Documents'. Required Documents list: (1) Transcript for Previous Years of Secondary/High School; (2) Interim or Mid-Term Transcript/Report Card for Current Year; (3) Self-Reported Grades (Canadian Secondary - Alberta) - Mandatory form; (4) Victoria College Student Profile, labelled Optional by the portal but needed for Vic consideration since Vic is ranked first. Corrections go through OUAC and take up to a week to display. Anticipated Fall 2027 decision rounds (subject to change): weeks of Jan 25, Feb 22, Mar 15, Apr 12, and May 17 / May 24. Late documents are reviewed space permitting only.",
       "mcmaster_course_eligibility_reply_2026_10_05": "Email from McMaster Student Recruitment (Office of the Registrar) answering Justin's Oct 3 questions. (1) French 30-1 satisfies the non-math / non-science / non-technology requirement; languages, arts and social sciences all qualify. (2) Math 31, Math 30-1 and Math 30-2 all satisfy the math requirement and the highest is used - Math 30-1 at 100. (3) Alberta applicants are averaged on FIVE 30/31-level courses, not six: ELA 30-1, one math, Biology 30, Chemistry 30, one non-math/science/technology course. (4) Courses finished before June 30 of the graduating year are treated the same, so Math 30-1 taken in Grade 11 counts. Not stated: which course is used when both French and Social Studies 30-1 are presented. Projected five-course average at current midpoints: (88.5 + 100 + 97.5 + 97.5 + 92.5) / 5 = 95.2; ELA 30-1 is now one fifth of the McMaster average.",
@@ -928,9 +929,9 @@
     },
     {
       "date": "2026-10-13",
-      "label": "UAlberta: read the reply deadline for the Biological Sciences offer on the Launchpad status page (scroll to 'Accept your offer') and ask the Student Service Centre (uab.ca/ask) whether accepting choice 2 and paying the deposit stops the choice-1 Honors Neuroscience re-evaluation. Do NOT accept before the answer; the offer stands until the portal deadline (standard UAlberta date 2027-05-01).",
+      "label": "UAlberta: decide when to accept the Biological Sciences offer. Official rule (verified 2026-10-10): accepting choice 2 does not stop the choice-1 Neuroscience assessment and the $500 non-refundable deposit transfers to choice 1 if offered. Deadline 2027-05-01 for offers made before April 1 (Launchpad shows the exact date). Never tick DECLINE. Options: accept now for certainty, or wait until spring when the Ontario and UCalgary results are known - the $500 is the only cost of accepting early.",
       "category": "application",
-      "priority": "high"
+      "priority": "normal"
     },
     {
       "date": "2026-10-15",
@@ -957,6 +958,12 @@
       "priority": "medium"
     },
     {
+      "date": "2026-11-01",
+      "label": "Queen's BHSc Supplementary Application (Kira Talent) OPENS today per the SOLUS To Do item; the Kira invitation email arrives within 8 days of the acknowledgement email. Due 2027-02-15 EST; no late submissions. Mandatory practice questions first; written (10 min, 335 words) then video (2 min prep, 2 min answer). Justin's own work - the agent supplies facts only.",
+      "category": "application",
+      "priority": "high"
+    },
+    {
       "date": "2026-11-02",
       "label": "Wolf Scholars application DUE 11:59 AM ET (9:59 AM Edmonton). Supplemental materials Dec 1; semi-final interviews January.",
       "category": "application_deadline",
@@ -967,6 +974,12 @@
       "label": "U of T early-round target: OUAC application in by Nov 7 and documents by Dec 1 to be reviewed in the earlier admission rounds (verified on future.utoronto.ca 2026-09-18). Aim for an early UofT Life Sci offer.",
       "category": "application",
       "priority": "high"
+    },
+    {
+      "date": "2026-11-09",
+      "label": "Queen's: confirm the Kira Talent invitation email has arrived (search Justin's inbox and spam for kiratalent.com and queensu.ca). If not, email Undergraduate Admission. Also check SOLUS: the Financial Aid & Awards Profile (optional, Feb 15) and whether the Major Admission Awards / Commitment Scholars applications are worth doing.",
+      "category": "application",
+      "priority": "normal"
     },
     {
       "date": "2026-11-16",
