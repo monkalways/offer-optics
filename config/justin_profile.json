@@ -661,7 +661,7 @@
       ]
     },
     "wolf_scholars_uoft": {
-      "status": "APPLYING — questions received 2026-09-28; agent drafts at data/justin/Wolf_Scholars_Draft_2026.md (gitignored). CAUTION added 2026-09-28: U of T prohibits generative-AI content in its undergraduate award applications; treat the drafts as a fact-checked outline only — Justin must write the submitted answers himself",
+      "status": "SUBMITTED - application and reference both complete by 2026-10-31 (parent's report), ahead of the 2026-11-02 11:59 AM ET deadline. Reference written and submitted by Prof. Hongbo Zeng (UAlberta, Tier 1 Canada Research Chair) - a stronger signatory than the Hongjian-only route planned in August. Old Scona nominated Justin 2026-10-31 (optional support per wolfscholars.com; schools may nominate up to three). Next: supplemental materials by 2026-12-01 (check the portal for what is asked - transcript or school documents); semi-final online interviews January 2027; selection weekend late February in Toronto; up to 16 scholars named March 2027, conditional on U of T admission. Answers were Justin's own words; agent drafts (data/justin/Wolf_Scholars_Draft_2026.md, gitignored) served as a fact-checked outline only.",
       "program": "Wolf Scholars (Wolf Cooper Foundation / Andrew Sheiner, with the Munk School). 16 scholars/yr from U of T Arts & Science (excl. Rotman) + Engineering; full tuition + annual stipend x4 years; Munk seminars (history, leadership, ethics, problem-solving); funded cohort travel (domestic Y1, international Y2-3); internships; Y4 capstone. Selection: 'drive to build and lead, intellectual curiosity and exceptional character'.",
       "questions_2026": [
         "1 Drive to Build & Lead: a specific time you took the lead on a project, business, or community initiative; challenges and how you pushed through",
@@ -673,7 +673,8 @@
         "supplemental_deadline": "2026-12-01",
         "semi_final_interviews": "2027-01 (online)",
         "selection_weekend": "late Feb 2027, Toronto, travel paid",
-        "decision": "2027-03"
+        "decision": "2027-03 (up to 16 scholars; conditional on U of T admission)",
+        "references_deadline": "2026-11-02 11:59 AM ET (same as the application; referees invited through the portal)"
       },
       "eligibility_check": "90% in last completed year (G11 97.0 OK); Canadian citizen/PR OK; final year of secondary OK; contingent on U of T admission (OUAC choice 4, Life Sci St. George); confirm age window (born Sept 1 2005 - Dec 31 2010)",
       "draft_strategy": "Q1 HelpingMinds + the client-side screening tool (safety and honesty as the challenges); Q2 'when should you trust a prediction about a person?' linking the Kaggle record and the Zeng-lab reflection (quoted); Q3 Chatter mentoring (needs one real anecdote) with a verified integrity alternate (declined the 47-model Kaggle stack). Word limits unknown — trim to the portal.",
@@ -681,7 +682,9 @@
         "https://www.wolfscholars.com/apply",
         "https://www.wolfscholars.com/program/program-info",
         "https://munkschool.utoronto.ca/wolf-scholars"
-      ]
+      ],
+      "nomination": "Old Scona nominated Justin (reported 2026-10-31). Note the contrast with the U of T National Scholarship, where the school's single nomination went to another student on 2026-10-07; Wolf allows up to three school nominations and does not require one.",
+      "reference": "Prof. Hongbo Zeng submitted the Wolf Scholars reference (done by 2026-10-31). This is the first letter actually filed from the Zeng lab; reuse the relationship for Schulich Leader / Loran / TD if those proceed, and keep the Hongjian-routed draft at data/justin/Zeng_Reference_Letter_Draft_2026.md as the record of what was supplied."
     }
   },
   "transcript_check_2026_10_03": "myPass Detailed Academic Report (in progress, 91 credits) saved at data/justin/Justin_Wei_Detailed_Academic_Report_IN_PROGRESS_2026-10-03.pdf (gitignored) and uploaded to Waterloo. All recorded Grade 11 marks match the report (Math 30-1 100 school / 100 diploma; Chem 20 99; Bio 20 98; French 98; ELA 20-1 90; Social 20-1 90; Biology Higher 25 87; CSE Project D 71). Grade 12 in progress: ELA 30-1, Social Studies 30-1, Mathematics 31, Biology 30, Chemistry 30, French 9Y 30 (all full-year). NOTES: (1) the report prints the French course as French 9Y 30 (FSL3099); the parent confirmed 2026-10-03 this is the same course the record calls French 30-1, so no correction is needed - where a form lists Alberta course names, pick the one matching the transcript; (2) Social Studies 30-1 is on the Grade 12 timetable but was not in this profile's projected-course list - it is a second candidate for the non-math/science credit and for five-course Alberta averages. No physics course on the record, as assumed.",
@@ -955,7 +958,7 @@
     },
     {
       "date": "2026-10-26",
-      "label": "Wolf Scholars (U of T): Justin's final answers in his own words ready for a last read — deadline Nov 2 at 11:59 AM ET (a MORNING deadline). Drafts and fact list at data/justin/Wolf_Scholars_Draft_2026.md.",
+      "label": "DONE 2026-10-31 - [2026-10-31: Old Scona nominated Justin for Wolf Scholars - optional support, the application and references are still due Nov 2 AM.] Wolf Scholars (U of T): Justin's final answers in his own words ready for a last read — deadline Nov 2 at 11:59 AM ET (a MORNING deadline). Drafts and fact list at data/justin/Wolf_Scholars_Draft_2026.md.",
       "category": "application",
       "priority": "high"
     },
@@ -979,7 +982,7 @@
     },
     {
       "date": "2026-11-02",
-      "label": "Wolf Scholars application DUE 11:59 AM ET (9:59 AM Edmonton). Supplemental materials Dec 1; semi-final interviews January.",
+      "label": "DONE 2026-10-31 - Wolf Scholars application submitted and Prof. Zeng's reference in, ahead of the Nov 2 11:59 AM ET deadline. School nomination received Oct 31. Next: supplemental materials Dec 1; semi-final online interviews January; selection weekend late February in Toronto.",
       "category": "application_deadline",
       "priority": "critical"
     },

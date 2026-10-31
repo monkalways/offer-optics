@@ -1,5 +1,5 @@
 {
-  "build_timestamp": "2026-10-17T17:37:07",
+  "build_timestamp": "2026-10-31T12:00:58",
   "cycle_label": "2026-2027",
   "profile": {
     "name": "Justin",
@@ -662,7 +662,7 @@
         ]
       },
       "wolf_scholars_uoft": {
-        "status": "APPLYING — questions received 2026-09-28; agent drafts at data/justin/Wolf_Scholars_Draft_2026.md (gitignored). CAUTION added 2026-09-28: U of T prohibits generative-AI content in its undergraduate award applications; treat the drafts as a fact-checked outline only — Justin must write the submitted answers himself",
+        "status": "SUBMITTED - application and reference both complete by 2026-10-31 (parent's report), ahead of the 2026-11-02 11:59 AM ET deadline. Reference written and submitted by Prof. Hongbo Zeng (UAlberta, Tier 1 Canada Research Chair) - a stronger signatory than the Hongjian-only route planned in August. Old Scona nominated Justin 2026-10-31 (optional support per wolfscholars.com; schools may nominate up to three). Next: supplemental materials by 2026-12-01 (check the portal for what is asked - transcript or school documents); semi-final online interviews January 2027; selection weekend late February in Toronto; up to 16 scholars named March 2027, conditional on U of T admission. Answers were Justin's own words; agent drafts (data/justin/Wolf_Scholars_Draft_2026.md, gitignored) served as a fact-checked outline only.",
         "program": "Wolf Scholars (Wolf Cooper Foundation / Andrew Sheiner, with the Munk School). 16 scholars/yr from U of T Arts & Science (excl. Rotman) + Engineering; full tuition + annual stipend x4 years; Munk seminars (history, leadership, ethics, problem-solving); funded cohort travel (domestic Y1, international Y2-3); internships; Y4 capstone. Selection: 'drive to build and lead, intellectual curiosity and exceptional character'.",
         "questions_2026": [
           "1 Drive to Build & Lead: a specific time you took the lead on a project, business, or community initiative; challenges and how you pushed through",
@@ -674,7 +674,8 @@
           "supplemental_deadline": "2026-12-01",
           "semi_final_interviews": "2027-01 (online)",
           "selection_weekend": "late Feb 2027, Toronto, travel paid",
-          "decision": "2027-03"
+          "decision": "2027-03 (up to 16 scholars; conditional on U of T admission)",
+          "references_deadline": "2026-11-02 11:59 AM ET (same as the application; referees invited through the portal)"
         },
         "eligibility_check": "90% in last completed year (G11 97.0 OK); Canadian citizen/PR OK; final year of secondary OK; contingent on U of T admission (OUAC choice 4, Life Sci St. George); confirm age window (born Sept 1 2005 - Dec 31 2010)",
         "draft_strategy": "Q1 HelpingMinds + the client-side screening tool (safety and honesty as the challenges); Q2 'when should you trust a prediction about a person?' linking the Kaggle record and the Zeng-lab reflection (quoted); Q3 Chatter mentoring (needs one real anecdote) with a verified integrity alternate (declined the 47-model Kaggle stack). Word limits unknown — trim to the portal.",
@@ -682,7 +683,9 @@
           "https://www.wolfscholars.com/apply",
           "https://www.wolfscholars.com/program/program-info",
           "https://munkschool.utoronto.ca/wolf-scholars"
-        ]
+        ],
+        "nomination": "Old Scona nominated Justin (reported 2026-10-31). Note the contrast with the U of T National Scholarship, where the school's single nomination went to another student on 2026-10-07; Wolf allows up to three school nominations and does not require one.",
+        "reference": "Prof. Hongbo Zeng submitted the Wolf Scholars reference (done by 2026-10-31). This is the first letter actually filed from the Zeng lab; reuse the relationship for Schulich Leader / Loran / TD if those proceed, and keep the Hongjian-routed draft at data/justin/Zeng_Reference_Letter_Draft_2026.md as the record of what was supplied."
       }
     },
     "transcript_check_2026_10_03": "myPass Detailed Academic Report (in progress, 91 credits) saved at data/justin/Justin_Wei_Detailed_Academic_Report_IN_PROGRESS_2026-10-03.pdf (gitignored) and uploaded to Waterloo. All recorded Grade 11 marks match the report (Math 30-1 100 school / 100 diploma; Chem 20 99; Bio 20 98; French 98; ELA 20-1 90; Social 20-1 90; Biology Higher 25 87; CSE Project D 71). Grade 12 in progress: ELA 30-1, Social Studies 30-1, Mathematics 31, Biology 30, Chemistry 30, French 9Y 30 (all full-year). NOTES: (1) the report prints the French course as French 9Y 30 (FSL3099); the parent confirmed 2026-10-03 this is the same course the record calls French 30-1, so no correction is needed - where a form lists Alberta course names, pick the one matching the transcript; (2) Social Studies 30-1 is on the Grade 12 timetable but was not in this profile's projected-course list - it is a second candidate for the non-math/science credit and for five-course Alberta averages. No physics course on the record, as assumed.",
@@ -956,7 +959,7 @@
       },
       {
         "date": "2026-10-26",
-        "label": "Wolf Scholars (U of T): Justin's final answers in his own words ready for a last read — deadline Nov 2 at 11:59 AM ET (a MORNING deadline). Drafts and fact list at data/justin/Wolf_Scholars_Draft_2026.md.",
+        "label": "DONE 2026-10-31 - [2026-10-31: Old Scona nominated Justin for Wolf Scholars - optional support, the application and references are still due Nov 2 AM.] Wolf Scholars (U of T): Justin's final answers in his own words ready for a last read — deadline Nov 2 at 11:59 AM ET (a MORNING deadline). Drafts and fact list at data/justin/Wolf_Scholars_Draft_2026.md.",
         "category": "application",
         "priority": "high"
       },
@@ -980,7 +983,7 @@
       },
       {
         "date": "2026-11-02",
-        "label": "Wolf Scholars application DUE 11:59 AM ET (9:59 AM Edmonton). Supplemental materials Dec 1; semi-final interviews January.",
+        "label": "DONE 2026-10-31 - Wolf Scholars application submitted and Prof. Zeng's reference in, ahead of the Nov 2 11:59 AM ET deadline. School nomination received Oct 31. Next: supplemental materials Dec 1; semi-final online interviews January; selection weekend late February in Toronto.",
         "category": "application_deadline",
         "priority": "critical"
       },
@@ -6443,490 +6446,490 @@
       "label": "Grade 12 begins — confirm the school-year commitment level for the Zeng lab and the clinic placement, and start weekly ELA 30-1 diploma practice",
       "category": "action",
       "priority": "high",
-      "days_from_today": -46
+      "days_from_today": -60
     },
     {
       "date": "2026-09-17",
       "label": "OUAC 2027 application SUBMITTED AND PAID 2026-09-20 ($799): Queen's BHSc, McMaster BHSc, Western Med Sci (Physiology interest, Ivey AEO no, Scholar's Electives yes), UofT Life Sci St. George (Vic / UC / New), Waterloo CS co-op. Group B: grades are self-reported per university after transmission; official transcripts via Alberta myPass.",
       "category": "application",
       "priority": "high",
-      "days_from_today": -30
+      "days_from_today": -44
     },
     {
       "date": "2026-09-30",
       "label": "Email UAlberta Faculty of Science advising: (1) PHYS 124 waiver or year-2 deferral for a Honors Neuroscience admit without Physics 20; (2) does Honors Neuroscience issue conditional offers on G11 marks alone? [Sent 2026-10-03. Question 2 answered by the 2026-10-06 decision: Honors Neuroscience was put ON HOLD - GPA not competitive on G11 marks + Math 30-1; Biological Sciences (choice 2) admitted with conditions.]",
       "category": "action",
       "priority": "high",
-      "days_from_today": -17
+      "days_from_today": -31
     },
     {
       "date": "2026-10-01",
       "label": "Email McMaster Admissions (per future.mcmaster.ca: out-of-province applicants should confirm course eligibility): does French 30-1 satisfy the BHSc non-math/non-science/non-technology 4U/M credit, and Math 31 the math prerequisite? McMaster averages the six required courses, so this fixes which six count.",
       "category": "action",
       "priority": "high",
-      "days_from_today": -16
+      "days_from_today": -30
     },
     {
       "date": "2026-10-01",
       "label": "UAlberta (ApplyAlberta) opens — DONE 2026-10-03: submitted with BSc Honors Neuroscience as choice 1 and BSc Major Biological Sciences as choice 2 ($150 paid). Uses final G11 marks + available G12 marks; a conditional offer in late fall is the goal, before the February Ontario supp apps.",
       "category": "application",
       "priority": "high",
-      "days_from_today": -16
+      "days_from_today": -30
     },
     {
       "date": "2026-10-01",
       "label": "UCalgary BHSc (Cumming School of Medicine) application AND the BHSc Supplementary Application open — separate UCalgary portal (~$125). Submit the application early so the four supplementary questions unlock and early admission on Grade 11 marks is possible. Decided 2026-09-24.",
       "category": "application",
       "priority": "high",
-      "days_from_today": -16
+      "days_from_today": -30
     },
     {
       "date": "2026-10-02",
       "label": "U of T National Book Award: Old Scona's internal nomination form (5 questions x 600 characters) — Justin writes his own answers from data/justin/UofT_National_Scholarship_Brief_2026.md; confirm the school's internal due date (school nomination to U of T is due Oct 9).",
       "category": "application",
       "priority": "high",
-      "days_from_today": -15
+      "days_from_today": -29
     },
     {
       "date": "2026-10-04",
       "label": "OUAC transmitted (paid Sept 20). Expect acknowledgement emails from all five universities by now — create each portal account (Join U of T, Western Student Center, Waterloo Quest, McMaster Mosaic, Queen's SOLUS), self-report final Grade 11 marks and Grade 12 courses in progress in each, and note each university's transcript instructions. Ask Mr. Karas for a signed and stamped Historical Academic Report — the interim document to upload until the final myPass transcript exists. Chase any university that has not emailed by Oct 10.",
       "category": "application",
       "priority": "high",
-      "days_from_today": -13
+      "days_from_today": -27
     },
     {
       "date": "2026-10-06",
       "label": "University presentation at Old Scona (recommended by Mr. Karas) — attend; bring questions on out-of-province document handling, early offers, and the Historical Academic Report.",
       "category": "action",
       "priority": "medium",
-      "days_from_today": -11
+      "days_from_today": -25
     },
     {
       "date": "2026-10-09",
       "label": "U of T applicant portal (access received Oct 5): Self-Reported Grades form SUBMITTED Oct 5. Previous-years transcript (myPass Detailed Academic Report) uploaded Oct 5. Check around Oct 15 that both show as received. Still to do: upload the first Grade 12 report card as the interim/mid-term item and replace the form's IPR rows with those marks, both by Dec 1. Everything complete by Dec 1 keeps Justin in the first decision round (week of Jan 25).",
       "category": "application",
       "priority": "high",
-      "days_from_today": -8
+      "days_from_today": -22
     },
     {
       "date": "2026-10-09",
       "label": "U of T National Book Award school nomination deadline (11:59 pm EDT) — Old Scona submits.",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": -8
+      "days_from_today": -22
     },
     {
       "date": "2026-10-13",
       "label": "UAlberta: decide when to accept the Biological Sciences offer. Official rule (verified 2026-10-10): accepting choice 2 does not stop the choice-1 Neuroscience assessment and the $500 non-refundable deposit transfers to choice 1 if offered. Deadline 2027-05-01 for offers made before April 1 (Launchpad shows the exact date). Never tick DECLINE. Options: accept now for certainty, or wait until spring when the Ontario and UCalgary results are known - the $500 is the only cost of accepting early.",
       "category": "application",
       "priority": "normal",
-      "days_from_today": -4
+      "days_from_today": -18
     },
     {
       "date": "2026-10-15",
       "label": "McMaster BHSc: as of 2026-09-18 every 2027 date on hhsp.healthsci.mcmaster.ca still reads 'Coming Soon' and the 2026 questions PDF is gone. Re-check for the 2027 Supplementary Application Questions PDF and the exact early/mid-February 2027 window (dashboard shows Feb 5 as an estimate). The agent can read the site via the r.jina.ai proxy.",
       "category": "action",
       "priority": "high",
-      "days_from_today": -2
+      "days_from_today": -16
     },
     {
       "date": "2026-10-20",
       "label": "RESOLVED 2026-10-17: Justin's @uwo.ca address has no mailbox yet (Outlook: no mailbox and no licence assigned); Western emails applicants at the OUAC address until an offer is accepted. Nothing to do. Re-check the To Do item (Out of Province SS) on Oct 26: expected to move from Pending to Received.",
       "category": "application",
       "priority": "normal",
-      "days_from_today": 3
+      "days_from_today": -11
     },
     {
       "date": "2026-10-26",
-      "label": "Wolf Scholars (U of T): Justin's final answers in his own words ready for a last read — deadline Nov 2 at 11:59 AM ET (a MORNING deadline). Drafts and fact list at data/justin/Wolf_Scholars_Draft_2026.md.",
+      "label": "DONE 2026-10-31 - [2026-10-31: Old Scona nominated Justin for Wolf Scholars - optional support, the application and references are still due Nov 2 AM.] Wolf Scholars (U of T): Justin's final answers in his own words ready for a last read — deadline Nov 2 at 11:59 AM ET (a MORNING deadline). Drafts and fact list at data/justin/Wolf_Scholars_Draft_2026.md.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 9
+      "days_from_today": -5
     },
     {
       "date": "2026-10-30",
       "label": "CANCELLED — U of T National Scholarship: Justin was not Old Scona's nominee (decided 2026-10-06), so the Oct 30 student application and Nov 6 reference letter do not apply.",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 13
+      "days_from_today": -1
     },
     {
       "date": "2026-11-01",
       "label": "Register at usaco.org and check the published 2026-27 contest dates — the season starts in January (2025-26 opened Jan 9-12), so registration and scheduling need to happen in the fall",
       "category": "competition",
       "priority": "medium",
-      "days_from_today": 15
+      "days_from_today": 1
     },
     {
       "date": "2026-11-01",
       "label": "Queen's BHSc Supplementary Application (Kira Talent) OPENS today per the SOLUS To Do item; the Kira invitation email arrives within 8 days of the acknowledgement email. Due 2027-02-15 EST; no late submissions. Mandatory practice questions first; written (10 min, 335 words) then video (2 min prep, 2 min answer). Justin's own work - the agent supplies facts only.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 15
+      "days_from_today": 1
     },
     {
       "date": "2026-11-02",
-      "label": "Wolf Scholars application DUE 11:59 AM ET (9:59 AM Edmonton). Supplemental materials Dec 1; semi-final interviews January.",
+      "label": "DONE 2026-10-31 - Wolf Scholars application submitted and Prof. Zeng's reference in, ahead of the Nov 2 11:59 AM ET deadline. School nomination received Oct 31. Next: supplemental materials Dec 1; semi-final online interviews January; selection weekend late February in Toronto.",
       "category": "application_deadline",
       "priority": "critical",
-      "days_from_today": 16
+      "days_from_today": 2
     },
     {
       "date": "2026-11-07",
       "label": "U of T early-round target: OUAC application in by Nov 7 and documents by Dec 1 to be reviewed in the earlier admission rounds (verified on future.utoronto.ca 2026-09-18). Aim for an early UofT Life Sci offer.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 21
+      "days_from_today": 7
     },
     {
       "date": "2026-11-09",
       "label": "Queen's: confirm the Kira Talent invitation email has arrived (search Justin's inbox and spam for kiratalent.com and queensu.ca). If not, email Undergraduate Admission. Also check SOLUS: the Financial Aid & Awards Profile (optional, Feb 15) and whether the Major Admission Awards / Commitment Scholars applications are worth doing.",
       "category": "application",
       "priority": "normal",
-      "days_from_today": 23
+      "days_from_today": 9
     },
     {
       "date": "2026-11-16",
       "label": "U of T: upload Justin's first Grade 12 report card as the 'Interim or Mid-Term Transcript/Report Card for Current Year' item (Join U of T > Upload Documents) as soon as Old Scona issues it, and replace the IPR rows on the Self-Reported Grades form with the same marks. Hard date Dec 1 for the first decision round. If no report card exists by Nov 25, upload the myPass Detailed Academic Report to that item instead and add the report card later. SAME DAY for UAlberta: report the first-term Grade 12 marks through Launchpad (apply.ualberta.ca/apply/status) so Honors Neuroscience (On Hold) is re-evaluated.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 30
+      "days_from_today": 16
     },
     {
       "date": "2026-11-20",
       "label": "Order Alberta myPass transcripts to UofT (documents due Dec 1 for the early round) and to any other university that has asked by now; put the OUAC Reference Number on each request.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 34
+      "days_from_today": 20
     },
     {
       "date": "2026-11-24",
       "label": "UCalgary Prestige Awards application DUE 2026-12-01 (documents by Dec 15) - Student Centre > My Financials > Apply for Entrance Awards (allow pop-ups). Check the eligibility list on ucalgary.ca/registrar awards pages first; Justin writes any statements himself. High School Awards and Bursaries close 2027-03-01 (same place).",
       "category": "scholarship",
       "priority": "high",
-      "days_from_today": 38
+      "days_from_today": 24
     },
     {
       "date": "2026-12-01",
       "label": "DONE 2026-10-05 — Victoria College Student Profile submitted (early-consideration deadline Dec 1, 2026; final Feb 1, 2027, per the form). Nothing further needed unless an answer changes.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 45
+      "days_from_today": 31
     },
     {
       "date": "2026-12-01",
       "label": "McMaster BHSc Supplementary Application QUESTIONS POSTED today (HHSP page, verified 2026-10-17): read the 2 x 3 prompts, pick one per question, and start Justin's own drafts (1500 characters each incl. spaces; no generative AI; no collaboration). Check the same page for the instructions-email date and the portal window (early February, about 3-4 days, no extensions).",
       "category": "application",
       "priority": "high",
-      "days_from_today": 45
+      "days_from_today": 31
     },
     {
       "date": "2027-01-09",
       "label": "USACO contest 1 (approx. — 2026-27 dates unpublished). Roughly two contests fall before the Waterloo AIF; a Gold division placement earned here would be citable.",
       "category": "competition",
       "priority": "medium",
-      "days_from_today": 84
+      "days_from_today": 70
     },
     {
       "date": "2027-01-10",
       "label": "UAlberta entrance awards application closes",
       "category": "application",
       "priority": "medium",
-      "days_from_today": 85
+      "days_from_today": 71
     },
     {
       "date": "2027-01-12",
       "label": "McMaster BHSc: the supplementary-application instructions email arrives in late January - search Justin's inbox and spam for mcmaster.ca; confirm the exact portal window dates on the HHSP page and in the Applicant Portal checklist. Final drafts ready before the window opens.",
       "category": "application",
       "priority": "high",
-      "days_from_today": 87
+      "days_from_today": 73
     },
     {
       "date": "2027-01-15",
       "label": "OUAC deadline — all applications submitted",
       "category": "application",
       "priority": "high",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "U of T Awards Profile DUE 2027-02-01 (Join U of T landing page > 'Complete the Awards Profile'). Merit scholarships are automatic; this form adds consideration for need-, leadership- and community-based admission awards. Justin completes it himself (U of T bans generative-AI content in award applications); the agent can supply dates, hours and facts from the profile.",
       "category": "scholarship",
       "priority": "high",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-01-15",
       "label": "OUAC application deadline: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 90
+      "days_from_today": 76
     },
     {
       "date": "2027-02-01",
       "label": "[Corrected 2026-10-17: the AIF deadline is 2027-02-15, same as documents; keep Feb 1 as the internal target.] CCC Senior — the highest-value CS credential available this cycle. Run by Waterloo's own CEMC; top-25 earns a Canadian Computing Olympiad invitation. Priority over USACO for the Waterloo AIF.",
       "category": "competition",
       "priority": "high",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-01",
       "label": "McMaster BHSc supplementary application window opens for only 3-4 days (2025-26 window was Feb 2-5). Missing it is auto-disqualification.",
       "category": "application",
       "priority": "critical",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-01",
       "label": "OUAC application deadline: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: University of Toronto (St. George) — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-01",
       "label": "OUAC application deadline: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: McMaster University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-01",
       "label": "Supplementary application due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-01",
       "label": "Documents due: University of Waterloo — Software Engineering",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 107
+      "days_from_today": 93
     },
     {
       "date": "2027-02-05",
       "label": "Supplementary application due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 111
+      "days_from_today": 97
     },
     {
       "date": "2027-02-05",
       "label": "Documents due: McMaster University — Bachelor of Health Sciences (Honours)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 111
+      "days_from_today": 97
     },
     {
       "date": "2027-02-14",
       "label": "Western Scholar's Electives Supplemental Application due Feb 14 (submit in the Western portal, opened with the Western username). Needs a 90% final admission average; not selected = still considered for regular Med Sci.",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 120
+      "days_from_today": 106
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 121
+      "days_from_today": 107
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 121
+      "days_from_today": 107
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Waterloo — Computer Science (BCS)",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 121
+      "days_from_today": 107
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Guelph — Biomedical Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 121
+      "days_from_today": 107
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: Western University — Bachelor of Medical Sciences (BMSc)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 121
+      "days_from_today": 107
     },
     {
       "date": "2027-02-15",
       "label": "Supplementary application due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 121
+      "days_from_today": 107
     },
     {
       "date": "2027-02-15",
       "label": "Documents due: University of Waterloo — Mathematics / Computer Science (joint)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 121
+      "days_from_today": 107
     },
     {
       "date": "2027-03-01",
       "label": "UCalgary BHSc Supplementary Application deadline (four questions, blind-scored). Do not leave it to the deadline — aim for mid-February alongside the Queen's PSE.",
       "category": "application_deadline",
       "priority": "critical",
-      "days_from_today": 135
+      "days_from_today": 121
     },
     {
       "date": "2027-03-01",
       "label": "UAlberta Faculty of Science application deadline (backstop — the application should have been in since October)",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 135
+      "days_from_today": 121
     },
     {
       "date": "2027-03-01",
       "label": "Application deadline (ApplyAlberta): University of Alberta — BSc Biological Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 135
+      "days_from_today": 121
     },
     {
       "date": "2027-03-01",
       "label": "Application deadline (ApplyAlberta): University of Alberta — BSc Honors Neuroscience",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 135
+      "days_from_today": 121
     },
     {
       "date": "2027-03-01",
       "label": "Application deadline (UCalgary portal): University of Calgary — Bachelor of Health Sciences (Honours) — Cumming School of Medicine",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 135
+      "days_from_today": 121
     },
     {
       "date": "2027-03-01",
       "label": "Supplementary application due: University of Calgary — Bachelor of Health Sciences (Honours) — Cumming School of Medicine",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 135
+      "days_from_today": 121
     },
     {
       "date": "2027-03-01",
       "label": "Documents due: University of Calgary — Bachelor of Health Sciences (Honours) — Cumming School of Medicine",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 135
+      "days_from_today": 121
     },
     {
       "date": "2027-03-31",
       "label": "Documents due: Queen's University — Bachelor of Health Sciences",
       "category": "application_deadline",
       "priority": "high",
-      "days_from_today": 165
+      "days_from_today": 151
     },
     {
       "date": "2027-03-31",
       "label": "Documents due: Queen's University — Life Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 165
+      "days_from_today": 151
     },
     {
       "date": "2027-06-15",
       "label": "UAlberta final-file documents (deadline 2027-08-01, only if Justin accepts a UAlberta offer): official AP score report sent from the College Board; official IB transcript from the IBO (results July 2027); the Alberta Education transcript is requested by UAlberta automatically. Launchpad checklist shows all three as Awaiting.",
       "category": "application",
       "priority": "normal",
-      "days_from_today": 241
+      "days_from_today": 227
     },
     {
       "date": "2027-07-01",
       "label": "IF admitted to Honors Neuroscience: take Physics 20 in summer school (Metro Continuing Education / Argyll Centre) so PHYS 124 can be taken in year 1. Register in spring 2027.",
       "category": "action",
       "priority": "medium",
-      "days_from_today": 257
+      "days_from_today": 243
     },
     {
       "date": "2027-08-01",
       "label": "Documents due: University of Alberta — BSc Biological Sciences",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 288
+      "days_from_today": 274
     },
     {
       "date": "2027-08-01",
       "label": "Documents due: University of Alberta — BSc Honors Neuroscience",
       "category": "application_deadline",
       "priority": "medium",
-      "days_from_today": 288
+      "days_from_today": 274
     }
   ],
   "ec_insights": {},
